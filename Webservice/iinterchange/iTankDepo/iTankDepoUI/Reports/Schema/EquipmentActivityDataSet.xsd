@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EquipmentActivityDataSet" targetNamespace="http://tempuri.org/EquipmentActivityDataSet.xsd" xmlns:mstns="http://tempuri.org/EquipmentActivityDataSet.xsd" xmlns="http://tempuri.org/EquipmentActivityDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="EquipmentActivityDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="EquipmentActivityDataSet" msprop:Generator_UserDSName="EquipmentActivityDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="V_EQUIPMENT_ACTIVTY_DATE" msprop:Generator_TableClassName="V_EQUIPMENT_ACTIVTY_DATEDataTable" msprop:Generator_TableVarName="tableV_EQUIPMENT_ACTIVTY_DATE" msprop:Generator_TablePropName="V_EQUIPMENT_ACTIVTY_DATE" msprop:Generator_RowDeletingName="V_EQUIPMENT_ACTIVTY_DATERowDeleting" msprop:Generator_RowChangingName="V_EQUIPMENT_ACTIVTY_DATERowChanging" msprop:Generator_RowEvHandlerName="V_EQUIPMENT_ACTIVTY_DATERowChangeEventHandler" msprop:Generator_RowDeletedName="V_EQUIPMENT_ACTIVTY_DATERowDeleted" msprop:Generator_UserTableName="V_EQUIPMENT_ACTIVTY_DATE" msprop:Generator_RowChangedName="V_EQUIPMENT_ACTIVTY_DATERowChanged" msprop:Generator_RowEvArgName="V_EQUIPMENT_ACTIVTY_DATERowChangeEvent" msprop:Generator_RowClassName="V_EQUIPMENT_ACTIVTY_DATERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CSTMR_ID" msprop:Generator_ColumnVarNameInTable="columnCSTMR_ID" msprop:Generator_ColumnPropNameInRow="CSTMR_ID" msprop:Generator_ColumnPropNameInTable="CSTMR_IDColumn" msprop:Generator_UserColumnName="CSTMR_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="CSTMR_CD" msprop:Generator_ColumnVarNameInTable="columnCSTMR_CD" msprop:Generator_ColumnPropNameInRow="CSTMR_CD" msprop:Generator_ColumnPropNameInTable="CSTMR_CDColumn" msprop:Generator_UserColumnName="CSTMR_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_ID" msprop:Generator_ColumnVarNameInTable="columnEQPMNT_TYP_ID" msprop:Generator_ColumnPropNameInRow="EQPMNT_TYP_ID" msprop:Generator_ColumnPropNameInTable="EQPMNT_TYP_IDColumn" msprop:Generator_UserColumnName="EQPMNT_TYP_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_CD" msprop:Generator_ColumnVarNameInTable="columnEQPMNT_TYP_CD" msprop:Generator_ColumnPropNameInRow="EQPMNT_TYP_CD" msprop:Generator_ColumnPropNameInTable="EQPMNT_TYP_CDColumn" msprop:Generator_UserColumnName="EQPMNT_TYP_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="ACTVTY_DT" msprop:Generator_ColumnVarNameInTable="columnACTVTY_DT" msprop:Generator_ColumnPropNameInRow="ACTVTY_DT" msprop:Generator_ColumnPropNameInTable="ACTVTY_DTColumn" msprop:Generator_UserColumnName="ACTVTY_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Received" msprop:Generator_ColumnVarNameInTable="columnReceived" msprop:Generator_ColumnPropNameInRow="Received" msprop:Generator_ColumnPropNameInTable="ReceivedColumn" msprop:Generator_UserColumnName="Received" type="xs:int" minOccurs="0" />
+              <xs:element name="Released" msprop:Generator_ColumnVarNameInTable="columnReleased" msprop:Generator_ColumnPropNameInRow="Released" msprop:Generator_ColumnPropNameInTable="ReleasedColumn" msprop:Generator_UserColumnName="Released" type="xs:int" minOccurs="0" />
+              <xs:element name="Heated" msprop:Generator_ColumnVarNameInTable="columnHeated" msprop:Generator_ColumnPropNameInRow="Heated" msprop:Generator_ColumnPropNameInTable="HeatedColumn" msprop:Generator_UserColumnName="Heated" type="xs:int" minOccurs="0" />
+              <xs:element name="Cleaned" msprop:Generator_ColumnVarNameInTable="columnCleaned" msprop:Generator_ColumnPropNameInRow="Cleaned" msprop:Generator_ColumnPropNameInTable="CleanedColumn" msprop:Generator_UserColumnName="Cleaned" type="xs:int" minOccurs="0" />
+              <xs:element name="Inspected" msprop:Generator_ColumnVarNameInTable="columnInspected" msprop:Generator_ColumnPropNameInRow="Inspected" msprop:Generator_ColumnPropNameInTable="InspectedColumn" msprop:Generator_UserColumnName="Inspected" type="xs:int" minOccurs="0" />
+              <xs:element name="Repaired" msprop:Generator_ColumnVarNameInTable="columnRepaired" msprop:Generator_ColumnPropNameInRow="Repaired" msprop:Generator_ColumnPropNameInTable="RepairedColumn" msprop:Generator_UserColumnName="Repaired" type="xs:int" minOccurs="0" />
+              <xs:element name="LeakTested" msprop:Generator_ColumnVarNameInTable="columnLeakTested" msprop:Generator_ColumnPropNameInRow="LeakTested" msprop:Generator_ColumnPropNameInTable="LeakTestedColumn" msprop:Generator_UserColumnName="LeakTested" type="xs:int" minOccurs="0" />
+              <xs:element name="On_Off_Hire_Surveyed" msprop:Generator_ColumnVarNameInTable="columnOn_Off_Hire_Surveyed" msprop:Generator_ColumnPropNameInRow="On_Off_Hire_Surveyed" msprop:Generator_ColumnPropNameInTable="On_Off_Hire_SurveyedColumn" msprop:Generator_UserColumnName="On_Off_Hire_Surveyed" type="xs:int" minOccurs="0" />
+              <xs:element name="OPENSTOCK" type="xs:long" minOccurs="0" />
+              <xs:element name="AVAILABLE" type="xs:long" minOccurs="0" />
+              <xs:element name="TOTAL" msprop:Generator_ColumnVarNameInTable="columnTOTAL" msprop:Generator_ColumnPropNameInRow="TOTAL" msprop:Generator_ColumnPropNameInTable="TOTALColumn" msprop:Generator_UserColumnName="TOTAL" type="xs:long" minOccurs="0" />
+              <xs:element name="CSTMR_CD_DSPLY" type="xs:string" minOccurs="0" />
+              <xs:element name="SLNO" type="xs:string" minOccurs="0" />
+              <xs:element name="EquipmentInspected" type="xs:string" minOccurs="0" />
+              <xs:element name="DPT_CD" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="V_EQUIPMENT_ACTIVTY_TYPE">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CSTMR_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="CSTMR_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="ACTVTY_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Received" type="xs:int" minOccurs="0" />
+              <xs:element name="Released" type="xs:int" minOccurs="0" />
+              <xs:element name="Heated" type="xs:int" minOccurs="0" />
+              <xs:element name="Cleaned" type="xs:int" minOccurs="0" />
+              <xs:element name="Inspected" type="xs:int" minOccurs="0" />
+              <xs:element name="Repaired" type="xs:int" minOccurs="0" />
+              <xs:element name="LeakTested" type="xs:int" minOccurs="0" />
+              <xs:element name="On_Off_Hire_Surveyed" type="xs:int" minOccurs="0" />
+              <xs:element name="OPENSTOCK" type="xs:long" minOccurs="0" />
+              <xs:element name="AVAILABLE" type="xs:long" minOccurs="0" />
+              <xs:element name="TOTAL" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="V_EQUIPMENT_ACTIVTY_CUSTOMER">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CSTMR_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="CSTMR_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="ACTVTY_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Received" type="xs:int" minOccurs="0" />
+              <xs:element name="Released" type="xs:int" minOccurs="0" />
+              <xs:element name="Heated" type="xs:int" minOccurs="0" />
+              <xs:element name="Cleaned" type="xs:int" minOccurs="0" />
+              <xs:element name="Inspected" type="xs:int" minOccurs="0" />
+              <xs:element name="Repaired" type="xs:int" minOccurs="0" />
+              <xs:element name="LeakTested" type="xs:int" minOccurs="0" />
+              <xs:element name="On_Off_Hire_Surveyed" type="xs:int" minOccurs="0" />
+              <xs:element name="OPENSTOCK" type="xs:long" minOccurs="0" />
+              <xs:element name="AVAILABLE" type="xs:long" minOccurs="0" />
+              <xs:element name="TOTAL" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="V_EQUIPMENT_ACTIVITY_DATE_DETAIL">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PERD_FRM_DT" type="xs:string" minOccurs="0" />
+              <xs:element name="PERD_TO_DT" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

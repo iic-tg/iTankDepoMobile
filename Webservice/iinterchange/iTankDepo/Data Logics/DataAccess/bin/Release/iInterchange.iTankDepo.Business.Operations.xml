@@ -1,0 +1,65 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+iInterchange.iTankDepo.Business.Operations
+</name>
+</assembly>
+<members>
+<member name="M:iInterchange.iTankDepo.Business.Operations.Schedule.Pub_GetActivityByActivityId(System.Int32,System.String,System.Int32,System.Int32)">
+	<summary>
+ This function is used to get activity by activityId
+ </summary>
+	<param name="bv_intActivityId"></param>
+	<param name="bv_strTableName"></param>
+	<param name="bv_intScheduleId"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.Business.Operations.Schedule.pub_UpdateActivityById(System.String,System.String,System.Int32,System.String,iInterchange.iTankDepo.Data.ScheduleDataSet@)">
+	<summary>
+ This function is used to update the schedule date to respective table (Repair_Estimate, Activity_Status)
+ </summary>
+	<param name="bv_strTableName"></param>
+	<param name="bv_strDataKey"></param>
+	<param name="bv_intActivityId"></param>
+	<param name="bv_strUpdateTableName"></param>
+	<param name="br_dsScheduleDataset"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.Business.Operations.Schedule.pub_GetRepairScheduleReport(System.String@)">
+	<summary>
+ This function is used to get the scheduled date repair details from Repair_Estimate table.
+ </summary>
+	<param name="bv_param"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.Business.Operations.Schedule.pub_GetSurveyScheduleReport(System.String@)">
+	<summary>
+ This function is used to get scheduled survey report from Activity_Status
+ </summary>
+	<param name="bv_param"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.Business.Operations.Schedule.pub_GetCleaningScheduleReport(System.String@)">
+	<summary>
+ This function is used to get scheduled cleaning details from Activity_Status table.
+ </summary>
+	<param name="bv_param"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:iInterchange.iTankDepo.Business.Operations.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:iInterchange.iTankDepo.Business.Operations.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:iInterchange.iTankDepo.Business.Operations.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

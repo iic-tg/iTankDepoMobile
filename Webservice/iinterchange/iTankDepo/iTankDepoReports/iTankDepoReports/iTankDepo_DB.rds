@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="iTankDepo_DB">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=IICHVW12RDS\SQL2008R2;Initial Catalog=iTankDepo</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>1181d377-a649-4e45-9e91-2f0255391340</DataSourceID>
+</RptDataSource>

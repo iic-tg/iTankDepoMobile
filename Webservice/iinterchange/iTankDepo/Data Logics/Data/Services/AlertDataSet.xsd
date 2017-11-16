@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AlertDataSet" targetNamespace="http://tempuri.org/AlertDataSet.xsd" xmlns:mstns="http://tempuri.org/AlertDataSet.xsd" xmlns="http://tempuri.org/AlertDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AlertDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="AlertDataSet" msprop:Generator_UserDSName="AlertDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PQALERT" msprop:Generator_TableClassName="PQAlertDataTable" msprop:Generator_TableVarName="tablePQAlert" msprop:Generator_RowChangedName="PQAlertRowChanged" msprop:Generator_TablePropName="PQAlert" msprop:Generator_RowDeletingName="PQAlertRowDeleting" msprop:Generator_RowChangingName="PQAlertRowChanging" msprop:Generator_RowEvHandlerName="PQAlertRowChangeEventHandler" msprop:Generator_RowDeletedName="PQAlertRowDeleted" msprop:Generator_RowClassName="PQAlertRow" msprop:Generator_UserTableName="PQALERT" msprop:Generator_RowEvArgName="PQAlertRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ALRT_BIN" msprop:Generator_ColumnVarNameInTable="columnALRT_BIN" msprop:Generator_ColumnPropNameInRow="ALRT_BIN" msprop:Generator_ColumnPropNameInTable="ALRT_BINColumn" msprop:Generator_UserColumnName="ALRT_BIN" type="xs:long" minOccurs="0" />
+              <xs:element name="ACTVTY_ID" msprop:Generator_ColumnVarNameInTable="columnACTVTY_ID" msprop:Generator_ColumnPropNameInRow="ACTVTY_ID" msprop:Generator_ColumnPropNameInTable="ACTVTY_IDColumn" msprop:Generator_UserColumnName="ACTVTY_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="TRNSCTN_ID" msprop:Generator_ColumnVarNameInTable="columnTRNSCTN_ID" msprop:Generator_ColumnPropNameInRow="TRNSCTN_ID" msprop:Generator_ColumnPropNameInTable="TRNSCTN_IDColumn" msprop:Generator_UserColumnName="TRNSCTN_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="ORGNSTN_ID" msprop:Generator_ColumnVarNameInTable="columnORGNSTN_ID" msprop:Generator_ColumnPropNameInRow="ORGNSTN_ID" msprop:Generator_ColumnPropNameInTable="ORGNSTN_IDColumn" msprop:Generator_UserColumnName="ORGNSTN_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="ALRT_DE_DT" msprop:Generator_ColumnVarNameInTable="columnALRT_DE_DT" msprop:Generator_ColumnPropNameInRow="ALRT_DE_DT" msprop:Generator_ColumnPropNameInTable="ALRT_DE_DTColumn" msprop:Generator_UserColumnName="ALRT_DE_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ALRT_SBJCT_VCR" msprop:Generator_ColumnVarNameInTable="columnALRT_SBJCT_VCR" msprop:Generator_ColumnPropNameInRow="ALRT_SBJCT_VCR" msprop:Generator_ColumnPropNameInTable="ALRT_SBJCT_VCRColumn" msprop:Generator_UserColumnName="ALRT_SBJCT_VCR" type="xs:string" minOccurs="0" />
+              <xs:element name="ALRT_CNTNT_XML" msprop:Generator_ColumnVarNameInTable="columnALRT_CNTNT_XML" msprop:Generator_ColumnPropNameInRow="ALRT_CNTNT_XML" msprop:Generator_ColumnPropNameInTable="ALRT_CNTNT_XMLColumn" msprop:Generator_UserColumnName="ALRT_CNTNT_XML" type="xs:string" minOccurs="0" />
+              <xs:element name="ALRT_TO" msprop:Generator_ColumnVarNameInTable="columnALRT_TO" msprop:Generator_ColumnPropNameInRow="ALRT_TO" msprop:Generator_ColumnPropNameInTable="ALRT_TOColumn" msprop:Generator_UserColumnName="ALRT_TO" type="xs:string" minOccurs="0" />
+              <xs:element name="ALRT_CC" msprop:Generator_ColumnVarNameInTable="columnALRT_CC" msprop:Generator_ColumnPropNameInRow="ALRT_CC" msprop:Generator_ColumnPropNameInTable="ALRT_CCColumn" msprop:Generator_UserColumnName="ALRT_CC" type="xs:string" minOccurs="0" />
+              <xs:element name="CRTD_BY" msprop:Generator_ColumnVarNameInTable="columnCRTD_BY" msprop:Generator_ColumnPropNameInRow="CRTD_BY" msprop:Generator_ColumnPropNameInTable="CRTD_BYColumn" msprop:Generator_UserColumnName="CRTD_BY" type="xs:string" minOccurs="0" />
+              <xs:element name="CRTD_DT" msprop:Generator_ColumnVarNameInTable="columnCRTD_DT" msprop:Generator_ColumnPropNameInRow="CRTD_DT" msprop:Generator_ColumnPropNameInTable="CRTD_DTColumn" msprop:Generator_UserColumnName="CRTD_DT" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PHALERT" msprop:Generator_TableClassName="PHALERTDataTable" msprop:Generator_TableVarName="tablePHALERT" msprop:Generator_RowChangedName="PHALERTRowChanged" msprop:Generator_TablePropName="PHALERT" msprop:Generator_RowDeletingName="PHALERTRowDeleting" msprop:Generator_RowChangingName="PHALERTRowChanging" msprop:Generator_RowEvHandlerName="PHALERTRowChangeEventHandler" msprop:Generator_RowDeletedName="PHALERTRowDeleted" msprop:Generator_RowClassName="PHALERTRow" msprop:Generator_UserTableName="PHALERT" msprop:Generator_RowEvArgName="PHALERTRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ALRT_BIN" msprop:Generator_ColumnVarNameInTable="columnALRT_BIN" msprop:Generator_ColumnPropNameInRow="ALRT_BIN" msprop:Generator_ColumnPropNameInTable="ALRT_BINColumn" msprop:Generator_UserColumnName="ALRT_BIN" type="xs:long" minOccurs="0" />
+              <xs:element name="ACTVTY_ID" msprop:Generator_ColumnVarNameInTable="columnACTVTY_ID" msprop:Generator_ColumnPropNameInRow="ACTVTY_ID" msprop:Generator_ColumnPropNameInTable="ACTVTY_IDColumn" msprop:Generator_UserColumnName="ACTVTY_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="TRNSCTN_ID" msprop:Generator_ColumnVarNameInTable="columnTRNSCTN_ID" msprop:Generator_ColumnPropNameInRow="TRNSCTN_ID" msprop:Generator_ColumnPropNameInTable="TRNSCTN_IDColumn" msprop:Generator_UserColumnName="TRNSCTN_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="ORGNSTN_ID" msprop:Generator_ColumnVarNameInTable="columnORGNSTN_ID" msprop:Generator_ColumnPropNameInRow="ORGNSTN_ID" msprop:Generator_ColumnPropNameInTable="ORGNSTN_IDColumn" msprop:Generator_UserColumnName="ORGNSTN_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="ALRT_DE_DT" msprop:Generator_ColumnVarNameInTable="columnALRT_DE_DT" msprop:Generator_ColumnPropNameInRow="ALRT_DE_DT" msprop:Generator_ColumnPropNameInTable="ALRT_DE_DTColumn" msprop:Generator_UserColumnName="ALRT_DE_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ALRT_SBJCT_VCR" msprop:Generator_ColumnVarNameInTable="columnALRT_SBJCT_VCR" msprop:Generator_ColumnPropNameInRow="ALRT_SBJCT_VCR" msprop:Generator_ColumnPropNameInTable="ALRT_SBJCT_VCRColumn" msprop:Generator_UserColumnName="ALRT_SBJCT_VCR" type="xs:string" minOccurs="0" />
+              <xs:element name="ALRT_CNTNT_XML" msprop:Generator_ColumnVarNameInTable="columnALRT_CNTNT_XML" msprop:Generator_ColumnPropNameInRow="ALRT_CNTNT_XML" msprop:Generator_ColumnPropNameInTable="ALRT_CNTNT_XMLColumn" msprop:Generator_UserColumnName="ALRT_CNTNT_XML" type="xs:string" minOccurs="0" />
+              <xs:element name="ALRT_TO" msprop:Generator_ColumnVarNameInTable="columnALRT_TO" msprop:Generator_ColumnPropNameInRow="ALRT_TO" msprop:Generator_ColumnPropNameInTable="ALRT_TOColumn" msprop:Generator_UserColumnName="ALRT_TO" type="xs:string" minOccurs="0" />
+              <xs:element name="ALRT_CC" msprop:Generator_ColumnVarNameInTable="columnALRT_CC" msprop:Generator_ColumnPropNameInRow="ALRT_CC" msprop:Generator_ColumnPropNameInTable="ALRT_CCColumn" msprop:Generator_UserColumnName="ALRT_CC" type="xs:string" minOccurs="0" />
+              <xs:element name="CRTD_BY" msprop:Generator_ColumnVarNameInTable="columnCRTD_BY" msprop:Generator_ColumnPropNameInRow="CRTD_BY" msprop:Generator_ColumnPropNameInTable="CRTD_BYColumn" msprop:Generator_UserColumnName="CRTD_BY" type="xs:string" minOccurs="0" />
+              <xs:element name="CRTD_DT" msprop:Generator_ColumnVarNameInTable="columnCRTD_DT" msprop:Generator_ColumnPropNameInRow="CRTD_DT" msprop:Generator_ColumnPropNameInTable="CRTD_DTColumn" msprop:Generator_UserColumnName="CRTD_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ALRT_STTS_BT" msprop:Generator_ColumnVarNameInTable="columnALRT_STTS_BT" msprop:Generator_ColumnPropNameInRow="ALRT_STTS_BT" msprop:Generator_ColumnPropNameInTable="ALRT_STTS_BTColumn" msprop:Generator_UserColumnName="ALRT_STTS_BT" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ALRT_LST_SND_DT" msprop:Generator_ColumnVarNameInTable="columnALRT_LST_SND_DT" msprop:Generator_ColumnPropNameInRow="ALRT_LST_SND_DT" msprop:Generator_ColumnPropNameInTable="ALRT_LST_SND_DTColumn" msprop:Generator_UserColumnName="ALRT_LST_SND_DT" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ALERTSETTING" msprop:Generator_TableClassName="ALERTSETTINGDataTable" msprop:Generator_TableVarName="tableALERTSETTING" msprop:Generator_RowChangedName="ALERTSETTINGRowChanged" msprop:Generator_TablePropName="ALERTSETTING" msprop:Generator_RowDeletingName="ALERTSETTINGRowDeleting" msprop:Generator_RowChangingName="ALERTSETTINGRowChanging" msprop:Generator_RowEvHandlerName="ALERTSETTINGRowChangeEventHandler" msprop:Generator_RowDeletedName="ALERTSETTINGRowDeleted" msprop:Generator_RowClassName="ALERTSETTINGRow" msprop:Generator_UserTableName="ALERTSETTING" msprop:Generator_RowEvArgName="ALERTSETTINGRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ACTVTY_ID" msprop:Generator_ColumnVarNameInTable="columnACTVTY_ID" msprop:Generator_ColumnPropNameInRow="ACTVTY_ID" msprop:Generator_ColumnPropNameInTable="ACTVTY_IDColumn" msprop:Generator_UserColumnName="ACTVTY_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="ALRT_TMPLT_ID" msprop:Generator_ColumnVarNameInTable="columnALRT_TMPLT_ID" msprop:Generator_ColumnPropNameInRow="ALRT_TMPLT_ID" msprop:Generator_ColumnPropNameInTable="ALRT_TMPLT_IDColumn" msprop:Generator_UserColumnName="ALRT_TMPLT_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="ALRT_RF_FLD_VCR" msprop:Generator_ColumnVarNameInTable="columnALRT_RF_FLD_VCR" msprop:Generator_ColumnPropNameInRow="ALRT_RF_FLD_VCR" msprop:Generator_ColumnPropNameInTable="ALRT_RF_FLD_VCRColumn" msprop:Generator_UserColumnName="ALRT_RF_FLD_VCR" type="xs:string" minOccurs="0" />
+              <xs:element name="ALRT_QRY_VCR" msprop:Generator_ColumnVarNameInTable="columnALRT_QRY_VCR" msprop:Generator_ColumnPropNameInRow="ALRT_QRY_VCR" msprop:Generator_ColumnPropNameInTable="ALRT_QRY_VCRColumn" msprop:Generator_UserColumnName="ALRT_QRY_VCR" type="xs:string" minOccurs="0" />
+              <xs:element name="ALRT_TP_FLD" msprop:Generator_ColumnVarNameInTable="columnALRT_TP_FLD" msprop:Generator_ColumnPropNameInRow="ALRT_TP_FLD" msprop:Generator_ColumnPropNameInTable="ALRT_TP_FLDColumn" msprop:Generator_UserColumnName="ALRT_TP_FLD" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ALERTTEMPLATE" msprop:Generator_TableClassName="ALERTTEMPLATEDataTable" msprop:Generator_TableVarName="tableALERTTEMPLATE" msprop:Generator_RowChangedName="ALERTTEMPLATERowChanged" msprop:Generator_TablePropName="ALERTTEMPLATE" msprop:Generator_RowDeletingName="ALERTTEMPLATERowDeleting" msprop:Generator_RowChangingName="ALERTTEMPLATERowChanging" msprop:Generator_RowEvHandlerName="ALERTTEMPLATERowChangeEventHandler" msprop:Generator_RowDeletedName="ALERTTEMPLATERowDeleted" msprop:Generator_RowClassName="ALERTTEMPLATERow" msprop:Generator_UserTableName="ALERTTEMPLATE" msprop:Generator_RowEvArgName="ALERTTEMPLATERowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ALRT_TMPLT_ID" msprop:Generator_ColumnVarNameInTable="columnALRT_TMPLT_ID" msprop:Generator_ColumnPropNameInRow="ALRT_TMPLT_ID" msprop:Generator_ColumnPropNameInTable="ALRT_TMPLT_IDColumn" msprop:Generator_UserColumnName="ALRT_TMPLT_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="ALRT_TMPLT_NAM" msprop:Generator_ColumnVarNameInTable="columnALRT_TMPLT_NAM" msprop:Generator_ColumnPropNameInRow="ALRT_TMPLT_NAM" msprop:Generator_ColumnPropNameInTable="ALRT_TMPLT_NAMColumn" msprop:Generator_UserColumnName="ALRT_TMPLT_NAM" type="xs:string" minOccurs="0" />
+              <xs:element name="ALRT_FL_PTH" msprop:Generator_ColumnVarNameInTable="columnALRT_FL_PTH" msprop:Generator_ColumnPropNameInRow="ALRT_FL_PTH" msprop:Generator_ColumnPropNameInTable="ALRT_FL_PTHColumn" msprop:Generator_UserColumnName="ALRT_FL_PTH" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

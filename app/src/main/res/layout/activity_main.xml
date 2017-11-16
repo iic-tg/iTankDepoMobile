@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/common_toolbar_home" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:background="@color/Title"
+            android:layout_below="@+id/header">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="131dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="1">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="0.5"
+                        android:id="@+id/LL_GateIn">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <RelativeLayout
+                                style="@style/DashboardImage_AM">
+
+                                <ImageView
+                                    style="@style/DashboardImage_AM"
+                                    android:src="@mipmap/ic_gray_gatein"
+                                    android:id="@+id/im_grey_gatein"/>
+                                <ImageView
+                                    style="@style/DashboardImage_AM"
+                                    android:src="@mipmap/ic_gatein"
+                                    android:id="@+id/im_gatein"/>
+                                <Button
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:visibility="gone"
+                                    android:id="@+id/bt_gateinCount"
+                                    android:textColor="@color/white"
+                                    android:layout_marginRight="48dp"
+                                    android:textSize="8sp"
+                                    android:background="@drawable/circle_button"
+                                    android:layout_alignParentRight="true"/>
+
+
+                            </RelativeLayout>
+                            <TextView
+                                style="@style/DashboardText_AM"
+                                android:text="Gate In"
+                                android:id="@+id/GateIn"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                    <View
+                        style="@style/View_vertical"
+                        />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="0.5"
+                        android:id="@+id/LL_GateOut"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <RelativeLayout
+                            style="@style/DashboardImage_AM">
+                            <ImageView
+                                style="@style/DashboardImage_AM"
+                                android:src="@mipmap/ic_gray_gate_out"
+                                android:id="@+id/im_grey_gateout"/>
+
+
+
+                            <ImageView
+                                style="@style/DashboardImage_AM"
+                                android:src="@mipmap/ic_gatout"
+                                android:id="@+id/im_gateout" />
+                            <Button
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:gravity="center"
+                                android:text="0"
+                                android:id="@+id/bt_gateoutCount"
+                                android:visibility="gone"
+                                android:textColor="@color/white"
+                                android:layout_marginRight="48dp"
+                                android:textSize="8sp"
+                                android:background="@drawable/circle_button"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+                            <TextView
+                                style="@style/DashboardText_AM"
+                                android:text="Gate Out"
+                                android:id="@+id/GateOut"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View
+                    style="@style/View_horizontal"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="131dp"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                   >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/LL_Heating"
+                        android:layout_weight="0.5"
+                      >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        <RelativeLayout
+                            style="@style/DashboardImage_AM">
+                            <ImageView
+                                style="@style/DashboardImage_AM"
+                                android:src="@mipmap/ic_gray_heating"
+                                android:id="@+id/im_grey_heating"/>
+                            <ImageView
+                                style="@style/DashboardImage_AM"
+                                android:src="@mipmap/ic_heating"
+                                android:id="@+id/im_heating" />
+                            <Button
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:gravity="center"
+                                android:text="0"
+                                android:visibility="gone"
+                                android:id="@+id/bt_heatingCount"
+                                android:textColor="@color/white"
+                                android:layout_marginRight="48dp"
+                                android:textSize="8sp"
+                                android:background="@drawable/circle_button"
+                                android:layout_alignParentRight="true"/>
+
+
+
+                        </RelativeLayout>
+                            <TextView
+                                style="@style/DashboardText_AM"
+                                android:text="Heating"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:id="@+id/Heating" />
+                        </RelativeLayout>
+
+
+
+
+
+                    </LinearLayout>
+                    <View
+                        style="@style/View_vertical"
+                        />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/LL_Cleaning"
+                        android:layout_weight="0.5"
+                        >
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <RelativeLayout
+                            style="@style/DashboardImage_AM">
+                            <ImageView
+                                style="@style/DashboardImage_AM"
+                                android:src="@mipmap/ic_gray_cleaning"
+                                android:id="@+id/im_grey_cleaning"
+                                />
+                            <ImageView
+                                style="@style/DashboardImage_AM"
+                                android:src="@mipmap/ic_cleaning"
+                                android:id="@+id/im_cleaning"
+                                />
+                            <Button
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:gravity="center"
+                                android:text="0"
+                                android:visibility="gone"
+                                android:id="@+id/bt_cleaningCount"
+                                android:textColor="@color/white"
+                                android:layout_marginRight="48dp"
+                                android:textSize="8sp"
+                                android:background="@drawable/circle_button"
+                                android:layout_alignParentRight="true"/>
+
+
+                        </RelativeLayout>
+                        <TextView
+                            style="@style/DashboardText_AM"
+                            android:text="Cleaning"
+                            android:id="@+id/Cleaning"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center"/>
+                    </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View
+                    style="@style/View_horizontal"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="131dp"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="1">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/LL_Inspection"
+                        android:layout_weight="0.5"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <RelativeLayout
+                                style="@style/DashboardImage_AM">
+                                <ImageView
+                                    style="@style/DashboardImage_AM"
+                                    android:src="@mipmap/ic_gray_inspection"
+                                    android:id="@+id/im_grey_Inspection" />
+                                <ImageView
+                                    style="@style/DashboardImage_AM"
+                                    android:src="@mipmap/ic_inspection"
+                                    android:id="@+id/im_Inspection" />
+                                <Button
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:visibility="gone"
+                                    android:id="@+id/bt_inspectionCount"
+                                    android:textColor="@color/white"
+                                    android:layout_marginRight="48dp"
+                                    android:textSize="8sp"
+                                    android:background="@drawable/circle_button"
+                                    android:layout_alignParentRight="true"/>
+
+                            </RelativeLayout>
+                            <TextView
+                                style="@style/DashboardText_AM"
+                                android:text="Inspection"
+                                android:id="@+id/Inspection"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                    <View
+                        style="@style/View_vertical"
+                        />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/LL_Repair"
+                        android:layout_weight="0.5"
+                        >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <RelativeLayout
+                            style="@style/DashboardImage_AM">
+                            <ImageView
+                                style="@style/DashboardImage_AM"
+                                android:src="@mipmap/ic_gray_repair"
+                                android:id="@+id/im_grey_repair" />
+                            <ImageView
+                                style="@style/DashboardImage_AM"
+                                android:src="@mipmap/ic_repair"
+                                android:id="@+id/im_repair" />
+                            <Button
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:gravity="center"
+                                android:text="0"
+                                android:visibility="gone"
+                                android:id="@+id/bt_repairCount"
+                                android:textColor="@color/white"
+                                android:layout_marginRight="48dp"
+                                android:textSize="8sp"
+                                android:background="@drawable/circle_button"
+                                android:layout_alignParentRight="true"/>
+
+                        </RelativeLayout>
+                        <TextView
+                            style="@style/DashboardText_AM"
+                            android:text="Repair"
+                            android:id="@+id/Repair"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center"/>
+                    </RelativeLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    style="@style/View_horizontal"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="131dp"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/LL_Leaktest"
+                        android:layout_weight="0.5"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <RelativeLayout
+                                style="@style/DashboardImage_AM">
+                                <ImageView
+                                    style="@style/DashboardImage_AM"
+                                    android:src="@mipmap/ic_grey_leaktest"
+                                    android:id="@+id/im_grey_leaktest"/>
+                                <ImageView
+                                    style="@style/DashboardImage_AM"
+                                    android:src="@mipmap/ic_leaktest"
+                                    android:id="@+id/im_leaktest"/>
+                                <Button
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:visibility="gone"
+                                    android:id="@+id/bt_leaktestCount"
+                                    android:textColor="@color/white"
+                                    android:layout_marginRight="48dp"
+                                    android:textSize="8sp"
+                                    android:background="@drawable/circle_button"
+                                    android:layout_alignParentRight="true"/>
+
+
+
+                            </RelativeLayout>
+                            <TextView
+                                style="@style/DashboardText_AM"
+                                android:text="Leak Test"
+                                android:id="@+id/tv_daily_stock_update"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        style="@style/View_vertical"
+                        />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        android:layout_weight="0.5"
+                        android:id="@+id/LL_History">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <RelativeLayout
+                                style="@style/DashboardImage_AM">
+                                <ImageView
+                                    style="@style/DashboardImage_AM"
+                                    android:id="@+id/im_grey_history"
+                                    android:src="@mipmap/ic_grey_equip_history"/>
+                                <ImageView
+                                    style="@style/DashboardImage_AM"
+                                    android:src="@mipmap/ic_history"
+                                    android:id="@+id/im_history"
+                                    />
+
+                            </RelativeLayout>
+                            <TextView
+                                style="@style/DashboardText_AM"
+                                android:text="Equipment History"
+                                android:id="@+id/history"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View
+                    style="@style/View_horizontal"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="131dp"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:id="@+id/LL_Stock_Report">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <RelativeLayout
+                                style="@style/DashboardImage_AM">
+                                <ImageView
+                                    style="@style/DashboardImage_AM"
+                                    android:src="@mipmap/ic_grey_report"
+                                    android:id="@+id/im_grey_report"/>
+
+
+
+                                <ImageView
+                                    style="@style/DashboardImage_AM"
+                                    android:src="@mipmap/ic_report"
+                                    android:id="@+id/im_report"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true" />
+                            </RelativeLayout>
+                            <TextView
+                                style="@style/DashboardText_AM"
+                                android:text="Stock Report"
+                                android:id="@+id/Report"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"/>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                    <View
+                        style="@style/View_vertical"
+                        />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="0.5"
+                        android:id="@+id/LL_change_status"
+                      >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <RelativeLayout
+                                style="@style/DashboardImage_AM">
+                                <ImageView
+                                    style="@style/DashboardImage_AM"
+
+                                    android:src="@mipmap/ic_cos_grey"/>
+                                <ImageView
+                                    style="@style/DashboardImage_AM"
+                                    android:src="@mipmap/ic_cos"
+
+                                    />
+
+                            </RelativeLayout>
+                            <TextView
+                                style="@style/DashboardText_AM"
+                                android:text="Change Of Status"
+                                android:layout_marginTop="5dp"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer" />
+</android.support.v4.widget.DrawerLayout>

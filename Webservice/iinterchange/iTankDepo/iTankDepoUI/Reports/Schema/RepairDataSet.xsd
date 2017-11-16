@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RepairDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="iTankDepoConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="iTankDepoConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.iTankDepoConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RepairDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:EnforceConstraints="False" msprop:Generator_UserDSName="RepairDataSet" msprop:Generator_DataSetName="RepairDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VM_FINANCE_REPAIR">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RPR_CHRG_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="EQPMNT_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="RPR_ESTMT_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="ESTMT_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="RPR_ESTMT_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RPR_APPRVL_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RPR_CMPLTN_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RPR_TYP_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="RPR_TYP_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="MTRL_CST_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LBR_CST_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RPR_TX_RT_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RPR_TX_AMNT_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TTL_CSTS_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RPR_APPRVL_AMNT_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BLLNG_FLG" type="xs:string" minOccurs="0" />
+              <xs:element name="YRD_LCTN" type="xs:string" minOccurs="0" />
+              <xs:element name="DPT_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="CSTMR_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="GI_TRNSCTN_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="CSTMR_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="CSTMR_NAM" type="xs:string" minOccurs="0" />
+              <xs:element name="PRDCT_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="PRDCT_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="PRDCT_DSCRPTN_VC" type="xs:string" minOccurs="0" />
+              <xs:element name="GTN_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CLN_CST_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="INVCNG_PRTY_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="INVCNG_PRTY_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="INVCNG_PRTY_NM" type="xs:string" minOccurs="0" />
+              <xs:element name="ACTV_BT" type="xs:boolean" minOccurs="0" />
+              <xs:element name="TTL_SRV_TAX" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TTL_EST_INCL_SRV_TAX" type="xs:decimal" minOccurs="0" />
+              <xs:element name="INVC_TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="LEAK_TEST" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PTI" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SURVEY" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SRVC_PRTNR_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="APPRVL_RFRNC_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="DPT_CRRNCY_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="CSTMR_CRRNCY_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="DPT_CRRNCY_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="CSTMR_CRRNCY_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="DPT_AMNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CSTMR_AMNT1" msdata:Caption="CSTMR_AMNT" type="xs:string" minOccurs="0" />
+              <xs:element name="CSTMR_AMNT" type="xs:string" minOccurs="0" />
+              <xs:element name="BILLED" type="xs:string" minOccurs="0" />
+              <xs:element name="BILLED_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="FNL_INVC_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="INVC_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UNBILLED_DPT_AMNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BILLED_DPT_AMNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="REPAIRS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="REPAIR_PERIOD" type="xs:int" minOccurs="0" />
+              <xs:element name="EQPMNT_CD_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_CD_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="REPAIR_COST" type="xs:decimal" minOccurs="0" />
+              <xs:element name="REPAIR_AMNT_GREATER" type="xs:int" minOccurs="0" />
+              <xs:element name="REPAIR_AMNT_LESSER" type="xs:int" minOccurs="0" />
+              <xs:element name="ADDTNL_CLNNG_CHRG_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="COUNT_EQPMNT_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="INVCNG_PRTY_CRRNCY_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="INVCNG_PRTY_CRRNCY_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="AGNT_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="AGNT_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="AGNT_NAM" type="xs:string" minOccurs="0" />
+              <xs:element name="AGNT_CRRNCY_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="AGNT_AMNT" type="xs:string" minOccurs="0" />
+              <xs:element name="DPT_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="DepotString" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VM_EQUIPMENT_REPAIR_STATUS">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EQPMNT_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_ID" msdata:ReadOnly="true" type="xs:long" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="GTN_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CSTMR_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="CSTMR_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="RPR_ESTMT_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="PRDCT_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="PRDCT_DSCRPTN_VC" msprop:nullValue="_throw" type="xs:string" minOccurs="0" />
+              <xs:element name="GI_TRNSCTN_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="RPR_TYP_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="RPR_TYP_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="RPR_ESTMT_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="APPRVL_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CMPLTN_DT" msdata:ReadOnly="true" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="REGULAR" type="xs:int" minOccurs="0" />
+              <xs:element name="PTI" type="xs:int" minOccurs="0" />
+              <xs:element name="LONGTERM" type="xs:int" minOccurs="0" />
+              <xs:element name="ONHIRE" type="xs:int" minOccurs="0" />
+              <xs:element name="OFFHIRE" type="xs:int" minOccurs="0" />
+              <xs:element name="DPT_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="OTHERS" type="xs:int" minOccurs="0" />
+              <xs:element name="DPT_CD" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VM_METRICS_REPAIR">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ACTVTY_STTS_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="CSTMR_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="CSTMR_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="CSTMR_NAM" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_CD_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="EQPMNT_CD_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="GTN_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CLNNG_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="INSPCTN_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RPR_ESTMT_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RPR_APPRVL_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RPR_CMPLTN_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RPR_TYP_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="RPR_TYP_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="AVL_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="AVAILABLE" type="xs:string" minOccurs="0" />
+              <xs:element name="PRDCT_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="PRDCT_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="PRDCT_DSCRPTN_VC" type="xs:string" minOccurs="0" />
+              <xs:element name="GI_TRNSCTN_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="DPT_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="ESTIMATE_PERIOD" type="xs:int" minOccurs="0" />
+              <xs:element name="REPAIR_PERIOD" type="xs:int" minOccurs="0" />
+              <xs:element name="NO_OF_ESTMT" type="xs:int" minOccurs="0" />
+              <xs:element name="COUNT_EQPMNT_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="ESTIMATE_PERIOD_SMMRY" type="xs:string" minOccurs="0" />
+              <xs:element name="DPT_CD" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VM_METRICS_REPAIR_LABOR">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RPR_ESTMT_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="RPR_ESTMT_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="GI_TRNSCTN_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="RPR_ESTMT_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RPR_APPRVL_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RPR_CMPLTN_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ACTVTY_NM" type="xs:string" minOccurs="0" />
+              <xs:element name="ORGNL_ESTMN_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EQPMNT_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_CD_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="EQPMNT_CD_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="GTN_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CSTMR_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="CSTMR_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="CSTMR_NAM" type="xs:string" minOccurs="0" />
+              <xs:element name="PRDCT_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="PRDCT_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="PRDCT_DSCRPTN_VC" type="xs:string" minOccurs="0" />
+              <xs:element name="RPR_TYP_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="RPR_TYP_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="ESTMTD_MN_HRS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ACTL_MN_HR_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OVERTIME_MAN_HOURS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OVERTIME" type="xs:string" minOccurs="0" />
+              <xs:element name="DPT_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="DPT_CD" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VM_METRICS_REPAIR_CHARGE">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ACTVTY_STTS_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="CSTMR_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="CSTMR_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="CSTMR_NAM" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_CD_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="EQPMNT_CD_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="GTN_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CLNNG_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="INSPCTN_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RPR_ESTMT_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RPR_APPRVL_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RPR_CMPLTN_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RPR_TYP_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="RPR_TYP_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="AVL_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="AVAILABLE" type="xs:string" minOccurs="0" />
+              <xs:element name="PRDCT_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="PRDCT_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="PRDCT_DSCRPTN_VC" type="xs:string" minOccurs="0" />
+              <xs:element name="GI_TRNSCTN_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="DPT_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="ESTIMATE_PERIOD" type="xs:int" minOccurs="0" />
+              <xs:element name="REPAIR_PERIOD" type="xs:int" minOccurs="0" />
+              <xs:element name="NO_OF_ESTMT" type="xs:int" minOccurs="0" />
+              <xs:element name="COUNT_EQPMNT_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="ESTIMATE_PERIOD_SMMRY" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

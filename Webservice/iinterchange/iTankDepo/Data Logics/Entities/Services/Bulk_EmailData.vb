@@ -1,0 +1,127 @@
+﻿Public Class Bulk_EmailData
+    'Data Tables..
+    Public Const _BULK_EMAIL As String = "BULK_EMAIL"
+    Public Const _BULK_EMAIL_DETAIL As String = "BULK_EMAIL_DETAIL"
+    Public Const _V_BULK_EMAIL As String = "V_BULK_EMAIL"
+    Public Const _V_BULK_EMAIL_DETAIL As String = "V_BULK_EMAIL_DETAIL"
+    Public Const _V_REPAIR_ESTIMATE As String = "V_REPAIR_ESTIMATE"
+    Public Const _V_CLEANING As String = "V_CLEANING"
+    Public Const _REPAIR_WORKORDER_CUSTOMER = "REPAIR_WORKORDER_CUSTOMER"
+    Public Const _REPAIR_WORKORDER_COMPILEDESTIMATE = "REPAIR_WORKORDER_COMPILEDESTIMATE"
+    Public Const _REPAIR_WORKORDER_SUMMARY = "REPAIR_WORKORDER_SUMMARY"
+    Public Const _DEPOT = "DEPOT"
+    Public Const _V_BULK_EMAIL_DETAIL_GROUP As String = "V_BULK_EMAIL_DETAIL_GROUP"
+    'Data Columns..
+
+    'Table Name: BULK_EMAIL
+    Public Const BLK_EML_ID As String = "BLK_EML_ID"
+    Public Const CSTMR_ID As String = "CSTMR_ID"
+    Public Const FRM_EML As String = "FRM_EML"
+    Public Const TO_EML As String = "TO_EML"
+    Public Const CC_EML As String = "CC_EML"
+    Public Const BCC_EML As String = "BCC_EML"
+    Public Const SBJCT_VC As String = "SBJCT_VC"
+    Public Const BDY_VC As String = "BDY_VC"
+    Public Const DPT_ID As String = "DPT_ID"
+    Public Const SNT_BT As String = "SNT_BT"
+    Public Const SNT_DT As String = "SNT_DT"
+    Public Const CRTD_DT As String = "CRTD_DT"
+    Public Const CRTD_BY As String = "CRTD_BY"
+
+    'Table Name: BULK_EMAIL_DETAIL
+    Public Const BLK_EML_DTL_ID As String = "BLK_EML_DTL_ID"
+    Public Const EQPMNT_NO As String = "EQPMNT_NO"
+    Public Const EQPMNT_STTS_ID As String = "EQPMNT_STTS_ID"
+    Public Const EQPMNT_STTS_CD As String = "EQPMNT_STTS_CD"
+    Public Const ACTVTY_NAM As String = "ACTVTY_NAM"
+    Public Const AMNT_NC As String = "AMNT_NC"
+    Public Const CRRNCY_ID As String = "CRRNCY_ID"
+    Public Const CRRNCY_CD As String = "CRRNCY_CD"
+    Public Const GI_TRNSCTN_NO As String = "GI_TRNSCTN_NO"
+    Public Const BLK_EML_FRMT_ID As String = "BLK_EML_FRMT_ID"
+    Public Const ACTVTY_NO As String = "ACTVTY_NO"
+    Public Const BLK_EML_FRMT_CD As String = "BLK_EML_FRMT_CD"
+    Public Const ATTCHMNT_PTH As String = "ATTCHMNT_PTH"
+    Public Const RSND_BT As String = "RSND_BT"
+    Public Const ERR_FLG As String = "ERR_FLG"
+    Public Const ERR_RMRKS As String = "ERR_RMRKS"
+
+    'Data Columns..
+
+    'Table Name: V_REPAIR_ESTIMATE   
+    Public Const CSTMR_CD As String = "CSTMR_CD"
+    Public Const DPT_CD As String = "DPT_CD"
+
+    'Table Name: CLEANING
+    Public Const CLNNG_ID As String = "CLNNG_ID"
+    Public Const CLNNG_CD As String = "CLNNG_CD"
+    Public Const CLNNG_CERT_NO As String = "CLNNG_CERT_NO"
+    Public Const PRDCT_ID As String = "PRDCT_ID"
+    Public Const CHMCL_NM As String = "CHMCL_NM"
+    Public Const CLNNG_RT As String = "CLNNG_RT"
+    Public Const ORGNL_CLNNG_DT As String = "ORGNL_CLNNG_DT"
+    Public Const LST_CLNNG_DT As String = "LST_CLNNG_DT"
+    Public Const ORGNL_INSPCTD_DT As String = "ORGNL_INSPCTD_DT"
+    Public Const LST_INSPCTD_DT As String = "LST_INSPCTD_DT"
+    Public Const CLND_FR_VCR As String = "CLND_FR_VCR"
+    Public Const LCTN_OF_CLNG As String = "LCTN_OF_CLNG"
+    Public Const EQPMNT_CLNNG_STTS_1 As String = "EQPMNT_CLNNG_STTS_1"
+    Public Const EQPMNT_CLNNG_STTS_2 As String = "EQPMNT_CLNNG_STTS_2"
+    Public Const EQPMNT_CNDTN_ID As String = "EQPMNT_CNDTN_ID"
+    Public Const VLV_FTTNG_CNDTN As String = "VLV_FTTNG_CNDTN"
+    Public Const MN_LID_SL_NO As String = "MN_LID_SL_NO"
+    Public Const TP_SL_NO As String = "TP_SL_NO"
+    Public Const BTTM_SL_NO As String = "BTTM_SL_NO"
+    Public Const INVCNG_PRTY_ID As String = "INVCNG_PRTY_ID"
+    Public Const CSTMR_RFRNC_NO As String = "CSTMR_RFRNC_NO"
+    Public Const CLNNG_RFRNC_NO As String = "CLNNG_RFRNC_NO"
+    Public Const RMRKS_VC As String = "RMRKS_VC"
+    Public Const MDFD_BY As String = "MDFD_BY"
+    Public Const MDFD_DT As String = "MDFD_DT"
+    Public Const CERT_GNRTD_FLG As String = "CERT_GNRTD_FLG"
+
+    Public Const EQPMNT_STTS_DSCRPTN_VC As String = "EQPMNT_STTS_DSCRPTN_VC"
+    Public Const EQPMNT_CLNNG_STTS_1_CD As String = "EQPMNT_CLNNG_STTS_1_CD"
+    Public Const EQPMNT_CLNNG_STTS_2_CD As String = "EQPMNT_CLNNG_STTS_2_CD"
+    Public Const EQPMNT_CNDTN_CD As String = "EQPMNT_CNDTN_CD"
+    Public Const VLV_FTTNG_CNDTN_CD As String = "VLV_FTTNG_CNDTN_CD"
+    Public Const INVCNG_PRTY_CD As String = "INVCNG_PRTY_CD"
+
+    'table Name:REPAIR_WORKORDER_CUSTOMER
+    Public Const CSTMR_CRRNCY_CD As String = "CSTMR_CRRNCY_CD"
+    Public Const CNVRT_TO_CRRNCY_ID As String = "CNVRT_TO_CRRNCY_ID"
+    Public Const LBR_RT_PR_HR_NC As String = "CLNNG_ID"
+    Public Const EXCHNG_RT_PR_UNT_NC As String = "EXCHNG_RT_PR_UNT_NC"
+
+
+    'TABLE NAME:REPAIR_WORKORDER_COMPILEDESTIMATE
+    Public Const RPR_ESTMT_DTL_ID As String = "RPR_ESTMT_DTL_ID"
+    Public Const RPR_ESTMT_ID As String = "RPR_ESTMT_ID"
+    Public Const ITM_ID As String = "ITM_ID"
+    Public Const ITM_CD As String = "ITM_CD"
+    Public Const RPR_ESTMT_TRNSXN As String = "RPR_ESTMT_TRNSXN"
+    Public Const RPR_ESTMT_DT As String = "RPR_ESTMT_DT"
+    Public Const DMG_RPR_DSCRPTN As String = "DMG_RPR_DSCRPTN"
+    Public Const RPR_DSCRPTN_VC As String = "RPR_DSCRPTN_VC"
+    Public Const LBR_HRS As String = "LBR_HRS"
+    Public Const LBR_HR_CST_NC As String = "LBR_HR_CST_NC"
+    Public Const MTRL_CST_NC As String = "MTRL_CST_NC"
+    Public Const ITM_DSCRPTN_VC As String = "ITM_DSCRPTN_VC"
+    Public Const SB_ITM_DSCRPTN_VC As String = "SB_ITM_DSCRPTN_VC"
+    Public Const DMG_DSCRPTN_VC As String = "DMG_DSCRPTN_VC"
+    Public Const ACTVTY_NM As String = "ACTVTY_NM"
+    Public Const ESTMTN_TTL_NC As String = "ESTMTN_TTL_NC"
+    Public Const CSTMR_NAM As String = "CSTMR_NAM"
+    Public Const CMMNTS As String = "CMMNTS"
+    Public Const DPT_NAM As String = "DPT_NAM"
+    Public Const GI_RF_NO As String = "GI_RF_NO"
+    Public Const CMPNY_LG_PTH As String = "CMPNY_LG_PTH"
+
+    'Table Name: BULK_EMAIL_DETAIL
+    Public Const SRVC_PRTNR_ID As String = "SRVC_PRTNR_ID"
+    Public Const SRVC_PRTNR_CD As String = "SRVC_PRTNR_CD"
+    Public Const RSPNSBLTY_ID As String = "RSPNSBLTY_ID"
+    Public Const SRVC_PRTNR_TYP_CD As String = "SRVC_PRTNR_TYP_CD"
+
+
+End Class

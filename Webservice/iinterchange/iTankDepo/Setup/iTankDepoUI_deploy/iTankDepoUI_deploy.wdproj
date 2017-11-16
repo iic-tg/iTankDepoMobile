@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  Microsoft Visual Studio 2010 Web Deployment Project 
+  http://go.microsoft.com/fwlink/?LinkID=104956
+
+-->
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C0732EE0-370E-4E83-8A9E-B95B7A5E49D0}</ProjectGuid>
+    <SourceWebPhysicalPath>..\..\iTankDepoUI</SourceWebPhysicalPath>
+    <SourceWebProject>{C984C1F9-17BA-47A0-B0E8-D20A136979FB}|http://localhost/iTankDepoUI</SourceWebProject>
+    <SourceWebVirtualPath>/iTankDepoUI</SourceWebVirtualPath>
+    <SourceWebMetabasePath>/LM/W3SVC/1/ROOT/iTankDepoUI/</SourceWebMetabasePath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>%24/iTankDepo/iTankDepo/Setup/iTankDepoUI_deploy</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <SccAuxPath>http://iic-tfs2012:8080/tfs/products</SccAuxPath>
+    <SccProvider>{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>.\Debug</OutputPath>
+    <EnableUpdateable>true</EnableUpdateable>
+    <UseMerge>true</UseMerge>
+    <SingleAssemblyName>iTankDepoUI_deploy</SingleAssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>.\Release</OutputPath>
+    <EnableUpdateable>true</EnableUpdateable>
+    <UseMerge>true</UseMerge>
+    <SingleAssemblyName>iTankDepoUI_deploy</SingleAssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <MySourceFiles Include="$(SourceWebPhysicalPath)\**\*.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Business Logics\Business.Admin\Business.Admin.vbproj">
+      <Project>{F1DADFA5-B62E-4B52-AB42-BE0D1962F752}</Project>
+      <Name>Business.Admin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business Logics\Business.Billing\Business.Billing.vbproj">
+      <Project>{E77E2EB4-96EE-4464-B957-9A39C1C392FD}</Project>
+      <Name>Business.Billing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business Logics\Business.Common\Business.Common.vbproj">
+      <Project>{8B3789D4-5BA3-452F-A0CB-566BF619ED09}</Project>
+      <Name>Business.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business Logics\Business.DynamicReports\Business.DynamicReport.vbproj">
+      <Project>{AFF79332-6F3A-4286-9F75-D0D6B7887A24}</Project>
+      <Name>Business.DynamicReport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business Logics\Business.DynamicReport\Business.DynamicReport.vbproj">
+      <Project>{B2737E0D-A0AC-4A45-BE97-68FDFDA9441E}</Project>
+      <Name>Business.DynamicReport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business Logics\Business.Masters\Business.Masters.vbproj">
+      <Project>{971BA995-F94B-4650-A905-C9623F23E69C}</Project>
+      <Name>Business.Masters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business Logics\Business.Operations\Business.Operations.vbproj">
+      <Project>{5A655DF8-4646-46BF-868E-2D5EB6C5FCC5}</Project>
+      <Name>Business.Operations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business Logics\Business.Rental\Business.Rental.vbproj">
+      <Project>{FA5A025C-BDC6-4B6C-B4B9-45F669092F03}</Project>
+      <Name>Business.Rental</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business Logics\Business.Services\Business.Services.vbproj">
+      <Project>{CD811DF8-37EC-4980-A8D9-85A034017FC4}</Project>
+      <Name>Business.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business Logics\Business.Tracking\Business.Tracking.vbproj">
+      <Project>{7C1E5358-1478-43A5-8332-7CE208904795}</Project>
+      <Name>Business.Tracking</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business Logics\Business.Transportation\Business.Transportation.vbproj">
+      <Project>{AD49EF3E-405C-4268-B1BB-44DA2AAE5D76}</Project>
+      <Name>Business.Transportation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business Logics\Business.Transportation\Business.Transportation.vbproj">
+      <Project>{8F796854-3CEA-4279-9AFB-FC91AAD6472F}</Project>
+      <Name>Business.Transportation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Business.Dashboard\Business.Dashboard.vbproj">
+      <Project>{78D9BC21-24C7-41C1-B461-710FDEA1BC55}</Project>
+      <Name>Business.Dashboard</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data Logics\DataAccess\DataAccess.vbproj">
+      <Project>{D8CD6DEC-7179-40E2-A9DC-EC3AAFFBF7CE}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data Logics\Data\Data.vbproj">
+      <Project>{D87AA6CF-6E51-4799-8432-09503731C270}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data Logics\Entities\Entities.vbproj">
+      <Project>{C0E0464A-A99E-4AB3-B1A4-4308C90FC8C2}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data Logics\GatewayFramework\GatewayFramework.vbproj">
+      <Project>{49E4BD8D-225C-4BF7-8A4C-228F6294810A}</Project>
+      <Name>GatewayFramework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WebDeployment\v10.0\Microsoft.WebDeployment.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.WebDeployment.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="BeforeMerge">
+  </Target>
+  <Target Name="AfterMerge">
+  </Target>  
+  -->
+  <Target Name="AfterBuild">
+    <Exec Command="E:\iInterchange\iTankDepo\iTankDepo\iTankDepo.bat" />
+  </Target>
+</Project>

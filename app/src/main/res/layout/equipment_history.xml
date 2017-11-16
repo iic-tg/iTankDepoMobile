@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+            <include layout="@layout/equipment_footer" />
+        </RelativeLayout>
+        <include layout="@layout/common_toolbar"
+            android:id="@+id/toolbar"></include>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:background="@color/search_bg"
+            android:layout_above="@+id/footer"
+            android:layout_below="@+id/toolbar">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1.7"
+                    android:background="@drawable/field_border_grey"
+                    android:id="@+id/ed_searchview"
+                    android:maxLength="11"
+                    android:inputType="textCapCharacters|textNoSuggestions"
+                    android:hint="Equipment Number"/>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:src="@mipmap/ic_search"
+                        android:id="@+id/im_searchview"
+                        android:background="@drawable/field_border_grey"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:background="@color/toolbar"
+                    android:id="@+id/LL_Equipment"
+                    android:weightSum="1">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="2"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="0.65">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:id="@+id/text1"
+                            android:gravity="center|left"
+                            android:focusable="false"
+                            android:textColor="@color/Title"
+                            android:text="Customer"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:focusable="false"
+                            android:gravity="center|left"
+                            android:id="@+id/text2"
+                            android:textColor="@color/Title"
+                            android:text="Equip. No , Type, Code"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp"
+                        android:weightSum="2"
+                        android:layout_weight="0.32">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:id="@+id/text3"
+                            android:textColor="@color/Title"
+                            android:gravity="center|right"
+                            android:focusable="false"
+                            android:layout_marginRight="5dp"
+                            android:text="Previous Cargo"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="5dp"
+                            android:gravity="center|right"
+                            android:focusable="false"
+                            android:textColor="@color/Title"
+                            android:id="@+id/text4"
+                            android:text="EIR Number"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/equip_listview">
+
+                </ListView>
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer" />
+
+</android.support.v4.widget.DrawerLayout>

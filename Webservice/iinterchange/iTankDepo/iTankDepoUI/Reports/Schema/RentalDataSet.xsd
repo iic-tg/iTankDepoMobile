@@ -1,0 +1,676 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RentalDataSet" targetNamespace="http://tempuri.org/RentalDataSet.xsd" xmlns:mstns="http://tempuri.org/RentalDataSet.xsd" xmlns="http://tempuri.org/RentalDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RentalDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="RentalDataSet" msprop:Generator_UserDSName="RentalDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VM_RENTAL">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RNTL_CHRG_ID" type="xs:long" />
+              <xs:element name="EQPMNT_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RNTL_TYP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RFRNC_EIR_NO_1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RFRNC_EIR_NO_2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FRM_BLLNG_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TO_BLLNG_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="HNDLNG_OT_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HNDLNG_IN_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ON_HR_SRVY_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OFF_HR_SRVY_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FR_DYS" type="xs:int" minOccurs="0" />
+              <xs:element name="NO_OF_DYS" type="xs:int" minOccurs="0" />
+              <xs:element name="RNTL_PR_DY_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RNTL_TX_RT_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TTL_CSTS_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RNTL_CNTN_FLG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BLLNG_FLG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IS_GT_IN_FLG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ACTV_BT" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IS_LT_FLG" type="xs:boolean" minOccurs="0" />
+              <xs:element name="BLLNG_TLL_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="YRD_LCTN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BLLNG_TYP_CD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CSTMR_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="DPT_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="GI_TRNSCTN_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RNTL_RFRNC_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DRFT_INVC_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FNL_INVC_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EQPMNT_TYP_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_CD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PO_RFRNC_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CNTRCT_RFRNC_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ON_HR_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="OFF_HR_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TTL_RNTL_PRD_DYS" type="xs:int" minOccurs="0" />
+              <xs:element name="CSTMR_CD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CSTMR_NAM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CSTMR_CRRNCY_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="CSTMR_CRRNCY_CD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EXCHNG_RT_PR_UNT_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OTHR_CHRG_NC" type="xs:string" minOccurs="0" />
+              <xs:element name="DPT_CRRNCY_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="DPT_CD" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VM_RENTAL_DETAIL">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RNTL_CHRG_ID" type="xs:long" />
+              <xs:element name="EQPMNT_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RNTL_TYP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RFRNC_EIR_NO_1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RFRNC_EIR_NO_2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FRM_BLLNG_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TO_BLLNG_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="HNDLNG_OT_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HNDLNG_IN_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ON_HR_SRVY_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OFF_HR_SRVY_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FR_DYS" type="xs:int" minOccurs="0" />
+              <xs:element name="NO_OF_DYS" type="xs:int" minOccurs="0" />
+              <xs:element name="RNTL_PR_DY_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RNTL_TX_RT_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TTL_CSTS_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RNTL_CNTN_FLG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BLLNG_FLG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IS_GT_IN_FLG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ACTV_BT" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IS_LT_FLG" type="xs:boolean" minOccurs="0" />
+              <xs:element name="BLLNG_TLL_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="YRD_LCTN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BLLNG_TYP_CD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CSTMR_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="DPT_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="GI_TRNSCTN_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RNTL_RFRNC_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DRFT_INVC_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FNL_INVC_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EQPMNT_TYP_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_CD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PO_RFRNC_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CNTRCT_RFRNC_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ON_HR_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="OFF_HR_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TTL_RNTL_PRD_DYS" type="xs:int" minOccurs="0" />
+              <xs:element name="CSTMR_CD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CSTMR_NAM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CSTMR_CRRNCY_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="CSTMR_CRRNCY_CD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EXCHNG_RT_PR_UNT_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OTHR_CHRG_NC" msdata:Caption="OTHR_CHRGS" type="xs:string" minOccurs="0" />
+              <xs:element name="Onhire" type="xs:string" minOccurs="0" />
+              <xs:element name="Offhire" type="xs:string" minOccurs="0" />
+              <xs:element name="DPT_CRRNCY_CD" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RENTAL_CUSTOMER_SUMMARY">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CSTMR_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="CSTMR_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="CSTMR_NAM" type="xs:string" minOccurs="0" />
+              <xs:element name="BILLED_DPT_AMNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="UNBILLED_DPT_AMNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DPT_AMNT" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RENTAL_EQUIPMENT_TYPE_SUMMARY">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EQPMNT_TYP_ID" msdata:Caption="CSTMR_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_CD" msdata:Caption="CSTMR_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_DSCRPTN_VC" msdata:Caption="CSTMR_NAM" type="xs:string" minOccurs="0" />
+              <xs:element name="BILLED_DPT_AMNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="UNBILLED_DPT_AMNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DPT_AMNT" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VM_KPI_RENTAL">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RNTL_CHRG_ID" type="xs:long" />
+              <xs:element name="EQPMNT_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RNTL_TYP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RFRNC_EIR_NO_1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RFRNC_EIR_NO_2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FRM_BLLNG_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TO_BLLNG_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="HNDLNG_OT_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HNDLNG_IN_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ON_HR_SRVY_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OFF_HR_SRVY_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FR_DYS" type="xs:int" minOccurs="0" />
+              <xs:element name="NO_OF_DYS" type="xs:int" minOccurs="0" />
+              <xs:element name="RNTL_PR_DY_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RNTL_TX_RT_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TTL_CSTS_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RNTL_CNTN_FLG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BLLNG_FLG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IS_GT_IN_FLG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ACTV_BT" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IS_LT_FLG" type="xs:boolean" minOccurs="0" />
+              <xs:element name="BLLNG_TLL_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="YRD_LCTN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BLLNG_TYP_CD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CSTMR_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="DPT_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="GI_TRNSCTN_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DRFT_INVC_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FNL_INVC_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OTHR_CHRG_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_CD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PO_RFRNC_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CNTRCT_RFRNC_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ON_HR_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="OFF_HR_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TTL_RNTL_PRD_DYS" type="xs:int" minOccurs="0" />
+              <xs:element name="CSTMR_CRRNCY_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="CSTMR_CRRNCY_CD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EXCHNG_RT_PR_UNT_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DPT_CRRNCY_CD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BILLED" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INVC_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UNBILLED_DPT_AMNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BILLED_DPT_AMNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CSTMR_NAM" type="xs:string" minOccurs="0" />
+              <xs:element name="CSTMR_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="BILLED_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_DSCRPTN_VC" type="xs:string" minOccurs="0" />
+              <xs:element name="DPT_CD" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VM_FINANCE_RENTAL_SUMMARY">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CSTMR_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="CSTMR_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="CSTMR_NAM" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="ON_HR_EQPMNT" type="xs:string" minOccurs="0" />
+              <xs:element name="OFF_HR_EQPMNT" type="xs:string" minOccurs="0" />
+              <xs:element name="TTL_RNTL_PRD_DYS" type="xs:string" minOccurs="0" />
+              <xs:element name="ON_HR_SRVY_NC" type="xs:string" minOccurs="0" />
+              <xs:element name="OFF_HR_SRVY_NC" type="xs:string" minOccurs="0" />
+              <xs:element name="RNTL_PR_DY_NC" type="xs:string" minOccurs="0" />
+              <xs:element name="HNDLNG_OT_NC" type="xs:string" minOccurs="0" />
+              <xs:element name="HNDLNG_IN_NC" type="xs:string" minOccurs="0" />
+              <xs:element name="RNTL_CHRG_NC" type="xs:string" minOccurs="0" />
+              <xs:element name="RNTL_CHRG_EQPMNT" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VM_FINANCE_RENTAL">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="INVC_HSTRY_DTL_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="INVC_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EQPMNT_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GI_TRNSCTN_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RNTL_RFRNC_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HNDLNG_IN_AMNT_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HNDLNG_OT_AMNT_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="STRG_AMNT_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DPT_AMNT_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CSTMR_AMNT_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="STRG_DYS" type="xs:int" minOccurs="0" />
+              <xs:element name="FR_DYS" type="xs:int" minOccurs="0" />
+              <xs:element name="ON_HR_SRVY_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OFF_HR_SRVY_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OTHR_CHRG_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="INVC_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FRM_BLLNG_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TO_BLLNG_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CSTMR_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="CSTMR_CD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CSTMR_CRRNCY_CD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EQPMNT_TYP_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_CD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PO_RFRNC_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CNTRCT_RFRNC_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ON_HR_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="OFF_HR_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RNTL_PR_DY_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DPT_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="DPT_CD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DPT_CRRNCY_CD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CSTMR_NAM" type="xs:string" minOccurs="0" />
+              <xs:element name="RNTL_CHRG_NC" type="xs:string" minOccurs="0" />
+              <xs:element name="DepotString" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:VM_RENTAL" />
+      <xs:field xpath="mstns:RNTL_CHRG_ID" />
+    </xs:unique>
+    <xs:unique name="VM_RENTAL_DETAIL_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:VM_RENTAL_DETAIL" />
+      <xs:field xpath="mstns:RNTL_CHRG_ID" />
+    </xs:unique>
+    <xs:unique name="VM_KPI_RENTAL_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:VM_KPI_RENTAL" />
+      <xs:field xpath="mstns:RNTL_CHRG_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

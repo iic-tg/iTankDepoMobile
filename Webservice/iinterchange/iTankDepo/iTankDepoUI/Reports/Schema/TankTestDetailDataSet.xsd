@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TankTestDetailDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="iTankDepoConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="iTankDepoConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.iTankDepoConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TankTestDetailDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:EnforceConstraints="False" msprop:Generator_DataSetName="TankTestDetailDataSet" msprop:Generator_UserDSName="TankTestDetailDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VM_TANK_TEST_DETAIL">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EQPMNT_INFRMTN_ID" type="xs:long" />
+              <xs:element name="EQPMNT_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_DSCRPTN_VC" type="xs:string" minOccurs="0" />
+              <xs:element name="CSTMR_ID" msdata:ReadOnly="true" type="xs:long" minOccurs="0" />
+              <xs:element name="CSTMR_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="CSTMR_NAM" type="xs:string" minOccurs="0" />
+              <xs:element name="MNFCTR_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TR_WGHT_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="GRSS_WGHT_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CPCTY_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LST_TST_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NXT_TST_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="VLDTY_PRD_TST_YRS" type="xs:string" minOccurs="0" />
+              <xs:element name="LST_TST_TYP_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="LST_TST_TYP_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="NXT_TST_TYP_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="NXT_TST_TYP_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="LST_SRVYR_NM" type="xs:string" minOccurs="0" />
+              <xs:element name="ACTV_BT" type="xs:boolean" />
+              <xs:element name="RNTL_BT" type="xs:boolean" minOccurs="0" />
+              <xs:element name="DPT_ID" type="xs:int" />
+              <xs:element name="DPT_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="CRTD_DT" type="xs:dateTime" />
+              <xs:element name="MDFD_BY" type="xs:string" minOccurs="0" />
+              <xs:element name="MDFD_DT" type="xs:dateTime" />
+              <xs:element name="RMRKS_VC" type="xs:string" minOccurs="0" />
+              <xs:element name="TEST_STATUS" type="xs:string" minOccurs="0" />
+              <xs:element name="TEST_STATUS_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="TESTID" type="xs:int" minOccurs="0" />
+              <xs:element name="LAST_HYDRO" type="xs:int" minOccurs="0" />
+              <xs:element name="LAST_PNEUMATIC" type="xs:int" minOccurs="0" />
+              <xs:element name="NEXT_HYDRO" type="xs:int" minOccurs="0" />
+              <xs:element name="NEXT_PNEUMATIC" type="xs:int" minOccurs="0" />
+              <xs:element name="EXPIRED" type="xs:int" minOccurs="0" />
+              <xs:element name="NO_DUE" type="xs:int" minOccurs="0" />
+              <xs:element name="EQPMNT_STTS_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="GTN_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TEST_DUE" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//VM_TANK_TEST_DETAIL" />
+      <xs:field xpath="EQPMNT_INFRMTN_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

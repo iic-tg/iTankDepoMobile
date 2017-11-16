@@ -1,0 +1,135 @@
+﻿Public Class RentalEntryData
+#Region "Declaration Part.."
+    'Data Tables..
+    Public Const _V_RENTAL_ENTRY As String = "V_RENTAL_ENTRY"
+    Public Const _EQUIPMENT_INFORMATION As String = "EQUIPMENT_INFORMATION"
+    Public Const _GATEOUT_INFO As String = "GATEOUT_INFO"
+    Public Const _V_RENTAL_OTHER_CHARGE As String = "V_RENTAL_OTHER_CHARGE"
+    Public Const _RENTAL_ENTRY As String = "RENTAL_ENTRY"
+    Public Const _RENTAL_OTHER_CHARGE As String = "RENTAL_OTHER_CHARGE"
+    Public Const _SUPPLIER_EQUIPMENT As String = "SUPPLIER_EQUIPMENT"
+    Public Const _V_ADDITIONAL_CHARGE_RATE As String = "V_ADDITIONAL_CHARGE_RATE"
+    Public Const _RENTAL_REFERENCE_NO As String = "RENTAL_REFERENCE_NO"
+    Public Const _V_ACTIVITY_STATUS As String = "V_ACTIVITY_STATUS"
+    Public Const _TRACKING As String = "TRACKING"
+    Public Const _RENTAL_CHARGE As String = "RENTAL_CHARGE"
+    Public Const _DEFAULT_ADDITIONAL_RATE As String = "DEFAULT_ADDITIONAL_RATE"
+    'Data Columns..
+
+    'Table Name: V_RENTAL_ENTRY
+    Public Const RNTL_ENTRY_ID As String = "RNTL_ENTRY_ID"
+    Public Const EQPMNT_NO As String = "EQPMNT_NO"
+    Public Const CSTMR_ID As String = "CSTMR_ID"
+    Public Const CSTMR_CD As String = "CSTMR_CD"
+    Public Const CSTMR_NAM As String = "CSTMR_NAM"
+    Public Const CNTRCT_RFRNC_NO As String = "CNTRCT_RFRNC_NO"
+    Public Const PO_RFRNC_NO As String = "PO_RFRNC_NO"
+    Public Const RNTL_PR_DY As String = "RNTL_PR_DY"
+    Public Const ON_HR_DT As String = "ON_HR_DT"
+    Public Const HNDLNG_OT_NC As String = "HNDLNG_OT_NC"
+    Public Const ON_HR_SRVY_NC As String = "ON_HR_SRVY_NC"
+    Public Const OFF_HR_DT As String = "OFF_HR_DT"
+    Public Const HNDLNG_IN_NC As String = "HNDLNG_IN_NC"
+    Public Const OFF_HR_SRVY_NC As String = "OFF_HR_SRVY_NC"
+    Public Const OTHR_CHRG_NC As String = "OTHR_CHRG_NC"
+    Public Const RMRKS_VC As String = "RMRKS_VC"
+    Public Const DPT_ID As String = "DPT_ID"
+    Public Const CRTD_BY As String = "CRTD_BY"
+    Public Const CRTD_DT As String = "CRTD_DT"
+    Public Const MDFD_BY As String = "MDFD_BY"
+    Public Const MDFD_DT As String = "MDFD_DT"
+    Public Const CHECKED As String = "CHECKED"
+    Public Const TTL_OTHR_CHRG_NC As String = "TTL_OTHR_CHRG_NC"
+
+    'TABLE: EQUIPMENT_INFORMATION
+    Public Const EQPMNT_INFRMTN_ID As String = "EQPMNT_INFRMTN_ID"
+    Public Const ACTV_BT As String = "ACTV_BT"
+    Public Const RNTL_BT As String = "RNTL_BT"
+    Public Const GTN_BT As String = "GTN_BT"
+    'TABLE:GATEOUT_INFO
+    Public Const GI_TRNSCTN_NO As String = "GI_TRNSCTN_NO"
+    Public Const GTOT_ID As String = "GTOT_ID"
+
+    'Table Name: V_RENTAL_OTHER_CHARGE
+    Public Const RNTL_OTHR_CHRG_ID As String = "RNTL_OTHR_CHRG_ID"
+    Public Const ADDTNL_CHRG_RT_ID As String = "ADDTNL_CHRG_RT_ID"
+    Public Const ADDTNL_CHRG_RT_CD As String = "ADDTNL_CHRG_RT_CD"
+    Public Const ADDTNL_CHRG_RT_DSCRPTN_VC As String = "ADDTNL_CHRG_RT_DSCRPTN_VC"
+    Public Const RT_NC As String = "RT_NC"
+
+    'Table Name:SUPPLIER_EQUIPMENT
+    Public Const CNTRCT_STRT_DT As String = "CNTRCT_STRT_DT"
+    Public Const CNTRCT_END_DT As String = "CNTRCT_END_DT"
+
+
+    'Table Name: V_ADDITIONAL_CHARGE_RATE
+
+    Public Const OPRTN_TYP_ID As String = "OPRTN_TYP_ID"
+    Public Const OPRTN_TYP_CD As String = "OPRTN_TYP_CD"
+    Public Const DFLT_BT As String = "DFLT_BT"
+    Public Const RNTL_RFRNC_NO As String = "RNTL_RFRNC_NO"
+
+    'Table Name: V_ACTIVITY_STATUS
+    Public Const ACTVTY_STTS_ID As String = "ACTVTY_STTS_ID"
+    Public Const EQPMNT_TYP_ID As String = "EQPMNT_TYP_ID"
+    Public Const EQPMNT_TYP_CD As String = "EQPMNT_TYP_CD"
+    Public Const EQPMNT_CD_ID As String = "EQPMNT_CD_ID"
+    Public Const EQPMNT_CD_CD As String = "EQPMNT_CD_CD"
+    Public Const GTN_DT As String = "GTN_DT"
+    Public Const GTOT_DT As String = "GTOT_DT"
+    Public Const PRDCT_ID As String = "PRDCT_ID"
+    Public Const PRDCT_CD As String = "PRDCT_CD"
+    Public Const PRDCT_DSCRPTN_VC As String = "PRDCT_DSCRPTN_VC"
+    Public Const CLNNG_DT As String = "CLNNG_DT"
+    Public Const EQPMNT_STTS_ID As String = "EQPMNT_STTS_ID"
+    Public Const EQPMNT_STTS_CD As String = "EQPMNT_STTS_CD"
+    Public Const ACTVTY_NAM As String = "ACTVTY_NAM"
+    Public Const ACTVTY_DT As String = "ACTVTY_DT"
+    Public Const INVC_GNRT_BT As String = "INVC_GNRT_BT"
+    Public Const GI_RF_NO As String = "GI_RF_NO"
+    Public Const INSPCTN_DT As String = "INSPCTN_DT"
+    Public Const INSTRCTNS_VC As String = "INSTRCTNS_VC"
+    Public Const DPT_CD As String = "DPT_CD"
+    Public Const DPT_NAM As String = "DPT_NAM"
+    Public Const YRD_LCTN As String = "YRD_LCTN"
+    Public Const FILTER_CODE As String = "FILTER_CODE"
+    Public Const CERT_GNRTD_FLG As String = "CERT_GNRTD_FLG"
+    Public Const RPR_CMPLTN_DT As String = "RPR_CMPLTN_DT"
+
+    'Table Name: TRACKING
+    Public Const TRCKNG_ID As String = "TRCKNG_ID"
+    Public Const ACTVTY_NO As String = "ACTVTY_NO"
+    Public Const ACTVTY_RMRKS As String = "ACTVTY_RMRKS"
+    Public Const INVCNG_PRTY_ID As String = "INVCNG_PRTY_ID"
+    Public Const RFRNC_NO As String = "RFRNC_NO"
+    Public Const CNCLD_BY As String = "CNCLD_BY"
+    Public Const CNCLD_DT As String = "CNCLD_DT"
+    Public Const ADT_RMRKS As String = "ADT_RMRKS"
+
+
+    'Table Name: RENTAL_CHARGE
+    Public Const RNTL_CHRG_ID As String = "RNTL_CHRG_ID"
+    Public Const RNTL_TYP As String = "RNTL_TYP"
+    Public Const RFRNC_EIR_NO_1 As String = "RFRNC_EIR_NO_1"
+    Public Const RFRNC_EIR_NO_2 As String = "RFRNC_EIR_NO_2"
+    Public Const FRM_BLLNG_DT As String = "FRM_BLLNG_DT"
+    Public Const TO_BLLNG_DT As String = "TO_BLLNG_DT"
+    Public Const FR_DYS As String = "FR_DYS"
+    Public Const NO_OF_DYS As String = "NO_OF_DYS"
+    Public Const RNTL_CST_NC As String = "RNTL_CST_NC"
+    Public Const RNTL_TX_RT_NC As String = "RNTL_TX_RT_NC"
+    Public Const TTL_CSTS_NC As String = "TTL_CSTS_NC"
+    Public Const RNTL_CNTN_FLG As String = "RNTL_CNTN_FLG"
+    Public Const BLLNG_FLG As String = "BLLNG_FLG"
+    Public Const IS_GT_IN_FLG As String = "IS_GT_IN_FLG"
+    Public Const IS_LT_FLG As String = "IS_LT_FLG"
+    Public Const BLLNG_TLL_DT As String = "BLLNG_TLL_DT"
+    Public Const BLLNG_TYP_CD As String = "BLLNG_TYP_CD"
+    Public Const DRFT_INVC_NO As String = "DRFT_INVC_NO"
+    Public Const FNL_INVC_NO As String = "FNL_INVC_NO"
+    Public Const IS_GTOT_BT As String = "IS_GTOT_BT"
+    Public Const IS_GTN_BT As String = "IS_GTN_BT"
+    Public Const ALLOW_EDIT As String = "ALLOW_EDIT"
+#End Region
+
+End Class

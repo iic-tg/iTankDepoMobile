@@ -1,0 +1,66 @@
+﻿<DataSourceView xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Product</ID>
+  <Name>Product</Name>
+  <Annotations xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>iTankDepo</DataSourceID>
+  <Schema>
+    <xs:schema id="Product" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Product" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="3fd3c2dd-d2d4-4bae-9f33-997561e27af7" msprop:CompareInfo="&lt;CompareInfo&gt;&lt;Culture&gt;en-US&lt;/Culture&gt;&lt;IgnoreCase&gt;true&lt;/IgnoreCase&gt;&lt;IgnoreKanaType&gt;true&lt;/IgnoreKanaType&gt;&lt;IgnoreWidth&gt;true&lt;/IgnoreWidth&gt;&lt;/CompareInfo&gt;">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_PRODUCT_CUSTOMER" msprop:FriendlyName="PRODUCT_CUSTOMER" msprop:DbSchemaName="dbo" msprop:DbTableName="PRODUCT_CUSTOMER" msprop:design-time-name="46d5eca2-2281-496f-b3f7-b60f9e6c673c" msprop:TableType="Table" msprop:stats_RowCount="15">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="PRDCT_CSTMR_ID" msprop:stats_UniqueValuePercent="100" msprop:DbDataType="bigint" msprop:FriendlyName="PRDCT_CSTMR_ID" msprop:design-time-name="46729024-bae4-43b2-be3b-00585311405d" msprop:stats_MaxWidth="2" msprop:stats_UniqueValueCount="15" msprop:stats_StDevWidth="0.5163978" msprop:stats_AvgWidth="1.466667" msprop:DbColumnName="PRDCT_CSTMR_ID" type="xs:long" />
+                  <xs:element name="PRDCT_ID" msprop:stats_UniqueValuePercent="46" msprop:DbDataType="bigint" msprop:FriendlyName="PRDCT_ID" msprop:design-time-name="768a4541-f0ff-46a3-bd69-b6ef71b737b9" msprop:stats_MaxWidth="3" msprop:stats_UniqueValueCount="7" msprop:stats_StDevWidth="0.9759001" msprop:stats_AvgWidth="2.333333" msprop:DbColumnName="PRDCT_ID" type="xs:long" />
+                  <xs:element name="CSTMR_ID" msprop:stats_UniqueValuePercent="46" msprop:DbDataType="bigint" msprop:FriendlyName="CSTMR_ID" msprop:design-time-name="85226f0a-2b26-4acc-ac01-23f328967b82" msprop:stats_MaxWidth="3" msprop:stats_UniqueValueCount="7" msprop:stats_StDevWidth="0.4577377" msprop:stats_AvgWidth="2.266667" msprop:DbColumnName="CSTMR_ID" type="xs:long" />
+                  <xs:element name="TTL_AMNT_NC" msprop:stats_UniqueValuePercent="73" msprop:stats_AvgScale="0" msprop:DbDataType="decimal" msprop:FriendlyName="TTL_AMNT_NC" msprop:design-time-name="84fe7d67-2b67-4b41-948b-5e3b08db7b4c" msprop:stats_StDevScale="0" msprop:stats_MaxWidth="7" msprop:stats_UniqueValueCount="11" msprop:stats_StDevWidth="0.9904304" msprop:stats_MaxScale="0" msprop:stats_AvgWidth="6.133333" msprop:DbColumnName="TTL_AMNT_NC" type="xs:decimal" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_PRODUCT_CUSTOMER" />
+          <xs:field xpath="PRDCT_CSTMR_ID" />
+        </xs:unique>
+      </xs:element>
+    </xs:schema>
+  </Schema>
+</DataSourceView>

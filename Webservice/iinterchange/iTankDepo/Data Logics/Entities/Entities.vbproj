@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{C0E0464A-A99E-4AB3-B1A4-4308C90FC8C2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>iInterchange.iTankDepo.Entities</RootNamespace>
+    <AssemblyName>iInterchange.iTankDepo.Entities</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>iInterchange.iTankDepo.Entities.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>iInterchange.iTankDepo.Entities.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AuditData.vb" />
+    <Compile Include="Admin\IndexPatternData.vb" />
+    <Compile Include="Billing\InvoiceGenerationData.vb" />
+    <Compile Include="Admin\CommonUIData.vb" />
+    <Compile Include="Admin\ConfigData.vb" />
+    <Compile Include="Admin\DepotData.vb" />
+    <Compile Include="Admin\RoleRightData.vb" />
+    <Compile Include="Admin\UserData.vb" />
+    <Compile Include="Billing\InvoiceReversalData.vb" />
+    <Compile Include="Billing\ViewInvoiceData.vb" />
+    <Compile Include="Billing\ViewXmlEdiData.vb" />
+    <Compile Include="Dashboard\DashboardData.vb" />
+    <Compile Include="Dashboard\EquipmentTrackingData.vb" />
+    <Compile Include="Dashboard\OperationsTurnOverData.vb" />
+    <Compile Include="DynamicReport\AddDynamicReportData.vb" />
+    <Compile Include="DynamicReport\ReportParamData.vb" />
+    <Compile Include="EDI\EDIData.vb" />
+    <Compile Include="Masters\AdditionalChargeRateData.vb" />
+    <Compile Include="Masters\AgentData.vb" />
+    <Compile Include="Masters\CleaningMethodData.vb" />
+    <Compile Include="Masters\CleaningTypeData.vb" />
+    <Compile Include="Masters\ComponentData.vb" />
+    <Compile Include="Masters\CountryData.vb" />
+    <Compile Include="Masters\CurrencyData.vb" />
+    <Compile Include="Masters\CustomerData.vb" />
+    <Compile Include="Masters\CustomerTariffData.vb" />
+    <Compile Include="Masters\DamageData.vb" />
+    <Compile Include="Masters\EquipmentCodeData.vb" />
+    <Compile Include="Masters\EquipmentSizeData.vb" />
+    <Compile Include="Masters\EquipmentStatusData.vb" />
+    <Compile Include="Masters\EquipmentTypeData.vb" />
+    <Compile Include="Masters\ExchangeRateData.vb" />
+    <Compile Include="Masters\GradeData.vb" />
+    <Compile Include="Masters\InvoicePartyData.vb" />
+    <Compile Include="Masters\ItemData.vb" />
+    <Compile Include="Masters\LocationData.vb" />
+    <Compile Include="Masters\MaterialData.vb" />
+    <Compile Include="Masters\MeasureData.vb" />
+    <Compile Include="Masters\PartyData.vb" />
+    <Compile Include="Masters\PortData.vb" />
+    <Compile Include="Masters\ProductData.vb" />
+    <Compile Include="Masters\RepairData.vb" />
+    <Compile Include="Masters\ResponsibilityData.vb" />
+    <Compile Include="Masters\RouteDetailData.vb" />
+    <Compile Include="Masters\StatusData.vb" />
+    <Compile Include="Masters\SubItemData.vb" />
+    <Compile Include="Masters\SupplierData.vb" />
+    <Compile Include="Masters\TariffCodeData.vb" />
+    <Compile Include="Masters\TariffGroupData.vb" />
+    <Compile Include="Masters\TariffTemplateData.vb" />
+    <Compile Include="Masters\TransporterData.vb" />
+    <Compile Include="Masters\UnitData.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Operations\ChangeOfStatusData.vb" />
+    <Compile Include="Operations\CleaningData.vb" />
+    <Compile Include="Operations\CleaningInspectionData.vb" />
+    <Compile Include="Operations\EquipmentHistoryData.vb" />
+    <Compile Include="Operations\EquipmentInformationData.vb" />
+    <Compile Include="Operations\EquipmentInspectionData.vb" />
+    <Compile Include="Operations\EquipmentUpdateData.vb" />
+    <Compile Include="Operations\GateOutApprovalData.vb" />
+    <Compile Include="Operations\GateOutData.vb" />
+    <Compile Include="Operations\GateinData.vb" />
+    <Compile Include="Operations\GateOutRequestData.vb" />
+    <Compile Include="Operations\HeatingData.vb" />
+    <Compile Include="Operations\InvoiceData.vb" />
+    <Compile Include="Operations\LeakTestData.vb" />
+    <Compile Include="Operations\MiscellaneousInvoiceData.vb" />
+    <Compile Include="Operations\PreAdviceData.vb" />
+    <Compile Include="Operations\RepairCompletionData.vb" />
+    <Compile Include="Operations\RepairEstimateData.vb" />
+    <Compile Include="Operations\RepairInvoiceUpdateData.vb" />
+    <Compile Include="Operations\ReserveBookingData.vb" />
+    <Compile Include="Operations\ScheduleData.vb" />
+    <Compile Include="Operations\TrackingData.vb" />
+    <Compile Include="Rental\RentalEntryData.vb" />
+    <Compile Include="Sage_Integration\FinanceIntegrationData.vb" />
+    <Compile Include="Services\AlertData.vb" />
+    <Compile Include="Services\Bulk_EmailData.vb" />
+    <Compile Include="Services\EmailData.vb" />
+    <Compile Include="Services\EDISettingData.vb" />
+    <Compile Include="Services\DARData.vb" />
+    <Compile Include="Tracking\BulkEmailData.vb" />
+    <Compile Include="Tracking\EnquiryData.vb" />
+    <Compile Include="Transportation\TransportationData.vb" />
+    <Compile Include="Upload\UploadData.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

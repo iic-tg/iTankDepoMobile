@@ -1,0 +1,41 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+iInterchange.iTankDepo.Business.Services
+</name>
+</assembly>
+<members>
+<member name="M:iInterchange.iTankDepo.Business.Services.Alert.pub_Send_Alert(System.String,System.String,System.String,System.String)">
+	<summary>
+ Name     : pub_Send_Email
+ Purpose  : pub_Send_Email function is used to Send Email 
+ </summary>
+	<param name="bv_strToMailIDs"></param>
+	<param name="bv_strCCEmailIDs"></param>
+	<param name="bv_strSubject"></param>
+	<param name="bv_strBody"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:iInterchange.iTankDepo.Business.Services.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:iInterchange.iTankDepo.Business.Services.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:iInterchange.iTankDepo.Business.Services.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:iInterchange.iTankDepo.Business.Services.Bulk_Email.pub_GetBulk_EmailForAllDepots">
+	<summary>
+ This Method is used to get Bulk Email for all Depots
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

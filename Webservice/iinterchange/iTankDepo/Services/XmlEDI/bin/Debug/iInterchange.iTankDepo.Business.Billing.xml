@@ -1,0 +1,51 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+iInterchange.iTankDepo.Business.Billing
+</name>
+</assembly>
+<members>
+<member name="M:iInterchange.iTankDepo.Business.Billing.ViewInvoice.pub_GetVInvoiceHistoryForAllDepot">
+	<summary>
+ This method is used for returning Invoice detail for all Depots - Multi location 
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.Business.Billing.ViewInvoice.pub_generateInvoiceXml(System.Data.DataSet,System.Data.DataTable,System.String,System.Int32,System.String,System.String)">
+	<summary>
+ This method will create xml file of invoice(cleaning or transportation) for those customer's xml_bt=1 in customer master 
+ </summary>
+	<param name="bv_dsDataset"></param>
+	<param name="bv_dtViewInvoice"></param>
+	<param name="bv_strFinalinvcno"></param>
+	<param name="bv_i32InvoiceTypeID"></param>
+	<param name="bv_strUsername"></param>
+	<param name="bv_strInvoiceFileName"></param>
+	<remarks></remarks>
+</member><member name="P:iInterchange.iTankDepo.Business.Billing.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:iInterchange.iTankDepo.Business.Billing.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:iInterchange.iTankDepo.Business.Billing.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:iInterchange.iTankDepo.Business.Billing.InvoiceGeneration.pub_GetExchangeRateWithEffectivedate(System.Int64,System.Int64,System.DateTime,System.Int32)">
+	<summary>
+ Get Exchange Rate from exchange rate master
+ </summary>
+	<param name="bv_lngFromCurrencyId"></param>
+	<param name="bv_lngToCurrencyId"></param>
+	<param name="bv_datCurrentDateTime"></param>
+	<param name="bv_intDepotId"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

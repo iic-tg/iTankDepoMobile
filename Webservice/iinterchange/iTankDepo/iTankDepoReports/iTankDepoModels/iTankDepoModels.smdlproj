@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Database>
+    <Name>iTankDepoModels.database</Name>
+    <FullPath>iTankDepoModels.database</FullPath>
+  </Database>
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD50cnVlPC9FbmFibGVkPg0KICA8UHJvamVjdE5hbWU+U0FLPC9Qcm9qZWN0TmFtZT4NCiAgPEF1eFBhdGg+U0FLPC9BdXhQYXRoPg0KICA8TG9jYWxQYXRoPlNBSzwvTG9jYWxQYXRoPg0KICA8UHJvdmlkZXI+U0FLPC9Qcm92aWRlcj4NCjwvU291cmNlQ29udHJvbEluZm8+</State>
+  <DataSources>
+    <ProjectItem>
+      <Name>iTankDepo.ds</Name>
+      <FullPath>iTankDepo.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>EquipmentActivity.dsv</Name>
+      <FullPath>EquipmentActivity.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>i Tank Depo.dsv</Name>
+      <FullPath>i Tank Depo.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Product.dsv</Name>
+      <FullPath>Product.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Customer.dsv</Name>
+      <FullPath>Customer.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Status.dsv</Name>
+      <FullPath>Status.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
+  <Models>
+    <ModelProjectItem>
+      <Name>EquipmentActivity.smdl</Name>
+      <FullPath>EquipmentActivity.smdl</FullPath>
+      <DsvName>EquipmentActivity</DsvName>
+    </ModelProjectItem>
+    <ModelProjectItem>
+      <Name>V_ACTIVITY_STATUS.smdl</Name>
+      <FullPath>V_ACTIVITY_STATUS.smdl</FullPath>
+      <DsvName>i Tank Depo</DsvName>
+    </ModelProjectItem>
+    <ModelProjectItem>
+      <Name>Product.smdl</Name>
+      <FullPath>Product.smdl</FullPath>
+      <DsvName>Product</DsvName>
+    </ModelProjectItem>
+    <ModelProjectItem>
+      <Name>Customer.smdl</Name>
+      <FullPath>Customer.smdl</FullPath>
+      <DsvName>Customer</DsvName>
+    </ModelProjectItem>
+    <ModelProjectItem>
+      <Name>Status.smdl</Name>
+      <FullPath>Status.smdl</FullPath>
+      <DsvName>Status</DsvName>
+    </ModelProjectItem>
+  </Models>
+  <Configurations>
+    <Configuration>
+      <Name>Production</Name>
+      <Platform>Win32</Platform>
+      <Options>
+        <OutputPath>bin</OutputPath>
+        <RemovePasswords>true</RemovePasswords>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>iTankDepo</Id>
+            <Name>iTankDepo</Name>
+            <Value xsi:type="xsd:string">Data Source=IICHVW12RDS\SQL2008R2;Initial Catalog=iTankDepo;Persist Security Info=True;User ID=;Password=</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionProviderMappings>
+          <ConfigurationSetting>
+            <Id>iTankDepo</Id>
+            <Name>iTankDepo</Name>
+            <Value xsi:type="xsd:string">System.Data.SqlClient</Value>
+          </ConfigurationSetting>
+        </ConnectionProviderMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>iTankDepo</Id>
+            <Name>iTankDepo</Name>
+            <Value xsi:type="xsd:int">1</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+        <DatabaseStorageLocations />
+        <TargetServerURL>http://iicdb/reportserver_sql2008</TargetServerURL>
+        <TargetModelFolder>iTankDepo/Models</TargetModelFolder>
+        <TargetDataSourceFolder>iTankDepo/Data Sources</TargetDataSourceFolder>
+        <OverwriteDataSources>true</OverwriteDataSources>
+      </Options>
+    </Configuration>
+  </Configurations>
+</Project>

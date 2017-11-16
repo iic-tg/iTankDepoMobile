@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:weightSum="3"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:id="@+id/LL_Line_iteam"
+        android:background="@android:color/transparent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/Line_iteam"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@android:color/transparent"
+                android:drawableTop="@mipmap/line_items"
+                android:drawableTint="@color/Title"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="11dp"
+                android:background="@android:color/transparent"
+                android:text="Line Details"
+                android:textColor="@color/Title"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:id="@+id/LL_add_details"
+        android:orientation="vertical"
+      >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_marginBottom="2dp"
+            >
+            <Button
+                android:id="@+id/add_details"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@android:color/transparent"
+                android:drawableTop="@mipmap/add_pen"
+                android:drawableTint="@color/Title"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="11dp"
+                android:background="@android:color/transparent"
+                android:id="@+id/tv_heat_refresh"
+                android:textColor="@color/Title"
+                android:text="Add Details"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--  <View
+          style="@style/View_vertical"
+          />-->
+    <!--<View
+        style="@style/View_vertical"
+        />-->
+
+
+    <!-- <View
+         style="@style/View_vertical"
+         />-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:id="@+id/LL_attachments"
+        android:background="@android:color/transparent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_marginBottom="2dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:layout_gravity="center">
+                <Button
+                    android:id="@+id/attachments"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/repair_attachment"
+                    android:gravity="center"
+                    android:drawableTint="@color/Title"
+                    />
+                <Button
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/red_circle"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="45dp"
+                    android:textSize="9dp"
+                    android:gravity="center"
+                    android:id="@+id/notification_text"
+                    android:text="0"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/Title"
+                android:textSize="11dp"
+                android:background="@android:color/transparent"
+                android:text="Attach Files"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+<!--
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:id="@+id/LL_summary"
+        android:background="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_marginBottom="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:layout_height="35dp">
+                <Button
+                    android:id="@+id/summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@mipmap/repair_summary"
+                    android:drawableTint="@color/Title"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/Title"
+                    android:gravity="center|bottom"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_amount"/>
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/tv_heating"
+                android:textColor="@color/Title"
+                android:textSize="11dp"
+                android:background="@android:color/transparent"
+                android:text="Summary"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+-->
+
+
+
+
+
+
+
+</LinearLayout >

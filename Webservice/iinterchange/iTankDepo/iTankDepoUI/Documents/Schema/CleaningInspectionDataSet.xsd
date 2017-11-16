@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CleaningInspectionDataSet" targetNamespace="http://tempuri.org/CleaningInspectionDataSet.xsd" xmlns:mstns="http://tempuri.org/CleaningInspectionDataSet.xsd" xmlns="http://tempuri.org/CleaningInspectionDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CleaningInspectionDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="CleaningInspectionDataSet" msprop:Generator_UserDSName="CleaningInspectionDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CLEANING_INSPECTION" msprop:Generator_TableClassName="CLEANING_INSPECTIONDataTable" msprop:Generator_TableVarName="tableCLEANING_INSPECTION" msprop:Generator_RowChangedName="CLEANING_INSPECTIONRowChanged" msprop:Generator_TablePropName="CLEANING_INSPECTION" msprop:Generator_RowDeletingName="CLEANING_INSPECTIONRowDeleting" msprop:Generator_RowChangingName="CLEANING_INSPECTIONRowChanging" msprop:Generator_RowEvHandlerName="CLEANING_INSPECTIONRowChangeEventHandler" msprop:Generator_RowDeletedName="CLEANING_INSPECTIONRowDeleted" msprop:Generator_RowClassName="CLEANING_INSPECTIONRow" msprop:Generator_UserTableName="CLEANING_INSPECTION" msprop:Generator_RowEvArgName="CLEANING_INSPECTIONRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ACTVTY_STTS_ID" msprop:Generator_ColumnVarNameInTable="columnACTVTY_STTS_ID" msprop:Generator_ColumnPropNameInRow="ACTVTY_STTS_ID" msprop:Generator_ColumnPropNameInTable="ACTVTY_STTS_IDColumn" msprop:Generator_UserColumnName="ACTVTY_STTS_ID" type="xs:string" />
+              <xs:element name="CLNNG_INSPCTN_NO" msprop:Generator_ColumnVarNameInTable="columnCLNNG_INSPCTN_NO" msprop:Generator_ColumnPropNameInRow="CLNNG_INSPCTN_NO" msprop:Generator_ColumnPropNameInTable="CLNNG_INSPCTN_NOColumn" msprop:Generator_UserColumnName="CLNNG_INSPCTN_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="GTN_DT" msprop:Generator_ColumnVarNameInTable="columnGTN_DT" msprop:Generator_ColumnPropNameInRow="GTN_DT" msprop:Generator_ColumnPropNameInTable="GTN_DTColumn" msprop:Generator_UserColumnName="GTN_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CSTMR_ID" msprop:Generator_ColumnVarNameInTable="columnCSTMR_ID" msprop:Generator_ColumnPropNameInRow="CSTMR_ID" msprop:Generator_ColumnPropNameInTable="CSTMR_IDColumn" msprop:Generator_UserColumnName="CSTMR_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="CSTMR_NAM" msprop:Generator_ColumnVarNameInTable="columnCSTMR_NAM" msprop:Generator_ColumnPropNameInRow="CSTMR_NAM" msprop:Generator_ColumnPropNameInTable="CSTMR_NAMColumn" msprop:Generator_UserColumnName="CSTMR_NAM" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_NO" msprop:Generator_ColumnVarNameInTable="columnEQPMNT_NO" msprop:Generator_ColumnPropNameInRow="EQPMNT_NO" msprop:Generator_ColumnPropNameInTable="EQPMNT_NOColumn" msprop:Generator_UserColumnName="EQPMNT_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EQPMNT_TYP_ID" msprop:Generator_ColumnVarNameInTable="columnEQPMNT_TYP_ID" msprop:Generator_ColumnPropNameInRow="EQPMNT_TYP_ID" msprop:Generator_ColumnPropNameInTable="EQPMNT_TYP_IDColumn" msprop:Generator_UserColumnName="EQPMNT_TYP_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_CD" msprop:Generator_ColumnVarNameInTable="columnEQPMNT_TYP_CD" msprop:Generator_ColumnPropNameInRow="EQPMNT_TYP_CD" msprop:Generator_ColumnPropNameInTable="EQPMNT_TYP_CDColumn" msprop:Generator_UserColumnName="EQPMNT_TYP_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="PRDCT_ID" msprop:Generator_ColumnVarNameInTable="columnPRDCT_ID" msprop:Generator_ColumnPropNameInRow="PRDCT_ID" msprop:Generator_ColumnPropNameInTable="PRDCT_IDColumn" msprop:Generator_UserColumnName="PRDCT_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="PRDCT_CD" msprop:Generator_ColumnVarNameInTable="columnPRDCT_CD" msprop:Generator_ColumnPropNameInRow="PRDCT_CD" msprop:Generator_ColumnPropNameInTable="PRDCT_CDColumn" msprop:Generator_UserColumnName="PRDCT_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="GI_RF_NO" msprop:Generator_ColumnVarNameInTable="columnGI_RF_NO" msprop:Generator_ColumnPropNameInRow="GI_RF_NO" msprop:Generator_ColumnPropNameInTable="GI_RF_NOColumn" msprop:Generator_UserColumnName="GI_RF_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="GI_TRNSCTN_NO" msprop:Generator_ColumnVarNameInTable="columnGI_TRNSCTN_NO" msprop:Generator_ColumnPropNameInRow="GI_TRNSCTN_NO" msprop:Generator_ColumnPropNameInTable="GI_TRNSCTN_NOColumn" msprop:Generator_UserColumnName="GI_TRNSCTN_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="PRDCT_DSCRPTN_VC" msprop:Generator_ColumnVarNameInTable="columnPRDCT_DSCRPTN_VC" msprop:Generator_ColumnPropNameInRow="PRDCT_DSCRPTN_VC" msprop:Generator_ColumnPropNameInTable="PRDCT_DSCRPTN_VCColumn" msprop:Generator_UserColumnName="PRDCT_DSCRPTN_VC" type="xs:string" minOccurs="0" />
+              <xs:element name="DPT_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="NXT_TST_TYP_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="NXT_TST_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UN_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="IMO_CLSS" type="xs:string" minOccurs="0" />
+              <xs:element name="CSTMR_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="SHELL" type="xs:boolean" minOccurs="0" />
+              <xs:element name="STUBE" type="xs:boolean" minOccurs="0" />
+              <xs:element name="CLNNG_MTHD_TYP_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="DPT_CD" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CLEANING_INSPECTION" />
+      <xs:field xpath="mstns:ACTVTY_STTS_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

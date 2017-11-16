@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="HeatingDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="HeatingDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:EnforceConstraints="False" msprop:Generator_UserDSName="HeatingDataSet" msprop:Generator_DataSetName="HeatingDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VM_HEATING">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="HTNG_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="HTNG_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_CD_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="EQPMNT_CD_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="CSTMR_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="CSTMR_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="CSTMR_NAM" type="xs:string" minOccurs="0" />
+              <xs:element name="HTNG_STRT_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="HTNG_STRT_TM" type="xs:string" minOccurs="0" />
+              <xs:element name="HTNG_END_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="HTNG_END_TM" type="xs:string" minOccurs="0" />
+              <xs:element name="HTNG_TMPRTR" type="xs:string" minOccurs="0" />
+              <xs:element name="TTL_HTN_PRD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MIN_HTNG_RT_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HRLY_CHRG_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TTL_RT_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BLLNG_FLG" type="xs:string" minOccurs="0" />
+              <xs:element name="GI_TRNSCTN_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="DPT_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="PRDCT_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="PRDCT_DSCRPTN_VC" type="xs:string" minOccurs="0" />
+              <xs:element name="GTN_DT" type="xs:string" minOccurs="0" />
+              <xs:element name="SRVC_PRTNR_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="HTNG_STRT_DT_TM" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="HTNG_END_DT_TM" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CSTMR_AMNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DPT_CRRNCY_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="CSTMR_CRRNCY_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="DPT_CRRNCY_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="CSTMR_CRRNCY_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="DPT_AMNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DPT_CD" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VM_FINANCE_HEATING">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="HTNG_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="HTNG_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_CD_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="EQPMNT_CD_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="CSTMR_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="CSTMR_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="CSTMR_NAM" type="xs:string" minOccurs="0" />
+              <xs:element name="HTNG_STRT_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="HTNG_STRT_TM" type="xs:string" minOccurs="0" />
+              <xs:element name="HTNG_END_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="HTNG_END_TM" type="xs:string" minOccurs="0" />
+              <xs:element name="HTNG_TMPRTR" type="xs:string" minOccurs="0" />
+              <xs:element name="TTL_HTN_PRD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MIN_HTNG_RT_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HRLY_CHRG_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TTL_RT_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BLLNG_FLG" type="xs:string" minOccurs="0" />
+              <xs:element name="GI_TRNSCTN_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="DPT_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="PRDCT_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="PRDCT_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="PRDCT_DSCRPTN_VC" type="xs:string" minOccurs="0" />
+              <xs:element name="GTN_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SRVC_PRTNR_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="HTNG_STRT_DT_TM" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="HTNG_END_DT_TM" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DPT_CRRNCY_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="CSTMR_CRRNCY_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="DPT_CRRNCY_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="CSTMR_CRRNCY_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="CSTMR_AMNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DPT_AMNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BILLED" type="xs:string" minOccurs="0" />
+              <xs:element name="BILLED_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="FNL_INVC_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="INVC_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UNBILLED_DPT_AMNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BILLED_DPT_AMNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DPT_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="DepotString" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VM_METRICS_HEATING">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="HTNG_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="HTNG_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="CSTMR_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="CSTMR_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="CSTMR_NAM" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_CD_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="EQPMNT_CD_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="GTN_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PRDCT_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="PRDCT_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="PRDCT_DSCRPTN_VC" type="xs:string" minOccurs="0" />
+              <xs:element name="HTNG_STRT_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="HTNG_STRT_TM" type="xs:string" minOccurs="0" />
+              <xs:element name="HTNG_END_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="HTNG_END_TM" type="xs:string" minOccurs="0" />
+              <xs:element name="HTNG_TMPRTR" type="xs:string" minOccurs="0" />
+              <xs:element name="TTL_HTN_PRD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MIN_HTNG_RT_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HRLY_CHRG_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="GI_TRNSCTN_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="DPT_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="HTNG_STRT_DT_TM" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="HTNG_END_DT_TM" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DPT_CD" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,308 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e1d1a931-10ff-4441-86e1-08e4652181af" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>EquipmentActivity</ID>
+  <Name>EquipmentActivity</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout>
+              <dds>
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="9" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1828" scrolltop="-5603" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="30533" y="21775" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                  <font>
+                    <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+                  </font>
+                  <mouseicon>
+                    <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                  </mouseicon>
+                </diagram>
+                <layoutmanager>
+                  <ddsxmlobj />
+                </layoutmanager>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="V_EQUIPMENT_ACTIVTY_DATE" left="0" top="158" logicalid="4" controlid="1" masterid="0" hint1="0" hint2="0" width="4128" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000800002010000088130000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_V_EQUIPMENT_ACTIVTY_DATE" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="CUSTOMER" left="7030" top="4059" logicalid="5" controlid="2" masterid="0" hint1="0" hint2="0" width="4895" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000800001f13000088130000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_CUSTOMER" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="EQUIPMENT_TYPE" left="14582" top="1060" logicalid="8" controlid="5" masterid="0" hint1="0" hint2="0" width="4815" height="4842" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="00080000cf120000ea120000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_EQUIPMENT_TYPE" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+              </dds>
+</DiagramLayout>
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>-1828</DiagramViewPortLeft>
+            <DiagramViewPortTop>-5603</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>iTankDepo</DataSourceID>
+  <Schema>
+    <xs:schema id="EquipmentActivity" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="EquipmentActivity" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="f91532a0-7181-4a35-9464-c910357f6178" msprop:CompareInfo="&lt;CompareInfo&gt;&lt;Culture&gt;en-US&lt;/Culture&gt;&lt;IgnoreCase&gt;true&lt;/IgnoreCase&gt;&lt;IgnoreKanaType&gt;true&lt;/IgnoreKanaType&gt;&lt;IgnoreWidth&gt;true&lt;/IgnoreWidth&gt;&lt;/CompareInfo&gt;">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_V_EQUIPMENT_ACTIVTY_DATE" msprop:FriendlyName="V_EQUIPMENT_ACTIVTY_DATE" msprop:DbSchemaName="dbo" msprop:DbTableName="V_EQUIPMENT_ACTIVTY_DATE" msprop:design-time-name="37d4dd65-7889-4d5b-b6a0-4ec45e6e9c06" msprop:TableType="View" msprop:stats_RowCount="5073">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="CSTMR_ID" msprop:stats_StDevWidth="0.3588467" msprop:stats_UniqueValuePercent="100" msprop:FriendlyName="CSTMR_ID" msprop:design-time-name="3592da23-95e1-464a-b98e-97bca6e9c3c9" msprop:stats_MaxWidth="3" msprop:stats_UniqueValueCount="5073" msprop:stats_AvgWidth="2.151784" msprop:DbColumnName="CSTMR_ID" type="xs:long" />
+                  <xs:element name="CSTMR_CD" msdata:ReadOnly="true" msprop:stats_StDevWidth="1.61558" msprop:stats_UniqueValuePercent="1" msprop:FriendlyName="CSTMR_CD" msprop:design-time-name="08edc74c-6de3-4062-9e1b-66def7f727bf" msprop:stats_MaxWidth="9" msprop:stats_UniqueValueCount="71" msprop:stats_AvgWidth="5.926276" msprop:DbColumnName="CSTMR_CD" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="9" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="EQPMNT_TYP_ID" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="EQPMNT_TYP_ID" msprop:design-time-name="1363ff05-9b65-461b-8b9e-befe7e27967a" msprop:stats_MaxWidth="1" msprop:stats_UniqueValueCount="8" msprop:stats_AvgWidth="1" msprop:DbColumnName="EQPMNT_TYP_ID" type="xs:long" minOccurs="0" />
+                  <xs:element name="EQPMNT_TYP_CD" msdata:ReadOnly="true" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="EQPMNT_TYP_CD" msprop:design-time-name="793192d9-999b-4341-979d-21be84523ff6" msprop:stats_MaxWidth="3" msprop:stats_UniqueValueCount="8" msprop:stats_AvgWidth="3" msprop:DbColumnName="EQPMNT_TYP_CD" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="3" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ACTVTY_DT" msprop:FriendlyName="ACTVTY_DT" msprop:DbColumnName="ACTVTY_DT" msprop:stats_UniqueValuePercent="10" msprop:design-time-name="c941d5c9-e836-4cb6-a76b-8550d6e70fbf" msprop:stats_UniqueValueCount="524" type="xs:dateTime" />
+                  <xs:element name="Received" msprop:stats_StDevWidth="0.1789584" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Received" msprop:design-time-name="58c46ea4-5ebe-4bc1-a8c0-8a92b2ca11f7" msprop:stats_MaxWidth="2" msprop:stats_UniqueValueCount="31" msprop:stats_AvgWidth="1.033116" msprop:DbColumnName="Received" type="xs:int" minOccurs="0" />
+                  <xs:element name="Released" msprop:stats_StDevWidth="0.1815094" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Released" msprop:design-time-name="f8bdd660-908d-4178-8dc1-41eb40650714" msprop:stats_MaxWidth="2" msprop:stats_UniqueValueCount="32" msprop:stats_AvgWidth="1.034102" msprop:DbColumnName="Released" type="xs:int" minOccurs="0" />
+                  <xs:element name="Heated" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Heated" msprop:design-time-name="a1d20b12-b99c-4f1f-8df9-b6813235b42a" msprop:stats_MaxWidth="1" msprop:stats_UniqueValueCount="3" msprop:stats_AvgWidth="1" msprop:DbColumnName="Heated" type="xs:int" minOccurs="0" />
+                  <xs:element name="Cleaned" msprop:stats_StDevWidth="0.145013" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Cleaned" msprop:design-time-name="93b9800c-1dac-4939-8b66-851170618d94" msprop:stats_MaxWidth="2" msprop:stats_UniqueValueCount="25" msprop:stats_AvgWidth="1.021486" msprop:DbColumnName="Cleaned" type="xs:int" minOccurs="0" />
+                  <xs:element name="Inspected" msprop:stats_StDevWidth="0.148227" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Inspected" msprop:design-time-name="b1bb3461-acdf-442c-bf77-2e24f7c3b4c7" msprop:stats_MaxWidth="2" msprop:stats_UniqueValueCount="19" msprop:stats_AvgWidth="1.022472" msprop:DbColumnName="Inspected" type="xs:int" minOccurs="0" />
+                  <xs:element name="Repaired" msprop:stats_StDevWidth="0.1688613" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Repaired" msprop:design-time-name="c72059e8-4d90-427a-be74-4c083275dcba" msprop:stats_MaxWidth="2" msprop:stats_UniqueValueCount="30" msprop:stats_AvgWidth="1.029371" msprop:DbColumnName="Repaired" type="xs:int" minOccurs="0" />
+                  <xs:element name="LeakTested" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="LeakTested" msprop:design-time-name="fe5a9bb6-4bd5-4771-a850-a47f5e5c893c" msprop:stats_MaxWidth="1" msprop:stats_UniqueValueCount="2" msprop:stats_AvgWidth="1" msprop:DbColumnName="LeakTested" type="xs:int" minOccurs="0" />
+                  <xs:element name="On_Off_Hire_Surveyed" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="On_Off_Hire_Surveyed" msprop:design-time-name="aabac7b0-4537-4bcd-a780-c429490c89e6" msprop:stats_MaxWidth="1" msprop:stats_UniqueValueCount="7" msprop:stats_AvgWidth="1" msprop:DbColumnName="On_Off_Hire_Surveyed" type="xs:int" minOccurs="0" />
+                  <xs:element name="TOTAL" msdata:ReadOnly="true" msprop:stats_StDevWidth="0.4150763" msprop:stats_UniqueValuePercent="1" msprop:FriendlyName="TOTAL" msprop:design-time-name="09fde5d6-26e3-4b4c-9695-5a1e7f768c30" msprop:stats_MaxWidth="2" msprop:stats_UniqueValueCount="65" msprop:stats_AvgWidth="1.221171" msprop:DbColumnName="TOTAL" type="xs:int" minOccurs="0" />
+                  <xs:element name="DPT_ID" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="DPT_ID" msprop:design-time-name="2d4dbefd-0cca-4439-afa1-13ff26a02ee2" msprop:stats_MaxWidth="1" msprop:stats_UniqueValueCount="1" msprop:stats_AvgWidth="1" msprop:DbColumnName="DPT_ID" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_CUSTOMER" msprop:FriendlyName="CUSTOMER" msprop:DbSchemaName="dbo" msprop:DbTableName="CUSTOMER" msprop:design-time-name="cd005f0c-e5c6-4552-a754-5b712cb84a23" msprop:TableType="Table" msprop:stats_RowCount="74">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="CSTMR_ID" msprop:stats_StDevWidth="0.491505" msprop:stats_UniqueValuePercent="100" msprop:DbDataType="bigint" msprop:FriendlyName="CSTMR_ID" msprop:design-time-name="e10c9017-b512-40d8-bc68-22fc818651cb" msprop:stats_MaxWidth="3" msprop:stats_UniqueValueCount="74" msprop:stats_AvgWidth="2.391892" msprop:DbColumnName="CSTMR_ID" type="xs:long" />
+                  <xs:element name="CSTMR_CD" msprop:stats_StDevWidth="1.723587" msprop:stats_UniqueValuePercent="100" msprop:DbDataType="varchar" msprop:FriendlyName="CSTMR_CD" msprop:design-time-name="edec1666-e1f5-4bcb-b76b-b65e1829674d" msprop:stats_MaxWidth="9" msprop:stats_UniqueValueCount="74" msprop:stats_AvgWidth="6.351351" msprop:DbColumnName="CSTMR_CD">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="9" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CSTMR_NAM" msprop:stats_StDevWidth="1.894281" msprop:stats_UniqueValuePercent="100" msprop:DbDataType="varchar" msprop:FriendlyName="CSTMR_NAM" msprop:design-time-name="b7041a8e-f056-4d19-9e30-4a33feed5fea" msprop:stats_MaxWidth="13" msprop:stats_UniqueValueCount="74" msprop:stats_AvgWidth="7.027027" msprop:DbColumnName="CSTMR_NAM">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CSTMR_CRRNCY_ID" msprop:stats_StDevWidth="0.9352412" msprop:stats_UniqueValuePercent="5" msprop:DbDataType="bigint" msprop:FriendlyName="CSTMR_CRRNCY_ID" msprop:design-time-name="ba546e9f-1b8b-4724-9f1d-1964320553ab" msprop:stats_MaxWidth="3" msprop:stats_UniqueValueCount="4" msprop:stats_AvgWidth="1.689189" msprop:DbColumnName="CSTMR_CRRNCY_ID" type="xs:long" />
+                  <xs:element name="BLLNG_TYP_ID" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="1" msprop:DbDataType="bigint" msprop:FriendlyName="BLLNG_TYP_ID" msprop:design-time-name="8dd20637-dfcc-4f7c-8787-96f9553a0913" msprop:stats_MaxWidth="1" msprop:stats_UniqueValueCount="1" msprop:stats_AvgWidth="1" msprop:DbColumnName="BLLNG_TYP_ID" type="xs:long" minOccurs="0" />
+                  <xs:element name="CNTCT_PRSN_NAM" msprop:stats_StDevWidth="3.990571" msprop:stats_UniqueValuePercent="98" msprop:DbDataType="varchar" msprop:FriendlyName="CNTCT_PRSN_NAM" msprop:design-time-name="2441542a-5ae0-466c-acdb-64b785f48f5c" msprop:stats_MaxWidth="20" msprop:stats_UniqueValueCount="73" msprop:stats_AvgWidth="11.5" msprop:DbColumnName="CNTCT_PRSN_NAM">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CNTCT_ADDRSS" msprop:stats_StDevWidth="20.96721" msprop:stats_UniqueValuePercent="100" msprop:DbDataType="varchar" msprop:FriendlyName="CNTCT_ADDRSS" msprop:design-time-name="c71673af-fe58-4deb-852a-443afb68dc48" msprop:stats_MaxWidth="127" msprop:stats_UniqueValueCount="74" msprop:stats_AvgWidth="75.78378" msprop:DbColumnName="CNTCT_ADDRSS">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1000" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="BLLNG_ADDRSS" msprop:stats_StDevWidth="17.34895" msprop:stats_UniqueValuePercent="100" msprop:DbDataType="varchar" msprop:FriendlyName="BLLNG_ADDRSS" msprop:design-time-name="75d37d00-e1c8-43a4-8ca9-5037e368361b" msprop:stats_MaxWidth="134" msprop:stats_UniqueValueCount="72" msprop:stats_AvgWidth="78.33334" msprop:DbColumnName="BLLNG_ADDRSS" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1000" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ZP_CD" msprop:stats_StDevWidth="0.7003478" msprop:stats_UniqueValuePercent="21" msprop:DbDataType="varchar" msprop:FriendlyName="ZP_CD" msprop:design-time-name="09ab5996-3231-45b1-98a2-147ef84bcfc1" msprop:stats_MaxWidth="6" msprop:stats_UniqueValueCount="16" msprop:stats_AvgWidth="4.191781" msprop:DbColumnName="ZP_CD" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="PHN_NO" msprop:stats_StDevWidth="0.4072888" msprop:stats_UniqueValuePercent="94" msprop:DbDataType="varchar" msprop:FriendlyName="PHN_NO" msprop:design-time-name="395c13f1-a9d8-41bf-bb56-b478f861f56d" msprop:stats_MaxWidth="12" msprop:stats_UniqueValueCount="68" msprop:stats_AvgWidth="11.05556" msprop:DbColumnName="PHN_NO" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="FX_NO" msprop:stats_StDevWidth="0.4571162" msprop:stats_UniqueValuePercent="97" msprop:DbDataType="varchar" msprop:FriendlyName="FX_NO" msprop:design-time-name="18db34e9-cb0a-4ad2-a87f-b6e5d1b4529e" msprop:stats_MaxWidth="12" msprop:stats_UniqueValueCount="66" msprop:stats_AvgWidth="11" msprop:DbColumnName="FX_NO" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="RPRTNG_EML_ID" msprop:stats_StDevWidth="0.5773503" msprop:stats_UniqueValuePercent="4" msprop:DbDataType="varchar" msprop:FriendlyName="RPRTNG_EML_ID" msprop:design-time-name="e0f84dec-82c4-490b-8b9b-7fc83cd1d0c4" msprop:stats_MaxWidth="32" msprop:stats_UniqueValueCount="3" msprop:stats_AvgWidth="28" msprop:DbColumnName="RPRTNG_EML_ID" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1000" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="INVCNG_EML_ID" msprop:stats_StDevWidth="0.2357023" msprop:stats_UniqueValuePercent="2" msprop:DbDataType="varchar" msprop:FriendlyName="INVCNG_EML_ID" msprop:design-time-name="b240fce6-f239-49a2-91bd-a5feeebef840" msprop:stats_MaxWidth="28" msprop:stats_UniqueValueCount="2" msprop:stats_AvgWidth="27.97222" msprop:DbColumnName="INVCNG_EML_ID" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1000" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="RPR_TCH_EML_ID" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="1" msprop:DbDataType="varchar" msprop:FriendlyName="RPR_TCH_EML_ID" msprop:design-time-name="b2ee1422-46cc-4c59-a770-8c4bf7cd6858" msprop:stats_MaxWidth="28" msprop:stats_UniqueValueCount="1" msprop:stats_AvgWidth="28" msprop:DbColumnName="RPR_TCH_EML_ID" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1000" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="BLK_EML_FRMT_ID" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="2" msprop:DbDataType="bigint" msprop:FriendlyName="BLK_EML_FRMT_ID" msprop:design-time-name="fcb7fdf6-1e63-424a-879a-51fc97722e99" msprop:stats_MaxWidth="2" msprop:stats_UniqueValueCount="2" msprop:stats_AvgWidth="2" msprop:DbColumnName="BLK_EML_FRMT_ID" type="xs:long" />
+                  <xs:element name="HYDR_AMNT_NC" msprop:stats_UniqueValuePercent="10" msprop:stats_AvgScale="0" msprop:DbDataType="numeric" msprop:FriendlyName="HYDR_AMNT_NC" msprop:design-time-name="f4ff7082-76fd-4db7-8172-368aa89912a8" msprop:stats_StDevScale="0" msprop:stats_MaxWidth="10" msprop:stats_UniqueValueCount="8" msprop:stats_StDevWidth="0.7707394" msprop:stats_MaxScale="0" msprop:stats_AvgWidth="5.851351" msprop:DbColumnName="HYDR_AMNT_NC" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="PNMTC_AMNT_NC" msprop:stats_UniqueValuePercent="8" msprop:stats_AvgScale="0" msprop:DbDataType="numeric" msprop:FriendlyName="PNMTC_AMNT_NC" msprop:design-time-name="7af3e62e-575c-4261-b35f-a4f81bd91a1f" msprop:stats_StDevScale="0" msprop:stats_MaxWidth="10" msprop:stats_UniqueValueCount="6" msprop:stats_StDevWidth="0.7643481" msprop:stats_MaxScale="0" msprop:stats_AvgWidth="5.864865" msprop:DbColumnName="PNMTC_AMNT_NC" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="LBR_RT_PR_HR_NC" msprop:stats_UniqueValuePercent="5" msprop:stats_AvgScale="0" msprop:DbDataType="numeric" msprop:FriendlyName="LBR_RT_PR_HR_NC" msprop:design-time-name="aee12891-c11f-4e21-a8f5-d4b216744b6f" msprop:stats_StDevScale="0" msprop:stats_MaxWidth="7" msprop:stats_UniqueValueCount="4" msprop:stats_StDevWidth="0.4017732" msprop:stats_MaxScale="0" msprop:stats_AvgWidth="4.945946" msprop:DbColumnName="LBR_RT_PR_HR_NC" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="LK_TST_RT_NC" msprop:stats_UniqueValuePercent="9" msprop:stats_AvgScale="0" msprop:DbDataType="numeric" msprop:FriendlyName="LK_TST_RT_NC" msprop:design-time-name="d0cfad71-ce0d-47b0-92db-6337cc854cab" msprop:stats_StDevScale="0" msprop:stats_MaxWidth="11" msprop:stats_UniqueValueCount="7" msprop:stats_StDevWidth="0.9212816" msprop:stats_MaxScale="0" msprop:stats_AvgWidth="5.797297" msprop:DbColumnName="LK_TST_RT_NC" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="SRVY_ONHR_OFFHR_RT_NC" msprop:stats_UniqueValuePercent="5" msprop:stats_AvgScale="0" msprop:DbDataType="numeric" msprop:FriendlyName="SRVY_ONHR_OFFHR_RT_NC" msprop:design-time-name="8fec8ac5-c9b5-4d57-9226-04ddd848da11" msprop:stats_StDevScale="0" msprop:stats_MaxWidth="9" msprop:stats_UniqueValueCount="4" msprop:stats_StDevWidth="1.025178" msprop:stats_MaxScale="0" msprop:stats_AvgWidth="5.410959" msprop:DbColumnName="SRVY_ONHR_OFFHR_RT_NC" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="PRDC_TST_TYP_ID" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="3" msprop:DbDataType="bigint" msprop:FriendlyName="PRDC_TST_TYP_ID" msprop:design-time-name="8a397d96-484f-4d72-a6e5-724930dc7457" msprop:stats_MaxWidth="2" msprop:stats_UniqueValueCount="2" msprop:stats_AvgWidth="2" msprop:DbColumnName="PRDC_TST_TYP_ID" type="xs:long" minOccurs="0" />
+                  <xs:element name="VLDTY_PRD_TST_YRS" msprop:stats_StDevWidth="0.8412862" msprop:stats_UniqueValuePercent="6" msprop:DbDataType="varchar" msprop:FriendlyName="VLDTY_PRD_TST_YRS" msprop:design-time-name="34a4350f-bc9b-47ca-8a67-d896a344b60c" msprop:stats_MaxWidth="4" msprop:stats_UniqueValueCount="5" msprop:stats_AvgWidth="3.712329" msprop:DbColumnName="VLDTY_PRD_TST_YRS" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MIN_HTNG_RT_NC" msprop:stats_UniqueValuePercent="10" msprop:stats_AvgScale="0" msprop:DbDataType="numeric" msprop:FriendlyName="MIN_HTNG_RT_NC" msprop:design-time-name="aec70564-6218-4aba-914a-b3ea7cc96a4e" msprop:stats_StDevScale="0" msprop:stats_MaxWidth="7" msprop:stats_UniqueValueCount="8" msprop:stats_StDevWidth="0.6340925" msprop:stats_MaxScale="0" msprop:stats_AvgWidth="4.189189" msprop:DbColumnName="MIN_HTNG_RT_NC" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="MIN_HTNG_PRD_NC" msprop:stats_UniqueValuePercent="6" msprop:stats_AvgScale="0" msprop:DbDataType="numeric" msprop:FriendlyName="MIN_HTNG_PRD_NC" msprop:design-time-name="3ebc8193-f6f7-45e3-a92e-e040c640e6ec" msprop:stats_StDevScale="0" msprop:stats_MaxWidth="7" msprop:stats_UniqueValueCount="5" msprop:stats_StDevWidth="0.3487429" msprop:stats_MaxScale="0" msprop:stats_AvgWidth="4.040541" msprop:DbColumnName="MIN_HTNG_PRD_NC" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="HRLY_CHRG_NC" msprop:stats_UniqueValuePercent="9" msprop:stats_AvgScale="0" msprop:DbDataType="numeric" msprop:FriendlyName="HRLY_CHRG_NC" msprop:design-time-name="4dd0e640-36ac-48de-b3c4-ad5f6ddf3b73" msprop:stats_StDevScale="0" msprop:stats_MaxWidth="6" msprop:stats_UniqueValueCount="7" msprop:stats_StDevWidth="0.5963296" msprop:stats_MaxScale="0" msprop:stats_AvgWidth="4.202703" msprop:DbColumnName="HRLY_CHRG_NC" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="CHK_DGT_VLDTN_BT" msprop:stats_UniqueValuePercent="2" msprop:DbDataType="bit" msprop:DbColumnName="CHK_DGT_VLDTN_BT" msprop:design-time-name="65d392b0-e829-49e6-b4d1-2def4b49c395" msprop:FriendlyName="CHK_DGT_VLDTN_BT" msprop:stats_UniqueValueCount="2" type="xs:boolean" />
+                  <xs:element name="TRNSPRTTN_BT" msprop:stats_UniqueValuePercent="2" msprop:DbDataType="bit" msprop:DbColumnName="TRNSPRTTN_BT" msprop:design-time-name="e41930f3-d655-4414-bf2a-b23757cb279b" msprop:FriendlyName="TRNSPRTTN_BT" msprop:stats_UniqueValueCount="2" type="xs:boolean" />
+                  <xs:element name="RNTL_BT" msprop:stats_UniqueValuePercent="2" msprop:DbDataType="bit" msprop:DbColumnName="RNTL_BT" msprop:design-time-name="94d03630-c30d-4257-bbbc-a6f0a6e31ae8" msprop:FriendlyName="RNTL_BT" msprop:stats_UniqueValueCount="2" type="xs:boolean" />
+                  <xs:element name="CRTD_BY" msprop:stats_StDevWidth="0.9647623" msprop:stats_UniqueValuePercent="5" msprop:DbDataType="varchar" msprop:FriendlyName="CRTD_BY" msprop:design-time-name="9173b1a0-86ea-4cf5-95ee-f34d77f7cdd9" msprop:stats_MaxWidth="10" msprop:stats_UniqueValueCount="4" msprop:stats_AvgWidth="8.972973" msprop:DbColumnName="CRTD_BY">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CRTD_DT" msprop:stats_UniqueValuePercent="100" msprop:DbDataType="datetime" msprop:DbColumnName="CRTD_DT" msprop:design-time-name="ea427f0a-8866-4cdb-9b75-fb4013b55f32" msprop:FriendlyName="CRTD_DT" msprop:stats_UniqueValueCount="74" type="xs:dateTime" />
+                  <xs:element name="MDFD_BY" msprop:stats_StDevWidth="2.09745" msprop:stats_UniqueValuePercent="5" msprop:DbDataType="varchar" msprop:FriendlyName="MDFD_BY" msprop:design-time-name="5aa5a5bf-a3fb-4a6e-832d-076f6fe618de" msprop:stats_MaxWidth="10" msprop:stats_UniqueValueCount="4" msprop:stats_AvgWidth="7.635135" msprop:DbColumnName="MDFD_BY">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MDFD_DT" msprop:stats_UniqueValuePercent="100" msprop:DbDataType="datetime" msprop:DbColumnName="MDFD_DT" msprop:design-time-name="a5d9378f-101f-49ad-aacc-babac047183e" msprop:FriendlyName="MDFD_DT" msprop:stats_UniqueValueCount="74" type="xs:dateTime" />
+                  <xs:element name="ACTV_BT" msprop:stats_UniqueValuePercent="2" msprop:DbDataType="bit" msprop:DbColumnName="ACTV_BT" msprop:design-time-name="19ffd5c6-5d2e-4c58-bf52-568e0ad965e8" msprop:FriendlyName="ACTV_BT" msprop:stats_UniqueValueCount="2" type="xs:boolean" />
+                  <xs:element name="DPT_ID" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="1" msprop:DbDataType="int" msprop:FriendlyName="DPT_ID" msprop:design-time-name="c997e00c-ceb9-4763-9019-90c0d704fe4f" msprop:stats_MaxWidth="1" msprop:stats_UniqueValueCount="1" msprop:stats_AvgWidth="1" msprop:DbColumnName="DPT_ID" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_EQUIPMENT_TYPE" msprop:FriendlyName="EQUIPMENT_TYPE" msprop:DbSchemaName="dbo" msprop:DbTableName="EQUIPMENT_TYPE" msprop:design-time-name="ee2c591c-92d6-4024-9d47-8871703c35aa" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="EQPMNT_TYP_ID" msprop:FriendlyName="EQPMNT_TYP_ID" msprop:DbColumnName="EQPMNT_TYP_ID" msprop:design-time-name="ce61cb28-e281-42d1-9a6a-20acba150d54" type="xs:long" />
+                  <xs:element name="EQPMNT_TYP_CD" msprop:FriendlyName="EQPMNT_TYP_CD" msprop:DbColumnName="EQPMNT_TYP_CD" msprop:design-time-name="df078e6f-4c23-4d0c-b0b3-6fdfd4f761f6">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="3" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="EQPMNT_TYP_DSCRPTN_VC" msprop:FriendlyName="EQPMNT_TYP_DSCRPTN_VC" msprop:DbColumnName="EQPMNT_TYP_DSCRPTN_VC" msprop:design-time-name="68d7f1ba-06e7-4b01-b9d6-59ee717ed768">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CRTD_BY" msprop:FriendlyName="CRTD_BY" msprop:DbColumnName="CRTD_BY" msprop:design-time-name="822db85b-4e84-4a76-8543-e73d85952f8a" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CRTD_DT" msprop:FriendlyName="CRTD_DT" msprop:DbColumnName="CRTD_DT" msprop:design-time-name="6604cb2c-eeec-427e-89b2-90a8366b02ef" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="MDFD_BY" msprop:FriendlyName="MDFD_BY" msprop:DbColumnName="MDFD_BY" msprop:design-time-name="795946bf-09f4-4108-b3d7-90f8effab29a" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MDFD_DT" msprop:FriendlyName="MDFD_DT" msprop:DbColumnName="MDFD_DT" msprop:design-time-name="3732d699-554f-4c29-bc8e-3c0afbcf10d1" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="ACTV_BT" msprop:FriendlyName="ACTV_BT" msprop:DbColumnName="ACTV_BT" msprop:design-time-name="de734e0b-6ecc-4afa-a50a-73489e268449" type="xs:boolean" />
+                  <xs:element name="DPT_ID" msprop:FriendlyName="DPT_ID" msprop:DbColumnName="DPT_ID" msprop:design-time-name="52f8a107-de16-4ea6-a557-03532e73d073" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msprop:IsLogical="True" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_V_EQUIPMENT_ACTIVTY_DATE" />
+          <xs:field xpath="CSTMR_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_CUSTOMER_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_CUSTOMER" />
+          <xs:field xpath="CSTMR_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_EQUIPMENT_TYPE_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_EQUIPMENT_TYPE" />
+          <xs:field xpath="EQPMNT_TYP_ID" />
+        </xs:unique>
+      </xs:element>
+    </xs:schema>
+    <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+  </Schema>
+</DataSourceView>

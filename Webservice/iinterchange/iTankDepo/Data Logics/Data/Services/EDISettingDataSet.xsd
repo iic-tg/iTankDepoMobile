@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EDISettingDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="iTankDepoConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="iTankDepoConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.iInterchange.iTankDepo.Data.My.MySettings.GlobalReference.Default.iTankDepoConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="EDISettingDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:EnforceConstraints="False" msprop:Generator_DataSetName="EDISettingDataSet" msprop:Generator_UserDSName="EDISettingDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="V_EDI_SETTING_UI" msprop:Generator_TableClassName="V_EDI_SETTING_UIDataTable" msprop:Generator_TableVarName="tableV_EDI_SETTING_UI" msprop:Generator_TablePropName="V_EDI_SETTING_UI" msprop:Generator_RowDeletingName="V_EDI_SETTING_UIRowDeleting" msprop:Generator_RowChangingName="V_EDI_SETTING_UIRowChanging" msprop:Generator_RowEvHandlerName="V_EDI_SETTING_UIRowChangeEventHandler" msprop:Generator_RowDeletedName="V_EDI_SETTING_UIRowDeleted" msprop:Generator_UserTableName="V_EDI_SETTING_UI" msprop:Generator_RowChangedName="V_EDI_SETTING_UIRowChanged" msprop:Generator_RowEvArgName="V_EDI_SETTING_UIRowChangeEvent" msprop:Generator_RowClassName="V_EDI_SETTING_UIRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CSTMR_EDI_STTNG_BIN" msprop:Generator_ColumnVarNameInTable="columnCSTMR_EDI_STTNG_BIN" msprop:Generator_ColumnPropNameInRow="CSTMR_EDI_STTNG_BIN" msprop:Generator_ColumnPropNameInTable="CSTMR_EDI_STTNG_BINColumn" msprop:Generator_UserColumnName="CSTMR_EDI_STTNG_BIN" type="xs:long" />
+              <xs:element name="CSTMR_ID" msprop:Generator_ColumnVarNameInTable="columnCSTMR_ID" msprop:Generator_ColumnPropNameInRow="CSTMR_ID" msprop:Generator_ColumnPropNameInTable="CSTMR_IDColumn" msprop:Generator_UserColumnName="CSTMR_ID" type="xs:long" />
+              <xs:element name="CSTMR_CD" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCSTMR_CD" msprop:Generator_ColumnPropNameInRow="CSTMR_CD" msprop:Generator_ColumnPropNameInTable="CSTMR_CDColumn" msprop:Generator_UserColumnName="CSTMR_CD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EDI_FRMT" msprop:Generator_ColumnVarNameInTable="columnEDI_FRMT" msprop:Generator_ColumnPropNameInRow="EDI_FRMT" msprop:Generator_ColumnPropNameInTable="EDI_FRMTColumn" msprop:Generator_UserColumnName="EDI_FRMT" type="xs:int" />
+              <xs:element name="EDI_FRMT_CD" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEDI_FRMT_CD" msprop:Generator_ColumnPropNameInRow="EDI_FRMT_CD" msprop:Generator_ColumnPropNameInTable="EDI_FRMT_CDColumn" msprop:Generator_UserColumnName="EDI_FRMT_CD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TO_EML_ID" msprop:Generator_ColumnVarNameInTable="columnTO_EML_ID" msprop:Generator_ColumnPropNameInRow="TO_EML_ID" msprop:Generator_ColumnPropNameInTable="TO_EML_IDColumn" msprop:Generator_UserColumnName="TO_EML_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GNRTN_FRMT" msprop:Generator_ColumnVarNameInTable="columnGNRTN_FRMT" msprop:Generator_ColumnPropNameInRow="GNRTN_FRMT" msprop:Generator_ColumnPropNameInTable="GNRTN_FRMTColumn" msprop:Generator_UserColumnName="GNRTN_FRMT" type="xs:int" />
+              <xs:element name="GNRTN_FRMT_CD" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnGNRTN_FRMT_CD" msprop:Generator_ColumnPropNameInRow="GNRTN_FRMT_CD" msprop:Generator_ColumnPropNameInTable="GNRTN_FRMT_CDColumn" msprop:Generator_UserColumnName="GNRTN_FRMT_CD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GNRTN_TM" msprop:Generator_ColumnVarNameInTable="columnGNRTN_TM" msprop:Generator_ColumnPropNameInRow="GNRTN_TM" msprop:Generator_ColumnPropNameInTable="GNRTN_TMColumn" msprop:Generator_UserColumnName="GNRTN_TM">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DPT_ID" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDPT_ID" msprop:Generator_ColumnPropNameInRow="DPT_ID" msprop:Generator_ColumnPropNameInTable="DPT_IDColumn" msprop:Generator_UserColumnName="DPT_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="DPT_CD" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDPT_CD" msprop:Generator_ColumnPropNameInRow="DPT_CD" msprop:Generator_ColumnPropNameInTable="DPT_CDColumn" msprop:Generator_UserColumnName="DPT_CD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LST_RN" msprop:Generator_ColumnVarNameInTable="columnLST_RN" msprop:Generator_ColumnPropNameInRow="LST_RN" msprop:Generator_ColumnPropNameInTable="LST_RNColumn" msprop:Generator_UserColumnName="LST_RN" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NXT_RN_TM" msprop:Generator_ColumnVarNameInTable="columnNXT_RN_TM" msprop:Generator_ColumnPropNameInRow="NXT_RN_TM" msprop:Generator_ColumnPropNameInTable="NXT_RN_TMColumn" msprop:Generator_UserColumnName="NXT_RN_TM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CUSTOMER_EDI_SETTING" msprop:Generator_TableClassName="CUSTOMER_EDI_SETTINGDataTable" msprop:Generator_TableVarName="tableCUSTOMER_EDI_SETTING" msprop:Generator_RowChangedName="CUSTOMER_EDI_SETTINGRowChanged" msprop:Generator_TablePropName="CUSTOMER_EDI_SETTING" msprop:Generator_RowDeletingName="CUSTOMER_EDI_SETTINGRowDeleting" msprop:Generator_RowChangingName="CUSTOMER_EDI_SETTINGRowChanging" msprop:Generator_RowEvHandlerName="CUSTOMER_EDI_SETTINGRowChangeEventHandler" msprop:Generator_RowDeletedName="CUSTOMER_EDI_SETTINGRowDeleted" msprop:Generator_RowClassName="CUSTOMER_EDI_SETTINGRow" msprop:Generator_UserTableName="CUSTOMER_EDI_SETTING" msprop:Generator_RowEvArgName="CUSTOMER_EDI_SETTINGRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CSTMR_EDI_STTNG_BIN" msprop:Generator_ColumnVarNameInTable="columnCSTMR_EDI_STTNG_BIN" msprop:Generator_ColumnPropNameInRow="CSTMR_EDI_STTNG_BIN" msprop:Generator_ColumnPropNameInTable="CSTMR_EDI_STTNG_BINColumn" msprop:Generator_UserColumnName="CSTMR_EDI_STTNG_BIN" type="xs:long" />
+              <xs:element name="CSTMR_ID" msprop:Generator_ColumnVarNameInTable="columnCSTMR_ID" msprop:Generator_ColumnPropNameInRow="CSTMR_ID" msprop:Generator_ColumnPropNameInTable="CSTMR_IDColumn" msprop:Generator_UserColumnName="CSTMR_ID" type="xs:long" />
+              <xs:element name="EDI_FRMT" msprop:Generator_ColumnVarNameInTable="columnEDI_FRMT" msprop:Generator_ColumnPropNameInRow="EDI_FRMT" msprop:Generator_ColumnPropNameInTable="EDI_FRMTColumn" msprop:Generator_UserColumnName="EDI_FRMT" type="xs:int" />
+              <xs:element name="TO_EML_ID" msprop:Generator_ColumnVarNameInTable="columnTO_EML_ID" msprop:Generator_ColumnPropNameInRow="TO_EML_ID" msprop:Generator_ColumnPropNameInTable="TO_EML_IDColumn" msprop:Generator_UserColumnName="TO_EML_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GNRTN_FRMT" msprop:Generator_ColumnVarNameInTable="columnGNRTN_FRMT" msprop:Generator_ColumnPropNameInRow="GNRTN_FRMT" msprop:Generator_ColumnPropNameInTable="GNRTN_FRMTColumn" msprop:Generator_UserColumnName="GNRTN_FRMT" type="xs:int" />
+              <xs:element name="GNRTN_TM" msprop:Generator_ColumnVarNameInTable="columnGNRTN_TM" msprop:Generator_ColumnPropNameInRow="GNRTN_TM" msprop:Generator_ColumnPropNameInTable="GNRTN_TMColumn" msprop:Generator_UserColumnName="GNRTN_TM">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LST_RN" msprop:Generator_ColumnVarNameInTable="columnLST_RN" msprop:Generator_ColumnPropNameInRow="LST_RN" msprop:Generator_ColumnPropNameInTable="LST_RNColumn" msprop:Generator_UserColumnName="LST_RN" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NXT_RN_TM" msprop:Generator_ColumnVarNameInTable="columnNXT_RN_TM" msprop:Generator_ColumnPropNameInRow="NXT_RN_TM" msprop:Generator_ColumnPropNameInTable="NXT_RN_TMColumn" msprop:Generator_UserColumnName="NXT_RN_TM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//V_EDI_SETTING_UI" />
+      <xs:field xpath="CSTMR_EDI_STTNG_BIN" />
+    </xs:unique>
+    <xs:unique name="CUSTOMER_EDI_SETTING_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//CUSTOMER_EDI_SETTING" />
+      <xs:field xpath="CSTMR_EDI_STTNG_BIN" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

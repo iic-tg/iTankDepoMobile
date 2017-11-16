@@ -1,0 +1,1289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/common_toolbar"
+            android:id="@+id/toolbar"></include>
+        <RelativeLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+            <include layout="@layout/heating_footer" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:layout_above="@+id/footer"
+            android:layout_below="@+id/toolbar">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:background="@color/toolbar"
+                    android:weightSum="1">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="2"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="0.65">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:id="@+id/text1"
+                            android:focusable="false"
+                            android:gravity="center|left"
+                            android:textColor="@color/Title"
+                            android:text="text1"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:focusable="false"
+                            android:layout_gravity="center|left"
+                            android:id="@+id/text2"
+                            android:textColor="@color/Title"
+                            android:text="Cleaning Ref No"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="66dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:src="@mipmap/ic_info_leaktest"
+                            android:focusable="false"
+                            android:textColor="@color/Title"
+                            android:id="@+id/text4"
+                            android:text="08:15 am"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@+id/text_layout"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="Previous Cargo II "
+                            android:id="@+id/tv_preCargo2"
+                            android:textColor="@color/tv_color"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="2dp"
+                            android:id="@+id/tv_preCargo3"
+                            android:text="Previous Cargo III"
+                            android:textColor="@color/tv_color"
+                            />
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <!-- <EditText
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:padding="5dp"
+                                 android:lines="1"
+                                 android:singleLine="true"
+                                 android:paddingRight="10dp"
+                                 android:layout_marginRight="4dp"
+                                 android:textColor="@color/list_text"
+                                 android:focusable="false"
+                                 android:id="@+id/ed_startDate"
+                                 android:hint=""
+                                 />
+                             <ImageView
+                                 android:layout_width="30dp"
+                                 android:layout_height="30dp"
+                                 android:layout_marginTop="2dp"
+                                 android:id="@+id/im_startDate"
+                                 android:src="@mipmap/ic_calender"
+                                 android:layout_alignParentRight="true"/>-->
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/list_text"
+                                android:id="@+id/sp_previ_cargo2"
+                                style="@style/Widget.AppCompat.Spinner.Underlined"
+                                ></Spinner>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+
+                            <!-- <ImageView
+                                 android:layout_width="30dp"
+                                 android:layout_height="30dp"
+                                 android:layout_marginTop="2dp"
+                                 android:id="@+id/im_startTime"
+                                 android:src="@mipmap/ic_time"
+                                 android:layout_alignParentRight="true"/>
+
+                             <EditText
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:padding="5dp"
+                                 android:lines="1"
+                                 android:singleLine="true"
+                                 android:paddingRight="10dp"
+                                 android:focusable="false"
+                                 android:id="@+id/ed_startTime"
+                                 android:textColor="@color/list_text"
+                                 android:hint=""
+                                 android:layout_alignParentTop="true"
+                                 android:layout_alignParentLeft="true"
+                                 android:layout_alignParentStart="true" />-->
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/list_text"
+                                android:id="@+id/sp_previ_cargo3"
+                                style="@style/Widget.AppCompat.Spinner.Underlined"></Spinner>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="Original Cleaning Date *"
+                            android:layout_marginLeft="2dp"
+                            android:id="@+id/tv_org_cleanDate"
+                            android:layout_weight="1"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="2dp"
+                            android:id="@+id/tv_lat_cleanDate"
+                            android:text="Latest Cleaning Date *"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:focusable="false"
+                                android:id="@+id/ed_org_cleanDate"
+                                android:textColor="@color/list_text"
+                                android:layout_marginRight="4dp"
+                                android:hint=""
+                                />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@mipmap/ic_calender"
+                                android:id="@+id/im_org_cleanDate"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:focusable="false"
+                                android:textColor="@color/list_text"
+                                android:id="@+id/ed_lat_cleanDate"
+                                android:layout_marginRight="4dp"
+                                android:hint=""
+                                />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@mipmap/ic_calender"
+                                android:id="@+id/im_lat_cleanDate"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        android:weightSum="2">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="Cleaned For "
+                            android:id="@+id/tv_cleanFor"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"
+                            android:textColor="@color/tv_color"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="2dp"
+                            android:id="@+id/tv_locationOfClean"
+                            android:text="Location of Cleaning"
+                            android:textColor="@color/tv_color"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:layout_marginRight="4dp"
+                                android:textColor="@color/list_text"
+                                android:focusable="false"
+                                android:id="@+id/ed_cleanFor"
+                                android:hint=""
+                                />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:visibility="gone"
+                                android:layout_marginTop="2dp"
+                                android:id="@+id/im_startDate"
+                                android:src="@mipmap/ic_calender"
+                                android:layout_alignParentRight="true"/>
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:id="@+id/im_startTime"
+                                android:src="@mipmap/ic_time"
+                                android:visibility="gone"
+                                android:layout_alignParentRight="true"/>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:focusable="false"
+                                android:id="@+id/ed_locationOfclean"
+                                android:textColor="@color/list_text"
+                                android:hint=""
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="Clean Status 1"
+                            android:layout_marginLeft="2dp"
+                            android:id="@+id/tv_endDate"
+                            android:layout_weight="1"
+                            android:textColor="@color/tv_color"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="2dp"
+                            android:id="@+id/tv_endTime"
+                            android:text="Clean Status 2 "
+                            android:textColor="@color/tv_color"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/sp_cleanStatus1"
+                                android:textColor="@color/list_text"
+                                style="@style/Widget.AppCompat.Spinner.Underlined"
+                                ></Spinner>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/sp_cleanStatus2"
+                                android:textColor="@color/list_text"
+                                style="@style/Widget.AppCompat.Spinner.Underlined"
+                                ></Spinner>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="Condition "
+                            android:layout_marginLeft="2dp"
+                            android:id="@+id/tv_cleaning_startDate"
+                            android:layout_weight="1"
+                            android:textColor="@color/tv_color"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="2dp"
+                            android:id="@+id/tv_cleaning_endTime"
+                            android:text="Value and Fitting Condition "
+                            android:textColor="@color/tv_color"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/sp_condition"
+                                android:textColor="@color/list_text"
+                                style="@style/Widget.AppCompat.Spinner.Underlined"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"></Spinner>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/sp_valueandFitting"
+                                android:textColor="@color/list_text"
+                                style="@style/Widget.AppCompat.Spinner.Underlined"
+                                ></Spinner>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="2dp"
+                            android:text="Man Lid Seal No"
+                            android:textColor="@color/tv_color"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="Top Discharge/ Airline Seal No "
+                            android:id="@+id/tv_remark"
+                            android:textColor="@color/tv_color"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:layout_marginRight="4dp"
+                                android:textColor="@color/list_text"
+                                android:focusable="false"
+                                android:id="@+id/ed_lidSealNo"
+                                android:hint=""
+                                />
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:focusable="false"
+                                android:id="@+id/ed_airlineSealNo"
+                                android:textColor="@color/list_text"
+                                android:hint=""
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="@color/tv_color"
+                            android:layout_marginLeft="2dp"
+                            android:text="Bottom Outlet Seal No"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/tv_color"
+                            android:text="Foot Value Seat "
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:layout_marginRight="4dp"
+                                android:textColor="@color/list_text"
+                                android:focusable="false"
+                                android:id="@+id/ed_bottomOutlet"
+                                android:hint=""
+                                />
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:focusable="false"
+                                android:id="@+id/ed_footValue"
+                                android:textColor="@color/list_text"
+                                android:hint=""
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="2dp"
+                            android:textColor="@color/tv_color"
+                            android:text="FV Forty O Ring"/>
+
+                        <TextView
+                            android:textColor="@color/tv_color"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="Manlid Gasket "
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:layout_marginRight="4dp"
+                                android:textColor="@color/list_text"
+                                android:focusable="false"
+                                android:id="@+id/ed_fortyOring"
+                                android:hint=""
+                                />
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:focusable="false"
+                                android:id="@+id/ed_manlidGasket"
+                                android:textColor="@color/list_text"
+                                android:hint=""
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="@color/tv_color"
+                            android:layout_marginLeft="2dp"
+                            android:text="Relief Value Bursting Disc"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:textColor="@color/tv_color"
+                            android:layout_height="match_parent"
+                            android:text="Shyphon Tube "
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:layout_marginRight="4dp"
+                                android:textColor="@color/list_text"
+                                android:focusable="false"
+                                android:id="@+id/ed_relief_valueDisc"
+                                android:hint=""
+                                />
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:focusable="false"
+                                android:id="@+id/ed_shyphonTube"
+                                android:textColor="@color/list_text"
+                                android:hint=""
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="@color/tv_color"
+                            android:layout_marginLeft="2dp"
+                            android:text="Airline Value"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="Shell/D/En "
+                            android:textColor="@color/tv_color"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:layout_marginRight="4dp"
+                                android:textColor="@color/list_text"
+                                android:focusable="false"
+                                android:id="@+id/ed_airlineValue"
+                                android:hint=""
+                                />
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:focusable="false"
+                                android:id="@+id/ed_shell"
+                                android:textColor="@color/list_text"
+                                android:hint=""
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="@color/tv_color"
+                            android:layout_marginLeft="2dp"
+                            android:text="Top Discharge Value"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="O2 "
+                            android:textColor="@color/tv_color"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:layout_marginRight="4dp"
+                                android:textColor="@color/list_text"
+                                android:focusable="false"
+                                android:id="@+id/ed_dischargeValue"
+                                android:hint=""
+                                />
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:focusable="false"
+                                android:id="@+id/ed_o2"
+                                android:textColor="@color/list_text"
+                                android:hint=""
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="@color/tv_color"
+                            android:layout_marginLeft="2dp"
+                            android:text="LEL"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/tv_color"
+                            android:text="H2S "
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:layout_marginRight="4dp"
+                                android:textColor="@color/list_text"
+                                android:focusable="false"
+                                android:id="@+id/ed_lel"
+                                android:hint=""
+                                />
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:focusable="false"
+                                android:id="@+id/ed_h2s"
+                                android:textColor="@color/list_text"
+                                android:hint=""
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="@color/tv_color"
+                            android:layout_marginLeft="2dp"
+                            android:text="CO"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="PID "
+                            android:textColor="@color/tv_color"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:layout_marginRight="4dp"
+                                android:textColor="@color/list_text"
+                                android:focusable="false"
+                                android:id="@+id/ed_co"
+                                android:hint=""
+                                />
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:focusable="false"
+                                android:id="@+id/ed_pid"
+                                android:textColor="@color/list_text"
+                                android:hint=""
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="@color/tv_color"
+                            android:layout_marginLeft="2dp"
+                            android:text="Leak Test Date"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/tv_color"
+                            android:text="Leak Test "
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:layout_marginRight="4dp"
+                                android:textColor="@color/list_text"
+                                android:focusable="false"
+                                android:id="@+id/ed_leakTestDate"
+                                android:hint=""
+                                />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@mipmap/ic_calender"
+                                android:id="@+id/im_leakTestDate"
+                                android:layout_alignParentRight="true"/>
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:focusable="false"
+                                android:id="@+id/ed_leakTest"
+                                android:textColor="@color/list_text"
+                                android:hint=""
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+    <!--  <include
+          layout="@layout/pluse_button"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />-->
+
+    <!--<include layout="@layout/navigation"></include>-->
+
+</android.support.v4.widget.DrawerLayout>

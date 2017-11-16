@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AdditionalChargeRateDataSet" targetNamespace="http://tempuri.org/AdditionalChargeRateDataSet.xsd" xmlns:mstns="http://tempuri.org/AdditionalChargeRateDataSet.xsd" xmlns="http://tempuri.org/AdditionalChargeRateDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AdditionalChargeRateDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:EnforceConstraints="False" msprop:EnableTableAdapterManager="False" msprop:Generator_DataSetName="AdditionalChargeRateDataSet" msprop:Generator_UserDSName="AdditionalChargeRateDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="V_ADDITIONAL_CHARGE_RATE" msprop:Generator_TableClassName="V_ADDITIONAL_CHARGE_RATEDataTable" msprop:Generator_TableVarName="tableV_ADDITIONAL_CHARGE_RATE" msprop:Generator_TablePropName="V_ADDITIONAL_CHARGE_RATE" msprop:Generator_RowDeletingName="V_ADDITIONAL_CHARGE_RATERowDeleting" msprop:Generator_RowChangingName="V_ADDITIONAL_CHARGE_RATERowChanging" msprop:Generator_RowEvHandlerName="V_ADDITIONAL_CHARGE_RATERowChangeEventHandler" msprop:Generator_RowDeletedName="V_ADDITIONAL_CHARGE_RATERowDeleted" msprop:Generator_UserTableName="V_ADDITIONAL_CHARGE_RATE" msprop:Generator_RowChangedName="V_ADDITIONAL_CHARGE_RATERowChanged" msprop:Generator_RowEvArgName="V_ADDITIONAL_CHARGE_RATERowChangeEvent" msprop:Generator_RowClassName="V_ADDITIONAL_CHARGE_RATERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ADDTNL_CHRG_RT_ID" msprop:Generator_ColumnVarNameInTable="columnADDTNL_CHRG_RT_ID" msprop:Generator_ColumnPropNameInRow="ADDTNL_CHRG_RT_ID" msprop:Generator_ColumnPropNameInTable="ADDTNL_CHRG_RT_IDColumn" msprop:Generator_UserColumnName="ADDTNL_CHRG_RT_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="OPRTN_TYP_ID" msprop:Generator_ColumnVarNameInTable="columnOPRTN_TYP_ID" msprop:Generator_ColumnPropNameInRow="OPRTN_TYP_ID" msprop:Generator_ColumnPropNameInTable="OPRTN_TYP_IDColumn" msprop:Generator_UserColumnName="OPRTN_TYP_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="OPRTN_TYP_CD" msprop:Generator_ColumnVarNameInTable="columnOPRTN_TYP_CD" msprop:Generator_ColumnPropNameInRow="OPRTN_TYP_CD" msprop:Generator_ColumnPropNameInTable="OPRTN_TYP_CDColumn" msprop:Generator_UserColumnName="OPRTN_TYP_CD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ADDTNL_CHRG_RT_CD" msprop:Generator_ColumnVarNameInTable="columnADDTNL_CHRG_RT_CD" msprop:Generator_ColumnPropNameInRow="ADDTNL_CHRG_RT_CD" msprop:Generator_ColumnPropNameInTable="ADDTNL_CHRG_RT_CDColumn" msprop:Generator_UserColumnName="ADDTNL_CHRG_RT_CD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ADDTNL_CHRG_RT_DSCRPTN_VC" msprop:Generator_ColumnVarNameInTable="columnADDTNL_CHRG_RT_DSCRPTN_VC" msprop:Generator_ColumnPropNameInRow="ADDTNL_CHRG_RT_DSCRPTN_VC" msprop:Generator_ColumnPropNameInTable="ADDTNL_CHRG_RT_DSCRPTN_VCColumn" msprop:Generator_UserColumnName="ADDTNL_CHRG_RT_DSCRPTN_VC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RT_NC" msprop:Generator_ColumnVarNameInTable="columnRT_NC" msprop:Generator_ColumnPropNameInRow="RT_NC" msprop:Generator_ColumnPropNameInTable="RT_NCColumn" msprop:Generator_UserColumnName="RT_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DFLT_BT" msprop:Generator_ColumnVarNameInTable="columnDFLT_BT" msprop:Generator_ColumnPropNameInRow="DFLT_BT" msprop:Generator_ColumnPropNameInTable="DFLT_BTColumn" msprop:Generator_UserColumnName="DFLT_BT" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ACTV_BT" msprop:Generator_ColumnVarNameInTable="columnACTV_BT" msprop:Generator_ColumnPropNameInRow="ACTV_BT" msprop:Generator_ColumnPropNameInTable="ACTV_BTColumn" msprop:Generator_UserColumnName="ACTV_BT" type="xs:boolean" minOccurs="0" />
+              <xs:element name="CRTD_BY" msprop:Generator_ColumnVarNameInTable="columnCRTD_BY" msprop:Generator_ColumnPropNameInRow="CRTD_BY" msprop:Generator_ColumnPropNameInTable="CRTD_BYColumn" msprop:Generator_UserColumnName="CRTD_BY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CRTD_DT" msprop:Generator_ColumnVarNameInTable="columnCRTD_DT" msprop:Generator_ColumnPropNameInRow="CRTD_DT" msprop:Generator_ColumnPropNameInTable="CRTD_DTColumn" msprop:Generator_UserColumnName="CRTD_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MDFD_BY" msprop:Generator_ColumnVarNameInTable="columnMDFD_BY" msprop:Generator_ColumnPropNameInRow="MDFD_BY" msprop:Generator_ColumnPropNameInTable="MDFD_BYColumn" msprop:Generator_UserColumnName="MDFD_BY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MDFD_DT" msprop:Generator_ColumnVarNameInTable="columnMDFD_DT" msprop:Generator_ColumnPropNameInRow="MDFD_DT" msprop:Generator_ColumnPropNameInTable="MDFD_DTColumn" msprop:Generator_UserColumnName="MDFD_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DPT_ID" msprop:Generator_ColumnVarNameInTable="columnDPT_ID" msprop:Generator_ColumnPropNameInRow="DPT_ID" msprop:Generator_ColumnPropNameInTable="DPT_IDColumn" msprop:Generator_UserColumnName="DPT_ID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ADDITIONAL_CHARGE_RATE" msprop:Generator_TableClassName="ADDITIONAL_CHARGE_RATEDataTable" msprop:Generator_TableVarName="tableADDITIONAL_CHARGE_RATE" msprop:Generator_RowChangedName="ADDITIONAL_CHARGE_RATERowChanged" msprop:Generator_TablePropName="ADDITIONAL_CHARGE_RATE" msprop:Generator_RowDeletingName="ADDITIONAL_CHARGE_RATERowDeleting" msprop:Generator_RowChangingName="ADDITIONAL_CHARGE_RATERowChanging" msprop:Generator_RowEvHandlerName="ADDITIONAL_CHARGE_RATERowChangeEventHandler" msprop:Generator_RowDeletedName="ADDITIONAL_CHARGE_RATERowDeleted" msprop:Generator_RowClassName="ADDITIONAL_CHARGE_RATERow" msprop:Generator_UserTableName="ADDITIONAL_CHARGE_RATE" msprop:Generator_RowEvArgName="ADDITIONAL_CHARGE_RATERowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ADDTNL_CHRG_RT_ID" msprop:Generator_ColumnVarNameInTable="columnADDTNL_CHRG_RT_ID" msprop:Generator_ColumnPropNameInRow="ADDTNL_CHRG_RT_ID" msprop:Generator_ColumnPropNameInTable="ADDTNL_CHRG_RT_IDColumn" msprop:Generator_UserColumnName="ADDTNL_CHRG_RT_ID" type="xs:long" />
+              <xs:element name="OPRTN_TYP_ID" msprop:Generator_ColumnVarNameInTable="columnOPRTN_TYP_ID" msprop:Generator_ColumnPropNameInRow="OPRTN_TYP_ID" msprop:Generator_ColumnPropNameInTable="OPRTN_TYP_IDColumn" msprop:Generator_UserColumnName="OPRTN_TYP_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="ADDTNL_CHRG_RT_CD" msprop:Generator_ColumnVarNameInTable="columnADDTNL_CHRG_RT_CD" msprop:Generator_ColumnPropNameInRow="ADDTNL_CHRG_RT_CD" msprop:Generator_ColumnPropNameInTable="ADDTNL_CHRG_RT_CDColumn" msprop:Generator_UserColumnName="ADDTNL_CHRG_RT_CD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ADDTNL_CHRG_RT_DSCRPTN_VC" msprop:Generator_ColumnVarNameInTable="columnADDTNL_CHRG_RT_DSCRPTN_VC" msprop:Generator_ColumnPropNameInRow="ADDTNL_CHRG_RT_DSCRPTN_VC" msprop:Generator_ColumnPropNameInTable="ADDTNL_CHRG_RT_DSCRPTN_VCColumn" msprop:Generator_UserColumnName="ADDTNL_CHRG_RT_DSCRPTN_VC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RT_NC" msprop:Generator_ColumnVarNameInTable="columnRT_NC" msprop:Generator_ColumnPropNameInRow="RT_NC" msprop:Generator_ColumnPropNameInTable="RT_NCColumn" msprop:Generator_UserColumnName="RT_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DFLT_BT" msprop:Generator_ColumnVarNameInTable="columnDFLT_BT" msprop:Generator_ColumnPropNameInRow="DFLT_BT" msprop:Generator_ColumnPropNameInTable="DFLT_BTColumn" msprop:Generator_UserColumnName="DFLT_BT" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ACTV_BT" msprop:Generator_ColumnVarNameInTable="columnACTV_BT" msprop:Generator_ColumnPropNameInRow="ACTV_BT" msprop:Generator_ColumnPropNameInTable="ACTV_BTColumn" msprop:Generator_UserColumnName="ACTV_BT" type="xs:boolean" minOccurs="0" />
+              <xs:element name="CRTD_BY" msprop:Generator_ColumnVarNameInTable="columnCRTD_BY" msprop:Generator_ColumnPropNameInRow="CRTD_BY" msprop:Generator_ColumnPropNameInTable="CRTD_BYColumn" msprop:Generator_UserColumnName="CRTD_BY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CRTD_DT" msprop:Generator_ColumnVarNameInTable="columnCRTD_DT" msprop:Generator_ColumnPropNameInRow="CRTD_DT" msprop:Generator_ColumnPropNameInTable="CRTD_DTColumn" msprop:Generator_UserColumnName="CRTD_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MDFD_BY" msprop:Generator_ColumnVarNameInTable="columnMDFD_BY" msprop:Generator_ColumnPropNameInRow="MDFD_BY" msprop:Generator_ColumnPropNameInTable="MDFD_BYColumn" msprop:Generator_UserColumnName="MDFD_BY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MDFD_DT" msprop:Generator_ColumnVarNameInTable="columnMDFD_DT" msprop:Generator_ColumnPropNameInRow="MDFD_DT" msprop:Generator_ColumnPropNameInTable="MDFD_DTColumn" msprop:Generator_UserColumnName="MDFD_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DPT_ID" msprop:Generator_ColumnVarNameInTable="columnDPT_ID" msprop:Generator_ColumnPropNameInRow="DPT_ID" msprop:Generator_ColumnPropNameInTable="DPT_IDColumn" msprop:Generator_UserColumnName="DPT_ID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DEPOT" msprop:Generator_TableClassName="DEPOTDataTable" msprop:Generator_TableVarName="tableDEPOT" msprop:Generator_TablePropName="DEPOT" msprop:Generator_RowDeletingName="DEPOTRowDeleting" msprop:Generator_RowChangingName="DEPOTRowChanging" msprop:Generator_RowEvHandlerName="DEPOTRowChangeEventHandler" msprop:Generator_RowDeletedName="DEPOTRowDeleted" msprop:Generator_UserTableName="DEPOT" msprop:Generator_RowChangedName="DEPOTRowChanged" msprop:Generator_RowEvArgName="DEPOTRowChangeEvent" msprop:Generator_RowClassName="DEPOTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DPT_ID" msprop:Generator_ColumnVarNameInTable="columnDPT_ID" msprop:Generator_ColumnPropNameInRow="DPT_ID" msprop:Generator_ColumnPropNameInTable="DPT_IDColumn" msprop:Generator_UserColumnName="DPT_ID" type="xs:int" />
+              <xs:element name="DPT_CD" msprop:Generator_ColumnVarNameInTable="columnDPT_CD" msprop:Generator_ColumnPropNameInRow="DPT_CD" msprop:Generator_ColumnPropNameInTable="DPT_CDColumn" msprop:Generator_UserColumnName="DPT_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="DPT_NAM" msprop:Generator_ColumnVarNameInTable="columnDPT_NAM" msprop:Generator_ColumnPropNameInRow="DPT_NAM" msprop:Generator_ColumnPropNameInTable="DPT_NAMColumn" msprop:Generator_UserColumnName="DPT_NAM" type="xs:string" minOccurs="0" />
+              <xs:element name="CNTCT_PRSN_NAM" msprop:Generator_ColumnVarNameInTable="columnCNTCT_PRSN_NAM" msprop:Generator_ColumnPropNameInRow="CNTCT_PRSN_NAM" msprop:Generator_ColumnPropNameInTable="CNTCT_PRSN_NAMColumn" msprop:Generator_UserColumnName="CNTCT_PRSN_NAM" type="xs:string" minOccurs="0" />
+              <xs:element name="ADDRSS_LN1_VC" msprop:Generator_ColumnVarNameInTable="columnADDRSS_LN1_VC" msprop:Generator_ColumnPropNameInRow="ADDRSS_LN1_VC" msprop:Generator_ColumnPropNameInTable="ADDRSS_LN1_VCColumn" msprop:Generator_UserColumnName="ADDRSS_LN1_VC" type="xs:string" minOccurs="0" />
+              <xs:element name="ADDRSS_LN2_VC" msprop:Generator_ColumnVarNameInTable="columnADDRSS_LN2_VC" msprop:Generator_ColumnPropNameInRow="ADDRSS_LN2_VC" msprop:Generator_ColumnPropNameInTable="ADDRSS_LN2_VCColumn" msprop:Generator_UserColumnName="ADDRSS_LN2_VC" type="xs:string" minOccurs="0" />
+              <xs:element name="ADDRSS_LN3_VC" msprop:Generator_ColumnVarNameInTable="columnADDRSS_LN3_VC" msprop:Generator_ColumnPropNameInRow="ADDRSS_LN3_VC" msprop:Generator_ColumnPropNameInTable="ADDRSS_LN3_VCColumn" msprop:Generator_UserColumnName="ADDRSS_LN3_VC" type="xs:string" minOccurs="0" />
+              <xs:element name="CNTRY_NAM" msprop:Generator_ColumnVarNameInTable="columnCNTRY_NAM" msprop:Generator_ColumnPropNameInRow="CNTRY_NAM" msprop:Generator_ColumnPropNameInTable="CNTRY_NAMColumn" msprop:Generator_UserColumnName="CNTRY_NAM" type="xs:string" minOccurs="0" />
+              <xs:element name="CTY_NAM" msprop:Generator_ColumnVarNameInTable="columnCTY_NAM" msprop:Generator_ColumnPropNameInRow="CTY_NAM" msprop:Generator_ColumnPropNameInTable="CTY_NAMColumn" msprop:Generator_UserColumnName="CTY_NAM" type="xs:string" minOccurs="0" />
+              <xs:element name="ZP_CD" msprop:Generator_ColumnVarNameInTable="columnZP_CD" msprop:Generator_ColumnPropNameInRow="ZP_CD" msprop:Generator_ColumnPropNameInTable="ZP_CDColumn" msprop:Generator_UserColumnName="ZP_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="VT_NO" msprop:Generator_ColumnVarNameInTable="columnVT_NO" msprop:Generator_ColumnPropNameInRow="VT_NO" msprop:Generator_ColumnPropNameInTable="VT_NOColumn" msprop:Generator_UserColumnName="VT_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="EML_ID" msprop:Generator_ColumnVarNameInTable="columnEML_ID" msprop:Generator_ColumnPropNameInRow="EML_ID" msprop:Generator_ColumnPropNameInTable="EML_IDColumn" msprop:Generator_UserColumnName="EML_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="PHN_NO" msprop:Generator_ColumnVarNameInTable="columnPHN_NO" msprop:Generator_ColumnPropNameInRow="PHN_NO" msprop:Generator_ColumnPropNameInTable="PHN_NOColumn" msprop:Generator_UserColumnName="PHN_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="FX_NO" msprop:Generator_ColumnVarNameInTable="columnFX_NO" msprop:Generator_ColumnPropNameInRow="FX_NO" msprop:Generator_ColumnPropNameInTable="FX_NOColumn" msprop:Generator_UserColumnName="FX_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="CRRNCY_ID" msprop:Generator_ColumnVarNameInTable="columnCRRNCY_ID" msprop:Generator_ColumnPropNameInRow="CRRNCY_ID" msprop:Generator_ColumnPropNameInTable="CRRNCY_IDColumn" msprop:Generator_UserColumnName="CRRNCY_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="CMPNY_LG_PTH" msprop:Generator_ColumnVarNameInTable="columnCMPNY_LG_PTH" msprop:Generator_ColumnPropNameInRow="CMPNY_LG_PTH" msprop:Generator_ColumnPropNameInTable="CMPNY_LG_PTHColumn" msprop:Generator_UserColumnName="CMPNY_LG_PTH" type="xs:string" minOccurs="0" />
+              <xs:element name="MDFD_BY" msprop:Generator_ColumnVarNameInTable="columnMDFD_BY" msprop:Generator_ColumnPropNameInRow="MDFD_BY" msprop:Generator_ColumnPropNameInTable="MDFD_BYColumn" msprop:Generator_UserColumnName="MDFD_BY" type="xs:string" minOccurs="0" />
+              <xs:element name="MDFD_DT" msprop:Generator_ColumnVarNameInTable="columnMDFD_DT" msprop:Generator_ColumnPropNameInRow="MDFD_DT" msprop:Generator_ColumnPropNameInTable="MDFD_DTColumn" msprop:Generator_UserColumnName="MDFD_DT" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ADDITIONAL_CHARGE_RATE" />
+      <xs:field xpath="mstns:ADDTNL_CHRG_RT_ID" />
+    </xs:unique>
+    <xs:unique name="DEPOT_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DEPOT" />
+      <xs:field xpath="mstns:DPT_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

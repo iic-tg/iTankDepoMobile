@@ -1,0 +1,299 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e2572832-cb1e-42da-86c1-a2642c92b72f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Invoice</ID>
+  <Name>Invoice</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout>
+              <dds>
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="6" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7938" scrolltop="-2779" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="31327" y="18865" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                  <font>
+                    <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+                  </font>
+                  <mouseicon>
+                    <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                  </mouseicon>
+                </diagram>
+                <layoutmanager>
+                  <ddsxmlobj />
+                </layoutmanager>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Handling_Storage_Rental Invoice " left="7287" top="80" logicalid="3" controlid="1" masterid="0" hint1="0" hint2="0" width="5980" height="12091" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000800005c1700003b2f0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_V_RPT_INVOICE_EQUIPMENT" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Invoice" left="0" top="0" logicalid="4" controlid="2" masterid="0" hint1="0" hint2="0" width="5980" height="15186" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000800005c170000523b0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_V_RPT_INVOICE" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+              </dds>
+</DiagramLayout>
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>-7938</DiagramViewPortLeft>
+            <DiagramViewPortTop>-2779</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>iTankDepo</DataSourceID>
+  <Schema>
+    <xs:schema id="Invoice" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Invoice" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="e17f55f7-28f2-410d-9b79-f4d65f0db298">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_V_RPT_INVOICE_EQUIPMENT" msprop:FriendlyName="Handling_Storage_Rental Invoice " msprop:DbSchemaName="dbo" msprop:DbTableName="V_RPT_INVOICE_EQUIPMENT" msprop:design-time-name="a8ea0b4d-3e34-4e7f-ba54-9335c43ee1a8" msprop:TableType="View">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="INVC_NO" msprop:FriendlyName="Invoice No" msprop:DbColumnName="INVC_NO" msprop:design-time-name="bd70a2a8-09c0-46bd-ab88-8c8bf9e38c70">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CSTMR_ID" msdata:ReadOnly="true" msprop:FriendlyName="Customer ID" msprop:DbColumnName="CSTMR_ID" msprop:design-time-name="3796ade8-2ee0-48c9-affa-08f144299e7b" type="xs:long" minOccurs="0" />
+                  <xs:element name="CSTMR_CD" msdata:ReadOnly="true" msprop:FriendlyName="Customer" msprop:DbColumnName="CSTMR_CD" msprop:design-time-name="51302e5f-240a-49b3-a5d1-a5bf0a1c0272" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="9" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CSTMR_NAM" msdata:ReadOnly="true" msprop:FriendlyName="Customer Name" msprop:DbColumnName="CSTMR_NAM" msprop:design-time-name="053c8790-865f-4d5f-964e-469e266226d2" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="INVC_DT" msdata:ReadOnly="true" msprop:FriendlyName="Invoice Date" msprop:DbColumnName="INVC_DT" msprop:design-time-name="89169be7-8121-4ea1-9a8f-2b5d414dbbf3" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="INVC_TYP" msdata:ReadOnly="true" msprop:FriendlyName="Invoice Type" msprop:DbColumnName="INVC_TYP" msprop:design-time-name="b8b5b27b-c6bb-4cab-93a8-47103b2ff971" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="3" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="INVC_CRRNCY_CD" msdata:ReadOnly="true" msprop:FriendlyName="Invoice Currency" msprop:DbColumnName="INVC_CRRNCY_CD" msprop:design-time-name="42b0c98e-fc3d-479f-a35b-e0b3c77c44e4" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="3" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CSTMR_CRRNCY_CD" msdata:ReadOnly="true" msprop:FriendlyName="Customer Currency" msprop:DbColumnName="CSTMR_CRRNCY_CD" msprop:design-time-name="0ac96e2b-c236-441d-81b4-cd3df73cec07" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="3" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TTL_CST_IN_CSTMR_CRRNCY_NC" msdata:ReadOnly="true" msprop:FriendlyName="Total Cost in Customer Currency" msprop:DbColumnName="TTL_CST_IN_CSTMR_CRRNCY_NC" msprop:design-time-name="002663d2-c312-4d70-98bd-757f3a76fb1f" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="TTL_CST_IN_INVC_CRRNCY_NC" msdata:ReadOnly="true" msprop:FriendlyName="Total Cost in Invoice Currency" msprop:DbColumnName="TTL_CST_IN_INVC_CRRNCY_NC" msprop:design-time-name="5cf21e3a-7c7e-4761-8906-5d71c01648fd" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="EXCHNG_RT_NC" msdata:ReadOnly="true" msprop:FriendlyName="Exchnage Rate" msprop:DbColumnName="EXCHNG_RT_NC" msprop:design-time-name="870daf60-85f1-4097-92a0-4c69acb3843d" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="EQPMNT_NO" msprop:FriendlyName="Equipment No" msprop:DbColumnName="EQPMNT_NO" msprop:design-time-name="5ffc5ab5-7f67-4048-8763-1766d844d56b">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="EQPMNT_TYP_ID" msdata:ReadOnly="true" msprop:FriendlyName="EQPMNT_TYP_ID" msprop:DbColumnName="EQPMNT_TYP_ID" msprop:design-time-name="69e82033-35f9-473d-81ea-49889a2116bc" type="xs:long" minOccurs="0" />
+                  <xs:element name="EQPMNT_TYP_CD" msdata:ReadOnly="true" msprop:FriendlyName="Equipment Type" msprop:DbColumnName="EQPMNT_TYP_CD" msprop:design-time-name="bca5d045-02d9-44d8-a4c5-0b77964c62a1" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="3" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="HNDLNG_IN_AMNT_NC" msprop:FriendlyName="Handling In Amount" msprop:DbColumnName="HNDLNG_IN_AMNT_NC" msprop:design-time-name="118196f3-d871-468d-80b4-211f259de37c" type="xs:decimal" />
+                  <xs:element name="HNDLNG_OT_AMNT_NC" msprop:FriendlyName="Handling Out Amount" msprop:DbColumnName="HNDLNG_OT_AMNT_NC" msprop:design-time-name="fd73a300-312d-4f88-b0df-49a4966b1e16" type="xs:decimal" />
+                  <xs:element name="STRG_AMNT_NC" msprop:FriendlyName="Storage Amount" msprop:DbColumnName="STRG_AMNT_NC" msprop:design-time-name="f4dd804a-4b48-4a5e-86d9-5b6bbf232b0e" type="xs:decimal" />
+                  <xs:element name="DPT_AMNT_NC" msprop:FriendlyName="Depot Amount" msprop:DbColumnName="DPT_AMNT_NC" msprop:design-time-name="3b4ff0f2-6815-4c49-a2a7-e8b03bb45bd0" type="xs:decimal" />
+                  <xs:element name="CSTMR_AMNT_NC" msprop:FriendlyName="Customer Amount" msprop:DbColumnName="CSTMR_AMNT_NC" msprop:design-time-name="4299cd09-a35e-41f4-8b14-60fffbe8e626" type="xs:decimal" />
+                  <xs:element name="STRG_DYS" msprop:FriendlyName="Storage Days" msprop:DbColumnName="STRG_DYS" msprop:design-time-name="ab307bb8-2028-4914-80bd-0c5e30661848" type="xs:int" />
+                  <xs:element name="FR_DYS" msprop:FriendlyName="Free Days" msprop:DbColumnName="FR_DYS" msprop:design-time-name="b00248a4-cdb2-4137-a367-90d5c619a9fd" type="xs:int" />
+                  <xs:element name="OFF_HR_SRVY_NC" msprop:FriendlyName="OFF Hire Survey" msprop:DbColumnName="OFF_HR_SRVY_NC" msprop:design-time-name="a3fd4211-45a3-4921-9383-c33d990c8af9" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="ON_HR_SRVY_NC" msprop:FriendlyName="ON Hire Survey" msprop:DbColumnName="ON_HR_SRVY_NC" msprop:design-time-name="b269c4b7-9c4d-4cfc-aaa4-5496276d64d4" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="OTHR_CHRG_NC" msprop:FriendlyName="Other Charge" msprop:DbColumnName="OTHR_CHRG_NC" msprop:design-time-name="4c8552cb-80f3-4a9b-9c96-88bae6bd6365" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="FRM_BLLNG_DT" msprop:FriendlyName="From Billing Date" msprop:DbColumnName="FRM_BLLNG_DT" msprop:design-time-name="3d4e87a1-6318-47ce-a201-63606dadefba" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="TO_BLLNG_DT" msprop:FriendlyName="To Billing Date" msprop:DbColumnName="TO_BLLNG_DT" msprop:design-time-name="cef28889-4852-48c9-aa21-81efd6214dcb" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_V_RPT_INVOICE" msprop:FriendlyName="Invoice" msprop:DbSchemaName="dbo" msprop:DbTableName="V_RPT_INVOICE" msprop:design-time-name="600756fd-7fd4-41ec-97f4-030a3df7856d" msprop:TableType="View">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="INVC_BIN" msprop:FriendlyName="INVC_BIN" msprop:DbColumnName="INVC_BIN" msprop:design-time-name="cdef729e-9c5c-4f8c-abeb-ab6a4e03ac87" type="xs:long" />
+                  <xs:element name="INVC_NO" msprop:FriendlyName="Invoice No" msprop:DbColumnName="INVC_NO" msprop:design-time-name="8fcb7cfd-4e4f-4fe4-b9a1-79ea7473a08c">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="INVC_DT" msprop:FriendlyName="Invoice Date" msprop:DbColumnName="INVC_DT" msprop:design-time-name="4f09a0f8-e6b8-4872-96e9-b76f7be31bdf" type="xs:dateTime" />
+                  <xs:element name="INVC_FL_PTH" msprop:FriendlyName="INVC_FL_PTH" msprop:DbColumnName="INVC_FL_PTH" msprop:design-time-name="13df0dfe-bbcd-4590-b6b0-4a6c3a6a8c5b" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="INVC_NM" msdata:ReadOnly="true" msprop:FriendlyName="Invoice Name" msprop:DbColumnName="INVC_NM" msprop:design-time-name="af8f0e91-3ca8-41c7-85fa-0e8bf5b5de96" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="14" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="INVC_TYP" msprop:FriendlyName="Invoice Type" msprop:DbColumnName="INVC_TYP" msprop:design-time-name="c0327dec-c014-452f-9541-7c86ed49b72f">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="3" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="INVC_CRRNCY_ID" msprop:FriendlyName="Invoice Currency ID" msprop:DbColumnName="INVC_CRRNCY_ID" msprop:design-time-name="5b65e45f-293d-47ad-b359-51a5b426c077" type="xs:long" />
+                  <xs:element name="INVC_CRRNCY_CD" msdata:ReadOnly="true" msprop:FriendlyName="Invoice Currency Code" msprop:DbColumnName="INVC_CRRNCY_CD" msprop:design-time-name="000d7a5b-a3fc-469e-9fee-50d18ab47014" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="3" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="EXCHNG_RT_NC" msprop:FriendlyName="Exchange Rate" msprop:DbColumnName="EXCHNG_RT_NC" msprop:design-time-name="f66d30c5-27c3-4563-8846-8458425c691a" type="xs:decimal" />
+                  <xs:element name="CSTMR_CRRNCY_ID" msprop:FriendlyName="Customer Currency ID" msprop:DbColumnName="CSTMR_CRRNCY_ID" msprop:design-time-name="bd5080f1-70e6-4c13-99be-e1db6bfec313" type="xs:long" />
+                  <xs:element name="CSTMR_CRRNCY_CD" msdata:ReadOnly="true" msprop:FriendlyName="Customer Currency " msprop:DbColumnName="CSTMR_CRRNCY_CD" msprop:design-time-name="c1b5c0bc-a308-4b9c-935c-d54d4b0c2358" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="3" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="BLLNG_TYP_ID" msprop:FriendlyName="BLLNG_TYP_ID" msprop:DbColumnName="BLLNG_TYP_ID" msprop:design-time-name="9cf2c6ac-c53e-4a4c-9dc4-c93a93561288" type="xs:long" minOccurs="0" />
+                  <xs:element name="FRM_BLLNG_DT" msprop:FriendlyName="From Billing Date" msprop:DbColumnName="FRM_BLLNG_DT" msprop:design-time-name="9381e2b9-6f2f-4fdf-bb98-88093656b4e4" type="xs:dateTime" />
+                  <xs:element name="TO_BLLNG_DT" msprop:FriendlyName="To Billing Date" msprop:DbColumnName="TO_BLLNG_DT" msprop:design-time-name="6fb35580-be38-4181-b069-469d910837f7" type="xs:dateTime" />
+                  <xs:element name="TTL_CST_IN_CSTMR_CRRNCY_NC" msprop:FriendlyName="Total Cost in Customer Currency" msprop:DbColumnName="TTL_CST_IN_CSTMR_CRRNCY_NC" msprop:design-time-name="96d982be-8440-41f9-8c1f-1a69d79e88e5" type="xs:decimal" />
+                  <xs:element name="TTL_CST_IN_INVC_CRRNCY_NC" msprop:FriendlyName="Total Cost in Invoice Currency" msprop:DbColumnName="TTL_CST_IN_INVC_CRRNCY_NC" msprop:design-time-name="31b5813d-fe54-443b-bf78-5206d8dc03a9" type="xs:decimal" />
+                  <xs:element name="BLLNG_FLG" msprop:FriendlyName="Billed" msprop:DbColumnName="BLLNG_FLG" msprop:design-time-name="7e57794e-6c03-4b7b-8925-fba0bf8267eb">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="5" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CSTMR_ID" msprop:FriendlyName="Customer ID" msprop:DbColumnName="CSTMR_ID" msprop:design-time-name="01cb6f59-d455-435c-a8bd-4c0959f5c2d4" type="xs:long" minOccurs="0" />
+                  <xs:element name="INVCNG_PRTY_ID" msprop:FriendlyName="Invoice Party ID" msprop:DbColumnName="INVCNG_PRTY_ID" msprop:design-time-name="43f7d39b-45c2-4b8a-869d-0f02cf190452" type="xs:long" minOccurs="0" />
+                  <xs:element name="DPT_ID" msprop:FriendlyName="Depot ID" msprop:DbColumnName="DPT_ID" msprop:design-time-name="f853780e-34e7-45c2-a516-3a1127a02ff1" type="xs:int" />
+                  <xs:element name="DPT_CD" msdata:ReadOnly="true" msprop:FriendlyName="Depot" msprop:DbColumnName="DPT_CD" msprop:design-time-name="6866a32c-563c-462e-bea9-27f078263a58" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="9" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DPT_NAM" msdata:ReadOnly="true" msprop:FriendlyName="Depot Name" msprop:DbColumnName="DPT_NAM" msprop:design-time-name="f641ae72-0f05-4d19-8542-c183d5ad291d" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ACTV_BT" msprop:FriendlyName="ACTV_BT" msprop:DbColumnName="ACTV_BT" msprop:design-time-name="b76930fa-c2f4-41cc-ada8-9fcc29999d3d" type="xs:boolean" />
+                  <xs:element name="CRTD_BY" msprop:FriendlyName="CRTD_BY" msprop:DbColumnName="CRTD_BY" msprop:design-time-name="2f2e251b-1634-446e-ab41-589744687d5d">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CRTD_DT" msprop:FriendlyName="CRTD_DT" msprop:DbColumnName="CRTD_DT" msprop:design-time-name="45fcf111-9ef5-4440-baef-4ca6520eec60" type="xs:dateTime" />
+                  <xs:element name="MDFD_BY" msprop:FriendlyName="MDFD_BY" msprop:DbColumnName="MDFD_BY" msprop:design-time-name="4dd67675-65b4-4c62-9ccc-9983904be3f5">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MDFD_DT" msprop:FriendlyName="MDFD_DT" msprop:DbColumnName="MDFD_DT" msprop:design-time-name="ce07518e-5950-4d30-8920-89bc0900dc8f" type="xs:dateTime" />
+                  <xs:element name="SRVC_PRTNR_ID" msdata:ReadOnly="true" msprop:FriendlyName="Service Partner ID" msprop:DbColumnName="SRVC_PRTNR_ID" msprop:design-time-name="53588c64-97fa-4eb7-b2fb-531580edb075" type="xs:long" minOccurs="0" />
+                  <xs:element name="SRVC_PRTNR_CD" msdata:ReadOnly="true" msprop:FriendlyName="Service Partner" msprop:DbColumnName="SRVC_PRTNR_CD" msprop:design-time-name="6625563a-7f3d-461a-b6bb-6ddc2e0b5eb6" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="9" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="SRVC_PRTNR_NM" msdata:ReadOnly="true" msprop:FriendlyName="Service Partner Name" msprop:DbColumnName="SRVC_PRTNR_NM" msprop:design-time-name="596ea6bb-4e73-4bd7-a165-4ce1123fc518" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="FL_NM" msprop:FriendlyName="FL_NM" msprop:DbColumnName="FL_NM" msprop:design-time-name="50681754-f5e8-4e27-a321-f98ce35f17d1" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NO_OF_EQPMNT" msprop:FriendlyName="No Of Equipment" msprop:DbColumnName="NO_OF_EQPMNT" msprop:design-time-name="bb19ef54-4e38-44ef-b47d-e03de2912787" type="xs:long" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msprop:IsLogical="True" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_V_RPT_INVOICE_EQUIPMENT" />
+          <xs:field xpath="INVC_NO" />
+        </xs:unique>
+        <xs:unique name="dbo_V_RPT_INVOICE_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_V_RPT_INVOICE" />
+          <xs:field xpath="INVC_BIN" />
+        </xs:unique>
+      </xs:element>
+    </xs:schema>
+    <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+  </Schema>
+</DataSourceView>

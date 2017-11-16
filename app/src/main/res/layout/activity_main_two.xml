@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/common_toolbar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:background="@color/Title"
+            android:layout_below="@+id/header">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:weightSum="5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.75"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="1">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="0.5"
+                        android:id="@+id/LL_GateIn">
+                        <RelativeLayout
+                            style="@style/DashboardImage_AM">
+                            <ImageView
+                                style="@style/DashboardImage_AM"
+                                android:src="@mipmap/ic_gatein"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            style="@style/DashboardText_AM"
+                            android:text="Gate In"
+                            android:id="@+id/GateIn" />
+                    </LinearLayout>
+                    <View
+                        style="@style/View_vertical"
+                        />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="0.5"
+                        android:id="@+id/LL_Heating">
+                        <RelativeLayout
+                            style="@style/DashboardImage_AM">
+                            <ImageView
+                                style="@style/DashboardImage_AM"
+                                android:src="@mipmap/ic_heating"/>
+                            <Button
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:gravity="center"
+                                android:text="23"
+                                android:textColor="@color/white"
+                                android:layout_marginRight="48dp"
+                                android:textSize="8sp"
+                                android:background="@drawable/circle_button"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+                        <TextView
+                            style="@style/DashboardText_AM"
+                            android:text="Heating"
+                            android:id="@+id/Heating" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View
+                    style="@style/View_horizontal"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.75"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="1">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        android:layout_weight="0.5"
+                        android:id="@+id/LL_Cleaning">
+
+                        <RelativeLayout
+                            style="@style/DashboardImage_AM">
+                            <ImageView
+                                style="@style/DashboardImage_AM"
+                                android:src="@mipmap/ic_cleaning"
+                                android:id="@+id/imageView2"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true" />
+                            <Button
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:gravity="center"
+                                android:text="23"
+                                android:textColor="@color/white"
+                                android:layout_marginRight="48dp"
+                                android:textSize="8sp"
+                                android:background="@drawable/circle_button"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+
+
+                        <TextView
+                            style="@style/DashboardText_AM"
+                            android:text="Cleaning"
+                            android:id="@+id/Cleaning" />
+                    </LinearLayout>
+                    <View
+                        style="@style/View_vertical"
+                        />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        android:layout_weight="0.5"
+                        android:id="@+id/LL_Repair">
+                        <RelativeLayout
+                            style="@style/DashboardImage_AM">
+                            <ImageView
+                                style="@style/DashboardImage_AM"
+                                android:src="@mipmap/ic_repair"
+                                android:id="@+id/imageView3" />
+                            <Button
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:gravity="center"
+                                android:text="23"
+                                android:textColor="@color/white"
+                                android:layout_marginRight="48dp"
+                                android:textSize="8sp"
+                                android:background="@drawable/circle_button"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+
+
+                        <TextView
+                            style="@style/DashboardText_AM"
+                            android:text="Repair"
+                            android:id="@+id/Repair" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View
+                    style="@style/View_horizontal"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.75"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="1">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        android:layout_weight="0.5"
+                        android:id="@+id/LL_Leaktest">
+                        <RelativeLayout
+                            style="@style/DashboardImage_AM">
+                            <ImageView
+                                style="@style/DashboardImage_AM"
+                                android:src="@mipmap/ic_leaktest"/>
+                            <Button
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:gravity="center"
+                                android:text="23"
+                                android:textColor="@color/white"
+                                android:layout_marginRight="48dp"
+                                android:textSize="8sp"
+                                android:background="@drawable/circle_button"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+
+                        <TextView
+                            style="@style/DashboardText_AM"
+                            android:text="Leak Test"
+                            android:id="@+id/tv_daily_stock_update" />
+                    </LinearLayout>
+                    <View
+                        style="@style/View_vertical"
+                        />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        android:layout_weight="0.5"
+                        android:id="@+id/LL_GateOut">
+                        <RelativeLayout
+                            style="@style/DashboardImage_AM">
+                            <ImageView
+                                style="@style/DashboardImage_AM"
+                                android:src="@mipmap/ic_gatout"/>
+
+                        </RelativeLayout>
+                        <TextView
+                            style="@style/DashboardText_AM"
+                            android:text="Gate Out"
+                            android:id="@+id/GateOut" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.75"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="1">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        android:layout_weight="0.5"
+                        android:id="@+id/LL_History">
+                        <ImageView
+                            style="@style/DashboardImage_AM"
+                            android:src="@mipmap/ic_history"/>
+                        <TextView
+                            style="@style/DashboardText_AM"
+                            android:text="Equipment History"
+                            android:id="@+id/history" />
+                    </LinearLayout>
+                    <View
+                        style="@style/View_vertical"
+                        />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        android:layout_weight="0.5"
+                        android:id="@+id/LL_Report">
+                        <ImageView
+                            style="@style/DashboardImage_AM"
+                            android:src="@mipmap/ic_report"/>
+
+                        <TextView
+                            style="@style/DashboardText_AM"
+                            android:text="Stock report"
+                            android:id="@+id/Report" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer" />
+
+</android.support.v4.widget.DrawerLayout>

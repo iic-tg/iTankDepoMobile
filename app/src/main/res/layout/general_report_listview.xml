@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/field_border_thin_line"
+        android:layout_alignParentTop="true"
+        android:weightSum="4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:paddingLeft="3dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Depot"
+                    android:textSize="11dp"
+                    android:gravity="center|left"
+                    android:id="@+id/textView7" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Customer"
+                    android:textSize="11dp"
+                    android:gravity="center|left"
+                    android:id="@+id/textView9" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:textSize="11dp"
+                    android:paddingRight="3dp"
+                    android:text="Equipment No"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:textSize="11dp"
+                    android:paddingRight="3dp"
+                    android:text="Type"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp"
+                android:weightSum="4">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="1"
+                    android:textSize="11dp"
+                    android:textColor="@color/list_text"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_depot"
+                    android:gravity="center|left"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textSize="11dp"
+                    android:textColor="@color/list_text"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_cust_name"
+                    android:gravity="center|left"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:textColor="@color/list_text"
+                    android:textStyle="bold"
+                    android:textSize="11dp"
+                    android:id="@+id/tv_equip_no"
+                    android:text="0"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:textColor="@color/list_text"
+                    android:textStyle="bold"
+                    android:textSize="11dp"
+                    android:id="@+id/tv_type"
+                    android:text="0"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <View style="@style/View_horizontal_black"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:paddingLeft="3dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="11dp"
+                    android:text="In Date"
+                    android:gravity="center|left"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Previous Cargo"
+                    android:textSize="11dp"
+                    android:gravity="center|left"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:textSize="11dp"
+                    android:paddingRight="3dp"
+                    android:text="EIR No"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:textSize="11dp"
+                    android:paddingRight="3dp"
+                    android:text="CLN Cert.Num"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="@color/list_text"
+                    android:textStyle="bold"
+                    android:textSize="11dp"
+                    android:id="@+id/tv_inDate"
+                    android:gravity="center|left"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textSize="11dp"
+                    android:textColor="@color/list_text"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_preCargo"
+                    android:gravity="center|left"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:textColor="@color/list_text"
+                    android:textStyle="bold"
+                    android:textSize="11dp"
+                    android:id="@+id/tv_eirNo"
+                    android:text="0"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:textColor="@color/list_text"
+                    android:textStyle="bold"
+                    android:textSize="11dp"
+                    android:id="@+id/tv_cleaningCertNum"
+                    android:text="0"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <View style="@style/View_horizontal_line_two"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:paddingLeft="3dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="11dp"
+                    android:text="Cleaning Date"
+                    android:gravity="center|left"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Inspection Date"
+                    android:textSize="11dp"
+                    android:gravity="center|left"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="11dp"
+                    android:gravity="center|left"
+                    android:paddingRight="3dp"
+                    android:text="Current Status"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="11dp"
+                    android:gravity="center|left"
+                    android:paddingRight="3dp"
+                    android:text="CNT Status Date"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="@color/list_text"
+                    android:textStyle="bold"
+                    android:textSize="11dp"
+                    android:id="@+id/tv_cleaningDate"
+                    android:gravity="center|left"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textSize="11dp"
+                    android:textColor="@color/list_text"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_inspectionDate"
+                    android:gravity="center|left"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:textColor="@color/list_text"
+                    android:textStyle="bold"
+                    android:textSize="11dp"
+                    android:id="@+id/tv_currentStatus"
+                    android:text="0"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:textColor="@color/list_text"
+                    android:textStyle="bold"
+                    android:textSize="11dp"
+                    android:id="@+id/tv_currentStatusDate"
+                    android:text="0"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View style="@style/View_horizontal_black"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:paddingLeft="3dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="11dp"
+                    android:text="Next Test Date"
+                    android:gravity="center|left"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Next Test Type"
+                    android:gravity="center|left"
+                    android:textSize="11dp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="Remarks"
+                    android:id="@+id/textView8"
+                    android:textSize="11dp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:textSize="11dp"
+                    android:gravity="center|left"
+                    android:text="OUT"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="@color/list_text"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_nextTestDate"
+                    android:textSize="11dp"
+                    android:gravity="center|left"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:id="@+id/tv_nextTestType"
+                    android:textColor="@color/list_text"
+                    android:textSize="11dp"
+                    android:gravity="center|left"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:id="@+id/tv_remark"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="0"
+                    android:textStyle="bold"
+                    android:textColor="@color/list_text"
+                    android:textSize="11dp"
+
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:textSize="11dp"
+                    android:gravity="center|left"
+                    android:text="0"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

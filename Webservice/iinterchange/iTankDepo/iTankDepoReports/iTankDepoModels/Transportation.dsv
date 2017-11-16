@@ -1,0 +1,308 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e3bb971f-3ecf-4c90-bf6d-f44fec8f3d77" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Transportation</ID>
+  <Name>Transportation</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout>
+              <dds>
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-12905" scrolltop="807" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="31327" y="18865" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                  <font>
+                    <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+                  </font>
+                  <mouseicon>
+                    <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                  </mouseicon>
+                </diagram>
+                <layoutmanager>
+                  <ddsxmlobj />
+                </layoutmanager>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Transportation " left="0" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="5477" height="16483" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000800006515000063400000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_V_RPT_TRANSPORTATION" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+              </dds>
+</DiagramLayout>
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>-12905</DiagramViewPortLeft>
+            <DiagramViewPortTop>807</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>iTankDepo</DataSourceID>
+  <Schema>
+    <xs:schema id="Transportation" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Transportation" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="09d17e5e-58e2-482d-879c-80f8f85239b6">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_V_RPT_TRANSPORTATION" msprop:FriendlyName="Transportation " msprop:DbSchemaName="dbo" msprop:DbTableName="V_RPT_TRANSPORTATION" msprop:design-time-name="cb593a69-54f4-403f-91c5-d397d17b0943" msprop:TableType="View">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="EQPMNT_NO" msprop:FriendlyName="Equipment No" msprop:DbColumnName="EQPMNT_NO" msprop:design-time-name="e1486f73-6e22-4fe1-9798-7b85261ab112">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="11" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CSTMR_ID" msdata:ReadOnly="true" msprop:FriendlyName="Customer ID" msprop:DbColumnName="CSTMR_ID" msprop:design-time-name="b4006f9a-df20-4a44-9e12-ca2f2c2fc799" type="xs:long" minOccurs="0" />
+                  <xs:element name="CSTMR_CD" msdata:ReadOnly="true" msprop:FriendlyName="Customer" msprop:DbColumnName="CSTMR_CD" msprop:design-time-name="2d65bf5c-5faf-4730-9a39-042a268ff164" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="9" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CSTMR_NAM" msdata:ReadOnly="true" msprop:FriendlyName="Customer Name" msprop:DbColumnName="CSTMR_NAM" msprop:design-time-name="82c13d29-fd3c-4864-94d4-199a2b8eb9d3" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CSTMR_CRRNCY_CD" msdata:ReadOnly="true" msprop:FriendlyName="Customer Currency" msprop:DbColumnName="CSTMR_CRRNCY_CD" msprop:design-time-name="73f7e024-642a-4eba-9ef0-6b72430c168a" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="3" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="RT_ID" msdata:ReadOnly="true" msprop:FriendlyName="Route ID" msprop:DbColumnName="RT_ID" msprop:design-time-name="a5c9f39e-06d3-4d94-aa24-65c14cd35e6d" type="xs:long" minOccurs="0" />
+                  <xs:element name="RT_CD" msdata:ReadOnly="true" msprop:FriendlyName="Route" msprop:DbColumnName="RT_CD" msprop:design-time-name="2a52c1c8-66c4-479c-9a9c-0d424aac7d02" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="RT_DSCRPTN_VC" msdata:ReadOnly="true" msprop:FriendlyName="Route Description" msprop:DbColumnName="RT_DSCRPTN_VC" msprop:design-time-name="d9df5c42-ea13-443b-ae1a-7dc947c70d8e" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="PCK_UP_LCTN_CD" msdata:ReadOnly="true" msprop:FriendlyName="Pick Up Location" msprop:DbColumnName="PCK_UP_LCTN_CD" msprop:design-time-name="3bdd1d5f-38ee-4f13-9f53-8ccdf51792d3" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="PCK_UP_LCTN_DSCRPTN_VC" msdata:ReadOnly="true" msprop:FriendlyName="Pick Up Location Description" msprop:DbColumnName="PCK_UP_LCTN_DSCRPTN_VC" msprop:design-time-name="d3e60590-0bed-4686-9742-d290b5268cbe" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DRP_OFF_LCTN_CD" msdata:ReadOnly="true" msprop:FriendlyName="Drop Off Location" msprop:DbColumnName="DRP_OFF_LCTN_CD" msprop:design-time-name="5bc92ad1-bb0d-4545-a783-f6b58a7e0a8e" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DRP_OFF_LCTN_DSCRPTN_VC" msdata:ReadOnly="true" msprop:FriendlyName="Drop Off Location Description" msprop:DbColumnName="DRP_OFF_LCTN_DSCRPTN_VC" msprop:design-time-name="5b0192ed-df14-4b44-bfe2-f4bfa86dd4cb" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ACTVTY_CD" msdata:ReadOnly="true" msprop:FriendlyName=" Activity " msprop:DbColumnName="ACTVTY_CD" msprop:design-time-name="5ca80c0f-80e3-4577-9e8c-b35b81dc7f8d" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ACTVTY_LCTN_CD" msdata:ReadOnly="true" msprop:FriendlyName="Activity Location " msprop:DbColumnName="ACTVTY_LCTN_CD" msprop:design-time-name="b1bef293-40b3-437e-8499-44654d36d5a3" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ACTVTY_LCTN_DSCRPTN_VC" msdata:ReadOnly="true" msprop:FriendlyName="Activity Location  Description" msprop:DbColumnName="ACTVTY_LCTN_DSCRPTN_VC" msprop:design-time-name="a2f6feaf-cebf-474c-9478-75b69a2c68c3" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TRNSPRTTN_STTS_CD" msdata:ReadOnly="true" msprop:FriendlyName="Transportation Status " msprop:DbColumnName="TRNSPRTTN_STTS_CD" msprop:design-time-name="f0a2fe9e-6bb6-4ed9-ab3e-705680df0744" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="EQPMNT_STT_CD" msdata:ReadOnly="true" msprop:FriendlyName="Equipment Status" msprop:DbColumnName="EQPMNT_STT_CD" msprop:design-time-name="76897103-1640-41bf-907b-83423076d5f3" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="EQPMNT_TYP_ID" msdata:ReadOnly="true" msprop:FriendlyName="EQPMNT_TYP_ID" msprop:DbColumnName="EQPMNT_TYP_ID" msprop:design-time-name="5466e6d6-4daf-48a3-8a39-fb974aaecd4c" type="xs:long" minOccurs="0" />
+                  <xs:element name="EQPMNT_TYP_CD" msdata:ReadOnly="true" msprop:FriendlyName="Equipment Type" msprop:DbColumnName="EQPMNT_TYP_CD" msprop:design-time-name="3e26f95c-89ad-43bd-a3f1-05470e2ae00d" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="3" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MNFCTR_DT" msdata:ReadOnly="true" msprop:FriendlyName="Manufacture Date" msprop:DbColumnName="MNFCTR_DT" msprop:design-time-name="4e779968-2571-44ea-bd3f-f77c4f542221" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="TR_WGHT_NC" msdata:ReadOnly="true" msprop:FriendlyName="Tare Weight" msprop:DbColumnName="TR_WGHT_NC" msprop:design-time-name="0422c5e3-b791-4cfc-9ba1-e68770896b9c" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="GRSS_WGHT_NC" msdata:ReadOnly="true" msprop:FriendlyName="Gross Weight" msprop:DbColumnName="GRSS_WGHT_NC" msprop:design-time-name="8b62f4d8-2b1a-45b2-819e-4217381b8b83" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="CPCTY_NC" msdata:ReadOnly="true" msprop:FriendlyName="Capacity " msprop:DbColumnName="CPCTY_NC" msprop:design-time-name="102c5453-e2bc-4156-bf93-69bc454088b9" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="LST_TST_DT" msdata:ReadOnly="true" msprop:FriendlyName="Last Test Date " msprop:DbColumnName="LST_TST_DT" msprop:design-time-name="21cebf32-73a4-4e76-b79a-787c166d88a6" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="NXT_TST_DT" msdata:ReadOnly="true" msprop:FriendlyName="Next Test Date" msprop:DbColumnName="NXT_TST_DT" msprop:design-time-name="945deed6-7a58-4613-9027-ef1eeb3fcc54" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="LST_TST_TYP" msdata:ReadOnly="true" msprop:FriendlyName="Last Test Type" msprop:DbColumnName="LST_TST_TYP" msprop:design-time-name="ace1ad49-df9d-49df-87e0-b288091c5ea9" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NXT_TST_TYP" msdata:ReadOnly="true" msprop:FriendlyName="Next Test Type" msprop:DbColumnName="NXT_TST_TYP" msprop:design-time-name="696cfbca-cbfe-4864-8853-a9c2027e9520" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CSTMR_RF_NO" msprop:FriendlyName="Customer Reference No" msprop:DbColumnName="CSTMR_RF_NO" msprop:design-time-name="d659386c-7581-48c8-8944-c7d43bec47bf" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="PRDCT_ID" msprop:FriendlyName="Cargo ID" msprop:DbColumnName="PRDCT_ID" msprop:design-time-name="be659930-65b2-40dc-96cf-c97326458ced" type="xs:long" minOccurs="0" />
+                  <xs:element name="PRDCT_CD" msdata:ReadOnly="true" msprop:FriendlyName="Cargo " msprop:DbColumnName="PRDCT_CD" msprop:design-time-name="4c984a35-fa15-4a0b-aa3c-a930c7baf1e5" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="9" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="PRDCT_DSCRPTN_VC" msdata:ReadOnly="true" msprop:FriendlyName="Cargo Description" msprop:DbColumnName="PRDCT_DSCRPTN_VC" msprop:design-time-name="d6c0c882-28f0-4fbd-8c84-8a3aa62fb241" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TTL_RT_NC" msprop:FriendlyName="Total Amount" msprop:DbColumnName="TTL_RT_NC" msprop:design-time-name="3ece6c44-2685-48c2-83da-58b99f2b5ff2" type="xs:decimal" />
+                  <xs:element name="JB_STRT_DT" msprop:FriendlyName="Job Start Date" msprop:DbColumnName="JB_STRT_DT" msprop:design-time-name="bbbb7d01-c244-44d3-b308-dd80bd8eb2da" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="TRP_RT_NC" msprop:FriendlyName="Trip Rate" msprop:DbColumnName="TRP_RT_NC" msprop:design-time-name="6957a0a3-8c4c-4a32-8444-75cb11c3e6fc" type="xs:decimal" />
+                  <xs:element name="JB_END_DT" msprop:FriendlyName="Job End Date" msprop:DbColumnName="JB_END_DT" msprop:design-time-name="00deb807-e080-4c0a-a933-49f3c438c7a8" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="BLLNG_FLG" msdata:ReadOnly="true" msprop:FriendlyName="Billed" msprop:DbColumnName="BLLNG_FLG" msprop:design-time-name="37dba532-7a38-4795-89b2-5b18cea14aef" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="EMPTY_SNGL_ID" msprop:FriendlyName="Empty Single ID" msprop:DbColumnName="EMPTY_SNGL_ID" msprop:design-time-name="eb8c8206-141e-49ee-addf-0ec85dda3d81" type="xs:long" minOccurs="0" />
+                  <xs:element name="EMPTY_SNGL_CD" msdata:ReadOnly="true" msprop:FriendlyName="Empty Single" msprop:DbColumnName="EMPTY_SNGL_CD" msprop:design-time-name="35f5ae35-2ae2-44d0-9c1c-921832892857" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="RQST_NO" msdata:ReadOnly="true" msprop:FriendlyName="Request No" msprop:DbColumnName="RQST_NO" msprop:design-time-name="901eae3f-28e6-43f0-80d3-f4298002581b">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="RQST_DT" msdata:ReadOnly="true" msprop:FriendlyName="Request Date " msprop:DbColumnName="RQST_DT" msprop:design-time-name="79e7199a-bfeb-404a-a33c-f60b191fdaa0" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="RMRKS_VC" msdata:ReadOnly="true" msprop:FriendlyName="Remarks" msprop:DbColumnName="RMRKS_VC" msprop:design-time-name="a87e3b7b-1e22-4aa6-b969-e83d0abaece5" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DPT_ID" msdata:ReadOnly="true" msprop:FriendlyName="Depot ID" msprop:DbColumnName="DPT_ID" msprop:design-time-name="2e6197e1-67d2-453a-bf04-2dd8449b4ab6" type="xs:int" minOccurs="0" />
+                  <xs:element name="DPT_CD" msdata:ReadOnly="true" msprop:FriendlyName="Depot" msprop:DbColumnName="DPT_CD" msprop:design-time-name="fd82c301-b350-44cb-80dd-0876c9aca7e0" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="9" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DRFT_INVC_NO" msdata:ReadOnly="true" msprop:FriendlyName="Draft Invoice No" msprop:DbColumnName="DRFT_INVC_NO" msprop:design-time-name="315aec80-b456-4095-abff-8236d53af079" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="FNL_INVC_NO" msdata:ReadOnly="true" msprop:FriendlyName="Final Invoice No" msprop:DbColumnName="FNL_INVC_NO" msprop:design-time-name="c35b53c2-d34e-47bf-94f1-2a77706366ae" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="VLDTY_PRD_TST_YRS" msprop:design-time-name="df8fce29-cdde-4d07-869f-3f024efb2115" msprop:DbColumnName="VLDTY_PRD_TST_YRS" msprop:FriendlyName="Validity Period Test Years" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msprop:IsLogical="True" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_V_RPT_TRANSPORTATION" />
+          <xs:field xpath="RQST_NO" />
+        </xs:unique>
+      </xs:element>
+    </xs:schema>
+    <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+  </Schema>
+</DataSourceView>

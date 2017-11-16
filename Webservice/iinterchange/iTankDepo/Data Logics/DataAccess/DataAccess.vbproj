@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{D8CD6DEC-7179-40E2-A9DC-EC3AAFFBF7CE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>iInterchange.iTankDepo.DataAccess</RootNamespace>
+    <AssemblyName>iInterchange.iTankDepo.DataAccess</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>iInterchange.iTankDepo.DataAccess.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>iInterchange.iTankDepo.DataAccess.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="iInterchange.iTankDepo.Business.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Business Logics\Business.Operations\bin\Debug\iInterchange.iTankDepo.Business.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="iInterchange.iTankDepo.Business.Operations">
+      <HintPath>..\..\Business Logics\Business.Operations\bin\Debug\iInterchange.iTankDepo.Business.Operations.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Audits.vb" />
+    <Compile Include="Admin\CommonUIs.vb" />
+    <Compile Include="Admin\DatasetHelpers.vb" />
+    <Compile Include="Admin\Depots.vb" />
+    <Compile Include="Admin\IndexPatterns.vb" />
+    <Compile Include="Admin\RoleRights.vb" />
+    <Compile Include="Admin\Users_M.vb" />
+    <Compile Include="Admin\Configs.vb" />
+    <Compile Include="Billing\InvoiceGenerations.vb" />
+    <Compile Include="Billing\InvoiceReversals.vb" />
+    <Compile Include="Billing\ViewInvoices.vb" />
+    <Compile Include="Billing\ViewXmlEdis.vb" />
+    <Compile Include="Dashboard\Dashboards.vb" />
+    <Compile Include="Dashboard\EquipmentTrackings.vb" />
+    <Compile Include="Dashboard\OperationsTurnOvers.vb" />
+    <Compile Include="DynamicReport\AddDynamicReports.vb" />
+    <Compile Include="DynamicReport\ReportParams.vb" />
+    <Compile Include="EDI\EDIs.vb" />
+    <Compile Include="Masters\AdditionalChargeRates.vb" />
+    <Compile Include="Masters\Agents.vb" />
+    <Compile Include="Masters\CleaningMethods.vb" />
+    <Compile Include="Masters\CleaningTypes.vb" />
+    <Compile Include="Masters\Components.vb" />
+    <Compile Include="Masters\Countrys.vb" />
+    <Compile Include="Masters\Currencys.vb" />
+    <Compile Include="Masters\Customers.vb" />
+    <Compile Include="Masters\CustomerTariffCodes.vb" />
+    <Compile Include="Masters\Damages.vb" />
+    <Compile Include="Masters\EquipmentCodes.vb" />
+    <Compile Include="Masters\EquipmentSizes.vb" />
+    <Compile Include="Masters\EquipmentStatuss.vb" />
+    <Compile Include="Masters\EquipmentTypes.vb" />
+    <Compile Include="Masters\ExchangeRates.vb" />
+    <Compile Include="Masters\Grades.vb" />
+    <Compile Include="Masters\InvoicePartys.vb" />
+    <Compile Include="Masters\Items.vb" />
+    <Compile Include="Masters\Locations.vb" />
+    <Compile Include="Masters\Materials.vb" />
+    <Compile Include="Masters\Measures.vb" />
+    <Compile Include="Masters\Partys.vb" />
+    <Compile Include="Masters\Ports.vb" />
+    <Compile Include="Masters\RouteDetails.vb" />
+    <Compile Include="Masters\Statuss.vb" />
+    <Compile Include="Masters\Suppliers.vb" />
+    <Compile Include="Masters\Transporters.vb" />
+    <Compile Include="Operations\ChangeOfStatuss.vb" />
+    <Compile Include="Operations\CleaningInspections.vb" />
+    <Compile Include="Operations\Cleanings.vb" />
+    <Compile Include="Operations\EquipmentHistorys.vb" />
+    <Compile Include="Operations\EquipmentInspections.vb" />
+    <Compile Include="Operations\EquipmentUpdates.vb" />
+    <Compile Include="Operations\GateOutApprovals.vb" />
+    <Compile Include="Operations\GateOutRequests.vb" />
+    <Compile Include="Operations\Heatings.vb" />
+    <Compile Include="Operations\LeakTests.vb" />
+    <Compile Include="Operations\MiscellaneousInvoices.vb" />
+    <Compile Include="Operations\PreAdvices.vb" />
+    <Compile Include="Masters\Products.vb" />
+    <Compile Include="Masters\Repairs.vb" />
+    <Compile Include="Masters\Responsibilitys.vb" />
+    <Compile Include="Masters\SubItems.vb" />
+    <Compile Include="Masters\TariffCodes.vb" />
+    <Compile Include="Masters\TariffGroups.vb" />
+    <Compile Include="Masters\TariffTemplates.vb" />
+    <Compile Include="Masters\Units.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Operations\EquipmentInformations.vb" />
+    <Compile Include="Operations\GateOuts.vb" />
+    <Compile Include="Operations\Gateins.vb" />
+    <Compile Include="Operations\Invoices.vb" />
+    <Compile Include="Operations\RepairCompletions.vb" />
+    <Compile Include="Operations\RepairEstimates.vb" />
+    <Compile Include="Operations\RepairInvoiceUpdates.vb" />
+    <Compile Include="Operations\ReserveBookings.vb" />
+    <Compile Include="Operations\Schedules.vb" />
+    <Compile Include="Operations\Trackings.vb" />
+    <Compile Include="Rental\RentalEntrys.vb" />
+    <Compile Include="SageIntegration\FinanceIntegrations.vb" />
+    <Compile Include="Services\Alerts.vb" />
+    <Compile Include="Services\Bulk_Emails.vb" />
+    <Compile Include="Services\Emails.vb" />
+    <Compile Include="Services\EDISettings.vb" />
+    <Compile Include="Services\DARs.vb" />
+    <Compile Include="Tracking\BulkEmails.vb" />
+    <Compile Include="Tracking\Enquirys.vb" />
+    <Compile Include="Transportation\Transportations.vb" />
+    <Compile Include="Upload\Uploads.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Data\Data.vbproj">
+      <Project>{D87AA6CF-6E51-4799-8432-09503731C270}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\Entities.vbproj">
+      <Project>{C0E0464A-A99E-4AB3-B1A4-4308C90FC8C2}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GatewayFramework\GatewayFramework.vbproj">
+      <Project>{49E4BD8D-225C-4BF7-8A4C-228F6294810A}</Project>
+      <Name>GatewayFramework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

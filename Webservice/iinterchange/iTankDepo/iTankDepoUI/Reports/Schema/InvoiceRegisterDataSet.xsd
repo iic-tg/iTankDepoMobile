@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="InvoiceRegisterDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="InvoiceRegisterDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:EnforceConstraints="False" msprop:Generator_UserDSName="InvoiceRegisterDataSet" msprop:Generator_DataSetName="InvoiceRegisterDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VM_INVOICE_REGISTER" msprop:Generator_TableClassName="VM_INVOICE_REGISTERDataTable" msprop:Generator_TableVarName="tableVM_INVOICE_REGISTER" msprop:Generator_RowChangedName="VM_INVOICE_REGISTERRowChanged" msprop:Generator_TablePropName="VM_INVOICE_REGISTER" msprop:Generator_RowDeletingName="VM_INVOICE_REGISTERRowDeleting" msprop:Generator_RowChangingName="VM_INVOICE_REGISTERRowChanging" msprop:Generator_RowEvHandlerName="VM_INVOICE_REGISTERRowChangeEventHandler" msprop:Generator_RowDeletedName="VM_INVOICE_REGISTERRowDeleted" msprop:Generator_RowClassName="VM_INVOICE_REGISTERRow" msprop:Generator_UserTableName="VM_INVOICE_REGISTER" msprop:Generator_RowEvArgName="VM_INVOICE_REGISTERRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="INVC_BIN" msprop:Generator_ColumnVarNameInTable="columnINVC_BIN" msprop:Generator_ColumnPropNameInRow="INVC_BIN" msprop:Generator_ColumnPropNameInTable="INVC_BINColumn" msprop:Generator_UserColumnName="INVC_BIN" type="xs:long" minOccurs="0" />
+              <xs:element name="INVC_NO" msprop:Generator_ColumnVarNameInTable="columnINVC_NO" msprop:Generator_ColumnPropNameInRow="INVC_NO" msprop:Generator_ColumnPropNameInTable="INVC_NOColumn" msprop:Generator_UserColumnName="INVC_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="INVC_DT" msprop:Generator_ColumnVarNameInTable="columnINVC_DT" msprop:Generator_ColumnPropNameInRow="INVC_DT" msprop:Generator_ColumnPropNameInTable="INVC_DTColumn" msprop:Generator_UserColumnName="INVC_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="INVC_FL_PTH" msprop:Generator_ColumnVarNameInTable="columnINVC_FL_PTH" msprop:Generator_ColumnPropNameInRow="INVC_FL_PTH" msprop:Generator_ColumnPropNameInTable="INVC_FL_PTHColumn" msprop:Generator_UserColumnName="INVC_FL_PTH" type="xs:string" minOccurs="0" />
+              <xs:element name="INVC_TYP" msprop:Generator_ColumnVarNameInTable="columnINVC_TYP" msprop:Generator_ColumnPropNameInRow="INVC_TYP" msprop:Generator_ColumnPropNameInTable="INVC_TYPColumn" msprop:Generator_UserColumnName="INVC_TYP" type="xs:string" minOccurs="0" />
+              <xs:element name="ACTVTY_TYP_ID" msprop:Generator_ColumnVarNameInTable="columnACTVTY_TYP_ID" msprop:Generator_ColumnPropNameInRow="ACTVTY_TYP_ID" msprop:Generator_ColumnPropNameInTable="ACTVTY_TYP_IDColumn" msprop:Generator_UserColumnName="ACTVTY_TYP_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="ACTVTY_TYP_CD" msprop:Generator_ColumnVarNameInTable="columnACTVTY_TYP_CD" msprop:Generator_ColumnPropNameInRow="ACTVTY_TYP_CD" msprop:Generator_ColumnPropNameInTable="ACTVTY_TYP_CDColumn" msprop:Generator_UserColumnName="ACTVTY_TYP_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="INVC_CRRNCY_ID" msprop:Generator_ColumnVarNameInTable="columnINVC_CRRNCY_ID" msprop:Generator_ColumnPropNameInRow="INVC_CRRNCY_ID" msprop:Generator_ColumnPropNameInTable="INVC_CRRNCY_IDColumn" msprop:Generator_UserColumnName="INVC_CRRNCY_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="EXCHNG_RT_NC" msprop:Generator_ColumnVarNameInTable="columnEXCHNG_RT_NC" msprop:Generator_ColumnPropNameInRow="EXCHNG_RT_NC" msprop:Generator_ColumnPropNameInTable="EXCHNG_RT_NCColumn" msprop:Generator_UserColumnName="EXCHNG_RT_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BLLNG_TYP_ID" msprop:Generator_ColumnVarNameInTable="columnBLLNG_TYP_ID" msprop:Generator_ColumnPropNameInRow="BLLNG_TYP_ID" msprop:Generator_ColumnPropNameInTable="BLLNG_TYP_IDColumn" msprop:Generator_UserColumnName="BLLNG_TYP_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="FRM_BLLNG_DT" msprop:Generator_ColumnVarNameInTable="columnFRM_BLLNG_DT" msprop:Generator_ColumnPropNameInRow="FRM_BLLNG_DT" msprop:Generator_ColumnPropNameInTable="FRM_BLLNG_DTColumn" msprop:Generator_UserColumnName="FRM_BLLNG_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TO_BLLNG_DT" msprop:Generator_ColumnVarNameInTable="columnTO_BLLNG_DT" msprop:Generator_ColumnPropNameInRow="TO_BLLNG_DT" msprop:Generator_ColumnPropNameInTable="TO_BLLNG_DTColumn" msprop:Generator_UserColumnName="TO_BLLNG_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TTL_CST_IN_CSTMR_CRRNCY_NC" msprop:Generator_ColumnVarNameInTable="columnTTL_CST_IN_CSTMR_CRRNCY_NC" msprop:Generator_ColumnPropNameInRow="TTL_CST_IN_CSTMR_CRRNCY_NC" msprop:Generator_ColumnPropNameInTable="TTL_CST_IN_CSTMR_CRRNCY_NCColumn" msprop:Generator_UserColumnName="TTL_CST_IN_CSTMR_CRRNCY_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TTL_CST_IN_INVC_CRRNCY_NC" msprop:Generator_ColumnVarNameInTable="columnTTL_CST_IN_INVC_CRRNCY_NC" msprop:Generator_ColumnPropNameInRow="TTL_CST_IN_INVC_CRRNCY_NC" msprop:Generator_ColumnPropNameInTable="TTL_CST_IN_INVC_CRRNCY_NCColumn" msprop:Generator_UserColumnName="TTL_CST_IN_INVC_CRRNCY_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HS_DPT_AMNT" msprop:Generator_ColumnVarNameInTable="columnHS_DPT_AMNT" msprop:Generator_ColumnPropNameInRow="HS_DPT_AMNT" msprop:Generator_ColumnPropNameInTable="HS_DPT_AMNTColumn" msprop:Generator_UserColumnName="HS_DPT_AMNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HT_DPT_AMNT" msprop:Generator_ColumnVarNameInTable="columnHT_DPT_AMNT" msprop:Generator_ColumnPropNameInRow="HT_DPT_AMNT" msprop:Generator_ColumnPropNameInTable="HT_DPT_AMNTColumn" msprop:Generator_UserColumnName="HT_DPT_AMNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CI_DPT_AMNT" msprop:Generator_ColumnVarNameInTable="columnCI_DPT_AMNT" msprop:Generator_ColumnPropNameInRow="CI_DPT_AMNT" msprop:Generator_ColumnPropNameInTable="CI_DPT_AMNTColumn" msprop:Generator_UserColumnName="CI_DPT_AMNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RP_DPT_AMNT" msprop:Generator_ColumnVarNameInTable="columnRP_DPT_AMNT" msprop:Generator_ColumnPropNameInRow="RP_DPT_AMNT" msprop:Generator_ColumnPropNameInTable="RP_DPT_AMNTColumn" msprop:Generator_UserColumnName="RP_DPT_AMNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MI_DPT_AMNT" msprop:Generator_ColumnVarNameInTable="columnMI_DPT_AMNT" msprop:Generator_ColumnPropNameInRow="MI_DPT_AMNT" msprop:Generator_ColumnPropNameInTable="MI_DPT_AMNTColumn" msprop:Generator_UserColumnName="MI_DPT_AMNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TP_DPT_AMNT" msprop:Generator_ColumnVarNameInTable="columnTP_DPT_AMNT" msprop:Generator_ColumnPropNameInRow="TP_DPT_AMNT" msprop:Generator_ColumnPropNameInTable="TP_DPT_AMNTColumn" msprop:Generator_UserColumnName="TP_DPT_AMNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RT_DPT_AMNT" msprop:Generator_ColumnVarNameInTable="columnRT_DPT_AMNT" msprop:Generator_ColumnPropNameInRow="RT_DPT_AMNT" msprop:Generator_ColumnPropNameInTable="RT_DPT_AMNTColumn" msprop:Generator_UserColumnName="RT_DPT_AMNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BLLNG_FLG" msprop:Generator_ColumnVarNameInTable="columnBLLNG_FLG" msprop:Generator_ColumnPropNameInRow="BLLNG_FLG" msprop:Generator_ColumnPropNameInTable="BLLNG_FLGColumn" msprop:Generator_UserColumnName="BLLNG_FLG" type="xs:string" minOccurs="0" />
+              <xs:element name="CSTMR_ID" msprop:Generator_ColumnVarNameInTable="columnCSTMR_ID" msprop:Generator_ColumnPropNameInRow="CSTMR_ID" msprop:Generator_ColumnPropNameInTable="CSTMR_IDColumn" msprop:Generator_UserColumnName="CSTMR_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="CSTMR_CD" msprop:Generator_ColumnVarNameInTable="columnCSTMR_CD" msprop:Generator_ColumnPropNameInRow="CSTMR_CD" msprop:Generator_ColumnPropNameInTable="CSTMR_CDColumn" msprop:Generator_UserColumnName="CSTMR_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="CSTMR_NAM" msprop:Generator_ColumnVarNameInTable="columnCSTMR_NAM" msprop:Generator_ColumnPropNameInRow="CSTMR_NAM" msprop:Generator_ColumnPropNameInTable="CSTMR_NAMColumn" msprop:Generator_UserColumnName="CSTMR_NAM" type="xs:string" minOccurs="0" />
+              <xs:element name="INVCNG_PRTY_ID" msprop:Generator_ColumnVarNameInTable="columnINVCNG_PRTY_ID" msprop:Generator_ColumnPropNameInRow="INVCNG_PRTY_ID" msprop:Generator_ColumnPropNameInTable="INVCNG_PRTY_IDColumn" msprop:Generator_UserColumnName="INVCNG_PRTY_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="INVCNG_PRTY_CD" msprop:Generator_ColumnVarNameInTable="columnINVCNG_PRTY_CD" msprop:Generator_ColumnPropNameInRow="INVCNG_PRTY_CD" msprop:Generator_ColumnPropNameInTable="INVCNG_PRTY_CDColumn" msprop:Generator_UserColumnName="INVCNG_PRTY_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="INVCNG_PRTY_NM" msprop:Generator_ColumnVarNameInTable="columnINVCNG_PRTY_NM" msprop:Generator_ColumnPropNameInRow="INVCNG_PRTY_NM" msprop:Generator_ColumnPropNameInTable="INVCNG_PRTY_NMColumn" msprop:Generator_UserColumnName="INVCNG_PRTY_NM" type="xs:string" minOccurs="0" />
+              <xs:element name="SRVC_PRTNR_ID" msprop:Generator_ColumnVarNameInTable="columnSRVC_PRTNR_ID" msprop:Generator_ColumnPropNameInRow="SRVC_PRTNR_ID" msprop:Generator_ColumnPropNameInTable="SRVC_PRTNR_IDColumn" msprop:Generator_UserColumnName="SRVC_PRTNR_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="CSTMR_CRRNCY_ID" msprop:Generator_ColumnVarNameInTable="columnCSTMR_CRRNCY_ID" msprop:Generator_ColumnPropNameInRow="CSTMR_CRRNCY_ID" msprop:Generator_ColumnPropNameInTable="CSTMR_CRRNCY_IDColumn" msprop:Generator_UserColumnName="CSTMR_CRRNCY_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="CSTMR_CRRNCY_CD" msprop:Generator_ColumnVarNameInTable="columnCSTMR_CRRNCY_CD" msprop:Generator_ColumnPropNameInRow="CSTMR_CRRNCY_CD" msprop:Generator_ColumnPropNameInTable="CSTMR_CRRNCY_CDColumn" msprop:Generator_UserColumnName="CSTMR_CRRNCY_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="DPT_CRRNCY_ID" msprop:Generator_ColumnVarNameInTable="columnDPT_CRRNCY_ID" msprop:Generator_ColumnPropNameInRow="DPT_CRRNCY_ID" msprop:Generator_ColumnPropNameInTable="DPT_CRRNCY_IDColumn" msprop:Generator_UserColumnName="DPT_CRRNCY_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="DPT_CRRNCY_CD" msprop:Generator_ColumnVarNameInTable="columnDPT_CRRNCY_CD" msprop:Generator_ColumnPropNameInRow="DPT_CRRNCY_CD" msprop:Generator_ColumnPropNameInTable="DPT_CRRNCY_CDColumn" msprop:Generator_UserColumnName="DPT_CRRNCY_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="DPT_ID" msprop:Generator_ColumnVarNameInTable="columnDPT_ID" msprop:Generator_ColumnPropNameInRow="DPT_ID" msprop:Generator_ColumnPropNameInTable="DPT_IDColumn" msprop:Generator_UserColumnName="DPT_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="ACTV_BT" msprop:Generator_ColumnVarNameInTable="columnACTV_BT" msprop:Generator_ColumnPropNameInRow="ACTV_BT" msprop:Generator_ColumnPropNameInTable="ACTV_BTColumn" msprop:Generator_UserColumnName="ACTV_BT" type="xs:boolean" minOccurs="0" />
+              <xs:element name="CRTD_BY" msprop:Generator_ColumnVarNameInTable="columnCRTD_BY" msprop:Generator_ColumnPropNameInRow="CRTD_BY" msprop:Generator_ColumnPropNameInTable="CRTD_BYColumn" msprop:Generator_UserColumnName="CRTD_BY" type="xs:string" minOccurs="0" />
+              <xs:element name="CRTD_DT" msprop:Generator_ColumnVarNameInTable="columnCRTD_DT" msprop:Generator_ColumnPropNameInRow="CRTD_DT" msprop:Generator_ColumnPropNameInTable="CRTD_DTColumn" msprop:Generator_UserColumnName="CRTD_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MDFD_BY" msprop:Generator_ColumnVarNameInTable="columnMDFD_BY" msprop:Generator_ColumnPropNameInRow="MDFD_BY" msprop:Generator_ColumnPropNameInTable="MDFD_BYColumn" msprop:Generator_UserColumnName="MDFD_BY" type="xs:string" minOccurs="0" />
+              <xs:element name="MDFD_DT" msprop:Generator_ColumnVarNameInTable="columnMDFD_DT" msprop:Generator_ColumnPropNameInRow="MDFD_DT" msprop:Generator_ColumnPropNameInTable="MDFD_DTColumn" msprop:Generator_UserColumnName="MDFD_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FL_NM" msprop:Generator_ColumnVarNameInTable="columnFL_NM" msprop:Generator_ColumnPropNameInRow="FL_NM" msprop:Generator_ColumnPropNameInTable="FL_NMColumn" msprop:Generator_UserColumnName="FL_NM" type="xs:string" minOccurs="0" />
+              <xs:element name="NO_OF_EQPMNT" msprop:Generator_ColumnVarNameInTable="columnNO_OF_EQPMNT" msprop:Generator_ColumnPropNameInRow="NO_OF_EQPMNT" msprop:Generator_ColumnPropNameInTable="NO_OF_EQPMNTColumn" msprop:Generator_UserColumnName="NO_OF_EQPMNT" type="xs:long" minOccurs="0" />
+              <xs:element name="SRVC_PRTNR_CD" msprop:Generator_ColumnVarNameInTable="columnSRVC_PRTNR_CD" msprop:Generator_ColumnPropNameInRow="SRVC_PRTNR_CD" msprop:Generator_ColumnPropNameInTable="SRVC_PRTNR_CDColumn" msprop:Generator_UserColumnName="SRVC_PRTNR_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="SRVC_PRTNR_NAM" msprop:Generator_ColumnVarNameInTable="columnSRVC_PRTNR_NAM" msprop:Generator_ColumnPropNameInRow="SRVC_PRTNR_NAM" msprop:Generator_ColumnPropNameInTable="SRVC_PRTNR_NAMColumn" msprop:Generator_UserColumnName="SRVC_PRTNR_NAM" type="xs:string" minOccurs="0" />
+              <xs:element name="IN_DPT_AMNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AGNT_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="AGNT_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="AGNT_NAM" type="xs:string" minOccurs="0" />
+              <xs:element name="AGNT_AMNT" type="xs:string" minOccurs="0" />
+              <xs:element name="DPT_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="DepotString" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VM_PENDING_INVOICE_REGISTER">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TRCKNG_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="CSTMR_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="CSTMR_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="CSTMR_NAM" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="ACTVTY_NAM" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_STTS_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="ACTVTY_NO" type="xs:long" minOccurs="0" />
+              <xs:element name="ACTVTY_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ACTIVITY_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="PNDNG_INVC_TYP_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="GI_TRNSCTN_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="INVCNG_PRTY_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="INVCNG_PRTY_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="INVCNG_PRTY_NM" type="xs:string" minOccurs="0" />
+              <xs:element name="RFRNC_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="GTN_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DPT_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="RFRNC_EIR_NO_1" type="xs:string" minOccurs="0" />
+              <xs:element name="DPT_AMNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DPT_CRRNCY_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="CSTMR_CRRNCY_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="DPT_CRRNCY_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="CSTMR_CRRNCY_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="CSTMR_AMNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="INVOICING_PARTY" type="xs:string" minOccurs="0" />
+              <xs:element name="FROM_BILLING_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TO_BILLING_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SRVC_PRTNR_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="SRVC_PRTNR_NAM" type="xs:string" minOccurs="0" />
+              <xs:element name="COUNT_EQPMNT_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="AGNT_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="AGNT_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="AGNT_NAM" type="xs:string" minOccurs="0" />
+              <xs:element name="AGNT_AMNT" type="xs:string" minOccurs="0" />
+              <xs:element name="DPT_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="DepotString" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VM_FINANCE_HANDLINGANDSTORAGE">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EQPMNT_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CSTMR_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="CSTMR_CD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CSTMR_NAM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EQPMNT_TYP_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_CD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EQPMNT_TYP_DSCRPTN_VC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRDCT_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="PRDCT_CD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRDCT_DSCRPTN_VC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GTN_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="STRG_DYS" type="xs:int" minOccurs="0" />
+              <xs:element name="CSTMR_CRRNCY_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="CSTMR_CRRNCY_CD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CRRNCY_DSCRPTN_VC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HNDLNG_IN_AMNT_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HNDLNG_OT_AMNT_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="STRG_AMNT_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CSTMR_AMNT_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DPT_AMNT_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TO_BLLNG_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="INVC_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STRG_FRM_BLLNG_DT" type="xs:string" minOccurs="0" />
+              <xs:element name="STRG_TO_BLLNG_DT" type="xs:string" minOccurs="0" />
+              <xs:element name="FR_DYS" type="xs:string" minOccurs="0" />
+              <xs:element name="DPT_CRRNCY_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="AGNT_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="AGNT_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="AGNT_NAM" type="xs:string" minOccurs="0" />
+              <xs:element name="STRG_DYS_AGNT" type="xs:string" minOccurs="0" />
+              <xs:element name="HNDLNG_IN_AMNT_NC_AGNT" type="xs:string" minOccurs="0" />
+              <xs:element name="HNDLNG_OT_AMNT_NC_AGNT" type="xs:string" minOccurs="0" />
+              <xs:element name="STRG_AMNT_NC_AGNT" type="xs:string" minOccurs="0" />
+              <xs:element name="CSTMR_AMNT_NC_AGNT" type="xs:string" minOccurs="0" />
+              <xs:element name="DPT_AMNT_NC_AGNT" type="xs:string" minOccurs="0" />
+              <xs:element name="CSTMR_CRRNCY_ID_AGNT" type="xs:string" minOccurs="0" />
+              <xs:element name="FR_DYS_AGNT" type="xs:string" minOccurs="0" />
+              <xs:element name="DPT_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="DepotString" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

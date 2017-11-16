@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "iTankDepoReports", "iTankDepoReports\iTankDepoReports.rptproj", "{EC6B8C37-1E10-49F8-848A-3EC7A746A091}"
+EndProject
+Project("{999D2CB9-9277-4465-A902-1604ED3686A3}") = "iTankDepoModels", "iTankDepoModels\iTankDepoModels.smdlproj", "{38E6BCDA-2865-4298-9BF9-CC90229F9B98}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://iic-tfs2012:8080/tfs/Products
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = iTankDepoReports\\iTankDepoReports.rptproj
+		SccProjectName1 = iTankDepoReports
+		SccLocalPath1 = iTankDepoReports
+		SccProjectUniqueName2 = iTankDepoModels\\iTankDepoModels.smdlproj
+		SccProjectName2 = iTankDepoModels
+		SccLocalPath2 = iTankDepoModels
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Production|Default = Production|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC6B8C37-1E10-49F8-848A-3EC7A746A091}.Debug|Default.ActiveCfg = Debug
+		{EC6B8C37-1E10-49F8-848A-3EC7A746A091}.Debug|Default.Build.0 = DebugLocal
+		{EC6B8C37-1E10-49F8-848A-3EC7A746A091}.Debug|Default.Deploy.0 = DebugLocal
+		{EC6B8C37-1E10-49F8-848A-3EC7A746A091}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{EC6B8C37-1E10-49F8-848A-3EC7A746A091}.DebugLocal|Default.Build.0 = DebugLocal
+		{EC6B8C37-1E10-49F8-848A-3EC7A746A091}.Production|Default.ActiveCfg = Release
+		{EC6B8C37-1E10-49F8-848A-3EC7A746A091}.Production|Default.Build.0 = Release
+		{EC6B8C37-1E10-49F8-848A-3EC7A746A091}.Production|Default.Deploy.0 = Release
+		{EC6B8C37-1E10-49F8-848A-3EC7A746A091}.Release|Default.ActiveCfg = Release
+		{EC6B8C37-1E10-49F8-848A-3EC7A746A091}.Release|Default.Build.0 = Release
+		{EC6B8C37-1E10-49F8-848A-3EC7A746A091}.Release|Default.Deploy.0 = Release
+		{38E6BCDA-2865-4298-9BF9-CC90229F9B98}.Debug|Default.ActiveCfg = Production
+		{38E6BCDA-2865-4298-9BF9-CC90229F9B98}.Debug|Default.Build.0 = Production
+		{38E6BCDA-2865-4298-9BF9-CC90229F9B98}.Debug|Default.Deploy.0 = Production
+		{38E6BCDA-2865-4298-9BF9-CC90229F9B98}.DebugLocal|Default.ActiveCfg = Production
+		{38E6BCDA-2865-4298-9BF9-CC90229F9B98}.DebugLocal|Default.Build.0 = Production
+		{38E6BCDA-2865-4298-9BF9-CC90229F9B98}.DebugLocal|Default.Deploy.0 = Production
+		{38E6BCDA-2865-4298-9BF9-CC90229F9B98}.Production|Default.ActiveCfg = Production
+		{38E6BCDA-2865-4298-9BF9-CC90229F9B98}.Production|Default.Build.0 = Production
+		{38E6BCDA-2865-4298-9BF9-CC90229F9B98}.Production|Default.Deploy.0 = Production
+		{38E6BCDA-2865-4298-9BF9-CC90229F9B98}.Release|Default.ActiveCfg = Production
+		{38E6BCDA-2865-4298-9BF9-CC90229F9B98}.Release|Default.Build.0 = Production
+		{38E6BCDA-2865-4298-9BF9-CC90229F9B98}.Release|Default.Deploy.0 = Production
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

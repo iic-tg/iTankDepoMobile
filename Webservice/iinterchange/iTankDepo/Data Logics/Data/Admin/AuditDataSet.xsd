@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AuditDataSet" targetNamespace="http://tempuri.org/AuditDataSet.xsd" xmlns:mstns="http://tempuri.org/AuditDataSet.xsd" xmlns="http://tempuri.org/AuditDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AuditDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:EnforceConstraints="False" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="AuditDataSet" msprop:Generator_UserDSName="AuditDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="V_AUDIT" msprop:Generator_TableClassName="V_AUDITDataTable" msprop:Generator_TableVarName="tableV_AUDIT" msprop:Generator_TablePropName="V_AUDIT" msprop:Generator_RowDeletingName="V_AUDITRowDeleting" msprop:Generator_RowChangingName="V_AUDITRowChanging" msprop:Generator_RowEvHandlerName="V_AUDITRowChangeEventHandler" msprop:Generator_RowDeletedName="V_AUDITRowDeleted" msprop:Generator_UserTableName="V_AUDIT" msprop:Generator_RowChangedName="V_AUDITRowChanged" msprop:Generator_RowEvArgName="V_AUDITRowChangeEvent" msprop:Generator_RowClassName="V_AUDITRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EQPMNT_NO" msprop:Generator_ColumnVarNameInTable="columnEQPMNT_NO" msprop:Generator_ColumnPropNameInRow="EQPMNT_NO" msprop:Generator_ColumnPropNameInTable="EQPMNT_NOColumn" msprop:Generator_UserColumnName="EQPMNT_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RFRNC_NO" msprop:Generator_ColumnVarNameInTable="columnRFRNC_NO" msprop:Generator_ColumnPropNameInRow="RFRNC_NO" msprop:Generator_ColumnPropNameInTable="RFRNC_NOColumn" msprop:Generator_UserColumnName="RFRNC_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="ACTVTY_NAM" msprop:Generator_ColumnVarNameInTable="columnACTVTY_NAM" msprop:Generator_ColumnPropNameInRow="ACTVTY_NAM" msprop:Generator_ColumnPropNameInTable="ACTVTY_NAMColumn" msprop:Generator_UserColumnName="ACTVTY_NAM" type="xs:string" minOccurs="0" />
+              <xs:element name="ACTN_VC" msprop:Generator_ColumnVarNameInTable="columnACTN_VC" msprop:Generator_ColumnPropNameInRow="ACTN_VC" msprop:Generator_ColumnPropNameInTable="ACTN_VCColumn" msprop:Generator_UserColumnName="ACTN_VC" type="xs:string" minOccurs="0" />
+              <xs:element name="CNCLD_BY" msprop:Generator_ColumnVarNameInTable="columnCNCLD_BY" msprop:Generator_ColumnPropNameInRow="CNCLD_BY" msprop:Generator_ColumnPropNameInTable="CNCLD_BYColumn" msprop:Generator_UserColumnName="CNCLD_BY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CNCLD_DT" msprop:Generator_ColumnVarNameInTable="columnCNCLD_DT" msprop:Generator_ColumnPropNameInRow="CNCLD_DT" msprop:Generator_ColumnPropNameInTable="CNCLD_DTColumn" msprop:Generator_UserColumnName="CNCLD_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ADT_RMRKS" msprop:Generator_ColumnVarNameInTable="columnADT_RMRKS" msprop:Generator_ColumnPropNameInRow="ADT_RMRKS" msprop:Generator_ColumnPropNameInTable="ADT_RMRKSColumn" msprop:Generator_UserColumnName="ADT_RMRKS" type="xs:string" minOccurs="0" />
+              <xs:element name="GI_TRNSCTN_NO" msprop:Generator_ColumnVarNameInTable="columnGI_TRNSCTN_NO" msprop:Generator_ColumnPropNameInRow="GI_TRNSCTN_NO" msprop:Generator_ColumnPropNameInTable="GI_TRNSCTN_NOColumn" msprop:Generator_UserColumnName="GI_TRNSCTN_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="DPT_ID" msprop:Generator_ColumnVarNameInTable="columnDPT_ID" msprop:Generator_ColumnPropNameInRow="DPT_ID" msprop:Generator_ColumnPropNameInTable="DPT_IDColumn" msprop:Generator_UserColumnName="DPT_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="OLD_VL" msprop:Generator_ColumnVarNameInTable="columnOLD_VL" msprop:Generator_ColumnPropNameInRow="OLD_VL" msprop:Generator_ColumnPropNameInTable="OLD_VLColumn" msprop:Generator_UserColumnName="OLD_VL" type="xs:string" minOccurs="0" />
+              <xs:element name="NEW_VL" msprop:Generator_ColumnVarNameInTable="columnNEW_VL" msprop:Generator_ColumnPropNameInRow="NEW_VL" msprop:Generator_ColumnPropNameInTable="NEW_VLColumn" msprop:Generator_UserColumnName="NEW_VL" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

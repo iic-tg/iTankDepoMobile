@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="InvoiceCancellationDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="InvoiceCancellationDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:EnforceConstraints="False">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="INVOICE_CANCEL">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="INVC_CNCL_ID" type="xs:long" />
+              <xs:element name="INVC_TYP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INVC_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FRM_BLLNG_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TO_BLLNG_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="INVC_TO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INVC_FNLD_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="GNRTD_BY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INVC_CNCLD_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CSTMR_TOT_CRRNCY" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DPT_TOT_CRRNCY" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DPT_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="CRTD_BY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CRTD_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ACTV_BT" type="xs:boolean" minOccurs="0" />
+              <xs:element name="CSTMR_CRRNCY_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="DPT_CRRNCY_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="DPT_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="DepotString" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="INVOICE_CANCEL_DETAIL">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="INVC_CNCL_DTL_ID" type="xs:long" />
+              <xs:element name="INVC_CNCL_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="EQPMNT_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EQPMNT_TYP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RFRNC_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CSTMR_TOT_CRRNCY" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DPT_TOT_CRRNCY" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ACTV_BT" type="xs:boolean" minOccurs="0" />
+              <xs:element name="DPT_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="DepotString" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="V_INVOICE_CANCEL">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="INVC_CNCL_ID" type="xs:long" />
+              <xs:element name="INVC_TYP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INVC_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FRM_BLLNG_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TO_BLLNG_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="INVC_TO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INVC_FNLD_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="GNRTD_BY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INVC_CNCLD_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CSTMR_TOT_CRRNCY" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DPT_TOT_CRRNCY" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DPT_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="CRTD_BY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CRTD_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ACTV_BT" type="xs:boolean" minOccurs="0" />
+              <xs:element name="CSTMR_CRRNCY_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="DPT_CRRNCY_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="DepotString" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//INVOICE_CANCEL" />
+      <xs:field xpath="INVC_CNCL_ID" />
+    </xs:unique>
+    <xs:unique name="INVOICE_CANCEL_DETAIL_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//INVOICE_CANCEL_DETAIL" />
+      <xs:field xpath="INVC_CNCL_DTL_ID" />
+    </xs:unique>
+    <xs:unique name="V_INVOICE_CANCEL_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//V_INVOICE_CANCEL" />
+      <xs:field xpath="INVC_CNCL_ID" />
+    </xs:unique>
+    <xs:keyref name="FK__INVOICE_C__INVC___5CF6C6BC" refer="Constraint1">
+      <xs:selector xpath=".//INVOICE_CANCEL_DETAIL" />
+      <xs:field xpath="INVC_CNCL_ID" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

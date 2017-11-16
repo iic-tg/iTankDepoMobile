@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+            <include layout="@layout/heating_footer" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:background="@color/search_bg"
+            android:layout_above="@+id/footer"
+            android:layout_below="@+id/toolbar">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:background="@color/toolbar"
+                    android:weightSum="1">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="2"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="0.65">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:id="@+id/text1"
+                            android:focusable="false"
+                            android:gravity="center|left"
+                            android:textColor="@color/Title"
+                            android:text="text1"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:focusable="false"
+                            android:gravity="center|left"
+                            android:id="@+id/text2"
+                            android:textColor="@color/Title"
+                            android:text="AAAAFFGG1 , type"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp"
+                        android:weightSum="2"
+                        android:layout_weight="0.32">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:id="@+id/text3"
+                            android:textColor="@color/Title"
+                            android:gravity="center"
+                            android:focusable="false"
+                            android:layout_marginRight="5dp"
+                            android:text="17-OCt-16"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="5dp"
+                            android:gravity="center"
+                            android:focusable="false"
+                            android:textColor="@color/Title"
+                            android:id="@+id/text4"
+                            android:text="08:15 am"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/search_bg"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textColor="@color/list_text"
+                            android:text="Total Period"
+                            android:id="@+id/textView6" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            android:textStyle="bold"
+                            android:textColor="@color/list_text"
+                            android:text="Min.Rate"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:visibility="invisible"
+                            android:textColor="@color/list_text"
+                            android:text="Hourly Rate"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                      <EditText
+                          android:focusable="false"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:id="@+id/ed_totalPrd"
+                            android:textColor="@color/list_text"
+                            android:text="6 hours"/>
+                        <EditText
+                            android:focusable="false"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/ed_minRate"
+                            android:visibility="invisible"
+                            android:text="0.00"/>
+                        <EditText
+                            android:focusable="false"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            android:id="@+id/ed_hourlyRate"
+                            android:text="0.00"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:visibility="invisible"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Total Cost (Currency)"
+                            android:textStyle="bold"
+                            android:gravity="center|left"
+                            android:textColor="@color/list_text"
+                            android:id="@+id/textView" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="30dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/list_text"
+                            android:gravity="center|right"
+                            android:id="@+id/tv_totalCost"
+                            android:text="30"/>
+
+
+
+                    </LinearLayout>
+                    <View style="@style/View_horizontal_heating"
+                        android:layout_marginTop="5dp"></View>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/tab_background">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_info"
+                        android:id="@+id/im_info"
+                        android:layout_alignParentLeft="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Heating Period"
+                        android:gravity="center|left"
+                        android:layout_toEndOf="@+id/im_info"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:id="@+id/textView3"
+                        android:layout_toRightOf="@+id/im_info" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_heating_add"
+                        android:tint="@color/Title"
+                        android:visibility="gone"
+                        android:id="@+id/im_add"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+<!--
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="2">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:textColor="@color/list_text"
+                            android:hint="Start Date,"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:textColor="@color/list_text"
+                            android:hint="End Date"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="2">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:textColor="@color/list_text"
+                            android:hint="Start Date,"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:textColor="@color/list_text"
+                            android:hint="End Date"/>
+                    </LinearLayout>
+                </LinearLayout>
+-->              <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/LL_whole"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:background="@color/search_bg"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.65">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:id="@+id/startDate"
+                            android:focusable="false"
+                            android:gravity="center|left"
+                            android:textColor="@color/list_text"
+                            android:text="Start Date, Start Time "/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:focusable="false"
+                            android:gravity="center|left"
+                            android:id="@+id/endDate"
+                            android:textColor="@color/list_text"
+                            android:text="End Date, End Time"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="5dp"
+                        android:weightSum="2"
+                        android:layout_weight="0.32">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:id="@+id/temp"
+                            android:textColor="@color/list_text_date"
+                            android:gravity="center|right"
+                            android:focusable="false"
+                            android:hint="Temp(°C)"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center|right"
+                            android:focusable="false"
+                            android:textColor="@color/list_text_date"
+                            android:id="@+id/total_period"
+                            android:hint="Total Period"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+                <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/LL_add_new_heating"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/field_border_grey">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Update Heating Period"
+                    android:gravity="center|left"
+                    android:layout_toEndOf="@+id/im_info1"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_Add_new"
+                    android:layout_toRightOf="@+id/im_info1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_info"
+                    android:id="@+id/im_info1"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@+id/text_layout"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="Start Date *"
+                            android:id="@+id/tv_startDate"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="2dp"
+                            android:id="@+id/tv_startTime"
+                            android:text="Start Time *"/>
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:layout_marginRight="4dp"
+                                android:textColor="@color/list_text"
+                                android:focusable="false"
+                                android:id="@+id/ed_startDate"
+                                android:hint=""
+                                />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:id="@+id/im_startDate"
+                                android:src="@mipmap/ic_calender"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:id="@+id/im_startTime"
+                                android:src="@mipmap/ic_time"
+                                android:layout_alignParentRight="true"/>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:focusable="false"
+                                android:id="@+id/ed_startTime"
+                                android:textColor="@color/list_text"
+                                android:hint=""
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="End Date *"
+                            android:layout_marginLeft="2dp"
+                            android:id="@+id/tv_endDate"
+                            android:layout_weight="1"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="2dp"
+                            android:id="@+id/tv_endTime"
+                            android:text="End Time *"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:focusable="false"
+                                android:id="@+id/ed_endDate"
+                                android:textColor="@color/list_text"
+                                android:layout_marginRight="4dp"
+                                android:hint=""
+                                />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@mipmap/ic_calender"
+                                android:id="@+id/im_endDate"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:focusable="false"
+                                android:textColor="@color/list_text"
+                                android:id="@+id/ed_endTime"
+                                android:layout_marginRight="4dp"
+                                android:hint=""
+                                />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@mipmap/ic_time"
+                                android:id="@+id/im_endTime"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="Temp *"
+                            android:id="@+id/tv_temp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:visibility="gone"
+                            android:textColor="@color/list_text"
+                            android:layout_marginLeft="2dp"
+                            android:text="End Time *"/>
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:weightSum="1">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:id="@+id/ed_temp"
+                            android:maxLength="7"
+                            android:inputType="number|textNoSuggestions"
+                            android:textColor="@color/list_text"
+                            android:layout_weight="1.13" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:weightSum="4"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center|bottom"
+                        android:layout_gravity="center|bottom"
+                        android:orientation="horizontal"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:src="@mipmap/ic_tick"
+                            android:tint="@color/white"
+                            android:id="@+id/im_okay"
+                            android:visibility="gone"
+                            android:background="@color/toolbar_right"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"/>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:tint="@color/white"
+                            android:id="@+id/im_cancel"
+                            android:visibility="gone"
+                            android:background="@color/list_text"
+                            android:src="@mipmap/ic_cancel"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/search_list">
+
+                </ListView>
+            </LinearLayout>
+
+        </ScrollView>
+
+        <include layout="@layout/common_toolbar"
+            android:id="@+id/toolbar"
+           ></include>
+
+    </RelativeLayout>
+    <!--  <include
+          layout="@layout/pluse_button"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />-->
+
+
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,1505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/common_toolbar"
+            android:id="@+id/toolbar"></include>
+        <RelativeLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+            <include layout="@layout/footer" />
+        </RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:padding="5dp"
+            android:layout_above="@+id/footer"
+            android:layout_below="@+id/toolbar">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/LL_general_info"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_marginLeft="2dp"
+                        android:id="@+id/text_layout"
+                        android:layout_below="@+id/visit_line"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:id="@+id/tv_name"
+                            android:text="Customer *"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:text="Equipment Number *"
+                            android:id="@+id/tv_equip_no"
+                            />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="wrap_content">
+
+
+
+                            <com.i_tankdepo.customcomponents.CustomSpinner
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/sp_customer"
+                                android:visibility="invisible"
+                                android:textColor="@color/list_text"
+                                style="@style/Widget.AppCompat.Spinner.Underlined"></com.i_tankdepo.customcomponents.CustomSpinner>
+
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:id="@+id/ed_customer"
+                                android:layout_height="45dp"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:longClickable="false"
+                                android:focusable="false"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:layout_marginRight="4dp"
+                                android:hint=""
+                                />
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginTop="5dp"
+                                android:src="@mipmap/ic_down_dark"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+                        <EditText
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_marginRight="2dp"
+                                android:id="@+id/ed_equip_no"
+                                android:maxLength="11"
+                                android:longClickable="false"
+                                android:inputType="textCapCharacters|textNoSuggestions"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/list_text" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_marginLeft="2dp"
+                        android:layout_below="@+id/visit_line"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:id="@+id/tv_type"
+                            android:layout_height="match_parent"
+                            android:text="Type *"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:id="@+id/tv_code"
+                            android:layout_height="match_parent"
+                            android:text="Code *"
+                            />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/sp_type"
+                                android:textColor="@color/list_text"
+                                style="@style/Widget.AppCompat.Spinner.Underlined"></Spinner>
+                            <!--<AutoCompleteTextView
+                                android:id="@+id/autoCompleteTextView1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:ems="10"
+                                android:text="">
+
+                                <requestFocus />
+                            </AutoCompleteTextView>-->
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/ed_code"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/list_text"
+                            android:longClickable="false"
+                            android:focusable="false"
+                            />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_marginLeft="2dp"
+                        android:layout_below="@+id/visit_line"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:id="@+id/tv_status"
+                            android:layout_height="match_parent"
+                            android:text="Status *"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:textColor="@color/tv_color"
+                            android:layout_height="match_parent"
+                            android:text="Yard Location "
+                            />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:focusable="false"
+                                android:singleLine="true"
+                                android:longClickable="false"
+                                android:paddingRight="10dp"
+                                android:layout_marginRight="4dp"
+                                android:hint="IND"
+                                android:id="@+id/ed_status"
+                                android:textColor="@color/list_text"
+                                />
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginTop="5dp"
+                                android:visibility="gone"
+                                android:src="@mipmap/ic_down_dark"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:maxLength="50"
+                                android:inputType="text|textNoSuggestions"
+                                android:layout_marginRight="4dp"
+                                android:longClickable="false"
+                                android:id="@+id/ed_location"
+                                android:hint=""
+                                android:text="JUB"
+                                android:textColor="@color/list_text"
+                                />
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginTop="5dp"
+                                android:src="@mipmap/ic_down_dark"
+                                android:visibility="gone"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_marginLeft="2dp"
+                        android:layout_below="@+id/visit_line"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:text="In Date *"
+                            android:id="@+id/tv_date"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:text="Time *"
+                            android:id="@+id/tv_time"
+                            />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:focusable="false"
+                                android:longClickable="false"
+                                android:layout_marginRight="4dp"
+                                android:id="@+id/ed_date"
+                                android:hint=""
+                                android:textColor="@color/list_text"
+                                />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@mipmap/ic_calender"
+                                android:id="@+id/im_date"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:focusable="false"
+                                android:paddingRight="10dp"
+                                android:layout_marginRight="4dp"
+                                android:hint=""
+                                android:text="00.00"
+                                android:longClickable="false"
+                                android:id="@+id/ed_time"
+                                android:textColor="@color/list_text"
+                                />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@mipmap/ic_time"
+                                android:id="@+id/im_time"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_marginLeft="2dp"
+                        android:layout_below="@+id/visit_line"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:text="Previous Cargo *"
+                            android:id="@+id/tv_cargo"
+
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/tv_color"
+                            android:text="EIR No "
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <com.i_tankdepo.customcomponents.CustomSpinner
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/sp_previ_cargo"
+                                android:textColor="@color/list_text"
+                                android:visibility="invisible"
+                                style="@style/Widget.AppCompat.Spinner.Underlined"></com.i_tankdepo.customcomponents.CustomSpinner>
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:focusable="false"
+                                android:id="@id/ed_preCargo"
+                                android:longClickable="false"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:layout_marginRight="4dp"
+                                android:hint=""
+                                />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginTop="5dp"
+                                android:src="@mipmap/ic_down_dark"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/list_text"
+                            android:id="@+id/ed_eir_no"
+                            android:textAllCaps="true"
+                            android:longClickable="false"
+                            android:maxLength="17"
+                            android:inputType="textCapCharacters|textNoSuggestions"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+                    </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_marginLeft="2dp"
+                        android:layout_below="@+id/visit_line"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:text="Vehicle No "
+                            android:textColor="@color/tv_color"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:text="Transporter "
+                            android:textColor="@color/tv_color"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:id="@+id/edit_layout"
+                        android:layout_below="@+id/text_layout"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:layout_marginRight="4dp"
+                                android:hint=""
+                                android:maxLength="70"
+                                android:longClickable="false"
+                                android:inputType="text|textNoSuggestions"
+                                android:id="@+id/ed_vechicle"
+                                android:textColor="@color/list_text"
+                                />
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginTop="5dp"
+                                android:src="@mipmap/ic_down_dark"
+                                android:visibility="gone"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/list_text"
+                            android:id="@+id/ed_transport"
+                            android:longClickable="false"
+                            android:inputType="text|textNoSuggestions"
+                            android:maxLength="70"
+                            />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_marginLeft="2dp"
+                        android:layout_below="@+id/new_fields"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:text="Consignee Name"
+                            android:textColor="@color/tv_color"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:text="Consignee Location"
+                            android:textColor="@color/tv_color"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:id="@+id/new_edit_layout"
+                        android:layout_below="@+id/new_text_layout"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:layout_marginRight="4dp"
+                                android:hint=""
+                                android:maxLength="30"
+                                android:longClickable="false"
+                                android:inputType="text|textNoSuggestions"
+                                android:id="@+id/ed_consignee_name"
+                                android:textColor="@color/list_text"
+                                />
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginTop="5dp"
+                                android:src="@mipmap/ic_down_dark"
+                                android:visibility="gone"
+                                android:layout_alignParentRight="true"
+                                />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textColor="@color/list_text"
+                                android:id="@+id/ed_consignee_location"
+                                android:longClickable="false"
+                                android:inputType="text|textNoSuggestions"
+                                android:maxLength="30"
+                                />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+                            <Switch
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:paddingRight="10dp"
+                                android:textColor="@color/list_text"
+                                android:layout_marginRight="4dp"
+                                android:text="Heating"
+                                android:id="@+id/switch_heating"
+                                android:theme="@style/SCBSwitch"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                        <Switch
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="2dp"
+                            android:textColor="@color/list_text"
+                            android:text="Rental"
+                            android:id="@+id/switch_rental"
+                            android:theme="@style/SCBSwitch"
+                            />
+                            </LinearLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_below="@+id/visit_line"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:text="Remarks "
+                            android:textColor="@color/tv_color"
+                            />
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:id="@+id/ed_remarks"
+                            android:inputType="textNoSuggestions"
+                            android:maxLength="255"
+                            android:textColor="@color/list_text"/>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Attachment"
+                        android:textColor="@color/tv_color"
+                        android:text="Attach files"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+                            <ImageView
+                                android:id="@+id/im_Attachment"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_toLeftOf="@+id/Attachment"
+                                android:layout_weight=".3"
+                                android:padding="7dp"
+                                android:src="@mipmap/ic_attach_camera"
+                                android:text="Attach files" />
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="100dp"
+                                android:layout_weight="1.7">
+
+
+
+                                <android.support.v7.widget.RecyclerView
+
+                                    android:id="@+id/list_item"
+                                    android:layout_weight="1.5"
+                                    android:scrollbars="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"/>
+                                <EditText
+                                    android:id="@+id/ed_attach"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0"
+                                    android:visibility="gone"
+                                    android:focusable="false"
+                                    android:longClickable="false"
+                                    android:textColor="@color/list_text" />
+
+
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/field_border"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="Equipment Info"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:gravity="center|left"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1.8"
+                        android:id="@+id/textView5" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@mipmap/ic_down"
+                            android:id="@+id/equip_down"
+                            />
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@mipmap/ic_up"
+                            android:visibility="gone"
+                            android:id="@+id/equip_up"
+                            />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/LL_Equipment_Info"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_marginLeft="2dp"
+                        android:layout_below="@+id/visit_line"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:textColor="@color/tv_color"
+                            android:layout_height="match_parent"
+                            android:text="Manuf. Date"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:textColor="@color/tv_color"
+                            android:layout_height="match_parent"
+                            android:inputType="number"
+                            android:text="Tare Weight(Kgs)"
+                            />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:focusable="false"
+                                android:paddingRight="10dp"
+                                android:layout_marginRight="4dp"
+                                android:id="@+id/ed_manfu"
+                                android:longClickable="false"
+                                android:hint=""
+                                android:textColor="@color/list_text"
+                                />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:id="@+id/im_manuf_date"
+                                android:src="@mipmap/ic_calender"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:layout_marginRight="4dp"
+                                android:hint=""
+                                android:longClickable="false"
+                                android:maxLength="11"
+                                android:inputType="numberDecimal|textNoSuggestions"
+                                android:digits="0123456789"
+                                android:id="@+id/ed_tare_weight"
+                                android:textColor="@color/list_text"
+                                />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@mipmap/ic_time"
+                                android:visibility="gone"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_marginLeft="2dp"
+                        android:layout_below="@+id/visit_line"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:textColor="@color/tv_color"
+                            android:layout_height="match_parent"
+                            android:text="Gross Weight(Kgs)"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:textColor="@color/tv_color"
+                            android:layout_height="match_parent"
+                            android:text="Capacity (Liters)"
+                            />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:layout_marginRight="4dp"
+                                android:hint=""
+                                android:maxLength="11"
+                                android:longClickable="false"
+                                android:inputType="numberDecimal|textNoSuggestions"
+                                android:digits="0123456789"
+                                android:id="@+id/ed_gross_weight"
+                                android:textColor="@color/list_text"
+                                />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:visibility="gone"
+                                android:src="@mipmap/ic_calender"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:layout_marginRight="4dp"
+                                android:id="@+id/ed_capacity"
+                                android:longClickable="false"
+                                android:inputType="numberDecimal|textNoSuggestions"
+                                android:digits="0123456789"
+                                android:maxLength="11"
+                                android:hint=""
+                                android:textColor="@color/list_text"
+                                />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@mipmap/ic_time"
+                                android:visibility="gone"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_marginLeft="2dp"
+                        android:layout_below="@+id/visit_line"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/tv_color"
+                            android:text="Last Surveyor"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/tv_color"
+                            android:text="Last Test Date"
+                            />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:id="@+id/ed_Last_survay"
+                                android:maxLength="9"
+                                android:longClickable="false"
+                                android:inputType="text|textNoSuggestions"
+                                android:layout_marginRight="4dp"
+                                android:hint=""
+                                android:textColor="@color/list_text"
+                                />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@mipmap/ic_calender"
+                                android:visibility="gone"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:layout_marginRight="4dp"
+                                android:id="@+id/ed_test_date"
+                                android:longClickable="false"
+                                android:hint=""
+                                android:focusable="false"
+                                android:textColor="@color/list_text"
+                                />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:id="@+id/im_last_Testdate"
+                                android:src="@mipmap/ic_calender"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_marginLeft="2dp"
+                        android:layout_below="@+id/visit_line"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/tv_color"
+                            android:text="Last Test Type"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/tv_color"
+                            android:text="Next Test Date"
+                            />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                           <com.i_tankdepo.customcomponents.CustomSpinner
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:id="@+id/sp_last_testtype"
+                               android:visibility="invisible"
+                               android:textColor="@color/list_text"
+                               style="@style/Widget.AppCompat.Spinner.Underlined"></com.i_tankdepo.customcomponents.CustomSpinner>
+                             <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                 android:focusable="false"
+                                 android:longClickable="false"
+                                android:id="@+id/ed_last_testtype"
+                                android:layout_marginRight="4dp"
+                                android:hint=""
+                                android:textColor="@color/list_text"
+                                />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@mipmap/ic_down"
+                                android:tint="@color/black"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:id="@+id/ed_next_date"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:layout_marginRight="4dp"
+                                android:hint=""
+                                android:longClickable="false"
+                                android:focusable="false"
+                                android:textColor="@color/list_text"
+                                />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:visibility="gone"
+                                android:src="@mipmap/ic_calender"
+                                android:id="@+id/im_next_Testdate"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_marginLeft="2dp"
+                        android:layout_below="@+id/visit_line"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/tv_color"
+                            android:text="Next Test Type"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/tv_color"
+                            android:text="Remark"
+                            android:visibility="gone"
+                            />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                           <!-- <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/sp_next_testtype"
+                                android:textColor="@color/list_text"
+                                style="@style/Widget.AppCompat.Spinner.Underlined"></Spinner>-->
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:longClickable="false"
+                                android:paddingRight="10dp"
+                                android:id="@+id/ed_next_testtype"
+                                android:layout_marginRight="4dp"
+                                android:hint=""
+                                android:focusable="false"
+                                android:textColor="@color/list_text"
+                                />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@mipmap/ic_calender"
+                                android:visibility="gone"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:visibility="gone"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:layout_marginRight="4dp"
+                                android:longClickable="false"
+                                android:id="@+id/ed_next_type"
+                                android:hint=""
+                                android:textColor="@color/list_text"
+                                />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@mipmap/ic_time"
+                                android:visibility="gone"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_marginLeft="2dp"
+                        android:layout_below="@+id/visit_line"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/tv_color"
+                            android:text="Remark"
+
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/tv_color"
+                            android:text="Next Test Date"
+                            android:visibility="gone"
+                            android:id="@+id/textView4" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:id="@+id/ed_info_remark"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:layout_marginRight="4dp"
+                                android:hint=""
+                                android:maxLength="255"
+                                android:textColor="@color/list_text"
+                                />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@mipmap/ic_time"
+                                android:visibility="gone"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+                            <Switch
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:paddingRight="10dp"
+                                android:textColor="@color/list_text"
+                                android:layout_marginRight="4dp"
+                                android:text="Active"
+                                android:id="@+id/swt_moreinfo_Active"
+                                android:theme="@style/SCBSwitch"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <Switch
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:paddingLeft="10dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="2dp"
+                                android:textColor="@color/list_text"
+                                android:text="Rental"
+                                android:id="@+id/swt_moreinfo_remtal"
+                                android:theme="@style/SCBSwitch"
+                                />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+<!--
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Submit &amp; Print"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@color/submit"
+                        android:textSize="18dp"
+                        android:layout_weight="1.00" />
+
+
+
+                </LinearLayout>
+-->
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+    <!--  <include
+          layout="@layout/pluse_button"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />-->
+
+
+</android.support.v4.widget.DrawerLayout>

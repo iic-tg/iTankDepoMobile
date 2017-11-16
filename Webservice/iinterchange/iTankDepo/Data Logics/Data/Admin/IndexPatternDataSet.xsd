@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="IndexPatternDataSet" targetNamespace="http://tempuri.org/IndexPatternDataSet.xsd" xmlns:mstns="http://tempuri.org/IndexPatternDataSet.xsd" xmlns="http://tempuri.org/IndexPatternDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="IndexPatternDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:EnforceConstraints="False" msprop:EnableTableAdapterManager="False" msprop:Generator_DataSetName="IndexPatternDataSet" msprop:Generator_UserDSName="IndexPatternDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="INDEX_PATTERN" msprop:Generator_TableClassName="INDEX_PATTERNDataTable" msprop:Generator_TableVarName="tableINDEX_PATTERN" msprop:Generator_RowChangedName="INDEX_PATTERNRowChanged" msprop:Generator_TablePropName="INDEX_PATTERN" msprop:Generator_RowDeletingName="INDEX_PATTERNRowDeleting" msprop:Generator_RowChangingName="INDEX_PATTERNRowChanging" msprop:Generator_RowEvHandlerName="INDEX_PATTERNRowChangeEventHandler" msprop:Generator_RowDeletedName="INDEX_PATTERNRowDeleted" msprop:Generator_RowClassName="INDEX_PATTERNRow" msprop:Generator_UserTableName="INDEX_PATTERN" msprop:Generator_RowEvArgName="INDEX_PATTERNRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="INDX_PTTRN_ID" msprop:Generator_ColumnVarNameInTable="columnINDX_PTTRN_ID" msprop:Generator_ColumnPropNameInRow="INDX_PTTRN_ID" msprop:Generator_ColumnPropNameInTable="INDX_PTTRN_IDColumn" msprop:Generator_UserColumnName="INDX_PTTRN_ID" type="xs:int" />
+              <xs:element name="SCRN_ID" msprop:Generator_ColumnVarNameInTable="columnSCRN_ID" msprop:Generator_ColumnPropNameInRow="SCRN_ID" msprop:Generator_ColumnPropNameInTable="SCRN_IDColumn" msprop:Generator_UserColumnName="SCRN_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="SQNC_NO_STRT" msprop:Generator_ColumnVarNameInTable="columnSQNC_NO_STRT" msprop:Generator_ColumnPropNameInRow="SQNC_NO_STRT" msprop:Generator_ColumnPropNameInTable="SQNC_NO_STRTColumn" msprop:Generator_UserColumnName="SQNC_NO_STRT" type="xs:string" minOccurs="0" />
+              <xs:element name="NO_OF_DGT" msprop:Generator_ColumnVarNameInTable="columnNO_OF_DGT" msprop:Generator_ColumnPropNameInRow="NO_OF_DGT" msprop:Generator_ColumnPropNameInTable="NO_OF_DGTColumn" msprop:Generator_UserColumnName="NO_OF_DGT" type="xs:int" minOccurs="0" />
+              <xs:element name="INDX_PTTRN_FRMT" msprop:Generator_ColumnVarNameInTable="columnINDX_PTTRN_FRMT" msprop:Generator_ColumnPropNameInRow="INDX_PTTRN_FRMT" msprop:Generator_ColumnPropNameInTable="INDX_PTTRN_FRMTColumn" msprop:Generator_UserColumnName="INDX_PTTRN_FRMT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RST_BSS_ID" msprop:Generator_ColumnVarNameInTable="columnRST_BSS_ID" msprop:Generator_ColumnPropNameInRow="RST_BSS_ID" msprop:Generator_ColumnPropNameInTable="RST_BSS_IDColumn" msprop:Generator_UserColumnName="RST_BSS_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="SPLT_CHR" msprop:Generator_ColumnVarNameInTable="columnSPLT_CHR" msprop:Generator_ColumnPropNameInRow="SPLT_CHR" msprop:Generator_ColumnPropNameInTable="SPLT_CHRColumn" msprop:Generator_UserColumnName="SPLT_CHR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INDX_BSS_ID" msprop:Generator_ColumnVarNameInTable="columnINDX_BSS_ID" msprop:Generator_ColumnPropNameInRow="INDX_BSS_ID" msprop:Generator_ColumnPropNameInTable="INDX_BSS_IDColumn" msprop:Generator_UserColumnName="INDX_BSS_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="CRTD_BY" msprop:Generator_ColumnVarNameInTable="columnCRTD_BY" msprop:Generator_ColumnPropNameInRow="CRTD_BY" msprop:Generator_ColumnPropNameInTable="CRTD_BYColumn" msprop:Generator_UserColumnName="CRTD_BY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CRTD_DT" msprop:Generator_ColumnVarNameInTable="columnCRTD_DT" msprop:Generator_ColumnPropNameInRow="CRTD_DT" msprop:Generator_ColumnPropNameInTable="CRTD_DTColumn" msprop:Generator_UserColumnName="CRTD_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MDFD_BY" msprop:Generator_ColumnVarNameInTable="columnMDFD_BY" msprop:Generator_ColumnPropNameInRow="MDFD_BY" msprop:Generator_ColumnPropNameInTable="MDFD_BYColumn" msprop:Generator_UserColumnName="MDFD_BY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MDFD_DT" msprop:Generator_ColumnVarNameInTable="columnMDFD_DT" msprop:Generator_ColumnPropNameInRow="MDFD_DT" msprop:Generator_ColumnPropNameInTable="MDFD_DTColumn" msprop:Generator_UserColumnName="MDFD_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ACTV_BT" msprop:Generator_ColumnVarNameInTable="columnACTV_BT" msprop:Generator_ColumnPropNameInRow="ACTV_BT" msprop:Generator_ColumnPropNameInTable="ACTV_BTColumn" msprop:Generator_UserColumnName="ACTV_BT" type="xs:boolean" minOccurs="0" />
+              <xs:element name="DPT_ID" msprop:Generator_ColumnVarNameInTable="columnDPT_ID" msprop:Generator_ColumnPropNameInRow="DPT_ID" msprop:Generator_ColumnPropNameInTable="DPT_IDColumn" msprop:Generator_UserColumnName="DPT_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="INDX_PTTRN_ACTL_FRMT" msprop:Generator_ColumnVarNameInTable="columnINDX_PTTRN_ACTL_FRMT" msprop:Generator_ColumnPropNameInRow="INDX_PTTRN_ACTL_FRMT" msprop:Generator_ColumnPropNameInTable="INDX_PTTRN_ACTL_FRMTColumn" msprop:Generator_UserColumnName="INDX_PTTRN_ACTL_FRMT" type="xs:string" minOccurs="0" />
+              <xs:element name="EDT_BT" msprop:Generator_ColumnVarNameInTable="columnEDT_BT" msprop:Generator_ColumnPropNameInRow="EDT_BT" msprop:Generator_ColumnPropNameInTable="EDT_BTColumn" msprop:Generator_UserColumnName="EDT_BT" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="INDEX_PATTERN_CONFIG" msprop:Generator_TableClassName="INDEX_PATTERN_CONFIGDataTable" msprop:Generator_TableVarName="tableINDEX_PATTERN_CONFIG" msprop:Generator_RowChangedName="INDEX_PATTERN_CONFIGRowChanged" msprop:Generator_TablePropName="INDEX_PATTERN_CONFIG" msprop:Generator_RowDeletingName="INDEX_PATTERN_CONFIGRowDeleting" msprop:Generator_RowChangingName="INDEX_PATTERN_CONFIGRowChanging" msprop:Generator_RowEvHandlerName="INDEX_PATTERN_CONFIGRowChangeEventHandler" msprop:Generator_RowDeletedName="INDEX_PATTERN_CONFIGRowDeleted" msprop:Generator_RowClassName="INDEX_PATTERN_CONFIGRow" msprop:Generator_UserTableName="INDEX_PATTERN_CONFIG" msprop:Generator_RowEvArgName="INDEX_PATTERN_CONFIGRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="INDX_PTTRN_CNFG_ID" msprop:Generator_ColumnVarNameInTable="columnINDX_PTTRN_CNFG_ID" msprop:Generator_ColumnPropNameInRow="INDX_PTTRN_CNFG_ID" msprop:Generator_ColumnPropNameInTable="INDX_PTTRN_CNFG_IDColumn" msprop:Generator_UserColumnName="INDX_PTTRN_CNFG_ID" type="xs:int" />
+              <xs:element name="SCRN_ID" msprop:Generator_ColumnVarNameInTable="columnSCRN_ID" msprop:Generator_ColumnPropNameInRow="SCRN_ID" msprop:Generator_ColumnPropNameInTable="SCRN_IDColumn" msprop:Generator_UserColumnName="SCRN_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="PRMTR_ID" msprop:Generator_ColumnVarNameInTable="columnPRMTR_ID" msprop:Generator_ColumnPropNameInRow="PRMTR_ID" msprop:Generator_ColumnPropNameInTable="PRMTR_IDColumn" msprop:Generator_UserColumnName="PRMTR_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="PRMTR_NM" msprop:Generator_ColumnVarNameInTable="columnPRMTR_NM" msprop:Generator_ColumnPropNameInRow="PRMTR_NM" msprop:Generator_ColumnPropNameInTable="PRMTR_NMColumn" msprop:Generator_UserColumnName="PRMTR_NM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRMTR_FLD_LNGTH" msprop:Generator_ColumnVarNameInTable="columnPRMTR_FLD_LNGTH" msprop:Generator_ColumnPropNameInRow="PRMTR_FLD_LNGTH" msprop:Generator_ColumnPropNameInTable="PRMTR_FLD_LNGTHColumn" msprop:Generator_UserColumnName="PRMTR_FLD_LNGTH" type="xs:int" minOccurs="0" />
+              <xs:element name="DLFT_BT" msprop:Generator_ColumnVarNameInTable="columnDLFT_BT" msprop:Generator_ColumnPropNameInRow="DLFT_BT" msprop:Generator_ColumnPropNameInTable="DLFT_BTColumn" msprop:Generator_UserColumnName="DLFT_BT" type="xs:boolean" minOccurs="0" />
+              <xs:element name="CMPNY_ID" msprop:Generator_ColumnVarNameInTable="columnCMPNY_ID" msprop:Generator_ColumnPropNameInRow="CMPNY_ID" msprop:Generator_ColumnPropNameInTable="CMPNY_IDColumn" msprop:Generator_UserColumnName="CMPNY_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="FLD_NM" msprop:Generator_ColumnVarNameInTable="columnFLD_NM" msprop:Generator_ColumnPropNameInRow="FLD_NM" msprop:Generator_ColumnPropNameInTable="FLD_NMColumn" msprop:Generator_UserColumnName="FLD_NM" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="INDEX_PATTERN_DETAIL" msprop:Generator_TableClassName="INDEX_PATTERN_DETAILDataTable" msprop:Generator_TableVarName="tableINDEX_PATTERN_DETAIL" msprop:Generator_RowChangedName="INDEX_PATTERN_DETAILRowChanged" msprop:Generator_TablePropName="INDEX_PATTERN_DETAIL" msprop:Generator_RowDeletingName="INDEX_PATTERN_DETAILRowDeleting" msprop:Generator_RowChangingName="INDEX_PATTERN_DETAILRowChanging" msprop:Generator_RowEvHandlerName="INDEX_PATTERN_DETAILRowChangeEventHandler" msprop:Generator_RowDeletedName="INDEX_PATTERN_DETAILRowDeleted" msprop:Generator_RowClassName="INDEX_PATTERN_DETAILRow" msprop:Generator_UserTableName="INDEX_PATTERN_DETAIL" msprop:Generator_RowEvArgName="INDEX_PATTERN_DETAILRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="INDX_PTTRN_DTL_ID" msprop:Generator_ColumnVarNameInTable="columnINDX_PTTRN_DTL_ID" msprop:Generator_ColumnPropNameInRow="INDX_PTTRN_DTL_ID" msprop:Generator_ColumnPropNameInTable="INDX_PTTRN_DTL_IDColumn" msprop:Generator_UserColumnName="INDX_PTTRN_DTL_ID" type="xs:int" />
+              <xs:element name="INDX_PTTRN_ID" msprop:Generator_ColumnVarNameInTable="columnINDX_PTTRN_ID" msprop:Generator_ColumnPropNameInRow="INDX_PTTRN_ID" msprop:Generator_ColumnPropNameInTable="INDX_PTTRN_IDColumn" msprop:Generator_UserColumnName="INDX_PTTRN_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="PRMTR_ID" msprop:Generator_ColumnVarNameInTable="columnPRMTR_ID" msprop:Generator_ColumnPropNameInRow="PRMTR_ID" msprop:Generator_ColumnPropNameInTable="PRMTR_IDColumn" msprop:Generator_UserColumnName="PRMTR_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="STRT_CHR" msprop:Generator_ColumnVarNameInTable="columnSTRT_CHR" msprop:Generator_ColumnPropNameInRow="STRT_CHR" msprop:Generator_ColumnPropNameInTable="STRT_CHRColumn" msprop:Generator_UserColumnName="STRT_CHR" type="xs:int" minOccurs="0" />
+              <xs:element name="END_CHR" msprop:Generator_ColumnVarNameInTable="columnEND_CHR" msprop:Generator_ColumnPropNameInRow="END_CHR" msprop:Generator_ColumnPropNameInTable="END_CHRColumn" msprop:Generator_UserColumnName="END_CHR" type="xs:int" minOccurs="0" />
+              <xs:element name="DFLT_VL" msprop:Generator_ColumnVarNameInTable="columnDFLT_VL" msprop:Generator_ColumnPropNameInRow="DFLT_VL" msprop:Generator_ColumnPropNameInTable="DFLT_VLColumn" msprop:Generator_UserColumnName="DFLT_VL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="V_INDEX_PATTERN" msprop:Generator_TableClassName="V_INDEX_PATTERNDataTable" msprop:Generator_TableVarName="tableV_INDEX_PATTERN" msprop:Generator_RowChangedName="V_INDEX_PATTERNRowChanged" msprop:Generator_TablePropName="V_INDEX_PATTERN" msprop:Generator_RowDeletingName="V_INDEX_PATTERNRowDeleting" msprop:Generator_RowChangingName="V_INDEX_PATTERNRowChanging" msprop:Generator_RowEvHandlerName="V_INDEX_PATTERNRowChangeEventHandler" msprop:Generator_RowDeletedName="V_INDEX_PATTERNRowDeleted" msprop:Generator_RowClassName="V_INDEX_PATTERNRow" msprop:Generator_UserTableName="V_INDEX_PATTERN" msprop:Generator_RowEvArgName="V_INDEX_PATTERNRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="INDX_PTTRN_ID" msprop:Generator_ColumnVarNameInTable="columnINDX_PTTRN_ID" msprop:Generator_ColumnPropNameInRow="INDX_PTTRN_ID" msprop:Generator_ColumnPropNameInTable="INDX_PTTRN_IDColumn" msprop:Generator_UserColumnName="INDX_PTTRN_ID" type="xs:int" />
+              <xs:element name="SCRN_ID" msprop:Generator_ColumnVarNameInTable="columnSCRN_ID" msprop:Generator_ColumnPropNameInRow="SCRN_ID" msprop:Generator_ColumnPropNameInTable="SCRN_IDColumn" msprop:Generator_UserColumnName="SCRN_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="SCRN_NM" msprop:Generator_ColumnVarNameInTable="columnSCRN_NM" msprop:Generator_ColumnPropNameInRow="SCRN_NM" msprop:Generator_ColumnPropNameInTable="SCRN_NMColumn" msprop:Generator_UserColumnName="SCRN_NM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SQNC_NO_STRT" msprop:Generator_ColumnVarNameInTable="columnSQNC_NO_STRT" msprop:Generator_ColumnPropNameInRow="SQNC_NO_STRT" msprop:Generator_ColumnPropNameInTable="SQNC_NO_STRTColumn" msprop:Generator_UserColumnName="SQNC_NO_STRT" type="xs:int" minOccurs="0" />
+              <xs:element name="NO_OF_DGT" msprop:Generator_ColumnVarNameInTable="columnNO_OF_DGT" msprop:Generator_ColumnPropNameInRow="NO_OF_DGT" msprop:Generator_ColumnPropNameInTable="NO_OF_DGTColumn" msprop:Generator_UserColumnName="NO_OF_DGT" type="xs:int" minOccurs="0" />
+              <xs:element name="INDX_PTTRN_FRMT" msprop:Generator_ColumnVarNameInTable="columnINDX_PTTRN_FRMT" msprop:Generator_ColumnPropNameInRow="INDX_PTTRN_FRMT" msprop:Generator_ColumnPropNameInTable="INDX_PTTRN_FRMTColumn" msprop:Generator_UserColumnName="INDX_PTTRN_FRMT" type="xs:string" minOccurs="0" />
+              <xs:element name="RST_BSS_ID" msprop:Generator_ColumnVarNameInTable="columnRST_BSS_ID" msprop:Generator_ColumnPropNameInRow="RST_BSS_ID" msprop:Generator_ColumnPropNameInTable="RST_BSS_IDColumn" msprop:Generator_UserColumnName="RST_BSS_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="RST_BSS_NM" msprop:Generator_ColumnVarNameInTable="columnRST_BSS_NM" msprop:Generator_ColumnPropNameInRow="RST_BSS_NM" msprop:Generator_ColumnPropNameInTable="RST_BSS_NMColumn" msprop:Generator_UserColumnName="RST_BSS_NM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SPLT_CHR" msprop:Generator_ColumnVarNameInTable="columnSPLT_CHR" msprop:Generator_ColumnPropNameInRow="SPLT_CHR" msprop:Generator_ColumnPropNameInTable="SPLT_CHRColumn" msprop:Generator_UserColumnName="SPLT_CHR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INDX_BSS_ID" msprop:Generator_ColumnVarNameInTable="columnINDX_BSS_ID" msprop:Generator_ColumnPropNameInRow="INDX_BSS_ID" msprop:Generator_ColumnPropNameInTable="INDX_BSS_IDColumn" msprop:Generator_UserColumnName="INDX_BSS_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="INDX_BSS_NM" msprop:Generator_ColumnVarNameInTable="columnINDX_BSS_NM" msprop:Generator_ColumnPropNameInRow="INDX_BSS_NM" msprop:Generator_ColumnPropNameInTable="INDX_BSS_NMColumn" msprop:Generator_UserColumnName="INDX_BSS_NM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CRTD_BY" msprop:Generator_ColumnVarNameInTable="columnCRTD_BY" msprop:Generator_ColumnPropNameInRow="CRTD_BY" msprop:Generator_ColumnPropNameInTable="CRTD_BYColumn" msprop:Generator_UserColumnName="CRTD_BY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CRTD_DT" msprop:Generator_ColumnVarNameInTable="columnCRTD_DT" msprop:Generator_ColumnPropNameInRow="CRTD_DT" msprop:Generator_ColumnPropNameInTable="CRTD_DTColumn" msprop:Generator_UserColumnName="CRTD_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MDFD_BY" msprop:Generator_ColumnVarNameInTable="columnMDFD_BY" msprop:Generator_ColumnPropNameInRow="MDFD_BY" msprop:Generator_ColumnPropNameInTable="MDFD_BYColumn" msprop:Generator_UserColumnName="MDFD_BY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MDFD_DT" msprop:Generator_ColumnVarNameInTable="columnMDFD_DT" msprop:Generator_ColumnPropNameInRow="MDFD_DT" msprop:Generator_ColumnPropNameInTable="MDFD_DTColumn" msprop:Generator_UserColumnName="MDFD_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ACTV_BT" msprop:Generator_ColumnVarNameInTable="columnACTV_BT" msprop:Generator_ColumnPropNameInRow="ACTV_BT" msprop:Generator_ColumnPropNameInTable="ACTV_BTColumn" msprop:Generator_UserColumnName="ACTV_BT" type="xs:boolean" minOccurs="0" />
+              <xs:element name="DPT_ID" msprop:Generator_ColumnVarNameInTable="columnDPT_ID" msprop:Generator_ColumnPropNameInRow="DPT_ID" msprop:Generator_ColumnPropNameInTable="DPT_IDColumn" msprop:Generator_UserColumnName="DPT_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="INDX_PTTRN_ACTL_FRMT" msprop:Generator_ColumnVarNameInTable="columnINDX_PTTRN_ACTL_FRMT" msprop:Generator_ColumnPropNameInRow="INDX_PTTRN_ACTL_FRMT" msprop:Generator_ColumnPropNameInTable="INDX_PTTRN_ACTL_FRMTColumn" msprop:Generator_UserColumnName="INDX_PTTRN_ACTL_FRMT" type="xs:string" minOccurs="0" />
+              <xs:element name="TBL_NAM" msprop:Generator_ColumnVarNameInTable="columnTBL_NAM" msprop:Generator_ColumnPropNameInRow="TBL_NAM" msprop:Generator_ColumnPropNameInTable="TBL_NAMColumn" msprop:Generator_UserColumnName="TBL_NAM" type="xs:string" minOccurs="0" />
+              <xs:element name="EDT_BT" msprop:Generator_ColumnVarNameInTable="columnEDT_BT" msprop:Generator_ColumnPropNameInRow="EDT_BT" msprop:Generator_ColumnPropNameInTable="EDT_BTColumn" msprop:Generator_UserColumnName="EDT_BT" type="xs:string" minOccurs="0" />
+              <xs:element name="DPT_CD" msprop:Generator_ColumnVarNameInTable="columnDPT_CD" msprop:Generator_ColumnPropNameInRow="DPT_CD" msprop:Generator_ColumnPropNameInTable="DPT_CDColumn" msprop:Generator_UserColumnName="DPT_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="INDX_BSS_FLD_NM" msprop:Generator_ColumnVarNameInTable="columnINDX_BSS_FLD_NM" msprop:Generator_ColumnPropNameInRow="INDX_BSS_FLD_NM" msprop:Generator_ColumnPropNameInTable="INDX_BSS_FLD_NMColumn" msprop:Generator_UserColumnName="INDX_BSS_FLD_NM" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="V_INDEX_PATTERN_DETAIL" msprop:Generator_TableClassName="V_INDEX_PATTERN_DETAILDataTable" msprop:Generator_TableVarName="tableV_INDEX_PATTERN_DETAIL" msprop:Generator_RowChangedName="V_INDEX_PATTERN_DETAILRowChanged" msprop:Generator_TablePropName="V_INDEX_PATTERN_DETAIL" msprop:Generator_RowDeletingName="V_INDEX_PATTERN_DETAILRowDeleting" msprop:Generator_RowChangingName="V_INDEX_PATTERN_DETAILRowChanging" msprop:Generator_RowEvHandlerName="V_INDEX_PATTERN_DETAILRowChangeEventHandler" msprop:Generator_RowDeletedName="V_INDEX_PATTERN_DETAILRowDeleted" msprop:Generator_RowClassName="V_INDEX_PATTERN_DETAILRow" msprop:Generator_UserTableName="V_INDEX_PATTERN_DETAIL" msprop:Generator_RowEvArgName="V_INDEX_PATTERN_DETAILRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="INDX_PTTRN_DTL_ID" msprop:Generator_ColumnVarNameInTable="columnINDX_PTTRN_DTL_ID" msprop:Generator_ColumnPropNameInRow="INDX_PTTRN_DTL_ID" msprop:Generator_ColumnPropNameInTable="INDX_PTTRN_DTL_IDColumn" msprop:Generator_UserColumnName="INDX_PTTRN_DTL_ID" type="xs:int" />
+              <xs:element name="INDX_PTTRN_ID" msprop:Generator_ColumnVarNameInTable="columnINDX_PTTRN_ID" msprop:Generator_ColumnPropNameInRow="INDX_PTTRN_ID" msprop:Generator_ColumnPropNameInTable="INDX_PTTRN_IDColumn" msprop:Generator_UserColumnName="INDX_PTTRN_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="PRMTR_ID" msprop:Generator_ColumnVarNameInTable="columnPRMTR_ID" msprop:Generator_ColumnPropNameInRow="PRMTR_ID" msprop:Generator_ColumnPropNameInTable="PRMTR_IDColumn" msprop:Generator_UserColumnName="PRMTR_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="PRMTR_NM" msprop:Generator_ColumnVarNameInTable="columnPRMTR_NM" msprop:Generator_ColumnPropNameInRow="PRMTR_NM" msprop:Generator_ColumnPropNameInTable="PRMTR_NMColumn" msprop:Generator_UserColumnName="PRMTR_NM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STRT_CHR" msprop:Generator_ColumnVarNameInTable="columnSTRT_CHR" msprop:Generator_ColumnPropNameInRow="STRT_CHR" msprop:Generator_ColumnPropNameInTable="STRT_CHRColumn" msprop:Generator_UserColumnName="STRT_CHR" type="xs:int" minOccurs="0" />
+              <xs:element name="END_CHR" msprop:Generator_ColumnVarNameInTable="columnEND_CHR" msprop:Generator_ColumnPropNameInRow="END_CHR" msprop:Generator_ColumnPropNameInTable="END_CHRColumn" msprop:Generator_UserColumnName="END_CHR" type="xs:int" minOccurs="0" />
+              <xs:element name="DFLT_VL" msprop:Generator_ColumnVarNameInTable="columnDFLT_VL" msprop:Generator_ColumnPropNameInRow="DFLT_VL" msprop:Generator_ColumnPropNameInTable="DFLT_VLColumn" msprop:Generator_UserColumnName="DFLT_VL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FLD_NM" msprop:Generator_ColumnVarNameInTable="columnFLD_NM" msprop:Generator_ColumnPropNameInRow="FLD_NM" msprop:Generator_ColumnPropNameInTable="FLD_NMColumn" msprop:Generator_UserColumnName="FLD_NM" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MAX_SNO" msprop:Generator_TableClassName="MAX_SNODataTable" msprop:Generator_TableVarName="tableMAX_SNO" msprop:Generator_RowChangedName="MAX_SNORowChanged" msprop:Generator_TablePropName="MAX_SNO" msprop:Generator_RowDeletingName="MAX_SNORowDeleting" msprop:Generator_RowChangingName="MAX_SNORowChanging" msprop:Generator_RowEvHandlerName="MAX_SNORowChangeEventHandler" msprop:Generator_RowDeletedName="MAX_SNORowDeleted" msprop:Generator_RowClassName="MAX_SNORow" msprop:Generator_UserTableName="MAX_SNO" msprop:Generator_RowEvArgName="MAX_SNORowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MX_SNO_ID" msprop:Generator_ColumnVarNameInTable="columnMX_SNO_ID" msprop:Generator_ColumnPropNameInRow="MX_SNO_ID" msprop:Generator_ColumnPropNameInTable="MX_SNO_IDColumn" msprop:Generator_UserColumnName="MX_SNO_ID" type="xs:int" />
+              <xs:element name="TBL_NM" msprop:Generator_ColumnVarNameInTable="columnTBL_NM" msprop:Generator_ColumnPropNameInRow="TBL_NM" msprop:Generator_ColumnPropNameInTable="TBL_NMColumn" msprop:Generator_UserColumnName="TBL_NM">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MX_NO" msprop:Generator_ColumnVarNameInTable="columnMX_NO" msprop:Generator_ColumnPropNameInRow="MX_NO" msprop:Generator_ColumnPropNameInTable="MX_NOColumn" msprop:Generator_UserColumnName="MX_NO" type="xs:long" />
+              <xs:element name="MX_RFRNC_NO" msprop:Generator_ColumnVarNameInTable="columnMX_RFRNC_NO" msprop:Generator_ColumnPropNameInRow="MX_RFRNC_NO" msprop:Generator_ColumnPropNameInTable="MX_RFRNC_NOColumn" msprop:Generator_UserColumnName="MX_RFRNC_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MAX_SNO_DETAIL" msprop:Generator_TableClassName="MAX_SNO_DETAILDataTable" msprop:Generator_TableVarName="tableMAX_SNO_DETAIL" msprop:Generator_RowChangedName="MAX_SNO_DETAILRowChanged" msprop:Generator_TablePropName="MAX_SNO_DETAIL" msprop:Generator_RowDeletingName="MAX_SNO_DETAILRowDeleting" msprop:Generator_RowChangingName="MAX_SNO_DETAILRowChanging" msprop:Generator_RowEvHandlerName="MAX_SNO_DETAILRowChangeEventHandler" msprop:Generator_RowDeletedName="MAX_SNO_DETAILRowDeleted" msprop:Generator_RowClassName="MAX_SNO_DETAILRow" msprop:Generator_UserTableName="MAX_SNO_DETAIL" msprop:Generator_RowEvArgName="MAX_SNO_DETAILRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MX_SN_DTL_ID" msprop:Generator_ColumnVarNameInTable="columnMX_SN_DTL_ID" msprop:Generator_ColumnPropNameInRow="MX_SN_DTL_ID" msprop:Generator_ColumnPropNameInTable="MX_SN_DTL_IDColumn" msprop:Generator_UserColumnName="MX_SN_DTL_ID" type="xs:long" />
+              <xs:element name="TBL_NM" msprop:Generator_ColumnVarNameInTable="columnTBL_NM" msprop:Generator_ColumnPropNameInRow="TBL_NM" msprop:Generator_ColumnPropNameInTable="TBL_NMColumn" msprop:Generator_UserColumnName="TBL_NM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SQNC_NO" msprop:Generator_ColumnVarNameInTable="columnSQNC_NO" msprop:Generator_ColumnPropNameInRow="SQNC_NO" msprop:Generator_ColumnPropNameInTable="SQNC_NOColumn" msprop:Generator_UserColumnName="SQNC_NO" type="xs:long" minOccurs="0" />
+              <xs:element name="SQNC_CNDTN_VAL" msprop:Generator_ColumnVarNameInTable="columnSQNC_CNDTN_VAL" msprop:Generator_ColumnPropNameInRow="SQNC_CNDTN_VAL" msprop:Generator_ColumnPropNameInTable="SQNC_CNDTN_VALColumn" msprop:Generator_UserColumnName="SQNC_CNDTN_VAL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RST_CNDTN_VAL" msprop:Generator_ColumnVarNameInTable="columnRST_CNDTN_VAL" msprop:Generator_ColumnPropNameInRow="RST_CNDTN_VAL" msprop:Generator_ColumnPropNameInTable="RST_CNDTN_VALColumn" msprop:Generator_UserColumnName="RST_CNDTN_VAL" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:INDEX_PATTERN" />
+      <xs:field xpath="mstns:INDX_PTTRN_ID" />
+    </xs:unique>
+    <xs:unique name="INDEX_PATTERN_CONFIG_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:INDEX_PATTERN_CONFIG" />
+      <xs:field xpath="mstns:INDX_PTTRN_CNFG_ID" />
+    </xs:unique>
+    <xs:unique name="INDEX_PATTERN_DETAIL_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:INDEX_PATTERN_DETAIL" />
+      <xs:field xpath="mstns:INDX_PTTRN_DTL_ID" />
+    </xs:unique>
+    <xs:unique name="V_INDEX_PATTERN_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:V_INDEX_PATTERN" />
+      <xs:field xpath="mstns:INDX_PTTRN_ID" />
+    </xs:unique>
+    <xs:unique name="V_INDEX_PATTERN_DETAIL_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:V_INDEX_PATTERN_DETAIL" />
+      <xs:field xpath="mstns:INDX_PTTRN_DTL_ID" />
+    </xs:unique>
+    <xs:unique name="MAX_SNO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:MAX_SNO" />
+      <xs:field xpath="mstns:MX_SNO_ID" />
+    </xs:unique>
+    <xs:unique name="MAX_SNO_DETAIL_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:MAX_SNO_DETAIL" />
+      <xs:field xpath="mstns:MX_SN_DTL_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

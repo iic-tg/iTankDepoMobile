@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/DialogTheme"
+    android:gravity="center"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:text="Forgot Password?"
+        android:gravity="center|left"
+        android:background="@color/Title"
+        android:textStyle="bold"
+        android:paddingLeft="27dp"
+        android:id="@+id/tv_name"
+        android:textSize="20dp"
+        android:layout_height="40dp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="25dp"
+    android:layout_below="@+id/tv_name"
+    android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:id="@+id/sp_LL"
+    android:layout_height="40dp">
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/item_spinner"></Spinner>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="12dp"
+        android:textColor="@color/black"
+        android:paddingLeft="5dp"
+        android:inputType="numberDecimal|textNoSuggestions"
+        android:id="@+id/edit"
+        android:background="@drawable/field_border_bend"
+        android:layout_below="@+id/forget"
+
+        />
+
+</RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="12dp"
+        android:textColor="@color/black"
+        android:paddingLeft="5dp"
+        android:visibility="gone"
+        android:inputType="text|textNoSuggestions"
+        android:id="@+id/remark_edit"
+        android:background="@drawable/field_border_bend"
+        android:layout_below="@+id/forget"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:weightSum="3"
+        android:layout_marginLeft="3dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_button"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:id="@+id/bt_ok"
+            android:textAllCaps="false"
+            android:text="Update"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_button"
+            android:layout_weight="1"
+            android:id="@+id/tv_resend"
+            android:textColor="@color/white"
+            android:layout_marginLeft="8dp"
+            android:textAllCaps="false"
+            android:text="Cancel"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:visibility="invisible"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+</RelativeLayout>

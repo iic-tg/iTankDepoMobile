@@ -1,0 +1,282 @@
+﻿<DataSourceView xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>RepairEstimate</ID>
+  <Name>RepairEstimate</Name>
+  <Annotations xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout>
+              <dds>
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-13090" scrolltop="-2381" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="31327" y="18865" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                  <font>
+                    <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+                  </font>
+                  <mouseicon>
+                    <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                  </mouseicon>
+                </diagram>
+                <layoutmanager>
+                  <ddsxmlobj />
+                </layoutmanager>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="Repair Estimate" left="0" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="5106" height="24501" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="00080000f2130000b55f0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_V_RPT_REPAIR_ESTIMATE" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+              </dds>
+            </DiagramLayout>
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>-13090</DiagramViewPortLeft>
+            <DiagramViewPortTop>-2381</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>iTankDepo</DataSourceID>
+  <Schema>
+    <xs:schema id="RepairEstimate" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="RepairEstimate" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="053f128b-e83b-4d29-bcc8-491d673cc625" msprop:CompareInfo="&lt;CompareInfo&gt;&lt;Culture&gt;en-US&lt;/Culture&gt;&lt;IgnoreCase&gt;true&lt;/IgnoreCase&gt;&lt;IgnoreKanaType&gt;true&lt;/IgnoreKanaType&gt;&lt;IgnoreWidth&gt;true&lt;/IgnoreWidth&gt;&lt;/CompareInfo&gt;">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_V_RPT_REPAIR_ESTIMATE" msprop:FriendlyName="Repair Estimate" msprop:DbSchemaName="dbo" msprop:DbTableName="V_RPT_REPAIR_ESTIMATE" msprop:design-time-name="86060470-2687-4c2b-93eb-871b35edc0c7" msprop:TableType="View" msprop:stats_RowCount="102229">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="RPR_ESTMT_ID" msprop:stats_StDevWidth="0.5380239" msprop:stats_UniqueValuePercent="100" msprop:FriendlyName="Repair Estimate ID" msprop:design-time-name="3fbbbae7-c71a-402a-9c0f-4f957ef2735e" msprop:stats_MaxWidth="5" msprop:stats_UniqueValueCount="102229" msprop:stats_AvgWidth="4.64551" msprop:DbColumnName="RPR_ESTMT_ID" type="xs:long" />
+                  <xs:element name="RPR_ESTMT_NO" msdata:ReadOnly="true" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="9" msprop:FriendlyName="Repair Estimate No" msprop:design-time-name="1ee61136-8a3e-4d3f-b79c-7da1c20d2d84" msprop:stats_MaxWidth="16" msprop:stats_UniqueValueCount="9550" msprop:stats_AvgWidth="16" msprop:DbColumnName="RPR_ESTMT_NO" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="GI_TRNSCTN_NO" msdata:ReadOnly="true" msprop:stats_StDevWidth="0.4044751" msprop:stats_UniqueValuePercent="8" msprop:FriendlyName="GI_TRNSCTN_NO" msprop:design-time-name="adebf60b-bb33-4de3-b051-9c2dc65ce713" msprop:stats_MaxWidth="12" msprop:stats_UniqueValueCount="8773" msprop:stats_AvgWidth="11.82125" msprop:DbColumnName="GI_TRNSCTN_NO" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="RVSN_NO" msdata:ReadOnly="true" msprop:stats_StDevWidth="0.07240359" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Revision No" msprop:design-time-name="1b4f1a43-233f-4b77-a9c4-0cf2c75f8876" msprop:stats_MaxWidth="2" msprop:stats_UniqueValueCount="19" msprop:stats_AvgWidth="1.00527" msprop:DbColumnName="RVSN_NO" type="xs:long" minOccurs="0" />
+                  <xs:element name="RPR_ESTMT_DT" msdata:ReadOnly="true" msprop:FriendlyName="Repair Estimate Date" msprop:DbColumnName="RPR_ESTMT_DT" msprop:stats_UniqueValuePercent="0" msprop:design-time-name="ac0f7950-a387-4ae2-a191-e3cda742d621" msprop:stats_UniqueValueCount="434" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="ORGNL_ESTMN_DT" msdata:ReadOnly="true" msprop:FriendlyName="Original Estimate Date" msprop:DbColumnName="ORGNL_ESTMN_DT" msprop:stats_UniqueValuePercent="0" msprop:design-time-name="1174721e-29b3-4c9a-b42b-85ef393101ff" msprop:stats_UniqueValueCount="407" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="EQPMNT_NO" msdata:ReadOnly="true" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="7" msprop:FriendlyName="Equipment No " msprop:design-time-name="d90fc388-1835-469e-8dad-9019a21d1177" msprop:stats_MaxWidth="11" msprop:stats_UniqueValueCount="7417" msprop:stats_AvgWidth="11" msprop:DbColumnName="EQPMNT_NO" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="11" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DPT_ID" msdata:ReadOnly="true" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Depot ID" msprop:design-time-name="274f5cac-2009-455f-a3fd-dd11c42a9e58" msprop:stats_MaxWidth="1" msprop:stats_UniqueValueCount="1" msprop:stats_AvgWidth="1" msprop:DbColumnName="DPT_ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="DPT_CD" msdata:ReadOnly="true" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Depot" msprop:design-time-name="ca8b7035-d7c3-4f2b-bb03-fa148c7e193f" msprop:stats_MaxWidth="6" msprop:stats_UniqueValueCount="1" msprop:stats_AvgWidth="6" msprop:DbColumnName="DPT_CD" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="9" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CSTMR_ID" msdata:ReadOnly="true" msprop:stats_StDevWidth="0.3346141" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Customer ID" msprop:design-time-name="588e8dc9-820b-4f94-ade4-7ae14bc47940" msprop:stats_MaxWidth="3" msprop:stats_UniqueValueCount="66" msprop:stats_AvgWidth="2.12847" msprop:DbColumnName="CSTMR_ID" type="xs:long" minOccurs="0" />
+                  <xs:element name="CSTMR_CD" msdata:ReadOnly="true" msprop:stats_StDevWidth="1.273032" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Customer " msprop:design-time-name="e04ab07a-3d1c-4f31-9974-835d0d2727b4" msprop:stats_MaxWidth="9" msprop:stats_UniqueValueCount="66" msprop:stats_AvgWidth="5.61227" msprop:DbColumnName="CSTMR_CD" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="9" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CSTMR_NAM" msdata:ReadOnly="true" msprop:stats_StDevWidth="1.291159" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Customer  Name" msprop:design-time-name="2c7a187a-037b-473f-a1a3-9fb7ccb7a05e" msprop:stats_MaxWidth="24" msprop:stats_UniqueValueCount="66" msprop:stats_AvgWidth="6.05343" msprop:DbColumnName="CSTMR_NAM" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="EQPMNT_STTS_CD" msdata:ReadOnly="true" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Equipment Status" msprop:design-time-name="52b8ac62-e74c-470d-b762-eb1ca2d459ed" msprop:stats_MaxWidth="3" msprop:stats_UniqueValueCount="4" msprop:stats_AvgWidth="3" msprop:DbColumnName="EQPMNT_STTS_CD" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="5" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="RPR_TYP_CD" msdata:ReadOnly="true" msprop:stats_StDevWidth="1.753862" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Repair Type" msprop:design-time-name="9b976496-7ca5-4446-a686-f46ae600e09d" msprop:stats_MaxWidth="14" msprop:stats_UniqueValueCount="5" msprop:stats_AvgWidth="13.24072" msprop:DbColumnName="RPR_TYP_CD" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CRT_OF_CLNLNSS_BT" msdata:ReadOnly="true" msprop:FriendlyName="CRT_OF_CLNLNSS_BT" msprop:DbColumnName="CRT_OF_CLNLNSS_BT" msprop:stats_UniqueValuePercent="0" msprop:design-time-name="e2f84884-c02a-4202-93db-57cc2837c584" msprop:stats_UniqueValueCount="2" type="xs:boolean" minOccurs="0" />
+                  <xs:element name="ESTMTN_TTL_NC" msdata:ReadOnly="true" msprop:stats_StDevWidth="0.5147897" msprop:stats_AvgScale="0.2857" msprop:stats_UniqueValuePercent="1" msprop:FriendlyName="Estimate Total " msprop:design-time-name="3bb7eb02-ee19-48dd-b775-94594732b7a3" msprop:stats_StDevScale="0.453164" msprop:stats_MaxWidth="8" msprop:stats_UniqueValueCount="1565" msprop:stats_MaxScale="2" msprop:stats_AvgWidth="6.3132" msprop:DbColumnName="ESTMTN_TTL_NC" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="OWNR_APPRVL_RF" msdata:ReadOnly="true" msprop:stats_StDevWidth="1.887573" msprop:stats_UniqueValuePercent="5" msprop:FriendlyName="Owner Approval Ref No" msprop:design-time-name="0c7b464f-33ef-4c91-a8c9-2c06f768b772" msprop:stats_MaxWidth="25" msprop:stats_UniqueValueCount="2680" msprop:stats_AvgWidth="6.26206" msprop:DbColumnName="OWNR_APPRVL_RF" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ACTVTY_DT" msdata:ReadOnly="true" msprop:FriendlyName="Activity Date" msprop:DbColumnName="ACTVTY_DT" msprop:stats_UniqueValuePercent="0" msprop:design-time-name="1c51c8d0-5def-472d-b9a3-4c2bc9fe34d3" msprop:stats_UniqueValueCount="459" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="ACTVTY_NM" msdata:ReadOnly="true" msprop:stats_StDevWidth="0.9129776" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Activity" msprop:design-time-name="2c5af9ba-d330-4d1f-843d-45082393c72d" msprop:stats_MaxWidth="17" msprop:stats_UniqueValueCount="4" msprop:stats_AvgWidth="15.59198" msprop:DbColumnName="ACTVTY_NM" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="APPRVL_AMNT_NC" msdata:ReadOnly="true" msprop:stats_StDevWidth="1.025905" msprop:stats_AvgScale="0.23234" msprop:stats_UniqueValuePercent="1" msprop:FriendlyName="Approval Amount" msprop:design-time-name="78826537-9a62-4a53-a685-4c55ab8b48e9" msprop:stats_StDevScale="0.4235327" msprop:stats_MaxWidth="8" msprop:stats_UniqueValueCount="1539" msprop:stats_MaxScale="2" msprop:stats_AvgWidth="5.86476" msprop:DbColumnName="APPRVL_AMNT_NC" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="ORGNL_ESTMTN_AMNT_NC" msdata:ReadOnly="true" msprop:stats_StDevWidth="0.5094341" msprop:stats_AvgScale="0.2769276" msprop:stats_UniqueValuePercent="1" msprop:FriendlyName="Original Estimate Amount" msprop:design-time-name="7e4977eb-6c30-4066-811c-e053b21fd44d" msprop:stats_StDevScale="0.4488468" msprop:stats_MaxWidth="8" msprop:stats_UniqueValueCount="1481" msprop:stats_MaxScale="2" msprop:stats_AvgWidth="6.317423" msprop:DbColumnName="ORGNL_ESTMTN_AMNT_NC" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="CSTMR_ESTMTN_TTL_NC" msdata:ReadOnly="true" msprop:stats_StDevWidth="0.6854047" msprop:stats_AvgScale="0.8869219" msprop:stats_UniqueValuePercent="3" msprop:FriendlyName="Customer Estimate Total " msprop:design-time-name="d07dc13f-209c-4a4d-8504-0f45369cb014" msprop:stats_StDevScale="0.8666005" msprop:stats_MaxWidth="8" msprop:stats_UniqueValueCount="1029" msprop:stats_MaxScale="2" msprop:stats_AvgWidth="6.218477" msprop:DbColumnName="CSTMR_ESTMTN_TTL_NC" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="CSTMR_APPRVL_AMNT_NC" msdata:ReadOnly="true" msprop:stats_StDevWidth="0.8399106" msprop:stats_AvgScale="0.8373586" msprop:stats_UniqueValuePercent="3" msprop:FriendlyName="Customer Approval Amount" msprop:design-time-name="a7ca5694-4a6c-4609-b1f5-19c6579ea7ca" msprop:stats_StDevScale="0.8650222" msprop:stats_MaxWidth="8" msprop:stats_UniqueValueCount="1127" msprop:stats_MaxScale="2" msprop:stats_AvgWidth="6.097925" msprop:DbColumnName="CSTMR_APPRVL_AMNT_NC" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="ACTL_MN_HR_NC" msdata:ReadOnly="true" msprop:stats_StDevWidth="0.3313697" msprop:stats_AvgScale="0.7193075" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="" msprop:design-time-name="46cd5b93-dcbe-4767-b971-c5fae36569cb" msprop:stats_StDevScale="0.8039936" msprop:stats_MaxWidth="6" msprop:stats_UniqueValueCount="110" msprop:stats_MaxScale="2" msprop:stats_AvgWidth="4.106695" msprop:DbColumnName="ACTL_MN_HR_NC" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="INVCNG_PRTY_ID" msdata:ReadOnly="true" msprop:stats_StDevWidth="0.5272436" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Invoice Party ID" msprop:design-time-name="84f9a429-b41a-4553-84db-0602731e49e7" msprop:stats_MaxWidth="3" msprop:stats_UniqueValueCount="29" msprop:stats_AvgWidth="1.361794" msprop:DbColumnName="INVCNG_PRTY_ID" type="xs:long" minOccurs="0" />
+                  <xs:element name="INVCNG_PRTY_CD" msdata:ReadOnly="true" msprop:stats_StDevWidth="0.7907167" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Invoice Party" msprop:design-time-name="883dc332-8c95-4d8c-805a-da0f7b897988" msprop:stats_MaxWidth="8" msprop:stats_UniqueValueCount="29" msprop:stats_AvgWidth="7.117277" msprop:DbColumnName="INVCNG_PRTY_CD" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="9" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="INVCNG_PRTY_NM" msdata:ReadOnly="true" msprop:stats_StDevWidth="7.887162" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Invoice Party Name" msprop:design-time-name="2d6fb0c4-6a23-45c4-961e-bf19c74f32dd" msprop:stats_MaxWidth="32" msprop:stats_UniqueValueCount="29" msprop:stats_AvgWidth="20.27458" msprop:DbColumnName="INVCNG_PRTY_NM" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DMG_ID" msprop:stats_StDevWidth="0.4754488" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Damage ID" msprop:design-time-name="39398411-5758-4838-93d4-0d0460db7f0a" msprop:stats_MaxWidth="2" msprop:stats_UniqueValueCount="23" msprop:stats_AvgWidth="1.65476" msprop:DbColumnName="DMG_ID" type="xs:long" />
+                  <xs:element name="DMG_CD" msdata:ReadOnly="true" msprop:stats_StDevWidth="0.4754488" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Damage" msprop:design-time-name="d5e811ae-0f4a-4169-9684-c718d40e3eda" msprop:stats_MaxWidth="2" msprop:stats_UniqueValueCount="23" msprop:stats_AvgWidth="1.65476" msprop:DbColumnName="DMG_CD" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="2" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="LBR_RT" msprop:stats_StDevWidth="0.05092412" msprop:stats_AvgScale="1E-05" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Labour Rate" msprop:design-time-name="33d0942d-dd09-468d-a063-3f2d6345f4ec" msprop:stats_StDevScale="0.003162278" msprop:stats_MaxWidth="5" msprop:stats_UniqueValueCount="5" msprop:stats_MaxScale="1" msprop:stats_AvgWidth="4.9974" msprop:DbColumnName="LBR_RT" type="xs:decimal" />
+                  <xs:element name="LBR_HRS" msprop:stats_StDevWidth="0.05033956" msprop:stats_AvgScale="0.57294" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Man Hours" msprop:design-time-name="a199a12f-54c1-43e4-bb48-70cbb5436436" msprop:stats_StDevScale="0.64613" msprop:stats_MaxWidth="6" msprop:stats_UniqueValueCount="76" msprop:stats_MaxScale="2" msprop:stats_AvgWidth="4.00244" msprop:DbColumnName="LBR_HRS" type="xs:decimal" />
+                  <xs:element name="LBR_HR_CST_NC" msprop:stats_StDevWidth="0.6379142" msprop:stats_AvgScale="0.08642" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Man Hour Cost" msprop:design-time-name="c9c7f468-ebce-450c-8cd9-2afb3ec8114a" msprop:stats_StDevScale="0.281127" msprop:stats_MaxWidth="8" msprop:stats_UniqueValueCount="77" msprop:stats_MaxScale="2" msprop:stats_AvgWidth="4.64216" msprop:DbColumnName="LBR_HR_CST_NC" type="xs:decimal" />
+                  <xs:element name="MTRL_CST_NC" msprop:stats_StDevWidth="0.7178453" msprop:stats_AvgScale="0.02256" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Material Cost" msprop:design-time-name="2b2f8c0c-18c7-4e2e-9a51-3dad3a18bd45" msprop:stats_StDevScale="0.1495703" msprop:stats_MaxWidth="7" msprop:stats_UniqueValueCount="566" msprop:stats_MaxScale="2" msprop:stats_AvgWidth="5.13778" msprop:DbColumnName="MTRL_CST_NC" type="xs:decimal" />
+                  <xs:element name="RSPNSBLTY_ID" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Responsibility ID" msprop:design-time-name="455b8a2a-7f1c-4870-8e63-3faa07bc30b7" msprop:stats_MaxWidth="2" msprop:stats_UniqueValueCount="2" msprop:stats_AvgWidth="2" msprop:DbColumnName="RSPNSBLTY_ID" type="xs:long" />
+                  <xs:element name="RSPNSBLTY_CD" msdata:ReadOnly="true" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Responsibility" msprop:design-time-name="d10a8d4b-1cbe-41e1-86c6-6e2dd188f505" msprop:stats_MaxWidth="1" msprop:stats_UniqueValueCount="2" msprop:stats_AvgWidth="1" msprop:DbColumnName="RSPNSBLTY_CD" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DMG_RPR_DSCRPTN" msprop:stats_StDevWidth="16.45127" msprop:stats_UniqueValuePercent="9" msprop:FriendlyName="Damage Description " msprop:design-time-name="cf3050b9-c9ec-4d3a-8770-ab5ed3dc7cd3" msprop:stats_MaxWidth="240" msprop:stats_UniqueValueCount="8251" msprop:stats_AvgWidth="30.11235" msprop:DbColumnName="DMG_RPR_DSCRPTN" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CHK_BT" msprop:FriendlyName="CHK_BT" msprop:DbColumnName="CHK_BT" msprop:stats_UniqueValuePercent="0" msprop:design-time-name="bce45b91-7982-406d-8287-933ab4130e0d" msprop:stats_UniqueValueCount="2" type="xs:boolean" />
+                  <xs:element name="TTL_CST_NC" msprop:stats_StDevWidth="0.8032928" msprop:stats_AvgScale="0.09542" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Total Cost" msprop:design-time-name="d05602c2-6575-4a81-affc-5886d390211a" msprop:stats_StDevScale="0.2944756" msprop:stats_MaxWidth="8" msprop:stats_UniqueValueCount="837" msprop:stats_MaxScale="2" msprop:stats_AvgWidth="5.42715" msprop:DbColumnName="TTL_CST_NC" type="xs:decimal" />
+                  <xs:element name="RPR_ID" msprop:stats_StDevWidth="0.4955134" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Repair ID" msprop:design-time-name="57d9b43a-5c07-492e-b239-beb4cb5c6285" msprop:stats_MaxWidth="2" msprop:stats_UniqueValueCount="21" msprop:stats_AvgWidth="1.43315" msprop:DbColumnName="RPR_ID" type="xs:long" />
+                  <xs:element name="RPR_CD" msdata:ReadOnly="true" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Repair" msprop:design-time-name="25f26c85-ea2d-49f0-b8ed-8afe73b45fe5" msprop:stats_MaxWidth="2" msprop:stats_UniqueValueCount="21" msprop:Description="" msprop:stats_AvgWidth="2" msprop:DbColumnName="RPR_CD" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="2" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="RPR_DSCRPTN_VC" msdata:ReadOnly="true" msprop:stats_StDevWidth="5.59905" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Repair Description" msprop:design-time-name="35376ea5-abdc-49fc-a9e8-45fb4d98b566" msprop:stats_MaxWidth="18" msprop:stats_UniqueValueCount="20" msprop:stats_AvgWidth="9.76369" msprop:DbColumnName="RPR_DSCRPTN_VC" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TTL_CLN_CST" msdata:ReadOnly="true" msprop:stats_StDevWidth="0" msprop:stats_AvgScale="0" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Total Cleaning Cost" msprop:design-time-name="8de09b54-a255-4e10-807b-f354140f22ff" msprop:stats_StDevScale="0" msprop:stats_MaxWidth="4" msprop:stats_UniqueValueCount="1" msprop:stats_MaxScale="0" msprop:stats_AvgWidth="4" msprop:DbColumnName="TTL_CLN_CST" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="ITM_ID" msprop:stats_StDevWidth="0.4788417" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Item ID" msprop:design-time-name="c654eec1-2c19-45f1-ad6b-5c2971825969" msprop:stats_MaxWidth="2" msprop:stats_UniqueValueCount="12" msprop:stats_AvgWidth="1.35608" msprop:DbColumnName="ITM_ID" type="xs:long" />
+                  <xs:element name="ITM_CD" msdata:ReadOnly="true" msprop:stats_StDevWidth="0.4788417" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Item" msprop:design-time-name="d57e2752-396d-408d-b9e1-a553165a716c" msprop:stats_MaxWidth="2" msprop:stats_UniqueValueCount="12" msprop:stats_AvgWidth="1.35608" msprop:DbColumnName="ITM_CD" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="SB_ITM_ID" msprop:stats_StDevWidth="0.235346" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Sub Item ID" msprop:design-time-name="01a02842-e692-4b8d-837e-dcb3a9fdbb77" msprop:stats_MaxWidth="2" msprop:stats_UniqueValueCount="51" msprop:stats_AvgWidth="1.941149" msprop:DbColumnName="SB_ITM_ID" type="xs:long" minOccurs="0" />
+                  <xs:element name="SB_ITM_CD" msdata:ReadOnly="true" msprop:stats_StDevWidth="0.235346" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Sub Item" msprop:design-time-name="a7f0ce59-9110-4d77-a3e8-c8bd0e649d2c" msprop:stats_MaxWidth="2" msprop:stats_UniqueValueCount="51" msprop:stats_AvgWidth="1.941149" msprop:DbColumnName="SB_ITM_CD" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="LATEST_RVSN_BT" msdata:ReadOnly="true" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="LATEST_RVSN_BT" msprop:design-time-name="07ec2e41-1475-46af-b692-1e720d36492d" msprop:stats_MaxWidth="1" msprop:stats_UniqueValueCount="2" msprop:stats_AvgWidth="1" msprop:DbColumnName="LATEST_RVSN_BT" type="xs:int" />
+                  <xs:element name="HEADER_FILTER_BT" msdata:ReadOnly="true" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="HEADER_FILTER_BT" msprop:design-time-name="c40ed240-68cf-4999-bb7a-9cd794d5fb46" msprop:stats_MaxWidth="1" msprop:stats_UniqueValueCount="2" msprop:stats_AvgWidth="1" msprop:DbColumnName="HEADER_FILTER_BT" type="xs:int" />
+                  <xs:element name="GTN_DT" msprop:FriendlyName="GateIn Date" msprop:DbColumnName="GTN_DT" msprop:stats_UniqueValuePercent="0" msprop:design-time-name="0ed57a72-e801-4abd-bb93-09c022a6d9bc" msprop:stats_UniqueValueCount="432" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="MNFCTR_DT" msprop:design-time-name="9879b538-5df6-40e6-ba0d-7b350869c257" msprop:DbColumnName="MNFCTR_DT" msprop:FriendlyName="Manufacture Date" msprop:stats_UniqueValuePercent="1" msprop:stats_UniqueValueCount="10" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="TR_WGHT_NC" msprop:stats_StDevWidth="0.1755811" msprop:stats_AvgScale="0" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Tare Weight " msprop:design-time-name="4c2eb482-7a5c-4344-be8f-4fe25c555be1" msprop:stats_StDevScale="0" msprop:stats_MaxWidth="9" msprop:stats_UniqueValueCount="224" msprop:stats_MaxScale="0" msprop:stats_AvgWidth="7.991536" msprop:DbColumnName="TR_WGHT_NC" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="GRSS_WGHT_NC" msprop:stats_StDevWidth="0.07351964" msprop:stats_AvgScale="0" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Gross Weight " msprop:design-time-name="df83e146-4e2f-42d0-a3de-b18865de255a" msprop:stats_StDevScale="0" msprop:stats_MaxWidth="10" msprop:stats_UniqueValueCount="35" msprop:stats_MaxScale="0" msprop:stats_AvgWidth="8.996755" msprop:DbColumnName="GRSS_WGHT_NC" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="CPCTY_NC" msprop:stats_StDevWidth="0.06729735" msprop:stats_AvgScale="0" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Capacity " msprop:design-time-name="ca58bfa4-3125-4b96-b228-ab3462864f98" msprop:stats_StDevScale="0" msprop:stats_MaxWidth="10" msprop:stats_UniqueValueCount="252" msprop:stats_MaxScale="0" msprop:stats_AvgWidth="8.997334" msprop:DbColumnName="CPCTY_NC" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="LST_TST_DT" msprop:design-time-name="f6ac78e0-bb2a-4518-b157-f79e239950d6" msprop:DbColumnName="LST_TST_DT" msprop:FriendlyName="Last Test Date " msprop:stats_UniqueValuePercent="0" msprop:stats_UniqueValueCount="402" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="NXT_TST_DT" msprop:design-time-name="2ebbb022-3644-4924-8615-4af33ea9df7a" msprop:DbColumnName="NXT_TST_DT" msprop:FriendlyName="Next Test Date" msprop:stats_UniqueValuePercent="0" msprop:stats_UniqueValueCount="419" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="LST_TST_TYP" msprop:stats_StDevWidth="1.945096" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Last Test Type" msprop:design-time-name="24440979-a8ae-4b2f-9347-b3aa0ebecd7d" msprop:stats_MaxWidth="9" msprop:stats_UniqueValueCount="2" msprop:stats_AvgWidth="6.534555" msprop:DbColumnName="LST_TST_TYP" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NXT_TST_TYP" msprop:stats_StDevWidth="1.938271" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Next Test Type" msprop:design-time-name="43a65aa2-46a4-43f8-835c-dceec0c9ab5d" msprop:stats_MaxWidth="9" msprop:stats_UniqueValueCount="2" msprop:stats_AvgWidth="7.493097" msprop:DbColumnName="NXT_TST_TYP" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="VLDTY_PRD_TST_YRS" msprop:stats_StDevWidth="0.7227119" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Validity Period Test Years" msprop:design-time-name="955817de-e81e-457d-9750-21b7140fba31" msprop:stats_MaxWidth="3" msprop:stats_UniqueValueCount="2" msprop:stats_AvgWidth="2.691153" msprop:DbColumnName="VLDTY_PRD_TST_YRS" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="LST_SRVYR_NM" msprop:stats_StDevWidth="0.5011885" msprop:stats_UniqueValuePercent="0" msprop:FriendlyName="Last Surveyor Name" msprop:design-time-name="2b0cdb37-4682-4a4a-90be-b06a7afc949b" msprop:stats_MaxWidth="3" msprop:stats_UniqueValueCount="16" msprop:stats_AvgWidth="2.470482" msprop:DbColumnName="LST_SRVYR_NM" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msprop:IsLogical="True" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_V_RPT_REPAIR_ESTIMATE" />
+          <xs:field xpath="RPR_ESTMT_ID" />
+        </xs:unique>
+      </xs:element>
+    </xs:schema>
+  </Schema>
+</DataSourceView>

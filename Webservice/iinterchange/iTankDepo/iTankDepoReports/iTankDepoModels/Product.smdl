@@ -1,0 +1,209 @@
+﻿<SemanticModel ID="G850a006c-58d1-4c85-b3eb-5bfbd5a602bb" xmlns="http://schemas.microsoft.com/sqlserver/2004/10/semanticmodeling" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Culture>en-US</Culture>
+  <Entities>
+    <Entity ID="G259ef05c-c06a-462f-88be-e5bb9f6105f5">
+      <Name>PRODUCT CUSTOMER</Name>
+      <CollectionName>PRODUCT CUSTOMERs</CollectionName>
+      <IdentifyingAttributes>
+        <AttributeReference>
+          <!--PRDCT CSTMR ID-->
+          <AttributeID>G31139b50-244e-4173-8733-0d5696d1f2e2</AttributeID>
+        </AttributeReference>
+        <AttributeReference>
+          <!--PRDCT ID-->
+          <AttributeID>G878cbdba-193a-4328-ba01-ba4319bdc6ec</AttributeID>
+        </AttributeReference>
+        <AttributeReference>
+          <!--CSTMR ID-->
+          <AttributeID>G053766ba-0b1a-45e4-adca-763dd566768e</AttributeID>
+        </AttributeReference>
+        <AttributeReference>
+          <!--TTL AMNT NC-->
+          <AttributeID>Ga6b035dc-80cf-4410-8144-132833275421</AttributeID>
+        </AttributeReference>
+      </IdentifyingAttributes>
+      <DefaultDetailAttributes>
+        <AttributeReference>
+          <!--PRDCT CSTMR ID-->
+          <AttributeID>G31139b50-244e-4173-8733-0d5696d1f2e2</AttributeID>
+        </AttributeReference>
+        <AttributeReference>
+          <!--TTL AMNT NC-->
+          <AttributeID>Ga6b035dc-80cf-4410-8144-132833275421</AttributeID>
+        </AttributeReference>
+        <AttributeReference>
+          <!--PRDCT ID-->
+          <AttributeID>G878cbdba-193a-4328-ba01-ba4319bdc6ec</AttributeID>
+        </AttributeReference>
+        <AttributeReference>
+          <!--CSTMR ID-->
+          <AttributeID>G053766ba-0b1a-45e4-adca-763dd566768e</AttributeID>
+        </AttributeReference>
+      </DefaultDetailAttributes>
+      <DefaultAggregateAttributes>
+        <AttributeReference>
+          <!--#PRODUCT CUSTOMERs-->
+          <AttributeID>G380ab86d-adff-4443-a775-79912869aafc</AttributeID>
+        </AttributeReference>
+      </DefaultAggregateAttributes>
+      <InstanceSelection>Dropdown</InstanceSelection>
+      <Fields>
+        <Attribute ID="G380ab86d-adff-4443-a775-79912869aafc">
+          <Name>#PRODUCT CUSTOMERs</Name>
+          <DataType>Integer</DataType>
+          <Expression>
+            <Function>
+              <FunctionName>Count</FunctionName>
+              <Arguments>
+                <Expression>
+                  <EntityRef>
+                    <!--PRODUCT CUSTOMER-->
+                    <EntityID>G259ef05c-c06a-462f-88be-e5bb9f6105f5</EntityID>
+                  </EntityRef>
+                </Expression>
+              </Arguments>
+            </Function>
+          </Expression>
+          <IsAggregate>true</IsAggregate>
+          <SortDirection>Descending</SortDirection>
+          <Format>n0</Format>
+          <EnableDrillthrough>true</EnableDrillthrough>
+        </Attribute>
+        <Attribute ID="G31139b50-244e-4173-8733-0d5696d1f2e2">
+          <Name>PRDCT CSTMR ID</Name>
+          <DataType>Integer</DataType>
+          <SortDirection>Descending</SortDirection>
+          <Width>3</Width>
+          <Format>g</Format>
+          <DiscourageGrouping>true</DiscourageGrouping>
+          <EnableDrillthrough>true</EnableDrillthrough>
+          <ContextualName>Merge</ContextualName>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="PRDCT_CSTMR_ID" />
+        </Attribute>
+        <Attribute ID="G878cbdba-193a-4328-ba01-ba4319bdc6ec">
+          <Name>PRDCT ID</Name>
+          <DataType>Integer</DataType>
+          <SortDirection>Descending</SortDirection>
+          <Width>4</Width>
+          <Format>g</Format>
+          <EnableDrillthrough>true</EnableDrillthrough>
+          <ContextualName>Merge</ContextualName>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="PRDCT_ID" />
+        </Attribute>
+        <Attribute ID="G053766ba-0b1a-45e4-adca-763dd566768e">
+          <Name>CSTMR ID</Name>
+          <DataType>Integer</DataType>
+          <SortDirection>Descending</SortDirection>
+          <Width>4</Width>
+          <Format>g</Format>
+          <EnableDrillthrough>true</EnableDrillthrough>
+          <ContextualName>Merge</ContextualName>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="CSTMR_ID" />
+        </Attribute>
+        <Attribute ID="Ga6b035dc-80cf-4410-8144-132833275421">
+          <Name>TTL AMNT NC</Name>
+          <DataType>Decimal</DataType>
+          <SortDirection>Descending</SortDirection>
+          <Width>9</Width>
+          <Format>f0</Format>
+          <EnableDrillthrough>true</EnableDrillthrough>
+          <ContextualName>Merge</ContextualName>
+          <!--Total TTL AMNT NC-->
+          <DefaultAggregateAttributeID>G0e0c7689-b8db-431e-a558-918d68f038b4</DefaultAggregateAttributeID>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Variations>
+            <Attribute ID="G0e0c7689-b8db-431e-a558-918d68f038b4">
+              <Name>Total TTL AMNT NC</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Sum</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--TTL AMNT NC-->
+                        <AttributeID>Ga6b035dc-80cf-4410-8144-132833275421</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G603e788e-bf11-4504-aba2-1128873935d9">
+              <Name>Avg TTL AMNT NC</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Avg</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--TTL AMNT NC-->
+                        <AttributeID>Ga6b035dc-80cf-4410-8144-132833275421</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G9949b0b9-185a-4f4c-bae7-443d5aebaee6">
+              <Name>Min TTL AMNT NC</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--TTL AMNT NC-->
+                        <AttributeID>Ga6b035dc-80cf-4410-8144-132833275421</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G7fa565d8-5e9e-4baa-ad10-f42cc6c82594">
+              <Name>Max TTL AMNT NC</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--TTL AMNT NC-->
+                        <AttributeID>Ga6b035dc-80cf-4410-8144-132833275421</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="TTL_AMNT_NC" />
+        </Attribute>
+      </Fields>
+      <Table Name="dbo_PRODUCT_CUSTOMER" />
+    </Entity>
+  </Entities>
+</SemanticModel>

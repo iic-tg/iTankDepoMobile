@@ -1,0 +1,131 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="FullHeightDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">#f1f1f1
+        </item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">#666666
+        </item>
+    </style>
+
+    <style name="CustomTheme" parent="android:Theme">
+    <item name="android:scrollbarThumbVertical">@drawable/scrollbar_vertical_thumb</item>
+    <item name="android:scrollbarSize">100dip</item>
+    </style>
+    <style name="DialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="View_vertical_black">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:background">@color/grey</item>
+    </style>
+    <style name="CheckBox">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:button">?android:attr/listChoiceIndicatorMultiple</item>
+    </style>
+    <style name="WhiteCheck">
+        <item name="colorAccent">#015bab</item>
+    </style>
+
+
+    <style name="MyCheckBox" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">@color/list_text_date</item>
+        <item name="colorControlActivated">@color/Title</item>
+    </style>
+
+    <style name="DashboardImage_AM">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginBottom">11dp</item>
+    </style>
+    <style name="DashboardText_AM">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="View_vertical">
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/white</item>
+    </style>
+    <style name="View_vertical_line">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/grey</item>
+    </style>
+    <style name="View_vertical_line_">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/grey</item>
+    </style>
+
+    <!--For horizontal line separator in dashboard-->
+    <style name="View_horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <!--<item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_marginLeft">15dp</item>-->
+        <item name="android:background">@color/white</item>
+    </style>
+    <!--For horizontal line separator in dashboard-->
+    <style name="View_horizontal_line_two">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <!--<item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_marginLeft">15dp</item>-->
+        <item name="android:background">@color/list_text</item>
+    </style>
+
+    <!--For horizontal line separator in dashboard-->
+    <style name="View_horizontal_black">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <!--<item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_marginLeft">15dp</item>-->
+        <item name="android:background">@color/Line</item>
+    </style>
+    <style name="View_horizontal_heating">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.8dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:background">@color/black</item>
+    </style>
+    <style name="View_horizontal_login">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">0.8dp</item>
+    <!--<item name="android:layout_marginRight">15dp</item>
+    <item name="android:layout_marginLeft">15dp</item>-->
+    <item name="android:background">@color/edit_boarder_bg</item>
+
+
+</style>
+</resources>

@@ -1,0 +1,1636 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/common_toolbar"
+            android:id="@+id/toolbar"></include>
+        <RelativeLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+            <include layout="@layout/heating_footer" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:layout_above="@+id/footer"
+            android:layout_below="@+id/toolbar">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:background="@color/toolbar"
+                    android:visibility="gone"
+                    android:weightSum="1">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="2"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="0.65">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:id="@+id/text1"
+                            android:focusable="false"
+                            android:gravity="center|left"
+                            android:textColor="@color/Title"
+                            android:text=""/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:focusable="false"
+                            android:layout_gravity="center|left"
+                            android:id="@+id/text2"
+                            android:visibility="gone"
+                            android:textColor="@color/Title"
+                            android:text="AAAAFFGG1 , type"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="66dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:src="@mipmap/ic_info_leaktest"
+                            android:focusable="false"
+                            android:textColor="@color/Title"
+                            android:id="@+id/im_info_cleaning"
+                            android:text="08:15 am"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@+id/text_layout"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        android:visibility="gone"
+                        android:weightSum="2">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="Cleaning Method "
+                            android:id="@+id/tv_CleanMethod"
+                            android:textStyle="bold"
+                            android:gravity="center|left"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1.9"/>
+
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:gravity="center"
+                            android:layout_gravity="center|right"
+                            android:textColor="@color/white"
+                            android:layout_marginLeft="2dp"
+                            android:background="@color/submit"
+                            android:text="ARU"
+                            android:id="@+id/bt_cleaningInst" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        android:weightSum="2">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="Customer Name"
+                            android:id="@+id/tv_cleanBy"
+                            android:textColor="@color/tv_color"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="2dp"
+                            android:textColor="@color/tv_color"
+                            android:id="@+id/tv_cleanRefNo"
+                            android:text="Equipment No"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:focusable="false"
+                                android:paddingRight="10dp"
+                                android:layout_marginRight="4dp"
+                                android:textColor="@color/list_text"
+                                android:id="@+id/ed_cust_name"
+                                android:hint=""
+                                />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:visibility="gone"
+                                android:layout_marginTop="2dp"
+                                android:id="@+id/im_startDate"
+                                android:src="@mipmap/ic_calender"
+                                android:layout_alignParentRight="true"/>
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@mipmap/ic_time"
+                                android:visibility="gone"
+                                android:layout_alignParentRight="true"/>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:focusable="false"
+                                android:id="@+id/ed_ed_eqp_no"
+                                android:textColor="@color/list_text"
+                                android:hint=""
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="In Date"
+                            android:textColor="@color/tv_color"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="@color/tv_color"
+                            android:layout_marginLeft="2dp"
+                            android:id="@+id/tv_Type"
+                            android:text="Type"/>
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:layout_marginRight="4dp"
+                                android:textColor="@color/list_text"
+                                android:focusable="false"
+                                android:id="@+id/ed_in_Date"
+                                android:hint=""
+                                />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@mipmap/ic_calender"
+                                android:layout_alignParentRight="true"/>
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/list_text"
+                                android:visibility="invisible"
+                                style="@style/Widget.AppCompat.Spinner.Underlined"
+                                ></Spinner>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+
+                             <ImageView
+                                 android:layout_width="30dp"
+                                 android:layout_height="30dp"
+                                 android:layout_marginTop="2dp"
+                                 android:id="@+id/im_startTime"
+                                 android:src="@mipmap/ic_down"
+                                 android:layout_alignParentRight="true"/>
+
+                             <EditText
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:padding="5dp"
+                                 android:lines="1"
+                                 android:singleLine="true"
+                                 android:paddingRight="10dp"
+                                 android:focusable="false"
+                                 android:id="@+id/ed_type"
+                                 android:textColor="@color/list_text"
+                                 android:hint=""
+                                 android:layout_alignParentTop="true"
+                                 android:layout_alignParentLeft="true"
+                                 android:layout_alignParentStart="true" />
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/list_text"
+                                android:id="@+id/sp_Type"
+                                android:visibility="invisible"
+                                style="@style/Widget.AppCompat.Spinner.Underlined"></Spinner>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="Previous Cargo"
+                            android:id="@+id/tv_preCargo2"
+                            android:textColor="@color/tv_color"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="@color/tv_color"
+                            android:layout_marginLeft="2dp"
+                            android:id="@+id/tv_preCargo3"
+                            android:text="Chemical Name"/>
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                             <EditText
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:padding="5dp"
+                                 android:lines="1"
+                                 android:singleLine="true"
+                                 android:paddingRight="10dp"
+                                 android:layout_marginRight="4dp"
+                                 android:textColor="@color/list_text"
+                                 android:focusable="false"
+                                 android:id="@+id/ed_previous_cargo"
+                                 android:hint=""
+                                 />
+                             <ImageView
+                                 android:layout_width="30dp"
+                                 android:layout_height="30dp"
+                                 android:layout_marginTop="2dp"
+                                 android:src="@mipmap/ic_down"
+                                 android:layout_alignParentRight="true"/>
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textColor="@color/list_text"
+                                android:id="@+id/sp_previ_cargo2"
+                                android:visibility="invisible"
+                                style="@style/Widget.AppCompat.Spinner.Underlined"
+                                ></Spinner>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@mipmap/ic_down"
+                                android:visibility="invisible"
+                                android:layout_alignParentRight="true"/>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:focusable="false"
+                                android:id="@+id/ed_chemical_name"
+                                android:textColor="@color/list_text"
+                                android:hint=""
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true" />
+                            <!--     <Spinner
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"
+                                     android:textColor="@color/list_text"
+                                     android:id="@+id/sp_previ_cargo3"
+                                     style="@style/Widget.AppCompat.Spinner.Underlined"></Spinner>-->
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="Status"
+                            android:id="@+id/tv_Status"
+                            android:textColor="@color/tv_color"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="@color/tv_color"
+                            android:layout_marginLeft="2dp"
+                            android:id="@+id/tv_cln_ref_number"
+                            android:text="Cleaning Certificate No"/>
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                             <EditText
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:padding="5dp"
+                                 android:lines="1"
+                                 android:singleLine="true"
+                                 android:paddingRight="10dp"
+                                 android:layout_marginRight="4dp"
+                                 android:textColor="@color/list_text"
+                                 android:focusable="false"
+                                 android:id="@+id/ed_status"
+                                 android:hint=""
+                                 />
+                             <ImageView
+                                 android:layout_width="30dp"
+                                 android:layout_height="30dp"
+                                 android:layout_marginTop="2dp"
+                                 android:src="@mipmap/ic_down"
+                                 android:layout_alignParentRight="true"/>
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textColor="@color/list_text"
+                                android:id="@+id/sp_Status"
+                                android:visibility="invisible"
+                                style="@style/Widget.AppCompat.Spinner.Underlined"
+                                ></Spinner>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@mipmap/ic_down"
+                                android:visibility="invisible"
+                                android:layout_alignParentRight="true"/>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:focusable="false"
+                                android:longClickable="false"
+                                android:id="@+id/ed_cleanRefNo"
+                                android:textColor="@color/list_text"
+                                android:hint=""
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true" />
+                            <!--     <Spinner
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"
+                                     android:textColor="@color/list_text"
+                                     android:id="@+id/sp_previ_cargo3"
+                                     style="@style/Widget.AppCompat.Spinner.Underlined"></Spinner>-->
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="Original Cleaning Date *"
+                            android:layout_marginLeft="2dp"
+                            android:textColor="@color/tv_color"
+                            android:id="@+id/tv_org_cleanDate"
+                            android:layout_weight="1"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="@color/tv_color"
+                            android:layout_marginLeft="2dp"
+                            android:id="@+id/tv_lat_cleanDate"
+                            android:text="Latest Cleaning Date *"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:focusable="false"
+                                android:id="@+id/ed_org_cleanDate"
+                                android:textColor="@color/list_text"
+                                android:layout_marginRight="4dp"
+                                android:hint=""
+                                />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@mipmap/ic_calender"
+                                android:id="@+id/im_org_cleanDate"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:focusable="false"
+                                android:textColor="@color/list_text"
+                                android:id="@+id/ed_lat_cleanDate"
+                                android:layout_marginRight="4dp"
+                                android:hint=""
+                                />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@mipmap/ic_calender"
+                                android:id="@+id/im_lat_cleanDate"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="Original Inspection Date *"
+                            android:layout_marginLeft="2dp"
+                            android:textColor="@color/tv_color"
+                            android:id="@+id/tv_org_inspection_Date"
+                            android:layout_weight="1"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="2dp"
+                            android:textColor="@color/tv_color"
+                            android:id="@+id/tv_lat_inspection_Date"
+                            android:text="Latest Inspection Date *"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:focusable="false"
+                                android:id="@+id/ed_org_inspection_Date"
+                                android:textColor="@color/list_text"
+                                android:layout_marginRight="4dp"
+                                android:hint=""
+                                />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@mipmap/ic_calender"
+                                android:id="@+id/im_org_inspection_Date"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:focusable="false"
+                                android:textColor="@color/list_text"
+                                android:id="@+id/ed_lat_inspection_Date"
+                                android:layout_marginRight="4dp"
+                                android:hint=""
+                                />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@mipmap/ic_calender"
+                                android:id="@+id/im_lat_inspection_Date"
+                                android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        android:weightSum="2">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="Cleaned For"
+                            android:id="@+id/tv_cleaned_for"
+                            android:textColor="@color/tv_color"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="2dp"
+                            android:textColor="@color/tv_color"
+                            android:id="@+id/tv_location_of_cleaning"
+                            android:text="Location Of Cleaning"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:maxLength="50"
+                                android:inputType="text|textNoSuggestions"
+                                android:layout_marginRight="4dp"
+                                android:textColor="@color/list_text"
+                                android:id="@+id/ed_cleaned_for"
+                                android:hint=""
+                                />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:visibility="gone"
+                                android:layout_marginTop="2dp"
+                                android:src="@mipmap/ic_calender"
+                                android:layout_alignParentRight="true"/>
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@mipmap/ic_time"
+                                android:visibility="gone"
+                                android:layout_alignParentRight="true"/>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:focusable="false"
+                                android:maxLength="50"
+                                android:inputType="text|textNoSuggestions"
+                                android:id="@+id/ed_location_of_cleaning"
+                                android:textColor="@color/list_text"
+                                android:hint=""
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="Clean Status 1"
+                            android:layout_marginLeft="2dp"
+                            android:id="@+id/tv_endDate"
+                            android:layout_weight="1"
+                            android:textColor="@color/tv_color"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="2dp"
+                            android:id="@+id/tv_endTime"
+                            android:text="Clean Status 2 "
+                            android:textColor="@color/tv_color"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/sp_cleanStatus1"
+                                android:textColor="@color/list_text"
+                                style="@style/Widget.AppCompat.Spinner.Underlined"
+                                ></Spinner>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/sp_cleanStatus2"
+                                android:textColor="@color/list_text"
+                                style="@style/Widget.AppCompat.Spinner.Underlined"
+                                ></Spinner>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="Condition "
+                            android:layout_marginLeft="2dp"
+                            android:id="@+id/tv_cleaning_startDate"
+                            android:layout_weight="1"
+                            android:textColor="@color/tv_color"
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="2dp"
+                            android:id="@+id/tv_cleaning_endTime"
+                            android:text="Value and Fitting Condition "
+                            android:textColor="@color/tv_color"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/sp_condition"
+                                android:textColor="@color/list_text"
+                                style="@style/Widget.AppCompat.Spinner.Underlined"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"></Spinner>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/sp_valueandFitting"
+                                android:textColor="@color/list_text"
+                                style="@style/Widget.AppCompat.Spinner.Underlined"
+                                ></Spinner>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="2dp"
+                            android:text="Man Lid Seal No"
+                            android:textColor="@color/tv_color"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="Top Discharge/Airline Seal No "
+                            android:textColor="@color/tv_color"
+                            android:layout_marginLeft="2dp"
+                            android:textSize="14dp"
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:maxLength="20"
+                                android:inputType="text|textNoSuggestions"
+                                android:layout_marginRight="4dp"
+                                android:textColor="@color/list_text"
+                                android:id="@+id/ed_lidSealNo"
+                                android:hint=""
+                                />
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:id="@+id/ed_airlineSealNo"
+                                android:textColor="@color/list_text"
+                                android:hint=""
+                                android:maxLength="20"
+                                android:inputType="text|textNoSuggestions"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="@color/tv_color"
+                            android:layout_marginLeft="2dp"
+                            android:text="Bottom Outlet Seal No"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/tv_color"
+                            android:text="EIR No"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:maxLength="20"
+                                android:inputType="text|textNoSuggestions"
+                                android:layout_marginRight="4dp"
+                                android:textColor="@color/list_text"
+                                android:id="@+id/ed_bottomOutlet"
+                                android:hint=""
+                                />
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:focusable="false"
+                                android:longClickable="false"
+                                android:id="@+id/ed_eir_no"
+                                android:textColor="@color/list_text"
+                                android:hint=""
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="@color/tv_color"
+                            android:layout_marginLeft="2dp"
+                            android:text="Cleaning Ref No"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/tv_color"
+                            android:text="Cleaning Rate(SAR)"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:maxLength="15"
+                                android:inputType="numberDecimal|textNoSuggestions"
+                                android:digits="0123456789."
+                                android:paddingRight="10dp"
+                                android:layout_marginRight="4dp"
+                                android:textColor="@color/list_text"
+                                android:id="@+id/ed_cleaning_ref_no"
+                                android:hint=""
+                                />
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:id="@+id/ed_Cleaning_Rate"
+                                android:textColor="@color/list_text"
+                                android:hint=""
+                                android:maxLength="12"
+                                android:longClickable="false"
+                                android:inputType="numberDecimal|textNoSuggestions"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="@color/tv_color"
+                            android:layout_marginLeft="2dp"
+                            android:text=" 	Invoice To"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/tv_color"
+                            android:visibility="invisible"
+                            android:text="Cleaning Rate(Currency)"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+
+                    <View style="@style/View_horizontal_black"
+                        android:layout_marginTop="10dp"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                       >
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:id="@+id/radio_group"
+                            android:weightSum="2">
+                            <RadioButton
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="Customer"
+                                android:checked="true"
+                                android:id="@+id/radio_Customer"
+                                android:layout_height="match_parent" />
+                            <RadioButton
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="Party"
+                                android:id="@+id/radio_Party"
+                                android:layout_height="match_parent" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/LL_invoice_"
+                        android:visibility="gone"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"
+                            android:text="Invoicing To *"
+                            android:textColor="@color/tv_color" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:visibility="gone"
+                            android:textColor="@color/list_text"
+                            android:layout_marginLeft="2dp"
+                            android:text="End Time *"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:visibility="gone"
+                        android:id="@+id/LL_invoice_party"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:layout_marginRight="4dp"
+                                android:textColor="@color/list_text"
+                                android:focusable="false"
+                                android:id="@+id/ed_invoice_party"
+                                android:hint=""
+                                />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@mipmap/ic_down"
+                                android:layout_alignParentRight="true"/>
+                            <com.i_tankdepo.customcomponents.CustomSpinner
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textColor="@color/list_text"
+                                android:id="@+id/sp_invoice_party"
+                                android:visibility="invisible"
+                                style="@style/Widget.AppCompat.Spinner.Underlined"
+                                ></com.i_tankdepo.customcomponents.CustomSpinner>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:visibility="invisible"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@mipmap/ic_down"
+                                android:visibility="invisible"
+                                android:layout_alignParentRight="true"/>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:focusable="false"
+                                android:textColor="@color/list_text"
+                                android:hint=""
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true" />
+                            <!--     <Spinner
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"
+                                     android:textColor="@color/list_text"
+                                     android:id="@+id/sp_previ_cargo3"
+                                     style="@style/Widget.AppCompat.Spinner.Underlined"></Spinner>-->
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        android:weightSum="2">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="Additional Cleaning "
+                            android:id="@+id/tv_addClean"
+                            android:gravity="center|left"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1.9"
+                            android:textColor="@color/tv_color"
+                            />
+                        <CheckBox
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:gravity="center"
+                            android:id="@+id/AddClean"
+                            android:layout_gravity="center|right"
+                            android:textColor="@color/Title"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="2dp"
+                            />
+                    </LinearLayout>
+
+
+                    <View style="@style/View_horizontal_black"
+                        android:layout_marginTop="10dp"></View>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:weightSum="1">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:id="@+id/ed_addCleaning"
+                                android:textColor="@color/list_text"
+                                android:layout_weight="2.00" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone"
+                        android:id="@+id/LL_aditional_one"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:visibility="gone"
+                            android:textColor="@color/list_text"
+                            android:layout_marginLeft="2dp"
+                            android:text="End Time *"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="Additional Cleaning Procedure "
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"
+                            android:textColor="@color/tv_color"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:visibility="gone"
+                        android:id="@+id/LL_aditional_two"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:layout_marginRight="4dp"
+                                android:textColor="@color/list_text"
+                                android:focusable="false"
+                                android:id="@+id/ed_additional_cleaning"
+                                android:hint=""
+                                />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@mipmap/ic_down"
+                                android:layout_alignParentRight="true"/>
+                            <com.i_tankdepo.customcomponents.CustomSpinner
+                                android:layout_width="match_parent"
+                                android:visibility="invisible"
+                                android:layout_height="match_parent"
+                                android:textColor="@color/list_text"
+                                android:id="@+id/sp_aditional_cleaning"
+                                style="@style/Widget.AppCompat.Spinner.Underlined"
+                                ></com.i_tankdepo.customcomponents.CustomSpinner>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp"
+                            android:visibility="invisible"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@mipmap/ic_down"
+                                android:visibility="invisible"
+                                android:layout_alignParentRight="true"/>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:lines="1"
+                                android:singleLine="true"
+                                android:paddingRight="10dp"
+                                android:focusable="false"
+                                android:textColor="@color/list_text"
+                                android:hint=""
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true" />
+                            <!--     <Spinner
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"
+                                     android:textColor="@color/list_text"
+                                     android:id="@+id/sp_previ_cargo3"
+                                     style="@style/Widget.AppCompat.Spinner.Underlined"></Spinner>-->
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:visibility="gone"
+                            android:textColor="@color/list_text"
+                            android:layout_marginLeft="2dp"
+                            android:text="End Time *"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="Remarks "
+                            android:id="@+id/tv_remark"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"
+                            android:textColor="@color/tv_color"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:id="@+id/ed_remark"
+                                android:textColor="@color/list_text"
+                                android:layout_weight="0.9" />
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:src="@mipmap/ic_info"
+                                android:layout_weight="0.1"
+                                android:id="@+id/tv_view_remarks"
+                                android:tint="@color/Title"
+                                android:layout_alignParentRight="true"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+    <!--  <include
+          layout="@layout/pluse_button"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />-->
+
+    <!--<include layout="@layout/navigation"></include>-->
+
+</android.support.v4.widget.DrawerLayout>

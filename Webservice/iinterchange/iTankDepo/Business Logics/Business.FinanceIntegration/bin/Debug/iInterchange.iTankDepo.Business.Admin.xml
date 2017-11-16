@@ -1,0 +1,157 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+iInterchange.iTankDepo.Business.Admin
+</name>
+</assembly>
+<members>
+<member name="P:iInterchange.iTankDepo.Business.Admin.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:iInterchange.iTankDepo.Business.Admin.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:iInterchange.iTankDepo.Business.Admin.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:iInterchange.iTankDepo.Business.Admin.CommonUI.pub_GetDocumentByDocumentID(System.Int32)">
+	<summary>
+ This method is used to get Document Templates by passing Document ID.
+ </summary>
+	<param name="bv_i32DocumentID">Denotes Document ID</param>
+	<returns>CommonUIDataSet</returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.Business.Admin.CommonUI.pub_GetDocumentTemplateByTemplateID(System.Int32)">
+	<summary>
+ This method is used to get Document Template Detail by passing Document Template ID.
+ </summary>
+	<param name="bv_i32DocumentTemplateID">Denotes Document Template ID</param>
+	<returns>CommonUIDataSet</returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.Business.Admin.CommonUI.GetNextIndex(System.Data.DataTable@,System.String)">
+	<summary>
+ This method is used to get next index from data table
+ </summary>
+	<param name="br_table">Denotes Datatable box oject</param>
+	<returns>Long</returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.Business.Admin.CommonUI.pub_validateFinalizedInvoiceActivityWise(System.String,System.Int64,System.String,System.String,System.String,System.String@,System.Data.DataSet)">
+	<summary>
+ Activity Submit
+ </summary>
+	<param name="bv_strTableName"></param>
+	<param name="bv_i32DepotID"></param>
+	<param name="bv_strTransactionID"></param>
+	<param name="bv_strTransactionNo"></param>
+	<param name="bv_strEquipmentNo"></param>
+	<param name="br_strErrorMessage"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.Business.Admin.RoleRight.pub_GetActivity(System.String,System.String)">
+	<summary>
+ This method is to retrieve datas for new mode
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.Business.Admin.RoleRight.pub_GetRoleCodeByRoleId(System.String,System.Int32)">
+	<summary>
+ This method is to retrive role by role id
+ </summary>
+	<param name="bv_strRole"></param>
+	<param name="bv_intRoleID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.Business.Admin.RoleRight.pub_GetRoleRightByRoleID(System.Int32)">
+	<summary>
+ This method is to retrieve datas in edit mode
+ </summary>
+	<param name="bv_intRoleID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.Business.Admin.RoleRight.pub_CreateRole(System.String,System.String,iInterchange.iTankDepo.Data.RoleRightDataSet@,System.String,System.DateTime,System.Boolean,System.Int32,System.Boolean)">
+	<summary>
+ This method is to insert data in new mode
+ </summary>
+	<param name="bv_strRoleCode"></param>
+	<param name="bv_strRoleDescription"></param>
+	<param name="bv_blnActiveBit"></param>
+	<param name="br_dsRoleRight"></param>
+	<param name="bv_i32DPT_ID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.Business.Admin.RoleRight.pub_ModifyRole(System.Int32,System.String,System.String,iInterchange.iTankDepo.Data.RoleRightDataSet@,System.String,System.DateTime,System.Boolean,System.Int32,System.Boolean)">
+	<summary>
+ This method is to insert data in edit mode
+ </summary>
+	<param name="bv_intRoleID"></param>
+	<param name="bv_strRoleCode"></param>
+	<param name="bv_strRoleDescription"></param>
+	<param name="bv_blnActiveBit"></param>
+	<param name="br_dsRoleRight"></param>
+	<param name="bv_i32DPT_ID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.Business.Admin.RoleRight.pub_DeleteRoleRight(System.Int32)">
+	<summary>
+ This method is to delete role rights by role 
+ </summary>
+	<param name="bv_intRoleRightID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.Business.Admin.User.pub_EncryptPassword(System.String)">
+	<summary>
+ This method used to encrypt the password
+ </summary>
+	<param name="bv_strPassword"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.Business.Admin.User.pub_CreateUserLog(System.String,System.DateTime,System.DateTime,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ This method used to store client access details for monitoring
+ </summary>
+	<param name="bv_strUserName"></param>
+	<param name="bv_strIPAddress"></param>
+	<param name="bv_strSessionID"></param>
+	<param name="bv_strUserAgent"></param>
+	<param name="bv_strBrowserVersion"></param>
+	<param name="bv_strScreenSize"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.Business.Admin.User.pub_UpdateUserLog(System.String,System.DateTime,System.String,System.String)">
+	<summary>
+ This method used to update logout date and time in USER_LOG table and last login information in USER_DETAIL table.
+ </summary>
+	<param name="bv_strUserName"></param>
+	<param name="bv_strIPAddress"></param>
+	<param name="bv_strSessionID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.Business.Admin.User.pub_ValidatePKUser(System.String)">
+	<summary>
+ This method is used to validate the User Name
+ </summary>
+	<param name="bv_strUserName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.Business.Admin.User.pub_ValidatePKUserWithDepotID(System.String,System.Int32)">
+	<summary>
+ This method is used to validate the User Name
+ </summary>
+	<param name="bv_strUserName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.Business.Admin.User.pub_ValidatePKUserWithDepotID(System.String)">
+	<summary>
+ This method is used to validate the User Name
+ </summary>
+	<param name="bv_strUserName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

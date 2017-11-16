@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:orientation="vertical"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/field_border_thin_line"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:background="@drawable/field_border_thin_line"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/Title"
+                android:textColor="@color/white"
+                android:text="Rev No : 2"
+                android:gravity="center"
+                android:id="@+id/tv_RevNo"
+                android:layout_weight="0.5"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Test Date"
+                android:background="@color/tab_background"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:gravity="center|right"
+                android:paddingRight="5dp"
+                android:layout_weight="1.5"
+                android:id="@+id/tv_testDate" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="3dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Shell Test"
+                    android:textSize="13dp"
+                    android:gravity="center|left"
+                    android:id="@+id/textView7" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Steam Tube Test"
+                    android:textSize="13dp"
+                    android:gravity="center|left"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:textSize="13dp"
+                    android:paddingRight="3dp"
+                    android:text="Relief Value Srl#1"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp"
+                android:weightSum="3">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Yes"
+                    android:textSize="13dp"
+                    android:textColor="@color/list_text"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_shellTest"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Yes"
+                    android:textSize="13dp"
+                    android:textColor="@color/list_text"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_steamTubeTest"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/list_text"
+                    android:textStyle="bold"
+                    android:textSize="13dp"
+                    android:id="@+id/tv_reliefValue1"
+                    android:text="212"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <View style="@style/View_horizontal_black"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="3dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="13dp"
+                    android:text="Relief Value Srl#2"
+                    android:gravity="center|left"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Pressure Gauge 1"
+                    android:textSize="13dp"
+                    android:gravity="center|left"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:textSize="13dp"
+                    android:paddingRight="3dp"
+                    android:text="Pressure Gauge 2"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="55"
+                    android:textColor="@color/list_text"
+                    android:textStyle="bold"
+                    android:textSize="13dp"
+                    android:id="@+id/tv_reliefValue2"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="55"
+                    android:textSize="13dp"
+                    android:textColor="@color/list_text"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_pressureGauge1"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/list_text"
+                    android:textStyle="bold"
+                    android:textSize="13dp"
+                    android:id="@+id/tv_pressureGauge2"
+                    android:text="55"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <View style="@style/View_horizontal_line_two"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="3dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="13dp"
+                    android:text="Last Generated By"
+                    android:gravity="center|left"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Last Generated Date"
+                    android:textSize="13dp"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="13dp"
+                    android:gravity="center|right"
+                    android:paddingRight="3dp"
+                    android:text="Latest Report No"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp"
+                android:weightSum="3">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Name"
+                    android:textColor="@color/list_text"
+                    android:textStyle="bold"
+                    android:textSize="13dp"
+                    android:id="@+id/tv_last_gene_by"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="55"
+                    android:textSize="13dp"
+                    android:textColor="@color/list_text"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_last_gene_date"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/list_text"
+                    android:textStyle="bold"
+                    android:textSize="13dp"
+                    android:id="@+id/tv_latest_report_No"
+                    android:text="55"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View style="@style/View_horizontal_black"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="3dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Remarks"
+                    android:gravity="center|left"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="55"
+                    android:visibility="gone"
+                    android:gravity="center|left"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:gravity="center|right"
+                    android:text="55"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Name"
+                    android:textColor="@color/list_text"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_remark"
+                    android:textSize="13dp"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="55"
+                    android:visibility="gone"
+                    android:gravity="center|left"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:visibility="gone"
+                    android:text="55"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

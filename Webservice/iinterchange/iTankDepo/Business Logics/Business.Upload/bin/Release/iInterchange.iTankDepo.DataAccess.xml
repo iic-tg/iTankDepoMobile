@@ -1,0 +1,264 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+iInterchange.iTankDepo.DataAccess
+</name>
+</assembly>
+<members>
+<member name="M:iInterchange.iTankDepo.DataAccess.RoleRights.GetActivity">
+	<summary>
+ This method is to get activity data
+ </summary>
+	<returns>RoleRightDataSet</returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.DataAccess.RoleRights.GetProcess">
+	<summary>
+ This method is to get process data from process table
+ </summary>
+	<returns>RoleRightDataSet</returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.DataAccess.RoleRights.GetParentProcess">
+	<summary>
+ This method is to get parent process for menu
+ </summary>
+	<returns>RoleRightDataSet</returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.DataAccess.RoleRights.GetRoleRightByRoleID(System.Int32)">
+	<summary>
+ This method is to get role rights by role id
+ </summary>
+	<param name="bv_intRoleID"></param>
+	<returns>RoleRightDataSet</returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.DataAccess.RoleRights.GetParentProcessByRoleID(System.Int32)">
+	<summary>
+ Added to get parent processes by RoleID
+ </summary>
+	<param name="bv_intRoleID"></param>
+	<returns>RoleRightDataSet</returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.DataAccess.RoleRights.GetRoleRightActivityByRoleID(System.Int32)">
+	<summary>
+ This method is to get activity by role id
+ </summary>
+	<param name="bv_intRoleID"></param>
+	<returns>RoleRightDataSet</returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.DataAccess.RoleRights.GetRoleByRoleID(System.String,System.Int32)">
+	<summary>
+ This method is to get role by role id
+ </summary>
+	<param name="bv_strRole"></param>
+	<param name="bv_intRoleID"></param>
+	<returns>RoleRightDataSet</returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.DataAccess.RoleRights.GetRoleRightProcessByRoleID(System.Int32)">
+	<summary>
+ This method is to get process based on role id
+ </summary>
+	<param name="bv_intRoleID"></param>
+	<returns>RoleRightDataSet</returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.DataAccess.RoleRights.CreateRole(System.String,System.String,System.String,System.DateTime,System.Boolean,System.Int32,System.Boolean)">
+	<summary>
+ This method is to insert role in db
+ </summary>
+	<param name="bv_strRoleCode"></param>
+	<param name="bv_strRoleDescription"></param>
+	<param name="bv_blnActiveBit"></param>
+	<returns>Long</returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.DataAccess.RoleRights.UpdateRole(System.Int32,System.String,System.String,System.String,System.DateTime,System.Boolean,System.Int32,System.Boolean)">
+	<summary>
+ This method is to update role in db
+ </summary>
+	<param name="bv_intRoleID"></param>
+	<param name="bv_strRoleCode"></param>
+	<param name="bv_strRoleDescription"></param>
+	<param name="bv_blnActiveBit"></param>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.DataAccess.RoleRights.CreateRoleRight(System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+ This method is to insert role rights in db
+ </summary>
+	<param name="bv_intRoleID"></param>
+	<param name="bv_intActivityID"></param>
+	<param name="bv_blnViewBit"></param>
+	<param name="bv_blnEditBit"></param>
+	<param name="bv_blnCreateBit"></param>
+	<returns>Long</returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.DataAccess.RoleRights.DeleteRoleRight(System.Int32)">
+	<summary>
+ This method is to delete from role rights
+ </summary>
+	<param name="bv_intRoleID"></param>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.DataAccess.RoleRights.ShowDashboard(System.Int32)">
+	<summery>
+ This method for Show Dashboard
+ </summery>
+</member><member name="M:iInterchange.iTankDepo.DataAccess.CleaningMethods.GetCleaningMethodDetailByCleaningMethodTypeID(System.Int64)">
+	<summary>
+ This method is to get CleaningMethod
+ </summary>
+	<returns>CleaningMethodDataSet</returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.DataAccess.CleaningMethods.CreateCleaningMethod(System.String,System.String,System.Boolean,System.String,System.DateTime,System.String,System.DateTime,System.Int32,iInterchange.iTankDepo.GatewayFramework.Transactions@)">
+	<summary>
+ This method is to create CleaningMethod
+ </summary>
+	<returns>Long</returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.DataAccess.CleaningMethods.UpdateCleaningMethod(System.Int64,System.String,System.String,System.Boolean,System.String,System.DateTime,iInterchange.iTankDepo.GatewayFramework.Transactions@)">
+	<summary>
+ This method is to update CleaningMethod
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.DataAccess.CleaningMethods.CreateCleaningMethodDetail(System.Int64,System.Int64,System.String,iInterchange.iTankDepo.GatewayFramework.Transactions@)">
+	<summary>
+ This method is to create cleaning Method detail
+ </summary>
+	<returns>Long</returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.DataAccess.CleaningMethods.UpdateCleaningMethodDetail(System.Int64,System.Int64,System.Int64,System.String,iInterchange.iTankDepo.GatewayFramework.Transactions@)">
+	<summary>
+ This method is to update cleaning Method detail
+ </summary>
+	<returns>Long</returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.DataAccess.CleaningMethods.DeleteCleaningMethodDetail(System.Int64,iInterchange.iTankDepo.GatewayFramework.Transactions@)">
+	<summary>
+ This method is to delete cleaning Method detail
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.DataAccess.CleaningMethods.GetCleaningMethodTypeCodeCount(System.String,System.Int32)">
+	<summary>
+ This method is to get cleaning Method Types
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.DataAccess.Schedules.GetActivityByActivityId(System.Int32,System.String,System.Int32,System.Int32)">
+	<summary>
+ Get Activity Details based on selected by page (Repair,Cleaning,Survey)
+ </summary>
+	<param name="bv_intActivityId"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.DataAccess.Schedules.UpdateActivityById(System.Int64,System.Int32,System.DateTime,System.String,iInterchange.iTankDepo.GatewayFramework.Transactions@)">
+	<summary>
+ Update activity based on selected by user (Repair, Cleaning, Survey)
+ </summary>
+	<param name="bv_lngId"></param>
+	<param name="bv_datScheduleDate"></param>
+	<param name="br_objTransaction"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.DataAccess.Schedules.GetRepairScheduleReport(System.DateTime,System.Int32)">
+	<summary>
+ This function is used to fetch the details for report
+ </summary>
+	<param name="bv_datScheduleDate"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.DataAccess.Schedules.GetSurveyScheduleReport(System.DateTime,System.Int32)">
+	<summary>
+ This function is used to fetch the details for report
+ </summary>
+	<param name="bv_datScheduleDate"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.DataAccess.Schedules.GetCleaningScheduleReport(System.DateTime,System.Int32)">
+	<summary>
+ This function is used to fetch the details for report
+ </summary>
+	<param name="bv_datScheduleDate"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.DataAccess.CommonUIs.ColToCSVstring(System.Data.DataTable@,System.String)">
+	<summary>
+ This method used to get the column values as CSV string
+ </summary>
+	<param name="br_dtData">Denotes the data to be converted</param>
+	<param name="bv_strColumnName">Denotes column name to be converted</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.DataAccess.CommonUIs.ParseParameter(System.String)">
+	<summary>
+ This method is used form Parameter Data.
+ </summary>
+	<param name="qrystr">Denotes Query string</param>
+	<returns>Hashtable</returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.DataAccess.CommonUIs.GetDocumentTemplateDocumentByDocumentID(System.Int32)">
+	<summary>
+ This method is used to get Document Template Details.
+ </summary>
+	<param name="bv_int">Denotes Document ID</param>
+	<returns>CommonUIDataSet</returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.DataAccess.CommonUIs.GetDocumentTemplateByDocumentTemplateID(System.Int32)">
+	<summary>
+ This method is used to get Document Template Detail.
+ </summary>
+	<param name="bv_intDocumentTemplateID">Denotes Document Template ID</param>
+	<returns>CommonUIDataSet</returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.DataAccess.Bulk_Emails.GetBulk_EmailForAllDepots">
+	<summary>
+ This Method is used to Get Bulk Email Data for all Depots
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.DataAccess.InvoiceGenerations.GetExchangeRateWithEffectiveDate(System.Int64,System.Int64,System.DateTime,System.Int32)">
+	<summary>
+ Get Exchange Rate with effective date
+ </summary>
+	<param name="bv_i64FromCuurencyId"></param>
+	<param name="bv_i64ToCuurencyId"></param>
+	<param name="bv_datCurrentDateTime"></param>
+	<param name="bv_intDepotId"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.DataAccess.Cleanings.GetCustomerDetailsByCustomerId(System.Int64)">
+	<summary>
+ Get Customer details based on customer ID
+ </summary>
+	<param name="bv_i64CSTMR_id"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.DataAccess.DatasetHelpers.ColToCSVstring(System.Data.DataTable@,System.String)">
+	<summary>
+ This method used to get the column values as CSV string
+ </summary>
+	<param name="br_dtData">Denotes the data to be converted</param>
+	<param name="bv_strColumnName">Denotes column name to be converted</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:iInterchange.iTankDepo.DataAccess.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:iInterchange.iTankDepo.DataAccess.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:iInterchange.iTankDepo.DataAccess.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:iInterchange.iTankDepo.DataAccess.ViewInvoices.GetVInvoiceHistoryForAllDepot">
+	<summary>
+ This method is used for returning Invoice detail for all Depots - Multi location 
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

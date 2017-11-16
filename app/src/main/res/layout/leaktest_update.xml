@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/common_toolbar"
+            android:id="@+id/toolbar"></include>
+        <RelativeLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+            <include layout="@layout/heating_footer" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:layout_above="@+id/footer"
+            android:layout_below="@+id/toolbar">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal"
+                        android:background="@color/toolbar"
+                        android:weightSum="1">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="2"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="0.65">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:id="@+id/text1"
+                                android:gravity="center|left"
+                                android:focusable="false"
+                                android:textColor="@color/Title"
+                                android:text="text1"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:focusable="false"
+                                android:gravity="center|left"
+                                android:id="@+id/text2"
+                                android:textColor="@color/Title"
+                                android:text="No of Times Generated"/>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                           >
+
+                            <ImageView
+                                android:layout_width="67dp"
+                                android:layout_height="0dp"
+                                android:padding="10dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:visibility="gone"
+                                android:src="@mipmap/ic_info_leaktest"
+                                android:focusable="false"
+                                android:textColor="@color/Title"
+                                android:id="@+id/text4"
+                                android:text="08:15 am"/>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_below="@+id/text_layout"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:text="Test Date *"
+                                android:id="@+id/tv_testDate"
+                                android:layout_marginLeft="2dp"
+                                android:layout_weight="1"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:textColor="@color/tv_color"
+                                android:layout_marginLeft="2dp"
+                                android:id="@+id/tv_revNo"
+                                android:text="Rev No"/>
+                        </LinearLayout>
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:layout_below="@+id/text_layout"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_marginRight="2dp"
+                                android:layout_height="match_parent">
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:lines="1"
+                                    android:singleLine="true"
+                                    android:paddingRight="10dp"
+                                    android:layout_marginRight="4dp"
+                                    android:textColor="@color/list_text"
+                                    android:focusable="false"
+                                    android:id="@+id/ed_testDate"
+                                    android:hint=""
+                                    />
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginTop="2dp"
+                                    android:id="@+id/im_testDate"
+                                    android:src="@mipmap/ic_calender"
+                                    android:layout_alignParentRight="true"/>
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_marginRight="2dp"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginTop="2dp"
+                                    android:id="@+id/im_startTime"
+                                    android:src="@mipmap/ic_time"
+                                    android:visibility="gone"
+                                    android:layout_alignParentRight="true"/>
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:lines="1"
+                                    android:singleLine="true"
+                                    android:paddingRight="10dp"
+                                    android:focusable="false"
+                                    android:id="@+id/ref_no"
+                                    android:textColor="@color/list_text"
+                                    android:hint=""
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true" />
+                                <Button
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:id="@+id/bt_revisionNo"
+                                    android:layout_marginRight="20dp"
+                                    android:textColor="@color/white"
+                                    android:textSize="8sp"
+                                    android:background="@drawable/circle_button"
+                                    android:layout_alignParentRight="true"/>
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/text_layout"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="1">
+                                <Switch
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:padding="5dp"
+                                    android:paddingRight="10dp"
+                                    android:textColor="@color/list_text"
+                                    android:layout_marginRight="4dp"
+                                    android:text="Shell Test"
+                                    android:id="@+id/switch_shellTest"
+                                    android:theme="@style/SCBSwitch"
+                                    />
+                                <View  style="@style/View_horizontal_black"
+                                    android:layout_marginRight="15dp">
+
+                                </View>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="1">
+
+                                <Switch
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:padding="5dp"
+                                    android:paddingRight="10dp"
+                                    android:textColor="@color/list_text"
+                                    android:layout_marginLeft="2dp"
+                                    android:text="Steam Tube Test"
+                                    android:id="@+id/switch_steam"
+                                    android:theme="@style/SCBSwitch"
+                                    />
+                                <View  style="@style/View_horizontal_black"
+                                    >
+
+                                </View>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/visit_line"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                android:text="Relife Value Srl #1"
+                                android:textColor="@color/tv_color"
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                android:text="Relife Value Srl #2"
+                                android:textColor="@color/tv_color"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:id="@+id/edit_layout"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:maxLength="20"
+                                android:inputType="textCapCharacters|textNoSuggestions"
+                                android:id="@+id/ed_relief_value1"
+                                android:textColor="@color/list_text"
+                                />
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:maxLength="20"
+                                android:inputType="textCapCharacters|textNoSuggestions"
+                                android:id="@+id/ed_relief_value2"
+                                android:textColor="@color/list_text"
+                                />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/visit_line"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                android:text="Pressure Gauge1"
+                                android:textColor="@color/tv_color"
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                android:text="Pressure Gauge2"
+                                android:textColor="@color/tv_color"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:layout_below="@+id/text_layout"
+                            android:orientation="horizontal">
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:maxLength="20"
+                                android:inputType="textCapCharacters|textNoSuggestions"
+                                android:id="@+id/ed_press_guage1"
+                                android:textColor="@color/list_text"
+                                />
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:maxLength="20"
+                                android:inputType="textCapCharacters|textNoSuggestions"
+                                android:id="@+id/ed_press_guage2"
+                                android:textColor="@color/list_text"
+                                />
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/visit_line"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                android:text="Current Status "
+                                android:textColor="@color/tv_color"
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                android:text="Pressure Gauge2"
+                                android:visibility="gone"
+                                android:textColor="@color/tv_color"
+                                />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:focusable="false"
+                                android:textColor="@color/list_text"
+                                android:id="@+id/ed_current_status"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/visit_line"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                android:text="Remarks "
+                                android:textColor="@color/tv_color"
+                                />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                android:text="Pressure Gauge2"
+                                android:visibility="gone"
+                                android:textColor="@color/tv_color"
+                                />
+
+
+                        </LinearLayout>
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/list_text"
+                            android:maxLength="500"
+                            android:singleLine="false"
+                            android:inputType="text|textNoSuggestions"
+                            android:id="@+id/ed_remarks"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+</ScrollView>
+
+
+    </RelativeLayout>
+    <!--  <include
+          layout="@layout/pluse_button"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />-->
+
+    <!--<include layout="@layout/navigation"></include>-->
+
+</android.support.v4.widget.DrawerLayout>

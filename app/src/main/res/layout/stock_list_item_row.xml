@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Radio_group"
+            android:layout_gravity="center">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_button"
+                android:buttonTint="@color/Title"
+                style="@style/AppTheme"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.7"
+            android:textSize="15dp"
+            android:paddingLeft="5dp"
+            android:id="@+id/tv_stock_item"
+            android:textColor="@color/list_text"
+            android:gravity="center|left"
+            android:text="IMAGENAME_123.jpeg"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_right"
+            android:layout_gravity="center"
+            android:layout_weight="0.3"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="InventoryDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="InventoryDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:EnforceConstraints="False" msprop:Generator_DataSetName="InventoryDataSet" msprop:Generator_UserDSName="InventoryDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="V_INVENTORY">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="INVNTRY_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="EQPMNT_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="EQPMNT_TYP_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_CD_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="EQPMNT_CD_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_LNGTH" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_SZ_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="EQPMNT_HGT" type="xs:string" minOccurs="0" />
+              <xs:element name="MNFCTR_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EQPMNT_MTRL" type="xs:string" minOccurs="0" />
+              <xs:element name="YRD_LCTN" type="xs:string" minOccurs="0" />
+              <xs:element name="VSSL_NM" type="xs:string" minOccurs="0" />
+              <xs:element name="VYG_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_STTS" type="xs:string" minOccurs="0" />
+              <xs:element name="ACTVTY_TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_STTS_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="LSS_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="LSS_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="GT_IN_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="GT_IN_RMRKS" type="xs:string" minOccurs="0" />
+              <xs:element name="RPR_ESTMT_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="RPR_ESTMT_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RPR_ESTMT_AMNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RPR_ESTMT_AMNT_TX" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RPR_MTRL_CST_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RPR_CLNG_CST_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RPR_LBR_CST_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RPR_ESTMT_RVSN_NO" type="xs:int" minOccurs="0" />
+              <xs:element name="DPP_AMNT_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OWNR_TTL_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="USR_TTL_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="INSRR_TTL_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DPT_TTL_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SPCL_BLLNG_TTL_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PRTY_NT_SPCFD_TTL_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RPR_RMRKS" type="xs:string" minOccurs="0" />
+              <xs:element name="LSS_APPRVL_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LSS_APPRVL_AMNT_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OWNR_APPRVL_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="OWNR_APPRVL_AMNT_NC" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RPR_CMPLTN_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RPR_CMPLTN_RMRKS" type="xs:string" minOccurs="0" />
+              <xs:element name="SRVYR_NM" type="xs:string" minOccurs="0" />
+              <xs:element name="SRVY_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="GT_OUT_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ACTV_BT" type="xs:boolean" minOccurs="0" />
+              <xs:element name="CSTMR_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="CSTMR_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="DPT_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="DPT_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="EQPMNT_STTS_DSCRPTN_VC" type="xs:string" minOccurs="0" />
+              <xs:element name="CSTMR_NAM" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

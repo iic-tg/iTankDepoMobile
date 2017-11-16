@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F782E3B5-AF73-446D-9F72-6E501F868C3F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Appcode</RootNamespace>
+    <AssemblyName>Appcode</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Appcode.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Appcode.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Business.FinanceIntegration">
+      <HintPath>..\..\iTankDepoUI\Bin\Business.FinanceIntegration.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashUpload">
+      <HintPath>..\..\iTankDepoUI\Bin\FlashUpload.dll</HintPath>
+    </Reference>
+    <Reference Include="iInterchange.Framework">
+      <HintPath>..\..\iTankDepoUI\Bin\iInterchange.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="iInterchange.iTankDepo.Business.Admin">
+      <HintPath>..\..\iTankDepoUI\Bin\iInterchange.iTankDepo.Business.Admin.dll</HintPath>
+    </Reference>
+    <Reference Include="iInterchange.iTankDepo.Business.Billing">
+      <HintPath>..\..\iTankDepoUI\Bin\iInterchange.iTankDepo.Business.Billing.dll</HintPath>
+    </Reference>
+    <Reference Include="iInterchange.iTankDepo.Business.Common">
+      <HintPath>..\..\iTankDepoUI\Bin\iInterchange.iTankDepo.Business.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="iInterchange.iTankDepo.Business.Dashboard">
+      <HintPath>..\..\iTankDepoUI\Bin\iInterchange.iTankDepo.Business.Dashboard.dll</HintPath>
+    </Reference>
+    <Reference Include="iInterchange.iTankDepo.Business.DynamicReport">
+      <HintPath>..\..\iTankDepoUI\Bin\iInterchange.iTankDepo.Business.DynamicReport.dll</HintPath>
+    </Reference>
+    <Reference Include="iInterchange.iTankDepo.Business.EDI">
+      <HintPath>..\..\iTankDepoUI\Bin\iInterchange.iTankDepo.Business.EDI.dll</HintPath>
+    </Reference>
+    <Reference Include="iInterchange.iTankDepo.Business.Masters">
+      <HintPath>..\..\iTankDepoUI\Bin\iInterchange.iTankDepo.Business.Masters.dll</HintPath>
+    </Reference>
+    <Reference Include="iInterchange.iTankDepo.Business.Operations">
+      <HintPath>..\..\iTankDepoUI\Bin\iInterchange.iTankDepo.Business.Operations.dll</HintPath>
+    </Reference>
+    <Reference Include="iInterchange.iTankDepo.Business.Rental">
+      <HintPath>..\..\iTankDepoUI\Bin\iInterchange.iTankDepo.Business.Rental.dll</HintPath>
+    </Reference>
+    <Reference Include="iInterchange.iTankDepo.Business.Tracking">
+      <HintPath>..\..\iTankDepoUI\Bin\iInterchange.iTankDepo.Business.Tracking.dll</HintPath>
+    </Reference>
+    <Reference Include="iInterchange.iTankDepo.Business.Transportation">
+      <HintPath>..\..\iTankDepoUI\Bin\iInterchange.iTankDepo.Business.Transportation.dll</HintPath>
+    </Reference>
+    <Reference Include="iInterchange.iTankDepo.Business.Upload">
+      <HintPath>..\..\iTankDepoUI\Bin\iInterchange.iTankDepo.Business.Upload.dll</HintPath>
+    </Reference>
+    <Reference Include="iInterchange.iTankDepo.Data">
+      <HintPath>..\..\iTankDepoUI\Bin\iInterchange.iTankDepo.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="iInterchange.iTankDepo.DataAccess">
+      <HintPath>..\..\iTankDepoUI\Bin\iInterchange.iTankDepo.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="iInterchange.iTankDepo.Entities">
+      <HintPath>..\..\iTankDepoUI\Bin\iInterchange.iTankDepo.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="iInterchange.iTankDepo.GatewayFramework">
+      <HintPath>..\..\iTankDepoUI\Bin\iInterchange.iTankDepo.GatewayFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="iInterchange.WebControls.v4">
+      <HintPath>..\..\iTankDepoUI\Bin\iInterchange.WebControls.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="iInterchange.WebControls.v4.Data.iFlexGrid">
+      <HintPath>..\..\iTankDepoUI\Bin\iInterchange.WebControls.v4.Data.iFlexGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\iTankDepoUI\Bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http">
+      <HintPath>..\..\iTankDepoUI\Bin\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\..\iTankDepoUI\Bin\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http">
+      <HintPath>..\..\..\..\Visual Studio\iTankSampleWebApi\iTankSampleWebApi\bin\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonData.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonWeb.vb" />
+    <Compile Include="iLock.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Pagebase.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Business.Dashboard\Business.Dashboard.vbproj">
+      <Project>{78d9bc21-24c7-41c1-b461-710fdea1bc55}</Project>
+      <Name>Business.Dashboard</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data Logics\DataAccess\DataAccess.vbproj">
+      <Project>{d8cd6dec-7179-40e2-a9dc-ec3aaffbf7ce}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data Logics\Data\Data.vbproj">
+      <Project>{d87aa6cf-6e51-4799-8432-09503731c270}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data Logics\Entities\Entities.vbproj">
+      <Project>{c0e0464a-a99e-4ab3-b1a4-4308c90fc8c2}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data Logics\GatewayFramework\GatewayFramework.vbproj">
+      <Project>{49e4bd8d-225c-4bf7-8a4c-228f6294810a}</Project>
+      <Name>GatewayFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Services\Alert\Alert.vbproj">
+      <Project>{31a3276e-1f7b-4007-bde8-121999616b2f}</Project>
+      <Name>Alert</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Services\BulkEmail\BulkEmail.vbproj">
+      <Project>{c83aa8a6-e614-4003-80cf-72b32b4c10ec}</Project>
+      <Name>BulkEmail</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Services\DAR\DAR.vbproj">
+      <Project>{7766f7a4-9d0c-4b25-9eda-673093a9e7c9}</Project>
+      <Name>DAR</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Services\FTPXml\FTPXml.vbproj">
+      <Project>{f4ecba5d-6223-4a6c-a64f-b76396a04339}</Project>
+      <Name>FTPXml</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Services\XmlEDI\XmlEDI.vbproj">
+      <Project>{36258490-929f-40c4-bc0f-c45eb25a59d9}</Project>
+      <Name>XmlEDI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Business.Admin\Business.Admin.vbproj">
+      <Project>{f1dadfa5-b62e-4b52-ab42-be0d1962f752}</Project>
+      <Name>Business.Admin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Business.Billing\Business.Billing.vbproj">
+      <Project>{6040c490-383b-4be5-bdd5-9ddc85602bf7}</Project>
+      <Name>Business.Billing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Business.Common\Business.Common.vbproj">
+      <Project>{8b3789d4-5ba3-452f-a0cb-566bf619ed09}</Project>
+      <Name>Business.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Business.DynamicReports\Business.DynamicReport.vbproj">
+      <Project>{aff79332-6f3a-4286-9f75-d0d6b7887a24}</Project>
+      <Name>Business.DynamicReport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Business.EDI\Business.EDI.vbproj">
+      <Project>{b2737e0d-a0ac-4a45-be97-68fdfda9441e}</Project>
+      <Name>Business.EDI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Business.FinanceIntegration\Business.SageIntegration.vbproj">
+      <Project>{09b24408-ab04-4d81-ab33-1761150168cc}</Project>
+      <Name>Business.SageIntegration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Business.Masters\Business.Masters.vbproj">
+      <Project>{971ba995-f94b-4650-a905-c9623f23e69c}</Project>
+      <Name>Business.Masters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Business.Operations\Business.Operations.vbproj">
+      <Project>{5a655df8-4646-46bf-868e-2d5eb6c5fcc5}</Project>
+      <Name>Business.Operations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Business.Rental\Business.Rental.vbproj">
+      <Project>{fa5a025c-bdc6-4b6c-b4b9-45f669092f03}</Project>
+      <Name>Business.Rental</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Business.Services\Business.Services.vbproj">
+      <Project>{cd811df8-37ec-4980-a8d9-85a034017fc4}</Project>
+      <Name>Business.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Business.Tracking\Business.Tracking.vbproj">
+      <Project>{7c1e5358-1478-43a5-8332-7ce208904795}</Project>
+      <Name>Business.Tracking</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Business.Transportation\Business.Transportation.vbproj">
+      <Project>{8f796854-3cea-4279-9afb-fc91aad6472f}</Project>
+      <Name>Business.Transportation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Business.Upload\Business.Upload.vbproj">
+      <Project>{ad49ef3e-405c-4268-b1bb-44da2aae5d76}</Project>
+      <Name>Business.Upload</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

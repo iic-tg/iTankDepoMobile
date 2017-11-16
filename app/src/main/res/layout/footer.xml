@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_gravity="bottom"
+    android:weightSum="5"
+    android:padding="1dp"
+    android:background="@color/submit"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@color/submit">
+        <Button
+            android:id="@+id/home"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:drawableTop="@mipmap/ic_home"
+            android:drawableTint="@color/white"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@android:color/transparent"
+            android:text="Home"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@color/submit">
+        <Button
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:drawableTop="@mipmap/ic_refresh"
+            android:drawableTint="@color/white"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Refresh"/>
+
+    </LinearLayout>
+
+    <!--  <View
+          style="@style/View_vertical"
+          />-->
+    <!--<View
+        style="@style/View_vertical"
+        />-->
+
+
+    <!-- <View
+         style="@style/View_vertical"
+         />-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/LL_Submit"
+        android:orientation="vertical"
+        android:background="@color/submit">
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@android:color/transparent"
+            android:drawableTop="@mipmap/ic_submit"
+            android:gravity="center"
+            android:drawableTint="@color/white"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent"
+            android:text="Submit"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/LL_footer_delete"
+        android:orientation="vertical"
+        android:background="@color/submit">
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:drawableTop="@mipmap/ic_delete"
+            android:drawableTint="@color/white"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent"
+            android:text="Delete"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:id="@+id/footer_add_btn"
+        android:background="@color/submit">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <Button
+                android:id="@+id/add"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@android:color/transparent"
+                android:drawableTop="@mipmap/ic_add"
+                android:gravity="center"
+                />
+            <Button
+                android:id="@+id/print"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@android:color/transparent"
+                android:drawableTop="@mipmap/ic_print"
+                android:gravity="center"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/tv_add"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent"
+            android:text="Add New"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout >

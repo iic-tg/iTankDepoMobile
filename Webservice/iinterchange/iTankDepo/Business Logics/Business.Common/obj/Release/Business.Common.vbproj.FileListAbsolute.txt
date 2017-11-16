@@ -1,0 +1,15 @@
+E:\iinterchange\iTankDepo\Business Logics\Business.Common\bin\Release\iInterchange.iTankDepo.Business.Common.dll
+E:\iinterchange\iTankDepo\Business Logics\Business.Common\bin\Release\iInterchange.iTankDepo.Business.Common.pdb
+E:\iinterchange\iTankDepo\Business Logics\Business.Common\bin\Release\iInterchange.iTankDepo.Business.Common.xml
+E:\iinterchange\iTankDepo\Business Logics\Business.Common\bin\Release\iInterchange.iTankDepo.Data.dll
+E:\iinterchange\iTankDepo\Business Logics\Business.Common\bin\Release\iInterchange.iTankDepo.Entities.dll
+E:\iinterchange\iTankDepo\Business Logics\Business.Common\bin\Release\iInterchange.iTankDepo.Data.pdb
+E:\iinterchange\iTankDepo\Business Logics\Business.Common\bin\Release\iInterchange.iTankDepo.Data.xml
+E:\iinterchange\iTankDepo\Business Logics\Business.Common\bin\Release\iInterchange.iTankDepo.Entities.pdb
+E:\iinterchange\iTankDepo\Business Logics\Business.Common\bin\Release\iInterchange.iTankDepo.Entities.xml
+E:\iinterchange\iTankDepo\Business Logics\Business.Common\obj\Release\Business.Common.vbprojResolveAssemblyReference.cache
+E:\iinterchange\iTankDepo\Business Logics\Business.Common\obj\Release\iInterchange.iTankDepo.Business.Common.Resources.resources
+E:\iinterchange\iTankDepo\Business Logics\Business.Common\obj\Release\Business.Common.vbproj.GenerateResource.Cache
+E:\iinterchange\iTankDepo\Business Logics\Business.Common\obj\Release\iInterchange.iTankDepo.Business.Common.dll
+E:\iinterchange\iTankDepo\Business Logics\Business.Common\obj\Release\iInterchange.iTankDepo.Business.Common.xml
+E:\iinterchange\iTankDepo\Business Logics\Business.Common\obj\Release\iInterchange.iTankDepo.Business.Common.pdb

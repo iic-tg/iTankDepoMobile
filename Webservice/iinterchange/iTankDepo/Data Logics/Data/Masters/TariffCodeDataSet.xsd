@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TariffCodeDataSet" targetNamespace="http://tempuri.org/TariffCodeDataSet.xsd" xmlns:mstns="http://tempuri.org/TariffCodeDataSet.xsd" xmlns="http://tempuri.org/TariffCodeDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="iTankDepoConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="iTankDepoConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.iInterchange.iTankDepo.Data.My.MySettings.GlobalReference.Default.iTankDepoConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TariffCodeDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:EnforceConstraints="False" msprop:EnableTableAdapterManager="False" msprop:Generator_DataSetName="TariffCodeDataSet" msprop:Generator_UserDSName="TariffCodeDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TARIFF_CODE" msprop:Generator_TableClassName="TARIFF_CODEDataTable" msprop:Generator_TableVarName="tableTARIFF_CODE" msprop:Generator_RowChangedName="TARIFF_CODERowChanged" msprop:Generator_TablePropName="TARIFF_CODE" msprop:Generator_RowDeletingName="TARIFF_CODERowDeleting" msprop:Generator_RowChangingName="TARIFF_CODERowChanging" msprop:Generator_RowEvHandlerName="TARIFF_CODERowChangeEventHandler" msprop:Generator_RowDeletedName="TARIFF_CODERowDeleted" msprop:Generator_RowClassName="TARIFF_CODERow" msprop:Generator_UserTableName="TARIFF_CODE" msprop:Generator_RowEvArgName="TARIFF_CODERowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TRFF_CD_ID" msprop:Generator_ColumnVarNameInTable="columnTRFF_CD_ID" msprop:Generator_ColumnPropNameInRow="TRFF_CD_ID" msprop:Generator_ColumnPropNameInTable="TRFF_CD_IDColumn" msprop:Generator_UserColumnName="TRFF_CD_ID" type="xs:long" />
+              <xs:element name="TRFF_CD_CD" msprop:Generator_ColumnVarNameInTable="columnTRFF_CD_CD" msprop:Generator_ColumnPropNameInRow="TRFF_CD_CD" msprop:Generator_ColumnPropNameInTable="TRFF_CD_CDColumn" msprop:Generator_UserColumnName="TRFF_CD_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="TRFF_CD_DESCRPTN_VC" msprop:Generator_ColumnVarNameInTable="columnTRFF_CD_DESCRPTN_VC" msprop:Generator_ColumnPropNameInRow="TRFF_CD_DESCRPTN_VC" msprop:Generator_ColumnPropNameInTable="TRFF_CD_DESCRPTN_VCColumn" msprop:Generator_UserColumnName="TRFF_CD_DESCRPTN_VC" type="xs:string" minOccurs="0" />
+              <xs:element name="ITM_ID" msprop:Generator_ColumnVarNameInTable="columnITM_ID" msprop:Generator_ColumnPropNameInRow="ITM_ID" msprop:Generator_ColumnPropNameInTable="ITM_IDColumn" msprop:Generator_UserColumnName="ITM_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="SB_ITM_ID" msprop:Generator_ColumnVarNameInTable="columnSB_ITM_ID" msprop:Generator_ColumnPropNameInRow="SB_ITM_ID" msprop:Generator_ColumnPropNameInTable="SB_ITM_IDColumn" msprop:Generator_UserColumnName="SB_ITM_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="DMG_ID" msprop:Generator_ColumnVarNameInTable="columnDMG_ID" msprop:Generator_ColumnPropNameInRow="DMG_ID" msprop:Generator_ColumnPropNameInTable="DMG_IDColumn" msprop:Generator_UserColumnName="DMG_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="RPR_ID" msprop:Generator_ColumnVarNameInTable="columnRPR_ID" msprop:Generator_ColumnPropNameInRow="RPR_ID" msprop:Generator_ColumnPropNameInTable="RPR_IDColumn" msprop:Generator_UserColumnName="RPR_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="MN_HR" msprop:Generator_ColumnVarNameInTable="columnMN_HR" msprop:Generator_ColumnPropNameInRow="MN_HR" msprop:Generator_ColumnPropNameInTable="MN_HRColumn" msprop:Generator_UserColumnName="MN_HR" type="xs:string" minOccurs="0" />
+              <xs:element name="MTRL_CST" msprop:Generator_ColumnVarNameInTable="columnMTRL_CST" msprop:Generator_ColumnPropNameInRow="MTRL_CST" msprop:Generator_ColumnPropNameInTable="MTRL_CSTColumn" msprop:Generator_UserColumnName="MTRL_CST" type="xs:double" minOccurs="0" />
+              <xs:element name="RMRKS_VC" msprop:Generator_ColumnVarNameInTable="columnRMRKS_VC" msprop:Generator_ColumnPropNameInRow="RMRKS_VC" msprop:Generator_ColumnPropNameInTable="RMRKS_VCColumn" msprop:Generator_UserColumnName="RMRKS_VC" type="xs:string" minOccurs="0" />
+              <xs:element name="CRTD_BY" msprop:Generator_ColumnVarNameInTable="columnCRTD_BY" msprop:Generator_ColumnPropNameInRow="CRTD_BY" msprop:Generator_ColumnPropNameInTable="CRTD_BYColumn" msprop:Generator_UserColumnName="CRTD_BY" type="xs:string" minOccurs="0" />
+              <xs:element name="CRTD_DT" msprop:Generator_ColumnVarNameInTable="columnCRTD_DT" msprop:Generator_ColumnPropNameInRow="CRTD_DT" msprop:Generator_ColumnPropNameInTable="CRTD_DTColumn" msprop:Generator_UserColumnName="CRTD_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MDFD_BY" msprop:Generator_ColumnVarNameInTable="columnMDFD_BY" msprop:Generator_ColumnPropNameInRow="MDFD_BY" msprop:Generator_ColumnPropNameInTable="MDFD_BYColumn" msprop:Generator_UserColumnName="MDFD_BY" type="xs:string" minOccurs="0" />
+              <xs:element name="MDFD_DT" msprop:Generator_ColumnVarNameInTable="columnMDFD_DT" msprop:Generator_ColumnPropNameInRow="MDFD_DT" msprop:Generator_ColumnPropNameInTable="MDFD_DTColumn" msprop:Generator_UserColumnName="MDFD_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ACTV_BT" msprop:Generator_ColumnVarNameInTable="columnACTV_BT" msprop:Generator_ColumnPropNameInRow="ACTV_BT" msprop:Generator_ColumnPropNameInTable="ACTV_BTColumn" msprop:Generator_UserColumnName="ACTV_BT" type="xs:boolean" minOccurs="0" />
+              <xs:element name="DPT_ID" msprop:Generator_ColumnVarNameInTable="columnDPT_ID" msprop:Generator_ColumnPropNameInRow="DPT_ID" msprop:Generator_ColumnPropNameInTable="DPT_IDColumn" msprop:Generator_UserColumnName="DPT_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="ITM_CD" msprop:Generator_ColumnVarNameInTable="columnITM_CD" msprop:Generator_ColumnPropNameInRow="ITM_CD" msprop:Generator_ColumnPropNameInTable="ITM_CDColumn" msprop:Generator_UserColumnName="ITM_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="SB_ITM_CD" msprop:Generator_ColumnVarNameInTable="columnSB_ITM_CD" msprop:Generator_ColumnPropNameInRow="SB_ITM_CD" msprop:Generator_ColumnPropNameInTable="SB_ITM_CDColumn" msprop:Generator_UserColumnName="SB_ITM_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="DMG_CD" msprop:Generator_ColumnVarNameInTable="columnDMG_CD" msprop:Generator_ColumnPropNameInRow="DMG_CD" msprop:Generator_ColumnPropNameInTable="DMG_CDColumn" msprop:Generator_UserColumnName="DMG_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="RPR_CD" msprop:Generator_ColumnVarNameInTable="columnRPR_CD" msprop:Generator_ColumnPropNameInRow="RPR_CD" msprop:Generator_ColumnPropNameInTable="RPR_CDColumn" msprop:Generator_UserColumnName="RPR_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="TRFF_GRP_DTL_ID" msprop:Generator_ColumnVarNameInTable="columnTRFF_GRP_DTL_ID" msprop:Generator_ColumnPropNameInRow="TRFF_GRP_DTL_ID" msprop:Generator_ColumnPropNameInTable="TRFF_GRP_DTL_IDColumn" msprop:Generator_UserColumnName="TRFF_GRP_DTL_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="TRFF_GRP_ID" msprop:Generator_ColumnVarNameInTable="columnTRFF_GRP_ID" msprop:Generator_ColumnPropNameInRow="TRFF_GRP_ID" msprop:Generator_ColumnPropNameInTable="TRFF_GRP_IDColumn" msprop:Generator_UserColumnName="TRFF_GRP_ID" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="V_TARIFF_CODE" msprop:Generator_TableClassName="V_TARIFF_CODEDataTable" msprop:Generator_TableVarName="tableV_TARIFF_CODE" msprop:Generator_RowChangedName="V_TARIFF_CODERowChanged" msprop:Generator_TablePropName="V_TARIFF_CODE" msprop:Generator_RowDeletingName="V_TARIFF_CODERowDeleting" msprop:Generator_RowChangingName="V_TARIFF_CODERowChanging" msprop:Generator_RowEvHandlerName="V_TARIFF_CODERowChangeEventHandler" msprop:Generator_RowDeletedName="V_TARIFF_CODERowDeleted" msprop:Generator_RowClassName="V_TARIFF_CODERow" msprop:Generator_UserTableName="V_TARIFF_CODE" msprop:Generator_RowEvArgName="V_TARIFF_CODERowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TRFF_ID" msprop:Generator_ColumnVarNameInTable="columnTRFF_ID" msprop:Generator_ColumnPropNameInRow="TRFF_ID" msprop:Generator_ColumnPropNameInTable="TRFF_IDColumn" msprop:Generator_UserColumnName="TRFF_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="TRFF_CD" msprop:Generator_ColumnVarNameInTable="columnTRFF_CD" msprop:Generator_ColumnPropNameInRow="TRFF_CD" msprop:Generator_ColumnPropNameInTable="TRFF_CDColumn" msprop:Generator_UserColumnName="TRFF_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="TRFF_CD_DESCRPTN_VC" msprop:Generator_ColumnVarNameInTable="columnTRFF_CD_DESCRPTN_VC" msprop:Generator_ColumnPropNameInRow="TRFF_CD_DESCRPTN_VC" msprop:Generator_ColumnPropNameInTable="TRFF_CD_DESCRPTN_VCColumn" msprop:Generator_UserColumnName="TRFF_CD_DESCRPTN_VC" type="xs:string" minOccurs="0" />
+              <xs:element name="ITM_ID" msprop:Generator_ColumnVarNameInTable="columnITM_ID" msprop:Generator_ColumnPropNameInRow="ITM_ID" msprop:Generator_ColumnPropNameInTable="ITM_IDColumn" msprop:Generator_UserColumnName="ITM_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="SB_ITM_ID" msprop:Generator_ColumnVarNameInTable="columnSB_ITM_ID" msprop:Generator_ColumnPropNameInRow="SB_ITM_ID" msprop:Generator_ColumnPropNameInTable="SB_ITM_IDColumn" msprop:Generator_UserColumnName="SB_ITM_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="DMG_ID" msprop:Generator_ColumnVarNameInTable="columnDMG_ID" msprop:Generator_ColumnPropNameInRow="DMG_ID" msprop:Generator_ColumnPropNameInTable="DMG_IDColumn" msprop:Generator_UserColumnName="DMG_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="RPR_ID" msprop:Generator_ColumnVarNameInTable="columnRPR_ID" msprop:Generator_ColumnPropNameInRow="RPR_ID" msprop:Generator_ColumnPropNameInTable="RPR_IDColumn" msprop:Generator_UserColumnName="RPR_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="MN_HR" msprop:Generator_ColumnVarNameInTable="columnMN_HR" msprop:Generator_ColumnPropNameInRow="MN_HR" msprop:Generator_ColumnPropNameInTable="MN_HRColumn" msprop:Generator_UserColumnName="MN_HR" type="xs:string" minOccurs="0" />
+              <xs:element name="MTRL_CST" msprop:Generator_ColumnVarNameInTable="columnMTRL_CST" msprop:Generator_ColumnPropNameInRow="MTRL_CST" msprop:Generator_ColumnPropNameInTable="MTRL_CSTColumn" msprop:Generator_UserColumnName="MTRL_CST" type="xs:string" minOccurs="0" />
+              <xs:element name="RMRKS_VC" msprop:Generator_ColumnVarNameInTable="columnRMRKS_VC" msprop:Generator_ColumnPropNameInRow="RMRKS_VC" msprop:Generator_ColumnPropNameInTable="RMRKS_VCColumn" msprop:Generator_UserColumnName="RMRKS_VC" type="xs:string" minOccurs="0" />
+              <xs:element name="CRTD_BY" msprop:Generator_ColumnVarNameInTable="columnCRTD_BY" msprop:Generator_ColumnPropNameInRow="CRTD_BY" msprop:Generator_ColumnPropNameInTable="CRTD_BYColumn" msprop:Generator_UserColumnName="CRTD_BY" type="xs:string" minOccurs="0" />
+              <xs:element name="CRTD_DT" msprop:Generator_ColumnVarNameInTable="columnCRTD_DT" msprop:Generator_ColumnPropNameInRow="CRTD_DT" msprop:Generator_ColumnPropNameInTable="CRTD_DTColumn" msprop:Generator_UserColumnName="CRTD_DT" type="xs:string" minOccurs="0" />
+              <xs:element name="MDFD_BY" msprop:Generator_ColumnVarNameInTable="columnMDFD_BY" msprop:Generator_ColumnPropNameInRow="MDFD_BY" msprop:Generator_ColumnPropNameInTable="MDFD_BYColumn" msprop:Generator_UserColumnName="MDFD_BY" type="xs:string" minOccurs="0" />
+              <xs:element name="MDFD_DT" msprop:Generator_ColumnVarNameInTable="columnMDFD_DT" msprop:Generator_ColumnPropNameInRow="MDFD_DT" msprop:Generator_ColumnPropNameInTable="MDFD_DTColumn" msprop:Generator_UserColumnName="MDFD_DT" type="xs:string" minOccurs="0" />
+              <xs:element name="ACTV_BT" msprop:Generator_ColumnVarNameInTable="columnACTV_BT" msprop:Generator_ColumnPropNameInRow="ACTV_BT" msprop:Generator_ColumnPropNameInTable="ACTV_BTColumn" msprop:Generator_UserColumnName="ACTV_BT" type="xs:string" minOccurs="0" />
+              <xs:element name="DPT_ID" msprop:Generator_ColumnVarNameInTable="columnDPT_ID" msprop:Generator_ColumnPropNameInRow="DPT_ID" msprop:Generator_ColumnPropNameInTable="DPT_IDColumn" msprop:Generator_UserColumnName="DPT_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="ITM_CD" msprop:Generator_ColumnVarNameInTable="columnITM_CD" msprop:Generator_ColumnPropNameInRow="ITM_CD" msprop:Generator_ColumnPropNameInTable="ITM_CDColumn" msprop:Generator_UserColumnName="ITM_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="SB_ITM_CD" msprop:Generator_ColumnVarNameInTable="columnSB_ITM_CD" msprop:Generator_ColumnPropNameInRow="SB_ITM_CD" msprop:Generator_ColumnPropNameInTable="SB_ITM_CDColumn" msprop:Generator_UserColumnName="SB_ITM_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="DMG_CD" msprop:Generator_ColumnVarNameInTable="columnDMG_CD" msprop:Generator_ColumnPropNameInRow="DMG_CD" msprop:Generator_ColumnPropNameInTable="DMG_CDColumn" msprop:Generator_UserColumnName="DMG_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="RPR_CD" msprop:Generator_ColumnVarNameInTable="columnRPR_CD" msprop:Generator_ColumnPropNameInRow="RPR_CD" msprop:Generator_ColumnPropNameInTable="RPR_CDColumn" msprop:Generator_UserColumnName="RPR_CD" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="V_TARIFF_GROUP_DETAIL" msprop:Generator_TableClassName="V_TARIFF_GROUP_DETAILDataTable" msprop:Generator_TableVarName="tableV_TARIFF_GROUP_DETAIL" msprop:Generator_TablePropName="V_TARIFF_GROUP_DETAIL" msprop:Generator_RowDeletingName="V_TARIFF_GROUP_DETAILRowDeleting" msprop:Generator_RowChangingName="V_TARIFF_GROUP_DETAILRowChanging" msprop:Generator_RowEvHandlerName="V_TARIFF_GROUP_DETAILRowChangeEventHandler" msprop:Generator_RowDeletedName="V_TARIFF_GROUP_DETAILRowDeleted" msprop:Generator_UserTableName="V_TARIFF_GROUP_DETAIL" msprop:Generator_RowChangedName="V_TARIFF_GROUP_DETAILRowChanged" msprop:Generator_RowEvArgName="V_TARIFF_GROUP_DETAILRowChangeEvent" msprop:Generator_RowClassName="V_TARIFF_GROUP_DETAILRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TRFF_GRP_DTL_ID" msprop:Generator_ColumnVarNameInTable="columnTRFF_GRP_DTL_ID" msprop:Generator_ColumnPropNameInRow="TRFF_GRP_DTL_ID" msprop:Generator_ColumnPropNameInTable="TRFF_GRP_DTL_IDColumn" msprop:Generator_UserColumnName="TRFF_GRP_DTL_ID" type="xs:long" />
+              <xs:element name="TRFF_CD_ID" msprop:Generator_ColumnVarNameInTable="columnTRFF_CD_ID" msprop:Generator_ColumnPropNameInRow="TRFF_CD_ID" msprop:Generator_ColumnPropNameInTable="TRFF_CD_IDColumn" msprop:Generator_UserColumnName="TRFF_CD_ID" type="xs:long" />
+              <xs:element name="TRFF_CD_CD" msprop:Generator_ColumnVarNameInTable="columnTRFF_CD_CD" msprop:Generator_ColumnPropNameInRow="TRFF_CD_CD" msprop:Generator_ColumnPropNameInTable="TRFF_CD_CDColumn" msprop:Generator_UserColumnName="TRFF_CD_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="TRFF_CD_DESCRPTN_VC" msprop:Generator_ColumnVarNameInTable="columnTRFF_CD_DESCRPTN_VC" msprop:Generator_ColumnPropNameInRow="TRFF_CD_DESCRPTN_VC" msprop:Generator_ColumnPropNameInTable="TRFF_CD_DESCRPTN_VCColumn" msprop:Generator_UserColumnName="TRFF_CD_DESCRPTN_VC" type="xs:string" minOccurs="0" />
+              <xs:element name="TRFF_GRP_ID" msprop:Generator_ColumnVarNameInTable="columnTRFF_GRP_ID" msprop:Generator_ColumnPropNameInRow="TRFF_GRP_ID" msprop:Generator_ColumnPropNameInTable="TRFF_GRP_IDColumn" msprop:Generator_UserColumnName="TRFF_GRP_ID" type="xs:long" minOccurs="0" />
+              <xs:element name="TRFF_GRP_CD" msprop:Generator_ColumnVarNameInTable="columnTRFF_GRP_CD" msprop:Generator_ColumnPropNameInRow="TRFF_GRP_CD" msprop:Generator_ColumnPropNameInTable="TRFF_GRP_CDColumn" msprop:Generator_UserColumnName="TRFF_GRP_CD" type="xs:string" minOccurs="0" />
+              <xs:element name="TRFF_GRP_DESCRPTN_VC" msprop:Generator_ColumnVarNameInTable="columnTRFF_GRP_DESCRPTN_VC" msprop:Generator_ColumnPropNameInRow="TRFF_GRP_DESCRPTN_VC" msprop:Generator_ColumnPropNameInTable="TRFF_GRP_DESCRPTN_VCColumn" msprop:Generator_UserColumnName="TRFF_GRP_DESCRPTN_VC" type="xs:string" minOccurs="0" />
+              <xs:element name="RMRKS_VC" msprop:Generator_ColumnVarNameInTable="columnRMRKS_VC" msprop:Generator_ColumnPropNameInRow="RMRKS_VC" msprop:Generator_ColumnPropNameInTable="RMRKS_VCColumn" msprop:Generator_UserColumnName="RMRKS_VC" type="xs:string" minOccurs="0" />
+              <xs:element name="ACTV_BT" msprop:Generator_ColumnVarNameInTable="columnACTV_BT" msprop:Generator_ColumnPropNameInRow="ACTV_BT" msprop:Generator_ColumnPropNameInTable="ACTV_BTColumn" msprop:Generator_UserColumnName="ACTV_BT" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TARIFF_CODE" />
+      <xs:field xpath="mstns:TRFF_CD_ID" />
+    </xs:unique>
+    <xs:unique name="V_TARIFF_GROUP_DETAIL_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:V_TARIFF_GROUP_DETAIL" />
+      <xs:field xpath="mstns:TRFF_GRP_DTL_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

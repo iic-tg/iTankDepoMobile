@@ -1,0 +1,85 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+iInterchange.iTankDepo.Business.Masters
+</name>
+</assembly>
+<members>
+<member name="P:iInterchange.iTankDepo.Business.Masters.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:iInterchange.iTankDepo.Business.Masters.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:iInterchange.iTankDepo.Business.Masters.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:iInterchange.iTankDepo.Business.Masters.CodeBase.pub_GetCodeMaster(System.String)">
+	<summary>
+ This method used to get data all records from code master tables
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.Business.Masters.CodeBase.pub_ValidatePK(System.String,System.String)">
+	<summary>
+ This method used to check whether the Code is Unique
+ </summary>
+	<param name="bv_strCode"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.Business.Masters.CodeBase.pub_CreateCodeMaster(System.String,System.String,System.Boolean,System.String,System.DateTime,System.String,System.DateTime,System.String)">
+	<summary>
+ This method used to insert record in new mode
+ </summary>
+	<param name="bv_strCode"></param>
+	<param name="bv_strDescription"></param>
+	<param name="bv_blnActivate"></param>
+	<param name="bv_strModified_By"></param>
+	<param name="bv_datModified"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.Business.Masters.CodeBase.pub_ModifyCodeMaster(System.Int32,System.String,System.String,System.Boolean,System.String,System.DateTime,System.String)">
+	<summary>
+ Name     : pub_ModifyCodeMaster
+ Purpose  : To update the record in edit Mode
+ </summary>
+	<param name="bv_intID"></param>
+	<param name="bv_strCode"></param>
+	<param name="bv_strDescription"></param>
+	<param name="bv_blnActivate"></param>
+	<param name="bv_strModified_By"></param>
+	<param name="bv_datModified"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.Business.Masters.CleaningMethod.pub_GetCleaningMethodDetail(System.Int64)">
+	<summary>
+ This method is used to get cleaning Method detail
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.Business.Masters.CleaningMethod.pub_CreateCleaningMethod(System.Int64,System.String,System.String,System.Boolean,System.String,System.DateTime,System.String,System.DateTime,System.Int32,iInterchange.iTankDepo.Data.CleaningMethodDataSet@)">
+	<summary>
+ This method is used to create cleaning Method detail
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.Business.Masters.CleaningMethod.pub_UpdateCleaningMethod(System.Int64,System.String,System.String,System.Boolean,System.String,System.DateTime,System.String,System.DateTime,System.Int32,iInterchange.iTankDepo.Data.CleaningMethodDataSet@)">
+	<summary>
+ This method is used to update cleaning Method detail
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:iInterchange.iTankDepo.Business.Masters.CleaningMethod.pub_GetCleaningMethodTypeCode(System.String,System.Int32)">
+	<summary>
+ This method is used to get cleaning method Type Code. 
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

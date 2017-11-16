@@ -1,0 +1,1369 @@
+﻿<SemanticModel ID="G472eac16-07e8-49e2-b87f-8fc4e894bc5a" xmlns="http://schemas.microsoft.com/sqlserver/2004/10/semanticmodeling" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Culture>en-US</Culture>
+  <Entities>
+    <Entity ID="Gdfadbcbd-a142-4c56-a807-2ac4d57057ee">
+      <Name>V CUSTOMER</Name>
+      <CollectionName>V CUSTOMERs</CollectionName>
+      <IdentifyingAttributes>
+        <AttributeReference>
+          <!--CSTMR CD-->
+          <AttributeID>G2636eb7a-fa55-4be2-a0dc-e1166f0bbc25</AttributeID>
+        </AttributeReference>
+      </IdentifyingAttributes>
+      <DefaultDetailAttributes>
+        <AttributeReference>
+          <!--CSTMR CD-->
+          <AttributeID>G2636eb7a-fa55-4be2-a0dc-e1166f0bbc25</AttributeID>
+        </AttributeReference>
+        <AttributeReference>
+          <!--CSTMR NAM-->
+          <AttributeID>G6dddec50-cec1-42f9-a0ea-1dcce45ee901</AttributeID>
+        </AttributeReference>
+        <AttributeReference>
+          <!--CNTCT PRSN NAM-->
+          <AttributeID>Ga09d27b8-15c1-403e-9485-d91916984b9f</AttributeID>
+        </AttributeReference>
+      </DefaultDetailAttributes>
+      <DefaultAggregateAttributes>
+        <AttributeReference>
+          <!--#V CUSTOMERs-->
+          <AttributeID>G8ee9d899-a405-4b07-8e92-c3b98378d96f</AttributeID>
+        </AttributeReference>
+      </DefaultAggregateAttributes>
+      <InstanceSelection>Dropdown</InstanceSelection>
+      <Fields>
+        <Attribute ID="G8ee9d899-a405-4b07-8e92-c3b98378d96f">
+          <Name>#V CUSTOMERs</Name>
+          <DataType>Integer</DataType>
+          <Expression>
+            <Function>
+              <FunctionName>Count</FunctionName>
+              <Arguments>
+                <Expression>
+                  <EntityRef>
+                    <!--V CUSTOMER-->
+                    <EntityID>Gdfadbcbd-a142-4c56-a807-2ac4d57057ee</EntityID>
+                  </EntityRef>
+                </Expression>
+              </Arguments>
+            </Function>
+          </Expression>
+          <IsAggregate>true</IsAggregate>
+          <SortDirection>Descending</SortDirection>
+          <Format>n0</Format>
+          <EnableDrillthrough>true</EnableDrillthrough>
+        </Attribute>
+        <Attribute ID="G54f8f5a8-9afa-43ee-8d6a-1f208e687d46">
+          <Name>CSTMR ID</Name>
+          <DataType>Integer</DataType>
+          <SortDirection>Descending</SortDirection>
+          <Width>4</Width>
+          <Format>g</Format>
+          <DiscourageGrouping>true</DiscourageGrouping>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="CSTMR_ID" />
+        </Attribute>
+        <Attribute ID="G2636eb7a-fa55-4be2-a0dc-e1166f0bbc25">
+          <Name>CSTMR CD</Name>
+          <DataType>String</DataType>
+          <SortDirection>Ascending</SortDirection>
+          <Width>9</Width>
+          <DiscourageGrouping>true</DiscourageGrouping>
+          <EnableDrillthrough>true</EnableDrillthrough>
+          <ContextualName>Merge</ContextualName>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="CSTMR_CD" />
+        </Attribute>
+        <Attribute ID="G6dddec50-cec1-42f9-a0ea-1dcce45ee901">
+          <Name>CSTMR NAM</Name>
+          <DataType>String</DataType>
+          <SortDirection>Ascending</SortDirection>
+          <Width>11</Width>
+          <DiscourageGrouping>true</DiscourageGrouping>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="CSTMR_NAM" />
+        </Attribute>
+        <Attribute ID="G8f65c532-f3ac-4167-97cd-fe98fb1067d9">
+          <Name>CSTMR CRRNCY ID</Name>
+          <DataType>Integer</DataType>
+          <SortDirection>Descending</SortDirection>
+          <Width>4</Width>
+          <Format>g</Format>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="CSTMR_CRRNCY_ID" />
+        </Attribute>
+        <Attribute ID="G5e019174-1e2e-422b-a94f-9c5d8c03b392">
+          <Name>CSTMR CRRNCY CD</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>3</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="CSTMR_CRRNCY_CD" />
+        </Attribute>
+        <Attribute ID="Gf07d3ff7-d6cd-49e5-b76d-801f72109911">
+          <Name>BLLNG TYP ID</Name>
+          <DataType>Integer</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Descending</SortDirection>
+          <Width>2</Width>
+          <Format>g</Format>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="BLLNG_TYP_ID" />
+        </Attribute>
+        <Attribute ID="G2332ba9b-a9eb-43fd-ba77-6af0531295bf">
+          <Name>BLLNG TYP CD</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>5</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="BLLNG_TYP_CD" />
+        </Attribute>
+        <Attribute ID="Ga09d27b8-15c1-403e-9485-d91916984b9f">
+          <Name>CNTCT PRSN NAM</Name>
+          <DataType>String</DataType>
+          <SortDirection>Ascending</SortDirection>
+          <Width>20</Width>
+          <DiscourageGrouping>true</DiscourageGrouping>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="CNTCT_PRSN_NAM" />
+        </Attribute>
+        <Attribute ID="G463602e0-05e5-486d-bd20-2b68d950bd6e">
+          <Name>CNTCT ADDRSS</Name>
+          <DataType>String</DataType>
+          <SortDirection>Ascending</SortDirection>
+          <Width>124</Width>
+          <DiscourageGrouping>true</DiscourageGrouping>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="CNTCT_ADDRSS" />
+        </Attribute>
+        <Attribute ID="G8a8db707-0f92-4945-b4f8-997f3d9bc4b7">
+          <Name>BLLNG ADDRSS</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>114</Width>
+          <DiscourageGrouping>true</DiscourageGrouping>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="BLLNG_ADDRSS" />
+        </Attribute>
+        <Attribute ID="G8e790c61-3355-4ec8-8d6d-38d89518d8be">
+          <Name>ZP CD</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>6</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="ZP_CD" />
+        </Attribute>
+        <Attribute ID="G5957159e-45a2-4b8f-8aad-47093e5e2a4b">
+          <Name>PHN NO</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>12</Width>
+          <DiscourageGrouping>true</DiscourageGrouping>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="PHN_NO" />
+        </Attribute>
+        <Attribute ID="Gd44037df-339b-43a4-b5c9-1c06bc7046ac">
+          <Name>FX NO</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>12</Width>
+          <DiscourageGrouping>true</DiscourageGrouping>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="FX_NO" />
+        </Attribute>
+        <Attribute ID="Gb727130d-046b-452c-89a7-7a992bc27991">
+          <Name>RPRTNG EML ID</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>35</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="RPRTNG_EML_ID" />
+        </Attribute>
+        <Attribute ID="G0aff766b-8ce5-4572-93fe-c1411d21e031">
+          <Name>INVCNG EML ID</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>29</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="INVCNG_EML_ID" />
+        </Attribute>
+        <Attribute ID="G7dc6531c-8a85-4e06-8f8f-08bb74519c4c">
+          <Name>RPR TCH EML ID</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>29</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="RPR_TCH_EML_ID" />
+        </Attribute>
+        <Attribute ID="G871406fd-8da9-4b35-b9d4-5e0c4daccabf">
+          <Name>BLK EML FRMT ID</Name>
+          <DataType>Integer</DataType>
+          <SortDirection>Descending</SortDirection>
+          <Width>3</Width>
+          <Format>g</Format>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="BLK_EML_FRMT_ID" />
+        </Attribute>
+        <Attribute ID="G704a085f-0794-40bc-9e62-eec6ca1df512">
+          <Name>BLK EML FRMT CD</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>8</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="BLK_EML_FRMT_CD" />
+        </Attribute>
+        <Attribute ID="Gb2e74829-1bc8-4610-a21a-19cee4026224">
+          <Name>HYDR AMNT NC</Name>
+          <DataType>Decimal</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Descending</SortDirection>
+          <Width>10</Width>
+          <Format>f0</Format>
+          <!--Total HYDR AMNT NC-->
+          <DefaultAggregateAttributeID>Gcc2ecb1d-6761-4b90-bb28-cfc4eea950ca</DefaultAggregateAttributeID>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Variations>
+            <Attribute ID="Gcc2ecb1d-6761-4b90-bb28-cfc4eea950ca">
+              <Name>Total HYDR AMNT NC</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Sum</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--HYDR AMNT NC-->
+                        <AttributeID>Gb2e74829-1bc8-4610-a21a-19cee4026224</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G211eb023-9d63-444a-a718-320730248d51">
+              <Name>Avg HYDR AMNT NC</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Avg</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--HYDR AMNT NC-->
+                        <AttributeID>Gb2e74829-1bc8-4610-a21a-19cee4026224</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G641b87e9-1382-457b-8df8-8b0b7cba79d5">
+              <Name>Min HYDR AMNT NC</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--HYDR AMNT NC-->
+                        <AttributeID>Gb2e74829-1bc8-4610-a21a-19cee4026224</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G701bae2e-f7c7-4386-9f43-f0b1a31795da">
+              <Name>Max HYDR AMNT NC</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--HYDR AMNT NC-->
+                        <AttributeID>Gb2e74829-1bc8-4610-a21a-19cee4026224</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="HYDR_AMNT_NC" />
+        </Attribute>
+        <Attribute ID="G8f4412ea-4290-468e-bbe7-5dbe55d4964b">
+          <Name>PNMTC AMNT NC</Name>
+          <DataType>Decimal</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Descending</SortDirection>
+          <Width>10</Width>
+          <Format>f0</Format>
+          <!--Total PNMTC AMNT NC-->
+          <DefaultAggregateAttributeID>G1b746c04-a5dd-4e12-8952-e46921744378</DefaultAggregateAttributeID>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Variations>
+            <Attribute ID="G1b746c04-a5dd-4e12-8952-e46921744378">
+              <Name>Total PNMTC AMNT NC</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Sum</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--PNMTC AMNT NC-->
+                        <AttributeID>G8f4412ea-4290-468e-bbe7-5dbe55d4964b</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="Ga11cbed3-facf-470d-8d96-4e03efd78450">
+              <Name>Avg PNMTC AMNT NC</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Avg</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--PNMTC AMNT NC-->
+                        <AttributeID>G8f4412ea-4290-468e-bbe7-5dbe55d4964b</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G3e86ded6-663f-42c3-a816-02e743f3a52f">
+              <Name>Min PNMTC AMNT NC</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--PNMTC AMNT NC-->
+                        <AttributeID>G8f4412ea-4290-468e-bbe7-5dbe55d4964b</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G1aa52584-2b6d-4b05-bae5-0025fe42b65e">
+              <Name>Max PNMTC AMNT NC</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--PNMTC AMNT NC-->
+                        <AttributeID>G8f4412ea-4290-468e-bbe7-5dbe55d4964b</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="PNMTC_AMNT_NC" />
+        </Attribute>
+        <Attribute ID="Gfb0e38f5-eddc-4a18-bbe3-50af69e6f30c">
+          <Name>LBR RT PR HR NC</Name>
+          <DataType>Decimal</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Descending</SortDirection>
+          <Width>8</Width>
+          <Format>f0</Format>
+          <!--Total LBR RT PR HR NC-->
+          <DefaultAggregateAttributeID>G0e1b077a-5a65-4ac8-b06b-1380f62d4006</DefaultAggregateAttributeID>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Variations>
+            <Attribute ID="G0e1b077a-5a65-4ac8-b06b-1380f62d4006">
+              <Name>Total LBR RT PR HR NC</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Sum</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--LBR RT PR HR NC-->
+                        <AttributeID>Gfb0e38f5-eddc-4a18-bbe3-50af69e6f30c</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G3ef2376f-cc90-4da5-b4d2-e875ce159394">
+              <Name>Avg LBR RT PR HR NC</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Avg</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--LBR RT PR HR NC-->
+                        <AttributeID>Gfb0e38f5-eddc-4a18-bbe3-50af69e6f30c</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="Gf79dc867-a54b-4e94-abd8-6234e78f0593">
+              <Name>Min LBR RT PR HR NC</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--LBR RT PR HR NC-->
+                        <AttributeID>Gfb0e38f5-eddc-4a18-bbe3-50af69e6f30c</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G774838ff-d7a0-4fd0-ae0b-b07a72077a6c">
+              <Name>Max LBR RT PR HR NC</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--LBR RT PR HR NC-->
+                        <AttributeID>Gfb0e38f5-eddc-4a18-bbe3-50af69e6f30c</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="LBR_RT_PR_HR_NC" />
+        </Attribute>
+        <Attribute ID="G7aefee9e-a766-4437-8f27-d6d52acf3855">
+          <Name>LK TST RT NC</Name>
+          <DataType>Decimal</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Descending</SortDirection>
+          <Width>10</Width>
+          <Format>f0</Format>
+          <!--Total LK TST RT NC-->
+          <DefaultAggregateAttributeID>G5a2a3a05-a1d9-4a58-a822-f31edb9ff177</DefaultAggregateAttributeID>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Variations>
+            <Attribute ID="G5a2a3a05-a1d9-4a58-a822-f31edb9ff177">
+              <Name>Total LK TST RT NC</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Sum</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--LK TST RT NC-->
+                        <AttributeID>G7aefee9e-a766-4437-8f27-d6d52acf3855</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="Ga14ad8a6-8493-482d-982d-22eb7a291bfa">
+              <Name>Avg LK TST RT NC</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Avg</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--LK TST RT NC-->
+                        <AttributeID>G7aefee9e-a766-4437-8f27-d6d52acf3855</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="Ga74c4cc6-d9fa-42bd-8668-474b707ef4fa">
+              <Name>Min LK TST RT NC</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--LK TST RT NC-->
+                        <AttributeID>G7aefee9e-a766-4437-8f27-d6d52acf3855</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G5c526943-a76d-4b46-91b2-9022a570a63c">
+              <Name>Max LK TST RT NC</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--LK TST RT NC-->
+                        <AttributeID>G7aefee9e-a766-4437-8f27-d6d52acf3855</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="LK_TST_RT_NC" />
+        </Attribute>
+        <Attribute ID="G49fdb646-2623-420d-84cb-44735aed968b">
+          <Name>SRVY ONHR OFFHR RT NC</Name>
+          <DataType>Decimal</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Descending</SortDirection>
+          <Width>10</Width>
+          <Format>f0</Format>
+          <!--Total SRVY ONHR OFFHR RT NC-->
+          <DefaultAggregateAttributeID>Gbb3e71fe-b7d0-4688-8119-2fdd45129ef1</DefaultAggregateAttributeID>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Variations>
+            <Attribute ID="Gbb3e71fe-b7d0-4688-8119-2fdd45129ef1">
+              <Name>Total SRVY ONHR OFFHR RT NC</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Sum</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--SRVY ONHR OFFHR RT NC-->
+                        <AttributeID>G49fdb646-2623-420d-84cb-44735aed968b</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G9bb6553f-dbf9-440c-bd77-0330819b0d4e">
+              <Name>Avg SRVY ONHR OFFHR RT NC</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Avg</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--SRVY ONHR OFFHR RT NC-->
+                        <AttributeID>G49fdb646-2623-420d-84cb-44735aed968b</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G98e1e08e-23b1-4aed-89d5-6c251394aad8">
+              <Name>Min SRVY ONHR OFFHR RT NC</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--SRVY ONHR OFFHR RT NC-->
+                        <AttributeID>G49fdb646-2623-420d-84cb-44735aed968b</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G9d896aba-e975-4336-adbb-7a0d084b437b">
+              <Name>Max SRVY ONHR OFFHR RT NC</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--SRVY ONHR OFFHR RT NC-->
+                        <AttributeID>G49fdb646-2623-420d-84cb-44735aed968b</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="SRVY_ONHR_OFFHR_RT_NC" />
+        </Attribute>
+        <Attribute ID="Gae55cc2a-bb4f-4587-94d8-8f17a3a9b74d">
+          <Name>PRDC TST TYP ID</Name>
+          <DataType>Integer</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Descending</SortDirection>
+          <Width>3</Width>
+          <Format>g</Format>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="PRDC_TST_TYP_ID" />
+        </Attribute>
+        <Attribute ID="Gb8e3ff52-1319-48cf-8b02-635d74ede3a8">
+          <Name>PRDC TST TYP CD</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>7</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="PRDC_TST_TYP_CD" />
+        </Attribute>
+        <Attribute ID="G50ded000-3dcd-4c19-9324-dad90319d54c">
+          <Name>VLDTY PRD TST YRS</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>4</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="VLDTY_PRD_TST_YRS" />
+        </Attribute>
+        <Attribute ID="G0e3b34df-01a2-4846-9df4-83968e897a94">
+          <Name>MIN HTNG RT NC</Name>
+          <DataType>Decimal</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Descending</SortDirection>
+          <Width>9</Width>
+          <Format>f2</Format>
+          <!--Total MIN HTNG RT NC-->
+          <DefaultAggregateAttributeID>Gba625b31-3ce5-4db9-bf98-0a026ba74fea</DefaultAggregateAttributeID>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Variations>
+            <Attribute ID="Gba625b31-3ce5-4db9-bf98-0a026ba74fea">
+              <Name>Total MIN HTNG RT NC</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Sum</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--MIN HTNG RT NC-->
+                        <AttributeID>G0e3b34df-01a2-4846-9df4-83968e897a94</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G0ac07dcd-1988-4738-bf7a-4816051d97c4">
+              <Name>Avg MIN HTNG RT NC</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Avg</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--MIN HTNG RT NC-->
+                        <AttributeID>G0e3b34df-01a2-4846-9df4-83968e897a94</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="Gac0f84ed-eaed-4480-ae0c-2e20d442ea9c">
+              <Name>Min MIN HTNG RT NC</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--MIN HTNG RT NC-->
+                        <AttributeID>G0e3b34df-01a2-4846-9df4-83968e897a94</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G66d25b98-e1ac-4557-b659-da5276d5e381">
+              <Name>Max MIN HTNG RT NC</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--MIN HTNG RT NC-->
+                        <AttributeID>G0e3b34df-01a2-4846-9df4-83968e897a94</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="MIN_HTNG_RT_NC" />
+        </Attribute>
+        <Attribute ID="G166b3cca-7a37-4a36-872f-6983f1c7b3e0">
+          <Name>MIN HTNG PRD NC</Name>
+          <DataType>Decimal</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Descending</SortDirection>
+          <Width>8</Width>
+          <Format>f2</Format>
+          <!--Total MIN HTNG PRD NC-->
+          <DefaultAggregateAttributeID>Gca623723-d280-48cb-b8c0-db9d33c03674</DefaultAggregateAttributeID>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Variations>
+            <Attribute ID="Gca623723-d280-48cb-b8c0-db9d33c03674">
+              <Name>Total MIN HTNG PRD NC</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Sum</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--MIN HTNG PRD NC-->
+                        <AttributeID>G166b3cca-7a37-4a36-872f-6983f1c7b3e0</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="Gd20828d4-8ed1-407c-90e2-a5a56e4572b0">
+              <Name>Avg MIN HTNG PRD NC</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Avg</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--MIN HTNG PRD NC-->
+                        <AttributeID>G166b3cca-7a37-4a36-872f-6983f1c7b3e0</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G77e2477a-4275-4e70-be00-53d9514d01fc">
+              <Name>Min MIN HTNG PRD NC</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--MIN HTNG PRD NC-->
+                        <AttributeID>G166b3cca-7a37-4a36-872f-6983f1c7b3e0</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="Ge058a19a-b5e0-4b05-b3e4-536b084857d9">
+              <Name>Max MIN HTNG PRD NC</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--MIN HTNG PRD NC-->
+                        <AttributeID>G166b3cca-7a37-4a36-872f-6983f1c7b3e0</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="MIN_HTNG_PRD_NC" />
+        </Attribute>
+        <Attribute ID="G20355bc7-39fe-40af-baa0-70bc43c74f13">
+          <Name>HRLY CHRG NC</Name>
+          <DataType>Decimal</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Descending</SortDirection>
+          <Width>9</Width>
+          <Format>f2</Format>
+          <!--Total HRLY CHRG NC-->
+          <DefaultAggregateAttributeID>G3dc801e3-ea03-42b5-aa1c-f543bbf82920</DefaultAggregateAttributeID>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Variations>
+            <Attribute ID="G3dc801e3-ea03-42b5-aa1c-f543bbf82920">
+              <Name>Total HRLY CHRG NC</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Sum</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--HRLY CHRG NC-->
+                        <AttributeID>G20355bc7-39fe-40af-baa0-70bc43c74f13</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G34d349c5-b028-4d6a-b1ad-389d3730f7a2">
+              <Name>Avg HRLY CHRG NC</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Avg</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--HRLY CHRG NC-->
+                        <AttributeID>G20355bc7-39fe-40af-baa0-70bc43c74f13</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G611e7a7f-2a1b-47c6-b74c-335e6ecf2003">
+              <Name>Min HRLY CHRG NC</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--HRLY CHRG NC-->
+                        <AttributeID>G20355bc7-39fe-40af-baa0-70bc43c74f13</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G81b7a8a2-32a1-4251-8f67-ec8e6c00f55d">
+              <Name>Max HRLY CHRG NC</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--HRLY CHRG NC-->
+                        <AttributeID>G20355bc7-39fe-40af-baa0-70bc43c74f13</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="HRLY_CHRG_NC" />
+        </Attribute>
+        <Attribute ID="G18d95186-a860-4f5b-b528-8e54ab27d116">
+          <Name>CHK DGT VLDTN BT</Name>
+          <DataType>Boolean</DataType>
+          <SortDirection>Ascending</SortDirection>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="CHK_DGT_VLDTN_BT" />
+        </Attribute>
+        <Attribute ID="G3da28d23-6972-4464-8c4c-532e6d85b46a">
+          <Name>TRNSPRTTN BT</Name>
+          <DataType>Boolean</DataType>
+          <SortDirection>Ascending</SortDirection>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="TRNSPRTTN_BT" />
+        </Attribute>
+        <Attribute ID="Gc9502a0a-f029-420b-9adc-ba1dca5f482b">
+          <Name>RNTL BT</Name>
+          <DataType>Boolean</DataType>
+          <SortDirection>Ascending</SortDirection>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="RNTL_BT" />
+        </Attribute>
+        <Attribute ID="Ga050fd59-925d-48cd-adae-c0ec50cd1b58">
+          <Name>ACTV BT</Name>
+          <DataType>Boolean</DataType>
+          <SortDirection>Ascending</SortDirection>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="ACTV_BT" />
+        </Attribute>
+        <Attribute ID="G3e5602cb-52cd-4a32-ada2-1cef0dbb03c1">
+          <Name>CRTD BY</Name>
+          <DataType>String</DataType>
+          <SortDirection>Ascending</SortDirection>
+          <Width>10</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="CRTD_BY" />
+        </Attribute>
+        <Attribute ID="Gfcb15906-f524-4d11-9de7-29b3dfae1194">
+          <Name>CRTD DT</Name>
+          <DataType>DateTime</DataType>
+          <SortDirection>Descending</SortDirection>
+          <Format>d</Format>
+          <DiscourageGrouping>true</DiscourageGrouping>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Variations>
+            <Attribute ID="G8dd2a522-f978-4fe8-83a2-12bd681cc358">
+              <Name>CRTD DT Day</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Day</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--CRTD DT-->
+                        <AttributeID>Gfcb15906-f524-4d11-9de7-29b3dfae1194</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+            </Attribute>
+            <Attribute ID="Gd82a0cb6-9662-4032-a44b-1d2ddd52f14c">
+              <Name>CRTD DT Month</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Month</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--CRTD DT-->
+                        <AttributeID>Gfcb15906-f524-4d11-9de7-29b3dfae1194</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+            </Attribute>
+            <Attribute ID="Gb0240e75-6c46-4ee8-9428-fa36e15f17a6">
+              <Name>CRTD DT Year</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Year</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--CRTD DT-->
+                        <AttributeID>Gfcb15906-f524-4d11-9de7-29b3dfae1194</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+              <Format>0000</Format>
+            </Attribute>
+            <Attribute ID="G2e3a8452-aa4a-458c-b304-dd940c63e15b">
+              <Name>CRTD DT Quarter</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Quarter</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--CRTD DT-->
+                        <AttributeID>Gfcb15906-f524-4d11-9de7-29b3dfae1194</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+              <Format>Q0</Format>
+            </Attribute>
+            <Attribute ID="G97e6b5e5-0a48-49cf-b475-8de6c0e49962">
+              <Name>First CRTD DT</Name>
+              <DataType>DateTime</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--CRTD DT-->
+                        <AttributeID>Gfcb15906-f524-4d11-9de7-29b3dfae1194</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <Format>d</Format>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="Ge0e64e15-5da4-4ec5-8b57-bfa880f38112">
+              <Name>Last CRTD DT</Name>
+              <DataType>DateTime</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--CRTD DT-->
+                        <AttributeID>Gfcb15906-f524-4d11-9de7-29b3dfae1194</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <Format>d</Format>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="CRTD_DT" />
+        </Attribute>
+        <Attribute ID="G3e8dfff7-4326-4f32-9ffe-bec52aee24ef">
+          <Name>MDFD BY</Name>
+          <DataType>String</DataType>
+          <SortDirection>Ascending</SortDirection>
+          <Width>10</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="MDFD_BY" />
+        </Attribute>
+        <Attribute ID="G1f7768c3-1920-4cfb-897c-1a232939026b">
+          <Name>MDFD DT</Name>
+          <DataType>DateTime</DataType>
+          <SortDirection>Descending</SortDirection>
+          <Format>d</Format>
+          <DiscourageGrouping>true</DiscourageGrouping>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Variations>
+            <Attribute ID="Gc4be1efd-a820-41b1-a5cd-895f3e13d728">
+              <Name>MDFD DT Day</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Day</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--MDFD DT-->
+                        <AttributeID>G1f7768c3-1920-4cfb-897c-1a232939026b</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+            </Attribute>
+            <Attribute ID="G7e054a57-a1a2-4c2f-b309-8850d24a2b81">
+              <Name>MDFD DT Month</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Month</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--MDFD DT-->
+                        <AttributeID>G1f7768c3-1920-4cfb-897c-1a232939026b</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+            </Attribute>
+            <Attribute ID="G6a651ae1-642e-40f3-ab57-e2152128fe91">
+              <Name>MDFD DT Year</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Year</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--MDFD DT-->
+                        <AttributeID>G1f7768c3-1920-4cfb-897c-1a232939026b</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+              <Format>0000</Format>
+            </Attribute>
+            <Attribute ID="G68ad2c0c-7ea4-40d2-982d-8a6c14d66ffd">
+              <Name>MDFD DT Quarter</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Quarter</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--MDFD DT-->
+                        <AttributeID>G1f7768c3-1920-4cfb-897c-1a232939026b</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+              <Format>Q0</Format>
+            </Attribute>
+            <Attribute ID="G85f50e3e-77d7-43ed-996c-acae62808c06">
+              <Name>First MDFD DT</Name>
+              <DataType>DateTime</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--MDFD DT-->
+                        <AttributeID>G1f7768c3-1920-4cfb-897c-1a232939026b</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <Format>d</Format>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="Gb60c6670-fa04-4c25-9f7c-34a94e8a35e5">
+              <Name>Last MDFD DT</Name>
+              <DataType>DateTime</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--MDFD DT-->
+                        <AttributeID>G1f7768c3-1920-4cfb-897c-1a232939026b</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <Format>d</Format>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="MDFD_DT" />
+        </Attribute>
+        <Attribute ID="G3ec4706d-3d32-4b2e-9905-57faf21db1b7">
+          <Name>DPT ID</Name>
+          <DataType>Integer</DataType>
+          <SortDirection>Descending</SortDirection>
+          <Width>2</Width>
+          <Format>g</Format>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="DPT_ID" />
+        </Attribute>
+        <Attribute ID="Gc81d740b-d362-44f5-8add-f37baa27fe88">
+          <Name>DPT CD</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>6</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="DPT_CD" />
+        </Attribute>
+      </Fields>
+      <Table Name="dbo_V_CUSTOMER" />
+    </Entity>
+  </Entities>
+</SemanticModel>

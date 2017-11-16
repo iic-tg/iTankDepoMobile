@@ -1,0 +1,8 @@
+E:\iinterchange\iTankDepo\Business Logics\Business.AppCode\bin\Debug\Business.AppCode.dll
+E:\iinterchange\iTankDepo\Business Logics\Business.AppCode\bin\Debug\Business.AppCode.pdb
+E:\iinterchange\iTankDepo\Business Logics\Business.AppCode\bin\Debug\Business.AppCode.xml
+E:\iinterchange\iTankDepo\Business Logics\Business.AppCode\obj\Debug\Business.AppCode.Resources.resources
+E:\iinterchange\iTankDepo\Business Logics\Business.AppCode\obj\Debug\Business.AppCode.vbproj.GenerateResource.Cache
+E:\iinterchange\iTankDepo\Business Logics\Business.AppCode\obj\Debug\Business.AppCode.dll
+E:\iinterchange\iTankDepo\Business Logics\Business.AppCode\obj\Debug\Business.AppCode.xml
+E:\iinterchange\iTankDepo\Business Logics\Business.AppCode\obj\Debug\Business.AppCode.pdb

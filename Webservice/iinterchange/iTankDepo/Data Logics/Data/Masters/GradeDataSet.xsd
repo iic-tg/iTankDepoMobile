@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="GradeDataSet" targetNamespace="http://tempuri.org/GradeDataSet.xsd" xmlns:mstns="http://tempuri.org/GradeDataSet.xsd" xmlns="http://tempuri.org/GradeDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="GradeDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="GradeDataSet" msprop:Generator_UserDSName="GradeDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GRADE" msprop:Generator_TableClassName="GRADEDataTable" msprop:Generator_TableVarName="tableGRADE" msprop:Generator_TablePropName="GRADE" msprop:Generator_RowDeletingName="GRADERowDeleting" msprop:Generator_RowChangingName="GRADERowChanging" msprop:Generator_RowEvHandlerName="GRADERowChangeEventHandler" msprop:Generator_RowDeletedName="GRADERowDeleted" msprop:Generator_UserTableName="GRADE" msprop:Generator_RowChangedName="GRADERowChanged" msprop:Generator_RowEvArgName="GRADERowChangeEvent" msprop:Generator_RowClassName="GRADERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GRD_ID" msprop:Generator_ColumnVarNameInTable="columnGRD_ID" msprop:Generator_ColumnPropNameInRow="GRD_ID" msprop:Generator_ColumnPropNameInTable="GRD_IDColumn" msprop:Generator_UserColumnName="GRD_ID" type="xs:long" />
+              <xs:element name="GRD_CD" msprop:Generator_ColumnVarNameInTable="columnGRD_CD" msprop:Generator_ColumnPropNameInRow="GRD_CD" msprop:Generator_ColumnPropNameInTable="GRD_CDColumn" msprop:Generator_UserColumnName="GRD_CD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GRD_DSCRPTN_VC" msprop:Generator_ColumnVarNameInTable="columnGRD_DSCRPTN_VC" msprop:Generator_ColumnPropNameInRow="GRD_DSCRPTN_VC" msprop:Generator_ColumnPropNameInTable="GRD_DSCRPTN_VCColumn" msprop:Generator_UserColumnName="GRD_DSCRPTN_VC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CRTD_BY" msprop:Generator_ColumnVarNameInTable="columnCRTD_BY" msprop:Generator_ColumnPropNameInRow="CRTD_BY" msprop:Generator_ColumnPropNameInTable="CRTD_BYColumn" msprop:Generator_UserColumnName="CRTD_BY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CRTD_DT" msprop:Generator_ColumnVarNameInTable="columnCRTD_DT" msprop:Generator_ColumnPropNameInRow="CRTD_DT" msprop:Generator_ColumnPropNameInTable="CRTD_DTColumn" msprop:Generator_UserColumnName="CRTD_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MDFD_BY" msprop:Generator_ColumnVarNameInTable="columnMDFD_BY" msprop:Generator_ColumnPropNameInRow="MDFD_BY" msprop:Generator_ColumnPropNameInTable="MDFD_BYColumn" msprop:Generator_UserColumnName="MDFD_BY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MDFD_DT" msprop:Generator_ColumnVarNameInTable="columnMDFD_DT" msprop:Generator_ColumnPropNameInRow="MDFD_DT" msprop:Generator_ColumnPropNameInTable="MDFD_DTColumn" msprop:Generator_UserColumnName="MDFD_DT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ACTV_BT" msprop:Generator_ColumnVarNameInTable="columnACTV_BT" msprop:Generator_ColumnPropNameInRow="ACTV_BT" msprop:Generator_ColumnPropNameInTable="ACTV_BTColumn" msprop:Generator_UserColumnName="ACTV_BT" type="xs:boolean" minOccurs="0" />
+              <xs:element name="DPT_ID" msprop:Generator_ColumnVarNameInTable="columnDPT_ID" msprop:Generator_ColumnPropNameInRow="DPT_ID" msprop:Generator_ColumnPropNameInTable="DPT_IDColumn" msprop:Generator_UserColumnName="DPT_ID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:GRADE" />
+      <xs:field xpath="mstns:GRD_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

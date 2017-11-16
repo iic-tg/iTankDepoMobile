@@ -1,0 +1,1586 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{D87AA6CF-6E51-4799-8432-09503731C270}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>iInterchange.iTankDepo.Data</RootNamespace>
+    <AssemblyName>iInterchange.iTankDepo.Data</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>iInterchange.iTankDepo.Data.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>iInterchange.iTankDepo.Data.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AuditDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AuditDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CommonUIDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommonUIDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CommonUIDataSet.vb">
+      <DependentUpon>CommonUIDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ConfigDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConfigDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DepotDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DepotDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\IndexPatternDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IndexPatternDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\RoleRightDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RoleRightDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Billing\InvoiceGenerationDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InvoiceGenerationDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Billing\InvoiceGenerationDataSet.vb">
+      <DependentUpon>InvoiceGenerationDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Billing\InvoiceReversalDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InvoiceReversalDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Billing\ViewInvoiceDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ViewInvoiceDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Billing\ViewXmlEdiDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ViewXmlEdiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\DashboardDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DashboardDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\EquipmentTrackingDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EquipmentTrackingDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\OperationsTurnOverDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OperationsTurnOverDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicReport\AddDynamicReportDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddDynamicReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicReport\ReportParamDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportParamDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EDI\EDIDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EDIDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EDI\EDIDataSet.vb">
+      <DependentUpon>EDIDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\AdditionalChargeRateDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdditionalChargeRateDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\AgentDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AgentDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\CleaningMethodDataSet.Designer.vb" />
+    <Compile Include="Masters\CleaningTypeDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CleaningTypeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\ComponentDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ComponentDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\ComponentDataSet.vb">
+      <DependentUpon>ComponentDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\CountryDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CountryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\CountryDataSet.vb">
+      <DependentUpon>CountryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\CurrencyDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CurrencyDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\CurrencyDataSet.vb">
+      <DependentUpon>CurrencyDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\CustomerDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomerDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\CustomerDataSet.vb">
+      <DependentUpon>CustomerDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\CustomerTariffCodeDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomerTariffCodeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\CustomerTariffCodeDataSet.vb">
+      <DependentUpon>CustomerTariffCodeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\DamageDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DamageDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\DamageDataSet.vb">
+      <DependentUpon>DamageDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\EquipmentCodeDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EquipmentCodeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\EquipmentCodeDataSet.vb">
+      <DependentUpon>EquipmentCodeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\EquipmentSizeDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EquipmentSizeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\EquipmentSizeDataSet.vb">
+      <DependentUpon>EquipmentSizeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\EquipmentStatusDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EquipmentStatusDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\EquipmentTypeDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EquipmentTypeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\EquipmentTypeDataSet.vb">
+      <DependentUpon>EquipmentTypeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\ExchangeRateDataSet.Designer.vb">
+      <DependentUpon>ExchangeRateDataSet.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Masters\GradeDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GradeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\InvoicePartyDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InvoicePartyDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\ItemDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ItemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\LocationDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LocationDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\LocationDataSet.vb">
+      <DependentUpon>LocationDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\MaterialDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaterialDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\MeasureDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MeasureDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\PartyDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PartyDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\PortDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PortDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\ProductDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\RepairDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RepairDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\ResponsibilityDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResponsibilityDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\ResponsibilityDataSet.vb">
+      <DependentUpon>ResponsibilityDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\RouteDetailDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RouteDetailDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\StatusDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StatusDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\SubItemDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SubItemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\SupplierDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SupplierDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\SupplierDataSet.vb">
+      <DependentUpon>SupplierDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\TariffCodeDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TariffCodeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\TariffCodeDataSet.vb">
+      <DependentUpon>TariffCodeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\TariffGroupDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TariffGroupDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\TariffTemplateDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TariffTemplateDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\TariffTemplateDataSet.vb">
+      <DependentUpon>TariffTemplateDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\TransporterDataSet.Designer.vb">
+      <DependentUpon>TransporterDataSet.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Masters\TransporterDataSet.vb">
+      <DependentUpon>TransporterDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\UnitDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UnitDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\UnitDataSet.vb">
+      <DependentUpon>UnitDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Operations\ChangeOfStatusDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChangeOfStatusDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\ChangeOfStatusDataSet.vb">
+      <DependentUpon>ChangeOfStatusDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\CleaningDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CleaningDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\CleaningInspectionDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CleaningInspectionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\CleaningInspectionDataSet.vb">
+      <DependentUpon>CleaningInspectionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\EquipmentHistoryDataSet.Designer.vb">
+      <DependentUpon>EquipmentHistoryDataSet.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Operations\EquipmentInspectionDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EquipmentInspectionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\EquipmentUpdateDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EquipmentUpdateDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\GateOutApprovalDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GateOutApprovalDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\GateOutApprovalDataSet.vb">
+      <DependentUpon>GateOutApprovalDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\GateOutRequestDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GateOutRequestDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\GateOutRequestDataSet.vb">
+      <DependentUpon>GateOutRequestDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\HeatingDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HeatingDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\LeakTestDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LeakTestDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\MiscellaneousInvoiceDataSet.Designer.vb">
+      <DependentUpon>MiscellaneousInvoiceDataSet.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Operations\EquipmentInformationDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EquipmentInformationDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\GateinDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GateinDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\GateinDataSet.vb">
+      <DependentUpon>GateinDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\GateOutDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GateOutDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\GateOutDataSet.vb">
+      <DependentUpon>GateOutDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\InputRedeliveryDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InputRedeliveryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\InvoiceDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InvoiceDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\InvoiceDataSet.vb">
+      <DependentUpon>InvoiceDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\MiscellaneousInvoiceDataSet.vb">
+      <DependentUpon>MiscellaneousInvoiceDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\PreAdviceDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PreAdviceDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\RepairCompletionDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RepairCompletionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\RepairCompletionDataSet.vb">
+      <DependentUpon>RepairCompletionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\RepairEstimateDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RepairEstimateDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\RepairEstimateDataSet.vb">
+      <DependentUpon>RepairEstimateDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\RepairInvoiceUpdateDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RepairInvoiceUpdateDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\ReserveBookingDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReserveBookingDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\ReserveBookingDataSet.vb">
+      <DependentUpon>ReserveBookingDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\ScheduleDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScheduleDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\ScheduleDataSet.vb">
+      <DependentUpon>ScheduleDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\TrackingDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TrackingDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\TrackingDataSet.vb">
+      <DependentUpon>TrackingDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Rental\RentalEntryDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RentalEntryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Rental\RentalEntryDataSet.vb">
+      <DependentUpon>RentalEntryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SageIntegration\FinanceIntegrationDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FinanceIntegrationDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Services\AlertDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AlertDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Services\AlertDataSet.vb">
+      <DependentUpon>AlertDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Bulk_EmailDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bulk_EmailDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Bulk_EmailDataSet.vb">
+      <DependentUpon>Bulk_EmailDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Services\EDISettingDataSet.Designer.vb">
+      <DependentUpon>EDISettingDataSet.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Services\DARDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DARDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Services\EDISettingDataSet.vb">
+      <DependentUpon>EDISettingDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Tracking\BulkEmailDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BulkEmailDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Tracking\EnquiryDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EnquiryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Transportation\TransportationDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TransportationDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Transportation\TransportationDataSet.vb">
+      <DependentUpon>TransportationDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Upload\UploadDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UploadDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Upload\UploadDataSet.vb">
+      <DependentUpon>UploadDataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Admin\AuditDataSet.xsc">
+      <DependentUpon>AuditDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Admin\AuditDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AuditDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Admin\AuditDataSet.xss">
+      <DependentUpon>AuditDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Admin\CommonUIDataSet.xsc">
+      <DependentUpon>CommonUIDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Admin\CommonUIDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CommonUIDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Admin\CommonUIDataSet.xss">
+      <DependentUpon>CommonUIDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Admin\ConfigDataSet.xsc">
+      <DependentUpon>ConfigDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Admin\ConfigDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ConfigDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Admin\ConfigDataSet.xss">
+      <DependentUpon>ConfigDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Admin\DepotDataSet.xsc">
+      <DependentUpon>DepotDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Admin\DepotDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DepotDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Admin\DepotDataSet.xss">
+      <DependentUpon>DepotDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Admin\IndexPatternDataSet.xsc">
+      <DependentUpon>IndexPatternDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Admin\IndexPatternDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IndexPatternDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Admin\IndexPatternDataSet.xss">
+      <DependentUpon>IndexPatternDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Admin\RoleRightDataSet.xsc">
+      <DependentUpon>RoleRightDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Admin\RoleRightDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RoleRightDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Admin\RoleRightDataSet.xss">
+      <DependentUpon>RoleRightDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Admin\UserDataSet.xsc">
+      <DependentUpon>UserDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Admin\UserDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UserDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Admin\UserDataSet.xss">
+      <DependentUpon>UserDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="app.config" />
+    <None Include="Billing\InvoiceGenerationDataSet.xsc">
+      <DependentUpon>InvoiceGenerationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Billing\InvoiceGenerationDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InvoiceGenerationDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Billing\InvoiceGenerationDataSet.xss">
+      <DependentUpon>InvoiceGenerationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Billing\InvoiceReversalDataSet.xsc">
+      <DependentUpon>InvoiceReversalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Billing\InvoiceReversalDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InvoiceReversalDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Billing\InvoiceReversalDataSet.xss">
+      <DependentUpon>InvoiceReversalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Billing\ViewInvoiceDataSet.xsc">
+      <DependentUpon>ViewInvoiceDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Billing\ViewInvoiceDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ViewInvoiceDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Billing\ViewInvoiceDataSet.xss">
+      <DependentUpon>ViewInvoiceDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Billing\ViewXmlEdiDataSet.xsc">
+      <DependentUpon>ViewXmlEdiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Billing\ViewXmlEdiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ViewXmlEdiDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Billing\ViewXmlEdiDataSet.xss">
+      <DependentUpon>ViewXmlEdiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\DashboardDataSet.xsc">
+      <DependentUpon>DashboardDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\DashboardDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DashboardDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Dashboard\DashboardDataSet.xss">
+      <DependentUpon>DashboardDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\EquipmentTrackingDataSet.xsc">
+      <DependentUpon>EquipmentTrackingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\EquipmentTrackingDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EquipmentTrackingDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Dashboard\EquipmentTrackingDataSet.xss">
+      <DependentUpon>EquipmentTrackingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\OperationsTurnOverDataSet.xsc">
+      <DependentUpon>OperationsTurnOverDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Dashboard\OperationsTurnOverDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OperationsTurnOverDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Dashboard\OperationsTurnOverDataSet.xss">
+      <DependentUpon>OperationsTurnOverDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DynamicReport\AddDynamicReportDataSet.xsc">
+      <DependentUpon>AddDynamicReportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DynamicReport\AddDynamicReportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AddDynamicReportDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DynamicReport\AddDynamicReportDataSet.xss">
+      <DependentUpon>AddDynamicReportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DynamicReport\ReportParamDataSet.xsc">
+      <DependentUpon>ReportParamDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DynamicReport\ReportParamDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportParamDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DynamicReport\ReportParamDataSet.xss">
+      <DependentUpon>ReportParamDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EDI\EDIDataSet.xsc">
+      <DependentUpon>EDIDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EDI\EDIDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EDIDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="EDI\EDIDataSet.xss">
+      <DependentUpon>EDIDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\AdditionalChargeRateDataSet.xsc">
+      <DependentUpon>AdditionalChargeRateDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\AdditionalChargeRateDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AdditionalChargeRateDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Masters\AdditionalChargeRateDataSet.xss">
+      <DependentUpon>AdditionalChargeRateDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\AgentDataSet.xsc">
+      <DependentUpon>AgentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\AgentDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AgentDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Masters\AgentDataSet.xss">
+      <DependentUpon>AgentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\CleaningMethodDataSet.xsc">
+      <DependentUpon>CleaningMethodDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\CleaningMethodDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CleaningMethodDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Masters\CleaningMethodDataSet.xss">
+      <DependentUpon>CleaningMethodDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\CleaningTypeDataSet.xsc">
+      <DependentUpon>CleaningTypeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\CleaningTypeDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CleaningTypeDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Masters\CleaningTypeDataSet.xss">
+      <DependentUpon>CleaningTypeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\ComponentDataSet.xsc">
+      <DependentUpon>ComponentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\ComponentDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ComponentDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Masters\ComponentDataSet.xss">
+      <DependentUpon>ComponentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\CountryDataSet.xsc">
+      <DependentUpon>CountryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\CountryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CountryDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Masters\CountryDataSet.xss">
+      <DependentUpon>CountryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\CurrencyDataSet.xsc">
+      <DependentUpon>CurrencyDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\CurrencyDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CurrencyDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Masters\CurrencyDataSet.xss">
+      <DependentUpon>CurrencyDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\CustomerDataSet.xsc">
+      <DependentUpon>CustomerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\CustomerDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CustomerDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Masters\CustomerDataSet.xss">
+      <DependentUpon>CustomerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\CustomerTariffCodeDataSet.xsc">
+      <DependentUpon>CustomerTariffCodeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\CustomerTariffCodeDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CustomerTariffCodeDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Masters\CustomerTariffCodeDataSet.xss">
+      <DependentUpon>CustomerTariffCodeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\DamageDataSet.xsc">
+      <DependentUpon>DamageDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\DamageDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DamageDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Masters\DamageDataSet.xss">
+      <DependentUpon>DamageDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\EquipmentCodeDataSet.xsc">
+      <DependentUpon>EquipmentCodeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\EquipmentCodeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EquipmentCodeDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Masters\EquipmentCodeDataSet.xss">
+      <DependentUpon>EquipmentCodeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\EquipmentSizeDataSet.xsc">
+      <DependentUpon>EquipmentSizeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\EquipmentSizeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EquipmentSizeDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Masters\EquipmentSizeDataSet.xss">
+      <DependentUpon>EquipmentSizeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\EquipmentStatusDataSet.xsc">
+      <DependentUpon>EquipmentStatusDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\EquipmentStatusDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EquipmentStatusDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Masters\EquipmentStatusDataSet.xss">
+      <DependentUpon>EquipmentStatusDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\EquipmentTypeDataSet.xsc">
+      <DependentUpon>EquipmentTypeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\EquipmentTypeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EquipmentTypeDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Masters\EquipmentTypeDataSet.xss">
+      <DependentUpon>EquipmentTypeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\ExchangeRateDataSet.xsc">
+      <DependentUpon>ExchangeRateDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\ExchangeRateDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ExchangeRateDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Masters\ExchangeRateDataSet.xss">
+      <DependentUpon>ExchangeRateDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\GradeDataSet.xsc">
+      <DependentUpon>GradeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\GradeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GradeDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Masters\GradeDataSet.xss">
+      <DependentUpon>GradeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\InvoicePartyDataSet.xsc">
+      <DependentUpon>InvoicePartyDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\InvoicePartyDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InvoicePartyDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Masters\InvoicePartyDataSet.xss">
+      <DependentUpon>InvoicePartyDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\ItemDataSet.xsc">
+      <DependentUpon>ItemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\ItemDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ItemDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Masters\ItemDataSet.xss">
+      <DependentUpon>ItemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\LocationDataSet.xsc">
+      <DependentUpon>LocationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\LocationDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LocationDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Masters\LocationDataSet.xss">
+      <DependentUpon>LocationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\MaterialDataSet.xsc">
+      <DependentUpon>MaterialDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\MaterialDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MaterialDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Masters\MaterialDataSet.xss">
+      <DependentUpon>MaterialDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\MeasureDataSet.xsc">
+      <DependentUpon>MeasureDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\MeasureDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MeasureDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Masters\MeasureDataSet.xss">
+      <DependentUpon>MeasureDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\PartyDataSet.xsc">
+      <DependentUpon>PartyDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\PartyDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PartyDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Masters\PartyDataSet.xss">
+      <DependentUpon>PartyDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\PortDataSet.xsc">
+      <DependentUpon>PortDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\PortDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PortDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Masters\PortDataSet.xss">
+      <DependentUpon>PortDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\ProductDataSet.xsc">
+      <DependentUpon>ProductDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\ProductDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProductDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Masters\ProductDataSet.xss">
+      <DependentUpon>ProductDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\RepairDataSet.xsc">
+      <DependentUpon>RepairDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\RepairDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RepairDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Masters\RepairDataSet.xss">
+      <DependentUpon>RepairDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\ResponsibilityDataSet.xsc">
+      <DependentUpon>ResponsibilityDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\ResponsibilityDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ResponsibilityDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Masters\ResponsibilityDataSet.xss">
+      <DependentUpon>ResponsibilityDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\RouteDetailDataSet.xsc">
+      <DependentUpon>RouteDetailDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\RouteDetailDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RouteDetailDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Masters\RouteDetailDataSet.xss">
+      <DependentUpon>RouteDetailDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\StatusDataSet.xsc">
+      <DependentUpon>StatusDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\StatusDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StatusDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Masters\StatusDataSet.xss">
+      <DependentUpon>StatusDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\SubItemDataSet.xsc">
+      <DependentUpon>SubItemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\SubItemDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SubItemDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Masters\SubItemDataSet.xss">
+      <DependentUpon>SubItemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\SupplierDataSet.xsc">
+      <DependentUpon>SupplierDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\SupplierDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SupplierDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Masters\SupplierDataSet.xss">
+      <DependentUpon>SupplierDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\TariffCodeDataSet.xsc">
+      <DependentUpon>TariffCodeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\TariffCodeDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TariffCodeDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Masters\TariffCodeDataSet.xss">
+      <DependentUpon>TariffCodeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\TariffGroupDataSet.xsc">
+      <DependentUpon>TariffGroupDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\TariffGroupDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TariffGroupDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Masters\TariffGroupDataSet.xss">
+      <DependentUpon>TariffGroupDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\TariffTemplateDataSet.xsc">
+      <DependentUpon>TariffTemplateDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\TariffTemplateDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TariffTemplateDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Masters\TariffTemplateDataSet.xss">
+      <DependentUpon>TariffTemplateDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\TransporterDataSet.xsc">
+      <DependentUpon>TransporterDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\TransporterDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TransporterDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Masters\TransporterDataSet.xss">
+      <DependentUpon>TransporterDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\UnitDataSet.xsc">
+      <DependentUpon>UnitDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Masters\UnitDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UnitDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Masters\UnitDataSet.xss">
+      <DependentUpon>UnitDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Operations\ChangeOfStatusDataSet.xsc">
+      <DependentUpon>ChangeOfStatusDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\ChangeOfStatusDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ChangeOfStatusDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Operations\ChangeOfStatusDataSet.xss">
+      <DependentUpon>ChangeOfStatusDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\CleaningDataSet.xsc">
+      <DependentUpon>CleaningDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\CleaningDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CleaningDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Operations\CleaningDataSet.xss">
+      <DependentUpon>CleaningDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\CleaningInspectionDataSet.xsc">
+      <DependentUpon>CleaningInspectionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\CleaningInspectionDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CleaningInspectionDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Operations\CleaningInspectionDataSet.xss">
+      <DependentUpon>CleaningInspectionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\EquipmentHistoryDataSet.xsc">
+      <DependentUpon>EquipmentHistoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\EquipmentHistoryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EquipmentHistoryDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Operations\EquipmentHistoryDataSet.xss">
+      <DependentUpon>EquipmentHistoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\EquipmentInspectionDataSet.xsc">
+      <DependentUpon>EquipmentInspectionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\EquipmentInspectionDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EquipmentInspectionDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Operations\EquipmentInspectionDataSet.xss">
+      <DependentUpon>EquipmentInspectionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\EquipmentUpdateDataSet.xsc">
+      <DependentUpon>EquipmentUpdateDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\EquipmentUpdateDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EquipmentUpdateDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Operations\EquipmentUpdateDataSet.xss">
+      <DependentUpon>EquipmentUpdateDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\GateOutApprovalDataSet.xsc">
+      <DependentUpon>GateOutApprovalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\GateOutApprovalDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GateOutApprovalDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Operations\GateOutApprovalDataSet.xss">
+      <DependentUpon>GateOutApprovalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\GateOutRequestDataSet.xsc">
+      <DependentUpon>GateOutRequestDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\GateOutRequestDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GateOutRequestDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Operations\GateOutRequestDataSet.xss">
+      <DependentUpon>GateOutRequestDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\HeatingDataSet.xsc">
+      <DependentUpon>HeatingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\HeatingDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HeatingDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Operations\HeatingDataSet.xss">
+      <DependentUpon>HeatingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\LeakTestDataSet.xsc">
+      <DependentUpon>LeakTestDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\LeakTestDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LeakTestDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Operations\LeakTestDataSet.xss">
+      <DependentUpon>LeakTestDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\MiscellaneousInvoiceDataSet.xsc">
+      <DependentUpon>MiscellaneousInvoiceDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\MiscellaneousInvoiceDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MiscellaneousInvoiceDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Operations\MiscellaneousInvoiceDataSet.xss">
+      <DependentUpon>MiscellaneousInvoiceDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\EquipmentInformationDataSet.xsc">
+      <DependentUpon>EquipmentInformationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\EquipmentInformationDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EquipmentInformationDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Operations\EquipmentInformationDataSet.xss">
+      <DependentUpon>EquipmentInformationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\GateinDataSet.xsc">
+      <DependentUpon>GateinDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\GateinDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GateinDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Operations\GateinDataSet.xss">
+      <DependentUpon>GateinDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\GateOutDataSet.xsc">
+      <DependentUpon>GateOutDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\GateOutDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GateOutDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Operations\GateOutDataSet.xss">
+      <DependentUpon>GateOutDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\InputRedeliveryDataSet.xsc">
+      <DependentUpon>InputRedeliveryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\InputRedeliveryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InputRedeliveryDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Operations\InputRedeliveryDataSet.xss">
+      <DependentUpon>InputRedeliveryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\InvoiceDataSet.xsc">
+      <DependentUpon>InvoiceDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\InvoiceDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InvoiceDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Operations\InvoiceDataSet.xss">
+      <DependentUpon>InvoiceDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\PreAdviceDataSet.xsc">
+      <DependentUpon>PreAdviceDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\PreAdviceDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PreAdviceDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Operations\PreAdviceDataSet.xss">
+      <DependentUpon>PreAdviceDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\RepairCompletionDataSet.xsc">
+      <DependentUpon>RepairCompletionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\RepairCompletionDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RepairCompletionDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Operations\RepairCompletionDataSet.xss">
+      <DependentUpon>RepairCompletionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\RepairEstimateDataSet.xsc">
+      <DependentUpon>RepairEstimateDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\RepairEstimateDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RepairEstimateDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Operations\RepairEstimateDataSet.xss">
+      <DependentUpon>RepairEstimateDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\RepairInvoiceUpdateDataSet.xsc">
+      <DependentUpon>RepairInvoiceUpdateDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\RepairInvoiceUpdateDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RepairInvoiceUpdateDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Operations\RepairInvoiceUpdateDataSet.xss">
+      <DependentUpon>RepairInvoiceUpdateDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\ReserveBookingDataSet.xsc">
+      <DependentUpon>ReserveBookingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\ReserveBookingDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReserveBookingDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Operations\ReserveBookingDataSet.xss">
+      <DependentUpon>ReserveBookingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\ScheduleDataSet.xsc">
+      <DependentUpon>ScheduleDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\ScheduleDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ScheduleDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Operations\ScheduleDataSet.xss">
+      <DependentUpon>ScheduleDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\TrackingDataSet.xsc">
+      <DependentUpon>TrackingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Operations\TrackingDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TrackingDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Operations\TrackingDataSet.xss">
+      <DependentUpon>TrackingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Rental\RentalEntryDataSet.xsc">
+      <DependentUpon>RentalEntryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Rental\RentalEntryDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RentalEntryDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Rental\RentalEntryDataSet.xss">
+      <DependentUpon>RentalEntryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SageIntegration\FinanceIntegrationDataSet.xsc">
+      <DependentUpon>FinanceIntegrationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SageIntegration\FinanceIntegrationDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FinanceIntegrationDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="SageIntegration\FinanceIntegrationDataSet.xss">
+      <DependentUpon>FinanceIntegrationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Services\AlertDataSet.xsc">
+      <DependentUpon>AlertDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Services\AlertDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AlertDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Services\AlertDataSet.xss">
+      <DependentUpon>AlertDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Services\Bulk_EmailDataSet.xsc">
+      <DependentUpon>Bulk_EmailDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Services\Bulk_EmailDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Bulk_EmailDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Services\Bulk_EmailDataSet.xss">
+      <DependentUpon>Bulk_EmailDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Services\EDISettingDataSet.xsc">
+      <DependentUpon>EDISettingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Services\EDISettingDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EDISettingDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Services\EDISettingDataSet.xss">
+      <DependentUpon>EDISettingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Services\DARDataSet.xsc">
+      <DependentUpon>DARDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Services\DARDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DARDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Services\DARDataSet.xss">
+      <DependentUpon>DARDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Tracking\BulkEmailDataSet.xsc">
+      <DependentUpon>BulkEmailDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Tracking\BulkEmailDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BulkEmailDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Tracking\BulkEmailDataSet.xss">
+      <DependentUpon>BulkEmailDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Tracking\EnquiryDataSet.xsc">
+      <DependentUpon>EnquiryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Tracking\EnquiryDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EnquiryDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Tracking\EnquiryDataSet.xss">
+      <DependentUpon>EnquiryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Transportation\TransportationDataSet.xsc">
+      <DependentUpon>TransportationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Transportation\TransportationDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TransportationDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Transportation\TransportationDataSet.xss">
+      <DependentUpon>TransportationDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Upload\UploadDataSet.xsc">
+      <DependentUpon>UploadDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Upload\UploadDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UploadDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Upload\UploadDataSet.xss">
+      <DependentUpon>UploadDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

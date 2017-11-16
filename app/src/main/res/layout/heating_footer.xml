@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:layout_gravity="bottom"
+    android:weightSum="4"
+    android:background="@color/submit"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@color/submit">
+        <Button
+            android:id="@+id/heat_home"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@android:color/transparent"
+            android:drawableTop="@mipmap/ic_home"
+            android:drawableTint="@color/white"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@android:color/transparent"
+            android:text="Home"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@color/submit">
+        <Button
+            android:id="@+id/heat_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@android:color/transparent"
+            android:drawableTop="@mipmap/ic_refresh"
+            android:drawableTint="@color/white"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/tv_heat_refresh"
+            android:textColor="@color/white"
+            android:text="Refresh"/>
+
+    </LinearLayout>
+
+    <!--  <View
+          style="@style/View_vertical"
+          />-->
+    <!--<View
+        style="@style/View_vertical"
+        />-->
+
+
+    <!-- <View
+         style="@style/View_vertical"
+         />-->
+    <LinearLayout
+        android:id="@+id/LL_heat_submit"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/submit"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/heat_submit"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@android:color/transparent"
+            android:drawableTint="@color/white"
+            android:drawableTop="@mipmap/ic_submit"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="Submit"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/LL_heat"
+        android:orientation="vertical"
+        android:background="@color/submit">
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/RL_heating">
+                    <Button
+                        android:id="@+id/heating"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@android:color/transparent"
+                        android:drawableTop="@mipmap/ic_heat"
+                        android:gravity="center"
+                        android:drawableTint="@color/white"
+                        />
+                    <Button
+                        android:id="@+id/cleaning"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@android:color/transparent"
+                        android:drawableTop="@mipmap/cleaning_footer"
+                        android:gravity="center"
+                        android:drawableTint="@color/white"
+                        />
+                    <Button
+                        android:id="@+id/inspection"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@android:color/transparent"
+                        android:drawableTop="@mipmap/insp_footer"
+                        android:gravity="center"
+                        android:drawableTint="@color/white"
+                        />
+                    <Button
+                        android:id="@+id/leakTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@android:color/transparent"
+                        android:drawableTop="@mipmap/ic_add"
+                        android:gravity="center"
+                        android:drawableTint="@color/white"
+                        />
+                    <Button
+                        android:id="@+id/bt_gateout"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@android:color/transparent"
+                        android:drawableTop="@mipmap/ic_print"
+                        android:gravity="center"
+                        android:drawableTint="@color/white"
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/RL_Repair">
+                    <Button
+                        android:id="@+id/repair_estimate"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@android:color/transparent"
+                        android:drawableTop="@mipmap/ic_repair_estimate"
+                        android:gravity="center"
+                        android:drawableTint="@color/white"
+                        />
+                    <Button
+                        android:id="@+id/repair_approval"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@android:color/transparent"
+                        android:drawableTop="@mipmap/ic_repair_approval"
+                        android:gravity="center"
+                        android:drawableTint="@color/white"
+                        />
+                    <Button
+                        android:id="@+id/survey_completion"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@android:color/transparent"
+                        android:drawableTop="@mipmap/ic_survey_completion"
+                        android:gravity="center"
+                        android:drawableTint="@color/white"
+                        />
+                    <Button
+                        android:id="@+id/repair_completion"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@android:color/transparent"
+                        android:drawableTop="@mipmap/ic_repair_completion"
+                        android:gravity="center"
+                        android:drawableTint="@color/white"
+                        />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:id="@+id/tv_heating"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:textSize="12dp"
+            android:background="@android:color/transparent"
+            android:text=""/>
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout >

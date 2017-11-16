@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@color/Title"
+            android:weightSum="2">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:drawableLeft="@mipmap/ic_add"
+                android:text="Add New Line Details"
+                android:layout_gravity="center|left"
+                android:gravity="center|left"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:layout_weight="2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LL_whole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tv_item_"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:text="Item"
+                    android:textColor="@color/tv_color" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Sub Item"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="@color/tv_color"
+                    android:id="@+id/tv_subitem"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_below="@+id/text_layout"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="2dp"
+                    android:layout_height="match_parent">
+
+                    <com.i_tankdepo.customcomponents.CustomSpinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sp_item"
+                        android:visibility="invisible"
+                        android:textColor="@color/list_text"
+                        style="@style/Widget.AppCompat.Spinner.Underlined"></com.i_tankdepo.customcomponents.CustomSpinner>
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:paddingRight="10dp"
+                        android:focusable="false"
+                        android:id="@+id/tv_item"
+                        android:longClickable="false"
+                        android:textColor="@color/list_text"
+                        android:layout_marginRight="4dp"
+                        android:hint=""
+                        />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp"
+                        android:src="@mipmap/ic_down"
+                        android:id="@+id/im_item"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="2dp"
+                    android:layout_height="match_parent">
+
+                    <com.i_tankdepo.customcomponents.CustomSpinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sp_sub_item"
+                        android:visibility="invisible"
+                        android:textColor="@color/list_text"
+                        style="@style/Widget.AppCompat.Spinner.Underlined"></com.i_tankdepo.customcomponents.CustomSpinner>
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:paddingRight="10dp"
+                        android:focusable="false"
+                        android:longClickable="false"
+                        android:textColor="@color/list_text"
+                        android:id="@+id/tv_sub_item"
+                        android:layout_marginRight="4dp"
+                        android:hint=""
+                        />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp"
+                        android:src="@mipmap/ic_down"
+                        android:tint="@color/black"
+                        android:id="@+id/im_repair_type"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Damage Code"
+                    android:layout_marginLeft="2dp"
+                    android:id="@+id/tv_damagecode"
+                    android:textColor="@color/tv_color"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2dp"
+                    android:id="@+id/tv_repaircode"
+                    android:textColor="@color/tv_color"
+                    android:text="Repair Code"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_below="@+id/text_layout"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="2dp"
+                    android:layout_height="match_parent">
+                    <com.i_tankdepo.customcomponents.CustomSpinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sp_damage_code"
+                        android:visibility="invisible"
+                        android:textColor="@color/list_text"
+                        style="@style/Widget.AppCompat.Spinner.Underlined"></com.i_tankdepo.customcomponents.CustomSpinner>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:paddingRight="10dp"
+                        android:longClickable="false"
+                        android:id="@+id/tv_damage_code"
+                        android:focusable="false"
+                        android:textColor="@color/list_text"
+                        android:layout_marginRight="4dp"
+                        android:hint=""
+                        />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp"
+                        android:src="@mipmap/ic_down"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="2dp"
+                    android:layout_height="match_parent">
+
+                    <com.i_tankdepo.customcomponents.CustomSpinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sp_repair_code"
+                        android:visibility="invisible"
+                        android:textColor="@color/list_text"
+                        style="@style/Widget.AppCompat.Spinner.Underlined"></com.i_tankdepo.customcomponents.CustomSpinner>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:paddingRight="10dp"
+                        android:longClickable="false"
+                        android:focusable="false"
+                        android:textColor="@color/list_text"
+                        android:id="@+id/tv_repair_cost"
+                        android:layout_marginRight="4dp"
+                        android:hint=""
+                        />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp"
+                        android:src="@mipmap/ic_down"
+                        android:tint="@color/black"
+                        android:id="@+id/im_invoicing_party"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/visit_line"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/tv_color"
+                    android:id="@+id/tv_manhour"
+                    android:text="Man Hour"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/tv_color"
+                    android:text="Man Hour Rate"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_below="@+id/text_layout"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="2dp"
+                    android:layout_height="match_parent">
+                    <!--  <Spinner
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:id="@+id/sp_last_survey"
+                          android:textColor="@color/list_text"
+                          style="@style/Widget.AppCompat.Spinner.Underlined"></Spinner>-->
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:lines="1"
+                        android:text="0.00"
+                        android:singleLine="true"
+                        android:paddingRight="10dp"
+                        android:longClickable="false"
+                        android:id="@+id/tv_man_hour"
+                        android:maxLength="12"
+                        android:inputType="numberDecimal|numberSigned|textNoSuggestions"
+                        android:textColor="@color/list_text"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp"
+                        android:src="@mipmap/ic_calender"
+                        android:visibility="gone"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="2dp"
+                    android:layout_height="match_parent">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:lines="1"
+                        android:id="@+id/tv_manhour_rate"
+                        android:singleLine="true"
+                        android:paddingRight="10dp"
+                        android:text="0.00"
+                        android:longClickable="false"
+                        android:maxLength="7"
+                        android:focusable="false"
+                        android:layout_marginRight="4dp"
+                        android:hint=""
+                        android:textColor="@color/list_text"
+                        />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp"
+                        android:visibility="gone"
+                        android:src="@mipmap/ic_calender"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/visit_line"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/tv_color"
+                    android:text="Man Hour Cost"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/tv_color"
+                    android:text="Material Cost"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_below="@+id/text_layout"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="2dp"
+                    android:layout_height="match_parent">
+                    <!--  <Spinner
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:id="@+id/sp_last_survey"
+                          android:textColor="@color/list_text"
+                          style="@style/Widget.AppCompat.Spinner.Underlined"></Spinner>-->
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:paddingRight="10dp"
+                        android:id="@+id/tv_manhour_cost"
+                        android:hint=""
+                        android:focusable="false"
+                        android:longClickable="false"
+                        android:text="0.00"
+                        android:textColor="@color/list_text"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp"
+                        android:src="@mipmap/ic_calender"
+                        android:visibility="gone"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="2dp"
+                    android:layout_height="match_parent">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:lines="1"
+                        android:id="@+id/tv_metrial_cost"
+                        android:singleLine="true"
+                        android:paddingRight="10dp"
+                        android:longClickable="false"
+                        android:maxLength="12"
+                        android:layout_marginRight="4dp"
+                        android:inputType="numberDecimal|textNoSuggestions"
+                        android:text="0.00"
+                        android:textColor="@color/list_text"
+                        />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp"
+                        android:visibility="gone"
+                        android:src="@mipmap/ic_calender"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/visit_line"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/tv_color"
+                    android:text="Total Cost"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/tv_color"
+                    android:id="@+id/tv_lable_responsibility"
+                    android:text="Responsibility"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_below="@+id/text_layout"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="2dp"
+                    android:layout_height="match_parent">
+                    <!--  <Spinner
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:id="@+id/sp_last_survey"
+                          android:textColor="@color/list_text"
+                          style="@style/Widget.AppCompat.Spinner.Underlined"></Spinner>-->
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:paddingRight="10dp"
+                        android:id="@+id/tv_totalCost"
+                        android:text="0.00"
+                        android:focusable="false"
+                        android:longClickable="false"
+                        android:textColor="@color/list_text"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp"
+                        android:src="@mipmap/ic_calender"
+                        android:visibility="gone"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="2dp"
+                    android:layout_height="match_parent">
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sp_responsibilitys"
+                        android:visibility="invisible"
+                        android:textColor="@color/list_text"
+                        style="@style/Widget.AppCompat.Spinner.Underlined"></Spinner>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:lines="1"
+                        android:id="@+id/tv_responsibility"
+                        android:singleLine="true"
+                        android:focusable="false"
+                        android:longClickable="false"
+                        android:paddingRight="10dp"
+                        android:layout_marginRight="4dp"
+                        android:textColor="@color/list_text"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:id="@+id/responsibility_id"/>
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp"
+                        android:src="@mipmap/ic_down"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/visit_line"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/tv_color"
+                    android:text="Remark"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/tv_color"
+                    android:text="Responsibility"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_below="@+id/text_layout"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_marginRight="2dp"
+                    android:layout_height="match_parent">
+                    <!--  <Spinner
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:id="@+id/sp_last_survey"
+                          android:textColor="@color/list_text"
+                          style="@style/Widget.AppCompat.Spinner.Underlined"></Spinner>-->
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:lines="1"
+                        android:paddingRight="10dp"
+                        android:id="@+id/tv_remark"
+                        android:hint=""
+                        android:maxLength="255"
+                        android:textColor="@color/list_text"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp"
+                        android:src="@mipmap/ic_calender"
+                        android:visibility="gone"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:layout_marginRight="2dp"
+                    android:layout_height="match_parent">
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"
+                        android:textColor="@color/list_text"
+                        style="@style/Widget.AppCompat.Spinner.Underlined"></Spinner>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:paddingRight="10dp"
+                        android:layout_marginRight="4dp"
+                        android:hint=""
+                        android:focusable="false"
+                        android:textColor="@color/list_text"
+                        />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp"
+                        android:src="@mipmap/ic_down"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:weightSum="2">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cancel"
+                    android:textSize="16dp"
+                    android:background="@color/Title"
+                    android:id="@+id/tv_resend"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/white"/>
+
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Save"
+                    android:textSize="16dp"
+                    android:id="@+id/bt_ok"
+                    android:background="@color/Title"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

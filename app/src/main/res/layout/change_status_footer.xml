@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:layout_gravity="bottom"
+    android:weightSum="3"
+    android:background="@color/submit"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@color/submit">
+        <Button
+            android:id="@+id/status_home"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@android:color/transparent"
+            android:drawableTop="@mipmap/ic_home"
+            android:drawableTint="@color/white"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@android:color/transparent"
+            android:text="Home"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@color/submit">
+        <Button
+            android:id="@+id/status_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@android:color/transparent"
+            android:drawableTop="@mipmap/ic_refresh"
+            android:drawableTint="@color/white"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/tv_heat_refresh"
+            android:textColor="@color/white"
+            android:text="Refresh"/>
+
+    </LinearLayout>
+
+    <!--  <View
+          style="@style/View_vertical"
+          />-->
+    <!--<View
+        style="@style/View_vertical"
+        />-->
+
+
+    <!-- <View
+         style="@style/View_vertical"
+         />-->
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/RL_run_submit"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/LL_status_submit"
+            android:background="@color/submit">
+
+            <Button
+                android:id="@+id/status_submit"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@android:color/transparent"
+                android:drawableTop="@mipmap/ic_submit"
+                android:gravity="center"
+                android:drawableTint="@color/white"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/change_submit"
+                android:textColor="@color/white"
+                android:background="@android:color/transparent"
+                android:text="Submit"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/LL_run"
+            android:background="@color/submit">
+
+            <Button
+                android:id="@+id/run_report"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@android:color/transparent"
+                android:drawableTop="@mipmap/ic_run"
+                android:gravity="center"
+                android:drawableTint="@color/white"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/tv_runReport"
+                android:textColor="@color/white"
+                android:background="@android:color/transparent"
+                android:text="Run Report"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout >

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/common_toolbar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:background="@color/white"
+            android:layout_below="@+id/header">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="1">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="0.5"
+                        android:id="@+id/LL_repair_Estimation">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <RelativeLayout
+                                style="@style/DashboardImage_AM">
+
+                                <ImageView
+                                    style="@style/DashboardImage_AM"
+                                    android:src="@drawable/rep_est"
+                                    android:id="@+id/im_repair_estimation"/>
+
+                                <Button
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:visibility="gone"
+                                    android:id="@+id/bt_repair_est_Count"
+                                    android:textColor="@color/white"
+                                    android:layout_marginRight="40dp"
+                                    android:textSize="8sp"
+                                    android:background="@drawable/circle_button"
+                                    android:layout_alignParentRight="true"/>
+
+
+                            </RelativeLayout>
+                            <TextView
+                                style="@style/DashboardText_AM"
+                                android:text="Repair Estimate"
+                                android:id="@+id/GateIn"
+                                android:textColor="@color/Title"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                    <View
+                        style="@style/View_vertical"
+                        />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="0.5"
+                        android:id="@+id/LL_Repair_Approval"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <RelativeLayout
+                                style="@style/DashboardImage_AM">
+                                <ImageView
+                                    style="@style/DashboardImage_AM"
+                                    android:src="@drawable/rep_app"
+                                    android:id="@+id/im_repair_approval"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true" />
+
+
+
+
+                                <Button
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:id="@+id/bt_repair_app_count"
+                                    android:visibility="gone"
+                                    android:textColor="@color/white"
+                                    android:layout_marginRight="40dp"
+                                    android:textSize="8sp"
+                                    android:background="@drawable/circle_button"
+                                    android:layout_alignParentRight="true"/>
+                            </RelativeLayout>
+                            <TextView
+                                style="@style/DashboardText_AM"
+                                android:text="Repair Approval"
+                                android:id="@+id/GateOut"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/Title"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View
+                    style="@style/View_horizontal"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/LL_Repair_completion"
+                        android:layout_weight="0.5"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <RelativeLayout
+                                style="@style/DashboardImage_AM">
+                                <ImageView
+                                    style="@style/DashboardImage_AM"
+                                    android:src="@drawable/rep_cmpl"
+                                    android:id="@+id/im_repair_completion"/>
+
+                                <Button
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:visibility="gone"
+                                    android:id="@+id/bt_repair_com_count"
+                                    android:textColor="@color/white"
+                                    android:layout_marginRight="40dp"
+                                    android:textSize="8sp"
+                                    android:background="@drawable/circle_button"
+                                    android:layout_alignParentRight="true"/>
+
+
+
+                            </RelativeLayout>
+                            <TextView
+                                style="@style/DashboardText_AM"
+                                android:text="Repair Completion"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/Title"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:id="@+id/Heating" />
+                        </RelativeLayout>
+
+
+
+
+
+                    </LinearLayout>
+                    <View
+                        style="@style/View_vertical"
+                        />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/LL_Survey_completion"
+                        android:layout_weight="0.5"
+                        >
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <RelativeLayout
+                                style="@style/DashboardImage_AM">
+                                <ImageView
+                                    style="@style/DashboardImage_AM"
+                                    android:src="@drawable/survey_cmpl"
+                                    android:id="@+id/im_survey_completion"
+                                    />
+
+                                <Button
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:visibility="gone"
+                                    android:id="@+id/bt_survey_com_count"
+                                    android:textColor="@color/white"
+                                    android:layout_marginRight="40dp"
+                                    android:textSize="8sp"
+                                    android:background="@drawable/circle_button"
+                                    android:layout_alignParentRight="true"/>
+
+
+                            </RelativeLayout>
+                            <TextView
+                                style="@style/DashboardText_AM"
+                                android:text="Survey Completion"
+                                android:id="@+id/Cleaning"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/Title"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer" />
+</android.support.v4.widget.DrawerLayout>

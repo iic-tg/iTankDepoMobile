@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">i TankDepo</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="fields">Fields</string>
+    <string name="operators">Operators</string>
+    <string name="bv_strWFData">USERID=1&amp;SYSTM_DT=15-JUN-2017 11:52:47 AM&amp;USERNAME=ADMIN&amp;RL_CD=ADMIN&amp;RL_ID=1&amp;DPT_ID=1&amp;DPT_CD=DEPOT!&amp;MSTR_ID_CSV=&amp;QCK_LNK_ID_CSV=&amp;CRT_BT=True&amp;EDT_BT=True&amp;VW_BT=True&amp;ACTIVITYID=170&amp;ACTN_DT=JUN 15, 2017</string>
+
+
+</resources>

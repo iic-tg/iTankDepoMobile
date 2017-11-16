@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/LL_general_info"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginLeft="2dp"
+            android:id="@+id/text_layout"
+            android:layout_below="@+id/visit_line"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_name"
+                android:text="Customer *"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Equipment Number *"
+                android:id="@+id/tv_date"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_below="@+id/text_layout"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"
+                android:layout_height="match_parent">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/ed_customer"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:lines="1"
+                    android:background="@drawable/field_border"
+                    android:singleLine="true"
+                    android:paddingRight="10dp"
+                    android:layout_marginRight="4dp"
+                    android:hint=""
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@mipmap/ic_box_down"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="2dp"
+                android:id="@+id/ed_equip_no"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:background="@drawable/field_border"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/visit_line"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Type *"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Code *"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_below="@+id/text_layout"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"
+                android:layout_height="match_parent">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/ed_type"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:background="@drawable/field_border"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:paddingRight="10dp"
+                    android:layout_marginRight="4dp"
+                    android:hint=""
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@mipmap/ic_box_down"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:layout_marginRight="8dp"
+                android:id="@+id/ed_code"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/field_border"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="2dp"
+            android:layout_below="@+id/visit_line"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Status *"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Yard Location "
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_below="@+id/text_layout"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"
+                android:layout_height="match_parent">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:lines="1"
+                    android:background="@drawable/field_border"
+                    android:singleLine="true"
+                    android:paddingRight="10dp"
+                    android:layout_marginRight="4dp"
+                    android:hint=""
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@mipmap/ic_box_down"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:layout_height="match_parent">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:lines="1"
+                    android:background="@drawable/field_border"
+                    android:singleLine="true"
+                    android:paddingRight="10dp"
+                    android:layout_marginRight="4dp"
+                    android:hint=""
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@mipmap/ic_box_down"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="2dp"
+            android:layout_below="@+id/visit_line"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="In Date *"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Time *"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_below="@+id/text_layout"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"
+                android:layout_height="match_parent">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:lines="1"
+                    android:background="@drawable/field_border"
+                    android:singleLine="true"
+                    android:paddingRight="10dp"
+                    android:layout_marginRight="4dp"
+                    android:hint=""
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@mipmap/ic_calender"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"
+                android:layout_height="match_parent">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:lines="1"
+                    android:background="@drawable/field_border"
+                    android:singleLine="true"
+                    android:paddingRight="10dp"
+                    android:layout_marginRight="4dp"
+                    android:hint=""
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@mipmap/ic_time"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/visit_line"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Previous Gargo*"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="EIR No "
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_below="@+id/text_layout"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"
+                android:layout_height="match_parent">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:background="@drawable/field_border"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:paddingRight="10dp"
+                    android:layout_marginRight="4dp"
+                    android:hint=""
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@mipmap/ic_box_down"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/field_border"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="2dp"
+            android:layout_below="@+id/visit_line"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Vehicle No "
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Transporter "
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:id="@+id/edit_layout"
+            android:layout_below="@+id/text_layout"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"
+                android:layout_height="match_parent">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:lines="1"
+                    android:background="@drawable/field_border"
+                    android:singleLine="true"
+                    android:paddingRight="10dp"
+                    android:layout_marginRight="4dp"
+                    android:hint=""
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@mipmap/ic_box_down"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/field_border"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_below="@+id/text_layout"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:paddingRight="10dp"
+                android:layout_marginRight="4dp"
+                android:text="Heating"
+                />
+
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:text="Rental"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="2dp"
+            android:layout_below="@+id/visit_line"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Notes "
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/text_layout"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/field_border"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

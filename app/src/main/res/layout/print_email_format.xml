@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.css.demoprojectfornavigation.MainActivity">
+
+<LinearLayout android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_generate"
+            android:text="PDF Generate"/>
+</LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll_pdflayout"
+    android:padding="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="Repair Estimation"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical"
+        android:paddingLeft="2dp"
+        android:background="@drawable/field_border"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:background="@color/dark_grey"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"></View>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView android:textColor="@color/black"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:background="@color/grey"
+                android:layout_weight="1.2"
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Customer" />
+            <View
+                android:background="@color/dark_grey"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"></View>
+            <TextView
+                android:id="@+id/tv_Customer"
+                android:layout_weight="0.8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <View
+            android:background="@color/dark_grey"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"></View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.8"
+                android:background="@color/grey"
+                android:padding="5dp"
+                android:text="Equipment No:"
+                android:textColor="@color/black" />
+
+            <View
+                android:background="@color/dark_grey"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"></View>
+
+            <TextView
+                android:id="@+id/tv_Equipment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2" />
+        </LinearLayout>
+        <View
+            android:background="@color/dark_grey"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"></View>
+        <LinearLayout android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:background="@color/grey"
+                android:gravity="center_vertical"
+                android:layout_weight="1.2"
+                android:text="Type"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <View
+                android:background="@color/dark_grey"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"></View>
+            <TextView
+                android:id="@+id/tv_Type"
+                android:layout_weight="0.8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View
+            android:background="@color/dark_grey"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"></View>
+
+
+        <LinearLayout android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:background="@color/grey"
+                android:gravity="center_vertical"
+                android:layout_weight="1.2"
+                android:text="Code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <View
+                android:background="@color/dark_grey"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"></View>
+            <TextView
+                android:id="@+id/tv_Code"
+                android:layout_weight="0.8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View
+            android:background="@color/dark_grey"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"></View>
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:background="@color/grey"
+                android:gravity="center_vertical"
+                android:layout_weight="1.2"
+                android:text="Status"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <View
+                android:background="@color/dark_grey"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"></View>
+            <TextView
+                android:id="@+id/tv_Status"
+                android:layout_weight="0.8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View
+            android:background="@color/dark_grey"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"></View>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:background="@color/grey"
+                android:gravity="center_vertical"
+                android:layout_weight="1.2"
+                android:text="Yard Loc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <View
+                android:background="@color/dark_grey"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"></View>
+            <TextView
+                android:id="@+id/tv_Yard_Loc"
+                android:layout_weight="0.8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View
+            android:background="@color/dark_grey"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"></View>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:background="@color/grey"
+                android:gravity="center_vertical"
+                android:layout_weight="1.2"
+                android:text="In Date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <View
+                android:background="@color/dark_grey"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"></View>
+            <TextView
+                android:id="@+id/tv_In_Date"
+                android:layout_weight="0.8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View
+            android:background="@color/dark_grey"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"></View>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:background="@color/grey"
+                android:gravity="center_vertical"
+                android:layout_weight="1.2"
+                android:text="Time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <View
+                android:background="@color/dark_grey"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"></View>
+            <TextView
+                android:id="@+id/tv_Time"
+                android:layout_weight="0.8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View
+            android:background="@color/dark_grey"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"></View>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:background="@color/grey"
+                android:gravity="center_vertical"
+                android:layout_weight="1.2"
+                android:text="Previous Cargo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <View
+                android:background="@color/dark_grey"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"></View>
+            <TextView
+                android:id="@+id/tv_Previous_Cargo"
+                android:layout_weight="0.8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View
+            android:background="@color/dark_grey"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"></View>
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:background="@color/grey"
+                android:gravity="center_vertical"
+                android:layout_weight="1.2"
+                android:text="EIR No"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <View
+                android:background="@color/dark_grey"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"></View>
+            <TextView
+                android:id="@+id/tv_EIR_No"
+                android:layout_weight="0.8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View
+            android:background="@color/dark_grey"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"></View>
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:background="@color/grey"
+                android:gravity="center_vertical"
+                android:layout_weight="1.2"
+                android:text="Repair type"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <View
+                android:background="@color/dark_grey"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"></View>
+            <TextView
+                android:id="@+id/tv_Vechicle_No"
+                android:layout_weight="0.8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View
+            android:background="@color/dark_grey"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"></View>
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:background="@color/grey"
+                android:gravity="center_vertical"
+                android:layout_weight="1.2"
+                android:text="Next Text Date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <View
+                android:background="@color/dark_grey"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"></View>
+            <TextView
+                android:id="@+id/tv_Transporter"
+                android:layout_weight="0.8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View
+            android:background="@color/dark_grey"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"></View>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:background="@color/grey"
+                android:gravity="center_vertical"
+                android:layout_weight="1.2"
+                android:text="Last Test Date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <View
+                android:background="@color/dark_grey"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"></View>
+            <TextView
+                android:id="@+id/tv_Heating"
+                android:layout_weight="0.8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View
+            android:background="@color/dark_grey"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"></View>
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:background="@color/grey"
+                android:gravity="center_vertical"
+                android:layout_weight="1.2"
+                android:text="Remarks"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <View
+                android:background="@color/dark_grey"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"></View>
+            <TextView
+                android:id="@+id/tv_Remarks"
+                android:layout_weight="0.8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View
+            android:background="@color/dark_grey"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"></View>
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:background="@color/grey"
+                android:gravity="center_vertical"
+                android:layout_weight="1.2"
+                android:text="Rental"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <View
+                android:background="@color/dark_grey"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"></View>
+            <TextView
+                android:id="@+id/tv_Rental"
+                android:layout_weight="0.8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:weightSum="3"
+        android:layout_height="match_parent">
+        <LinearLayout android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView android:text="Page"
+                android:gravity="center"
+                android:layout_weight="0.5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tv_Page_no"
+                android:layout_weight="0.5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+        </LinearLayout>
+
+        <LinearLayout android:weightSum="1"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="Printed by Admin:"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+            <TextView
+                android:gravity="center"
+                android:layout_weight="0.5"
+                android:id="@+id/tv_Printed_By"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical"
+            android:layout_weight="1"
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:gravity="center"
+                android:text="Printed Date:"
+                android:layout_weight="0.5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+            <TextView
+                android:gravity="center"
+                android:layout_weight="0.5"
+                android:id="@+id/tv_Printed_Date"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>

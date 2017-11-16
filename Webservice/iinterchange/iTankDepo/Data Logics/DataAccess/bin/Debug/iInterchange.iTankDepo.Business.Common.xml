@@ -1,0 +1,32 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+iInterchange.iTankDepo.Business.Common
+</name>
+</assembly>
+<members>
+<member name="M:iInterchange.iTankDepo.Business.Common.DatasetHelper.ColToCSVstring(System.Data.DataTable@,System.String)">
+	<summary>
+ This method used to get the column values as CSV string
+ </summary>
+	<param name="br_dtData">Denotes the data to be converted</param>
+	<param name="bv_strColumnName">Denotes column name to be converted</param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:iInterchange.iTankDepo.Business.Common.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:iInterchange.iTankDepo.Business.Common.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:iInterchange.iTankDepo.Business.Common.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

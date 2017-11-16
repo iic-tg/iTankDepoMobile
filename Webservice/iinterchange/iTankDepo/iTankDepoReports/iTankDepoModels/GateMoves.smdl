@@ -1,0 +1,3839 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SemanticModel ID="G8b215291-48a2-455f-a47a-88fd6a43673c" xmlns="http://schemas.microsoft.com/sqlserver/2004/10/semanticmodeling" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Culture>en-US</Culture>
+  <Entities>
+    <Entity ID="Gf6ff63bb-86b8-48a2-8a6b-99dae127a88b">
+      <Name>Gate Move</Name>
+      <CollectionName>Gate Moves</CollectionName>
+      <IdentifyingAttributes>
+        <AttributeReference>
+          <!--GI TRNSCTN NO-->
+          <AttributeID>G1358ab6a-0f6d-4320-a3df-bc98b867497b</AttributeID>
+        </AttributeReference>
+      </IdentifyingAttributes>
+      <DefaultDetailAttributes>
+        <AttributeReference>
+          <!--GI TRNSCTN NO-->
+          <AttributeID>G1358ab6a-0f6d-4320-a3df-bc98b867497b</AttributeID>
+        </AttributeReference>
+        <AttributeReference>
+          <!--Rental Reference No-->
+          <AttributeID>Gdc74f38e-8c38-485f-8fed-726e9a491fd3</AttributeID>
+        </AttributeReference>
+        <AttributeReference>
+          <!--Rental PO Ref No-->
+          <AttributeID>G803b75ff-5734-4f47-9406-975ab0bae976</AttributeID>
+        </AttributeReference>
+      </DefaultDetailAttributes>
+      <DefaultAggregateAttributes>
+        <AttributeReference>
+          <!--#Gate Moves-->
+          <AttributeID>Gb5cf5581-71c2-4082-b156-fa47c4d18455</AttributeID>
+        </AttributeReference>
+      </DefaultAggregateAttributes>
+      <InstanceSelection>MandatoryFilter</InstanceSelection>
+      <Fields>
+        <Attribute ID="Gb5cf5581-71c2-4082-b156-fa47c4d18455">
+          <Name>#Gate Moves</Name>
+          <DataType>Integer</DataType>
+          <Expression>
+            <Function>
+              <FunctionName>Count</FunctionName>
+              <Arguments>
+                <Expression>
+                  <EntityRef>
+                    <!--Gate Move-->
+                    <EntityID>Gf6ff63bb-86b8-48a2-8a6b-99dae127a88b</EntityID>
+                  </EntityRef>
+                </Expression>
+              </Arguments>
+            </Function>
+          </Expression>
+          <IsAggregate>true</IsAggregate>
+          <SortDirection>Descending</SortDirection>
+          <Format>n0</Format>
+          <EnableDrillthrough>true</EnableDrillthrough>
+        </Attribute>
+        <Attribute ID="G9e18861a-be58-4d5d-9484-8c107606aba0">
+          <Name>GTN ID</Name>
+          <DataType>Integer</DataType>
+          <SortDirection>Descending</SortDirection>
+          <Width>7</Width>
+          <Format>g</Format>
+          <DiscourageGrouping>true</DiscourageGrouping>
+          <Column Name="GTN_ID" />
+        </Attribute>
+        <Attribute ID="G1358ab6a-0f6d-4320-a3df-bc98b867497b">
+          <Name>GI TRNSCTN NO</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>12</Width>
+          <DiscourageGrouping>true</DiscourageGrouping>
+          <EnableDrillthrough>true</EnableDrillthrough>
+          <ContextualName>Merge</ContextualName>
+          <Column Name="GI_TRNSCTN_NO" />
+        </Attribute>
+        <Attribute ID="Gbb323d0c-d0b7-4800-8f3d-85f10ef0de2d">
+          <Name>Customer ID</Name>
+          <DataType>Integer</DataType>
+          <SortDirection>Descending</SortDirection>
+          <Width>4</Width>
+          <Format>g</Format>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="CSTMR_ID" />
+        </Attribute>
+        <Attribute ID="G0fff42e2-d97a-43ff-adda-16c03c10768c">
+          <Name>Customer</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>9</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="CSTMR_CD" />
+        </Attribute>
+        <Attribute ID="G287d5bdc-c51a-481a-b217-5f324bc7bf0a">
+          <Name>Customer Name</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>9</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="CSTMR_NAM" />
+        </Attribute>
+        <Attribute ID="Ge2ffc497-62ce-4ec5-8af5-9e7e2addec6e">
+          <Name>Equipment No</Name>
+          <DataType>String</DataType>
+          <SortDirection>Ascending</SortDirection>
+          <Width>11</Width>
+          <Column Name="EQPMNT_NO" />
+        </Attribute>
+        <Attribute ID="G60895489-cf23-4963-b85f-61ea43a5c46e">
+          <Name>Equipment Type ID</Name>
+          <DataType>Integer</DataType>
+          <SortDirection>Descending</SortDirection>
+          <Width>2</Width>
+          <Format>g</Format>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="EQPMNT_TYP_ID" />
+        </Attribute>
+        <Attribute ID="G57e7c65b-537b-4ffb-9811-b741e71616d2">
+          <Name>Equipment Type</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>3</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="EQPMNT_TYP_CD" />
+        </Attribute>
+        <Attribute ID="G551786fa-d068-4546-9038-414539e25a27">
+          <Name>Equipment Code ID</Name>
+          <DataType>Integer</DataType>
+          <SortDirection>Descending</SortDirection>
+          <Width>2</Width>
+          <Format>g</Format>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="EQPMNT_CD_ID" />
+        </Attribute>
+        <Attribute ID="G4dac7a7a-31fb-4056-a582-6dd82ff7dbeb">
+          <Name>Equipment Code</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>4</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="EQPMNT_CD_CD" />
+        </Attribute>
+        <Attribute ID="G712e7b6f-636e-41f7-84a2-af9b3c01f282">
+          <Name>GI Equipment Status ID</Name>
+          <DataType>Integer</DataType>
+          <SortDirection>Descending</SortDirection>
+          <Width>2</Width>
+          <Format>g</Format>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="GI_EQPMNT_STTS_ID" />
+        </Attribute>
+        <Attribute ID="Ga32dfbda-8caa-4db3-bbf7-ab1c038c2107">
+          <Name>GI Equipment Status</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>3</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="GI_EQPMNT_STTS_CD" />
+        </Attribute>
+        <Attribute ID="Gb612c121-0520-46d1-93d2-3c29ac6f2b66">
+          <Name>GI Equipment Status Description</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>8</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="GI_EQPMNT_STTS_DSCRPTN_VC" />
+        </Attribute>
+        <Attribute ID="G757c7942-30a4-4947-863a-c58b003902d4">
+          <Name>GI Yard Location</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>9</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="GI_YRD_LCTN" />
+        </Attribute>
+        <Attribute ID="Ga04305c9-974f-40c8-81ef-a3d20e6c7de7">
+          <Name>Gate In Date</Name>
+          <DataType>DateTime</DataType>
+          <SortDirection>Descending</SortDirection>
+          <Format>d</Format>
+          <ValueSelection>List</ValueSelection>
+          <Variations>
+            <Attribute ID="G0b050133-aacc-48f0-9ae7-0d31a952c010">
+              <Name>Gate In Day</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Day</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Gate In Date-->
+                        <AttributeID>Ga04305c9-974f-40c8-81ef-a3d20e6c7de7</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+            </Attribute>
+            <Attribute ID="Gfc19aa3c-3b19-4cb5-b360-4cd4b31c9422">
+              <Name>Gate In Month</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Month</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Gate In Date-->
+                        <AttributeID>Ga04305c9-974f-40c8-81ef-a3d20e6c7de7</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+            </Attribute>
+            <Attribute ID="G86868a0d-4ca9-4317-9de5-0bdba4fc009f">
+              <Name>Gate In Year</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Year</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Gate In Date-->
+                        <AttributeID>Ga04305c9-974f-40c8-81ef-a3d20e6c7de7</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+              <Format>0000</Format>
+            </Attribute>
+            <Attribute ID="Ge3cca5e3-1ef1-4e21-bd47-0486eb986230">
+              <Name>Gate In Quarter</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Quarter</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Gate In Date-->
+                        <AttributeID>Ga04305c9-974f-40c8-81ef-a3d20e6c7de7</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+              <Format>Q0</Format>
+            </Attribute>
+            <Attribute ID="G85e52b30-7cbd-40ce-b35b-909d91de24ce">
+              <Name>First Gate In Date</Name>
+              <DataType>DateTime</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Gate In Date-->
+                        <AttributeID>Ga04305c9-974f-40c8-81ef-a3d20e6c7de7</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <Format>d</Format>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G7710821d-2fc7-496d-8fb7-aff33d64fb8d">
+              <Name>Last Gate In Date</Name>
+              <DataType>DateTime</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Gate In Date-->
+                        <AttributeID>Ga04305c9-974f-40c8-81ef-a3d20e6c7de7</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <Format>d</Format>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="GTN_DT" />
+        </Attribute>
+        <Attribute ID="G3bf8d265-2fbf-4501-93ab-3a64901465e8">
+          <Name>Gate In Time</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>5</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="GTN_TM" />
+        </Attribute>
+        <Attribute ID="G25e98dc5-40b6-422e-8292-e745ed3ed9a1">
+          <Name>Product ID</Name>
+          <DataType>Integer</DataType>
+          <SortDirection>Descending</SortDirection>
+          <Width>4</Width>
+          <Format>g</Format>
+          <ValueSelection>List</ValueSelection>
+          <Column Name="PRDCT_ID" />
+        </Attribute>
+        <Attribute ID="G9f65ce89-1d1b-4cc8-82db-6b786ebc19b5">
+          <Name>Product Code</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>3</Width>
+          <ValueSelection>List</ValueSelection>
+          <Column Name="PRDCT_CD" />
+        </Attribute>
+        <Attribute ID="G37ae5dc8-c7c5-4c32-b44c-9351e6ca3ddf">
+          <Name>Product Decription</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>25</Width>
+          <ValueSelection>List</ValueSelection>
+          <Column Name="PRDCT_DSCRPTN_VC" />
+        </Attribute>
+        <Attribute ID="Gbb62a612-9c81-4ed2-be72-8b7d5a0fe00f">
+          <Name>GI EIR No</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>9</Width>
+          <DiscourageGrouping>true</DiscourageGrouping>
+          <Column Name="GI_EIR_NO" />
+        </Attribute>
+        <Attribute ID="G877acaf6-76d0-488e-b2d8-51ea068d13bc">
+          <Name>GI Vehicle No</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>7</Width>
+          <Column Name="GI_VHCL_NO" />
+        </Attribute>
+        <Attribute ID="Gb15c0f5b-e90a-47d7-8f95-3a317c7d8819">
+          <Name>GI Transporter</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>20</Width>
+          <Column Name="GI_TRNSPRTR_CD" />
+        </Attribute>
+        <Attribute ID="Ge8fe9abb-7ce4-4115-8f5e-b416536b356d">
+          <Name>Heating Flag</Name>
+          <DataType>Boolean</DataType>
+          <SortDirection>Ascending</SortDirection>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="HTNG_BT" />
+        </Attribute>
+        <Attribute ID="Gdc74f38e-8c38-485f-8fed-726e9a491fd3">
+          <Name>Rental Reference No</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>15</Width>
+          <DiscourageGrouping>true</DiscourageGrouping>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="RNTL_RFRNC_NO" />
+        </Attribute>
+        <Attribute ID="G000e0fae-8e2d-48d7-b218-ab35b78941e9">
+          <Name>Gate Out Flag</Name>
+          <DataType>Boolean</DataType>
+          <SortDirection>Ascending</SortDirection>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="GTOT_BT" />
+        </Attribute>
+        <Attribute ID="G68b433d1-ea92-4fac-b41b-2fafbe91410c">
+          <Name>Rental Flag</Name>
+          <DataType>Boolean</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="RNTL_BT" />
+        </Attribute>
+        <Attribute ID="G4f1f4838-c16a-4c0e-b8cd-00516e3dbb48">
+          <Name>Depot ID</Name>
+          <DataType>Integer</DataType>
+          <SortDirection>Descending</SortDirection>
+          <Width>2</Width>
+          <Format>g</Format>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="DPT_ID" />
+        </Attribute>
+        <Attribute ID="G3a4fa310-d290-4df7-a902-830171ef7518">
+          <Name>Depot Code</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>6</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="DPT_CD" />
+        </Attribute>
+        <Attribute ID="G55004184-adcc-4625-b213-cae4de9eb87e">
+          <Name>Manufacture Date</Name>
+          <DataType>DateTime</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Descending</SortDirection>
+          <Format>d</Format>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Variations>
+            <Attribute ID="G84fc2c4b-4a90-489a-9f69-a989cd4d2e59">
+              <Name>Manufacture Day</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Day</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Manufacture Date-->
+                        <AttributeID>G55004184-adcc-4625-b213-cae4de9eb87e</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+            </Attribute>
+            <Attribute ID="G09133329-b00b-4c3f-8fca-3d032ad343a5">
+              <Name>Manufacture Month</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Month</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Manufacture Date-->
+                        <AttributeID>G55004184-adcc-4625-b213-cae4de9eb87e</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+            </Attribute>
+            <Attribute ID="Gf1638200-4855-4684-8212-47f2a4a132c7">
+              <Name>Manufacture Year</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Year</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Manufacture Date-->
+                        <AttributeID>G55004184-adcc-4625-b213-cae4de9eb87e</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+              <Format>0000</Format>
+            </Attribute>
+            <Attribute ID="G3da7fd4c-42b1-450b-8ce5-4caf50b4437c">
+              <Name>Manufacture Quarter</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Quarter</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Manufacture Date-->
+                        <AttributeID>G55004184-adcc-4625-b213-cae4de9eb87e</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+              <Format>Q0</Format>
+            </Attribute>
+            <Attribute ID="Gd6846a48-ada8-4023-9fbd-d94b4ace421f">
+              <Name>First Manufacture Date</Name>
+              <DataType>DateTime</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Manufacture Date-->
+                        <AttributeID>G55004184-adcc-4625-b213-cae4de9eb87e</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <Format>d</Format>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G10cfcfd7-ffe6-4831-847f-4424f81d34d0">
+              <Name>Last Manufacture Date</Name>
+              <DataType>DateTime</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Manufacture Date-->
+                        <AttributeID>G55004184-adcc-4625-b213-cae4de9eb87e</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <Format>d</Format>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="MNFCTR_DT" />
+        </Attribute>
+        <Attribute ID="G0f18cfd5-5952-41cc-8f8f-ead5ad963bd7">
+          <Name>Tare Weight</Name>
+          <DataType>Decimal</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Descending</SortDirection>
+          <Width>12</Width>
+          <Format>f3</Format>
+          <!--Total Tare Weight-->
+          <DefaultAggregateAttributeID>G13d94d71-344a-42cb-92f8-53bb73d8e089</DefaultAggregateAttributeID>
+          <ValueSelection>List</ValueSelection>
+          <Variations>
+            <Attribute ID="G13d94d71-344a-42cb-92f8-53bb73d8e089">
+              <Name>Total Tare Weight</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Sum</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Tare Weight-->
+                        <AttributeID>G0f18cfd5-5952-41cc-8f8f-ead5ad963bd7</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G79c8a306-7e75-4f62-8d32-8372db6e8b29">
+              <Name>Avg Tare Weight</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Avg</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Tare Weight-->
+                        <AttributeID>G0f18cfd5-5952-41cc-8f8f-ead5ad963bd7</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="Gc1236066-8032-4f9d-8610-718a2c5a2991">
+              <Name>Min Tare Weight</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Tare Weight-->
+                        <AttributeID>G0f18cfd5-5952-41cc-8f8f-ead5ad963bd7</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G04db30a2-1379-4694-9d2f-af38b6f42468">
+              <Name>Max Tare Weight</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Tare Weight-->
+                        <AttributeID>G0f18cfd5-5952-41cc-8f8f-ead5ad963bd7</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="TR_WGHT_NC" />
+        </Attribute>
+        <Attribute ID="G21db053b-fcc7-49ba-a8ab-90c12ed0d666">
+          <Name>Gross Weight</Name>
+          <DataType>Decimal</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Descending</SortDirection>
+          <Width>13</Width>
+          <Format>f2</Format>
+          <!--Total Gross Weight-->
+          <DefaultAggregateAttributeID>Gd93b9891-58aa-4532-8e41-fbf24471e1b7</DefaultAggregateAttributeID>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Variations>
+            <Attribute ID="Gd93b9891-58aa-4532-8e41-fbf24471e1b7">
+              <Name>Total Gross Weight</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Sum</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Gross Weight-->
+                        <AttributeID>G21db053b-fcc7-49ba-a8ab-90c12ed0d666</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="Gdc35a11c-48b8-41f9-8667-0b06e0b016a2">
+              <Name>Avg Gross Weight</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Avg</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Gross Weight-->
+                        <AttributeID>G21db053b-fcc7-49ba-a8ab-90c12ed0d666</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G2e97e39a-423f-4333-818e-c772bb015a36">
+              <Name>Min Gross Weight</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Gross Weight-->
+                        <AttributeID>G21db053b-fcc7-49ba-a8ab-90c12ed0d666</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G7a3638d8-ec5f-43b7-8641-419218370481">
+              <Name>Max Gross Weight</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Gross Weight-->
+                        <AttributeID>G21db053b-fcc7-49ba-a8ab-90c12ed0d666</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="GRSS_WGHT_NC" />
+        </Attribute>
+        <Attribute ID="Gace5119a-feba-47d9-83de-5dfb72a2b2fa">
+          <Name>Capacity</Name>
+          <DataType>Decimal</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Descending</SortDirection>
+          <Width>13</Width>
+          <Format>f3</Format>
+          <!--Total Capacity-->
+          <DefaultAggregateAttributeID>G6fea6348-9b81-40e5-b100-59c723845bca</DefaultAggregateAttributeID>
+          <ValueSelection>List</ValueSelection>
+          <Variations>
+            <Attribute ID="G6fea6348-9b81-40e5-b100-59c723845bca">
+              <Name>Total Capacity</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Sum</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Capacity-->
+                        <AttributeID>Gace5119a-feba-47d9-83de-5dfb72a2b2fa</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G174d60de-8247-4af0-94a2-51cd866f4343">
+              <Name>Avg Capacity</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Avg</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Capacity-->
+                        <AttributeID>Gace5119a-feba-47d9-83de-5dfb72a2b2fa</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="Gd409fd47-af1b-4a2d-987b-64b107cc1674">
+              <Name>Min Capacity</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Capacity-->
+                        <AttributeID>Gace5119a-feba-47d9-83de-5dfb72a2b2fa</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G1e1e66c9-ba78-441d-a3f5-28a7bf769930">
+              <Name>Max Capacity</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Capacity-->
+                        <AttributeID>Gace5119a-feba-47d9-83de-5dfb72a2b2fa</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="CPCTY_NC" />
+        </Attribute>
+        <Attribute ID="G3d62b0a7-6325-4a0d-a99f-aa2806e11dd5">
+          <Name>Last Test Date</Name>
+          <DataType>DateTime</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Descending</SortDirection>
+          <Format>d</Format>
+          <ValueSelection>List</ValueSelection>
+          <Variations>
+            <Attribute ID="Gd719e89c-e7db-4d5e-830c-946702ff3973">
+              <Name>Last Test Day</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Day</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Last Test Date-->
+                        <AttributeID>G3d62b0a7-6325-4a0d-a99f-aa2806e11dd5</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+            </Attribute>
+            <Attribute ID="G298034c6-0e91-43e0-8ef3-4f404bf1ce77">
+              <Name>Last Test Month</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Month</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Last Test Date-->
+                        <AttributeID>G3d62b0a7-6325-4a0d-a99f-aa2806e11dd5</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+            </Attribute>
+            <Attribute ID="G3057c8fa-cb03-4c62-a6e6-c5bb3eea279b">
+              <Name>Last Test Year</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Year</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Last Test Date-->
+                        <AttributeID>G3d62b0a7-6325-4a0d-a99f-aa2806e11dd5</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+              <Format>0000</Format>
+            </Attribute>
+            <Attribute ID="Gf080f75a-999d-4701-ab4c-b8f5c54bbd27">
+              <Name>Last Test Quarter</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Quarter</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Last Test Date-->
+                        <AttributeID>G3d62b0a7-6325-4a0d-a99f-aa2806e11dd5</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+              <Format>Q0</Format>
+            </Attribute>
+            <Attribute ID="G6056ec7d-cbfa-4005-8189-6cf80374bef3">
+              <Name>First Last Test Date</Name>
+              <DataType>DateTime</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Last Test Date-->
+                        <AttributeID>G3d62b0a7-6325-4a0d-a99f-aa2806e11dd5</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <Format>d</Format>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G1c0050ad-97ff-45b1-9ec7-997876ba7ac0">
+              <Name>Last Last Test Date</Name>
+              <DataType>DateTime</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Last Test Date-->
+                        <AttributeID>G3d62b0a7-6325-4a0d-a99f-aa2806e11dd5</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <Format>d</Format>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="LST_TST_DT" />
+        </Attribute>
+        <Attribute ID="G20973968-1fd8-4c15-bd07-387ced753ce2">
+          <Name>Next Test Date</Name>
+          <DataType>DateTime</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Descending</SortDirection>
+          <Format>d</Format>
+          <ValueSelection>List</ValueSelection>
+          <Variations>
+            <Attribute ID="Gec2c4b88-e428-4476-a1c9-9411c31432b4">
+              <Name>Next Test Day</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Day</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Next Test Date-->
+                        <AttributeID>G20973968-1fd8-4c15-bd07-387ced753ce2</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+            </Attribute>
+            <Attribute ID="Gcafd8ea8-d3c1-40ab-887b-093f7b8b8ee6">
+              <Name>Next Test Month</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Month</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Next Test Date-->
+                        <AttributeID>G20973968-1fd8-4c15-bd07-387ced753ce2</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+            </Attribute>
+            <Attribute ID="G5ac49f66-5027-49cb-9175-92fb6e2c88b7">
+              <Name>Next Test Year</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Year</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Next Test Date-->
+                        <AttributeID>G20973968-1fd8-4c15-bd07-387ced753ce2</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+              <Format>0000</Format>
+            </Attribute>
+            <Attribute ID="G2673f0d1-c333-4b80-b12c-31b9a7ace670">
+              <Name>Next Test Quarter</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Quarter</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Next Test Date-->
+                        <AttributeID>G20973968-1fd8-4c15-bd07-387ced753ce2</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+              <Format>Q0</Format>
+            </Attribute>
+            <Attribute ID="G9b37e333-b5b4-489b-9fe8-ed79b6ae3f62">
+              <Name>First Next Test Date</Name>
+              <DataType>DateTime</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Next Test Date-->
+                        <AttributeID>G20973968-1fd8-4c15-bd07-387ced753ce2</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <Format>d</Format>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="Gf9ec6581-1ada-4b90-889a-53a747354598">
+              <Name>Last Next Test Date</Name>
+              <DataType>DateTime</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Next Test Date-->
+                        <AttributeID>G20973968-1fd8-4c15-bd07-387ced753ce2</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <Format>d</Format>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="NXT_TST_DT" />
+        </Attribute>
+        <Attribute ID="Gfd349f75-b378-429c-b98b-e533b2c8ed52">
+          <Name>Last Test Type</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>9</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="LST_TST_TYP" />
+        </Attribute>
+        <Attribute ID="G783f1b44-f462-4aed-a5a7-427f887e68d8">
+          <Name>Next Test Type</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>9</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="NXT_TST_TYP" />
+        </Attribute>
+        <Attribute ID="G77226a0e-5ad3-4d60-acb6-f6af6569359b">
+          <Name>Validity Period Test Years</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>3</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="VLDTY_PRD_TST_YRS" />
+        </Attribute>
+        <Attribute ID="Gb7959ac5-f1ea-4aa2-bf42-d67f7e380398">
+          <Name>Last Surveyor Name</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>4</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="LST_SRVYR_NM" />
+        </Attribute>
+        <Attribute ID="G1c05422c-14b4-4bbe-8eda-b2161cb44755">
+          <Name>Rental Entry ID</Name>
+          <DataType>Integer</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Descending</SortDirection>
+          <Width>3</Width>
+          <Format>g</Format>
+          <DiscourageGrouping>true</DiscourageGrouping>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="RNTL_ENTRY_ID" />
+        </Attribute>
+        <Attribute ID="G04d8c183-e521-4bde-827f-f73284f6db84">
+          <Name>Rental Contract Ref No</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>16</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="RNTL_CNTRCT_RFRNCE_NO" />
+        </Attribute>
+        <Attribute ID="G803b75ff-5734-4f47-9406-975ab0bae976">
+          <Name>Rental PO Ref No</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>25</Width>
+          <DiscourageGrouping>true</DiscourageGrouping>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="RNTL_PO_RFRNC_NO" />
+        </Attribute>
+        <Attribute ID="Ge42c7072-cf5a-4ea3-8689-fadf39646f7d">
+          <Name>Rental On Hire Date</Name>
+          <DataType>DateTime</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Descending</SortDirection>
+          <Format>d</Format>
+          <DiscourageGrouping>true</DiscourageGrouping>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Variations>
+            <Attribute ID="Ge9a942e6-2d95-41c1-8df8-6933de2eb283">
+              <Name>Rental On Hire Day</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Day</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Rental On Hire Date-->
+                        <AttributeID>Ge42c7072-cf5a-4ea3-8689-fadf39646f7d</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+            </Attribute>
+            <Attribute ID="Gd4bb6b1b-4f4e-4b20-9351-bebeb11d0d70">
+              <Name>Rental On Hire Month</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Month</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Rental On Hire Date-->
+                        <AttributeID>Ge42c7072-cf5a-4ea3-8689-fadf39646f7d</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+            </Attribute>
+            <Attribute ID="G28a02179-9074-47ad-bea4-0f44efabdf71">
+              <Name>Rental On Hire Year</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Year</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Rental On Hire Date-->
+                        <AttributeID>Ge42c7072-cf5a-4ea3-8689-fadf39646f7d</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+              <Format>0000</Format>
+            </Attribute>
+            <Attribute ID="Gc020ae82-6251-45c3-b91f-15aeaf7687f0">
+              <Name>Rental On Hire Quarter</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Quarter</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Rental On Hire Date-->
+                        <AttributeID>Ge42c7072-cf5a-4ea3-8689-fadf39646f7d</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+              <Format>Q0</Format>
+            </Attribute>
+            <Attribute ID="G2e8467a8-9479-4eee-9927-4918f67617af">
+              <Name>First Rental On Hire Date</Name>
+              <DataType>DateTime</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Rental On Hire Date-->
+                        <AttributeID>Ge42c7072-cf5a-4ea3-8689-fadf39646f7d</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <Format>d</Format>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="Gea0a5205-d7d5-4c37-873a-367261ce3e6d">
+              <Name>Last Rental On Hire Date</Name>
+              <DataType>DateTime</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Rental On Hire Date-->
+                        <AttributeID>Ge42c7072-cf5a-4ea3-8689-fadf39646f7d</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <Format>d</Format>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="RNTL_ON_HR_DT" />
+        </Attribute>
+        <Attribute ID="G67913999-4c4a-4c39-b12c-70c04d0add66">
+          <Name>Rental OFF Hire Date</Name>
+          <DataType>DateTime</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Descending</SortDirection>
+          <Format>d</Format>
+          <DiscourageGrouping>true</DiscourageGrouping>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Variations>
+            <Attribute ID="G52566b16-3724-4c2a-ad43-7d14f5b9c888">
+              <Name>Rental OFF Hire Day</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Day</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Rental OFF Hire Date-->
+                        <AttributeID>G67913999-4c4a-4c39-b12c-70c04d0add66</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+            </Attribute>
+            <Attribute ID="G58f7ed39-e5af-4368-bb8f-e363404d089f">
+              <Name>Rental OFF Hire Month</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Month</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Rental OFF Hire Date-->
+                        <AttributeID>G67913999-4c4a-4c39-b12c-70c04d0add66</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+            </Attribute>
+            <Attribute ID="G5af730c3-c177-4268-9214-d7ec9848bff6">
+              <Name>Rental OFF Hire Year</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Year</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Rental OFF Hire Date-->
+                        <AttributeID>G67913999-4c4a-4c39-b12c-70c04d0add66</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+              <Format>0000</Format>
+            </Attribute>
+            <Attribute ID="Gd971742b-12ad-481a-a457-32390f051f69">
+              <Name>Rental OFF Hire Quarter</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Quarter</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Rental OFF Hire Date-->
+                        <AttributeID>G67913999-4c4a-4c39-b12c-70c04d0add66</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+              <Format>Q0</Format>
+            </Attribute>
+            <Attribute ID="Gaf58f707-b690-4b42-af9b-6d6b7293acf6">
+              <Name>First Rental OFF Hire Date</Name>
+              <DataType>DateTime</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Rental OFF Hire Date-->
+                        <AttributeID>G67913999-4c4a-4c39-b12c-70c04d0add66</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <Format>d</Format>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="Gd0cc23e4-e206-4148-b836-45e3d0428a43">
+              <Name>Last Rental OFF Hire Date</Name>
+              <DataType>DateTime</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Rental OFF Hire Date-->
+                        <AttributeID>G67913999-4c4a-4c39-b12c-70c04d0add66</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <Format>d</Format>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="RNTL_OFF_HR_DT" />
+        </Attribute>
+        <Attribute ID="Gdec09b25-2f9e-4242-ab33-f25cfbf9c0d9">
+          <Name>Rental Reference No2</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>15</Width>
+          <DiscourageGrouping>true</DiscourageGrouping>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="RNTL_RNTL_RFRNC_NO" />
+        </Attribute>
+        <Attribute ID="G713fc6db-88f1-433a-bf0d-ab0a20d8f535">
+          <Name>Rental Other Charges</Name>
+          <DataType>Decimal</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Descending</SortDirection>
+          <Width>6</Width>
+          <Format>f0</Format>
+          <!--Total Rental Other Charges-->
+          <DefaultAggregateAttributeID>Ge26d5dec-78f7-4473-8ce9-59eed3253c1e</DefaultAggregateAttributeID>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Variations>
+            <Attribute ID="Ge26d5dec-78f7-4473-8ce9-59eed3253c1e">
+              <Name>Total Rental Other Charges</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Sum</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Rental Other Charges-->
+                        <AttributeID>G713fc6db-88f1-433a-bf0d-ab0a20d8f535</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G6929068e-4eca-4110-826e-c94786ab254b">
+              <Name>Avg Rental Other Charges</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Avg</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Rental Other Charges-->
+                        <AttributeID>G713fc6db-88f1-433a-bf0d-ab0a20d8f535</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G47bad947-0e78-4f07-8e18-fd68438ef46f">
+              <Name>Min Rental Other Charges</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Rental Other Charges-->
+                        <AttributeID>G713fc6db-88f1-433a-bf0d-ab0a20d8f535</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="Gd5daf850-241e-4e9a-82b8-daf2a31ab7ec">
+              <Name>Max Rental Other Charges</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Rental Other Charges-->
+                        <AttributeID>G713fc6db-88f1-433a-bf0d-ab0a20d8f535</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="RNTL_OTHR_CHRG_NC" />
+        </Attribute>
+        <Attribute ID="G9d6796c0-6e93-46fb-badb-9deb50921fd8">
+          <Name>Gate Out Code</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>13</Width>
+          <DiscourageGrouping>true</DiscourageGrouping>
+          <Column Name="GTOT_CD" />
+        </Attribute>
+        <Attribute ID="G665f84b5-b5f3-484a-97c5-695f2b41ee00">
+          <Name>GO Equipment Status</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>3</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="GO_EQPMNT_STTS_CD" />
+        </Attribute>
+        <Attribute ID="G9ccf51e3-ba64-4351-a21f-0699855e347b">
+          <Name>GO Yard Location</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>9</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="GO_YRD_LCTN" />
+        </Attribute>
+        <Attribute ID="G391a343d-698d-4bf4-97b1-b5be287fe40d">
+          <Name>Gate Out Date</Name>
+          <DataType>DateTime</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Descending</SortDirection>
+          <Format>d</Format>
+          <ValueSelection>List</ValueSelection>
+          <Variations>
+            <Attribute ID="G43d76f6a-b141-4dac-8d96-de5830351f8b">
+              <Name>Gate Out Day</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Day</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Gate Out Date-->
+                        <AttributeID>G391a343d-698d-4bf4-97b1-b5be287fe40d</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+            </Attribute>
+            <Attribute ID="G91906367-0971-47a0-b250-67ffaa56c2d9">
+              <Name>Gate Out Month</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Month</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Gate Out Date-->
+                        <AttributeID>G391a343d-698d-4bf4-97b1-b5be287fe40d</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+            </Attribute>
+            <Attribute ID="Gff0e01d4-5ec0-476d-a4a3-e92d32f69a18">
+              <Name>Gate Out Year</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Year</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Gate Out Date-->
+                        <AttributeID>G391a343d-698d-4bf4-97b1-b5be287fe40d</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+              <Format>0000</Format>
+            </Attribute>
+            <Attribute ID="G777422a9-1989-4567-80b3-a4b03fd82a7e">
+              <Name>Gate Out Quarter</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Quarter</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Gate Out Date-->
+                        <AttributeID>G391a343d-698d-4bf4-97b1-b5be287fe40d</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+              <Format>Q0</Format>
+            </Attribute>
+            <Attribute ID="G19d18d3b-ea3b-498d-aca1-713f06eff9c1">
+              <Name>First Gate Out Date</Name>
+              <DataType>DateTime</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Gate Out Date-->
+                        <AttributeID>G391a343d-698d-4bf4-97b1-b5be287fe40d</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <Format>d</Format>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G70fa72aa-162e-4a8d-a0af-bc61c361f43b">
+              <Name>Last Gate Out Date</Name>
+              <DataType>DateTime</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Gate Out Date-->
+                        <AttributeID>G391a343d-698d-4bf4-97b1-b5be287fe40d</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <Format>d</Format>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="GTOT_DT" />
+        </Attribute>
+        <Attribute ID="Ga5928cb5-44f1-4a4e-b4f0-6c4fc78d6047">
+          <Name>Gate Out Time</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>5</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="GTOT_TM" />
+        </Attribute>
+        <Attribute ID="G7ebcb074-2f18-419d-8c1c-d3f512952d86">
+          <Name>GO EIR No</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>7</Width>
+          <DiscourageGrouping>true</DiscourageGrouping>
+          <Column Name="GO_EIR_NO" />
+        </Attribute>
+        <Attribute ID="G36764dc8-ea6c-4c6d-85f4-83204c3c2f04">
+          <Name>GO Vehicle No</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>6</Width>
+          <Column Name="GO_VHCL_NO" />
+        </Attribute>
+        <Attribute ID="Gd4fe4124-8e90-4020-a3d9-a93fb577baaa">
+          <Name>GO Transporter Code</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>17</Width>
+          <ValueSelection>List</ValueSelection>
+          <Column Name="GO_TRNSPRTR_CD" />
+        </Attribute>
+        <Attribute ID="Gab6ca177-5d13-4ee9-8446-23a99f664059">
+          <Name>GO SNO</Name>
+          <DataType>Integer</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Descending</SortDirection>
+          <Width>1</Width>
+          <Format>g</Format>
+          <!--Total GO SNO-->
+          <DefaultAggregateAttributeID>Ged7faceb-f110-4deb-9105-b09dca8e820d</DefaultAggregateAttributeID>
+          <Variations>
+            <Attribute ID="Ged7faceb-f110-4deb-9105-b09dca8e820d">
+              <Name>Total GO SNO</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Sum</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--GO SNO-->
+                        <AttributeID>Gab6ca177-5d13-4ee9-8446-23a99f664059</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G703ecf49-3436-45bc-8449-fca565cd38a8">
+              <Name>Avg GO SNO</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Avg</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--GO SNO-->
+                        <AttributeID>Gab6ca177-5d13-4ee9-8446-23a99f664059</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G9962de5c-993b-46c4-aee3-5072166f4c40">
+              <Name>Min GO SNO</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--GO SNO-->
+                        <AttributeID>Gab6ca177-5d13-4ee9-8446-23a99f664059</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="Gfa352999-e6af-48f4-9040-4fcc897ebc98">
+              <Name>Max GO SNO</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--GO SNO-->
+                        <AttributeID>Gab6ca177-5d13-4ee9-8446-23a99f664059</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="GO_SNO" />
+        </Attribute>
+        <Attribute ID="Gdf4f62d7-aa3c-4bde-935f-a3e63d550c1a">
+          <Name>Acticity Name</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>14</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="ACTVTY_NAM" />
+        </Attribute>
+        <Attribute ID="G6aa6bb3a-fa7d-4a76-bc7f-5334d044d0e0">
+          <Name>Activity Date</Name>
+          <DataType>DateTime</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Descending</SortDirection>
+          <Format>d</Format>
+          <ValueSelection>List</ValueSelection>
+          <Variations>
+            <Attribute ID="G92e0c941-9071-4d45-988d-836d29d7a18c">
+              <Name>Activity Day</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Day</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Activity Date-->
+                        <AttributeID>G6aa6bb3a-fa7d-4a76-bc7f-5334d044d0e0</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+            </Attribute>
+            <Attribute ID="Gcbdb516e-bf7f-4bbf-85d4-81a2736c195d">
+              <Name>Activity Month</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Month</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Activity Date-->
+                        <AttributeID>G6aa6bb3a-fa7d-4a76-bc7f-5334d044d0e0</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+            </Attribute>
+            <Attribute ID="G05b95a25-7b38-4f6d-b0d6-8c9c56650103">
+              <Name>Activity Year</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Year</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Activity Date-->
+                        <AttributeID>G6aa6bb3a-fa7d-4a76-bc7f-5334d044d0e0</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+              <Format>0000</Format>
+            </Attribute>
+            <Attribute ID="G4c341f67-42d1-45eb-8533-86a3235f2a1e">
+              <Name>Activity Quarter</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Quarter</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Activity Date-->
+                        <AttributeID>G6aa6bb3a-fa7d-4a76-bc7f-5334d044d0e0</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+              <Format>Q0</Format>
+            </Attribute>
+            <Attribute ID="G5c7c26b1-5023-435c-ae52-9d99da73bc80">
+              <Name>First Activity Date</Name>
+              <DataType>DateTime</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Activity Date-->
+                        <AttributeID>G6aa6bb3a-fa7d-4a76-bc7f-5334d044d0e0</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <Format>d</Format>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="Gb27d5b09-0a15-4e44-ab40-9d28720dd539">
+              <Name>Last Activity Date</Name>
+              <DataType>DateTime</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Activity Date-->
+                        <AttributeID>G6aa6bb3a-fa7d-4a76-bc7f-5334d044d0e0</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <Format>d</Format>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="ACTVTY_DT" />
+        </Attribute>
+        <Attribute ID="G1c5f9a5e-1c34-4fbb-a282-4ea461514d04">
+          <Name>Handling In Cost</Name>
+          <DataType>Decimal</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Descending</SortDirection>
+          <Width>12</Width>
+          <Format>f2</Format>
+          <!--Total Handling In Cost-->
+          <DefaultAggregateAttributeID>Gb775160b-5951-494e-860e-5dacb5fa8dfe</DefaultAggregateAttributeID>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Variations>
+            <Attribute ID="Gb775160b-5951-494e-860e-5dacb5fa8dfe">
+              <Name>Total Handling In Cost</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Sum</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Handling In Cost-->
+                        <AttributeID>G1c5f9a5e-1c34-4fbb-a282-4ea461514d04</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G044ef925-a3b2-492e-85c7-17c51304a385">
+              <Name>Avg Handling In Cost</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Avg</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Handling In Cost-->
+                        <AttributeID>G1c5f9a5e-1c34-4fbb-a282-4ea461514d04</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G28cf9f4f-96ce-41ad-9e9a-70893d798d3c">
+              <Name>Min Handling In Cost</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Handling In Cost-->
+                        <AttributeID>G1c5f9a5e-1c34-4fbb-a282-4ea461514d04</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G29dddba2-fc12-4c3c-b059-e54b5f278402">
+              <Name>Max Handling In Cost</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Handling In Cost-->
+                        <AttributeID>G1c5f9a5e-1c34-4fbb-a282-4ea461514d04</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="HNDLING_IN_CST_NC" />
+        </Attribute>
+        <Attribute ID="G070c190a-5057-4c78-b908-098aacda2225">
+          <Name>Handling Tax Rate</Name>
+          <DataType>Decimal</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Descending</SortDirection>
+          <Width>10</Width>
+          <Format>f0</Format>
+          <!--Total Handling Tax Rate-->
+          <DefaultAggregateAttributeID>G654ecf11-0690-46cf-9382-4e2902148078</DefaultAggregateAttributeID>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Variations>
+            <Attribute ID="G654ecf11-0690-46cf-9382-4e2902148078">
+              <Name>Total Handling Tax Rate</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Sum</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Handling Tax Rate-->
+                        <AttributeID>G070c190a-5057-4c78-b908-098aacda2225</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="Gaf00bc76-dff1-4d8e-90d4-967f660b57dc">
+              <Name>Avg Handling Tax Rate</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Avg</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Handling Tax Rate-->
+                        <AttributeID>G070c190a-5057-4c78-b908-098aacda2225</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G2f1e8175-8565-42f8-a4d9-d3bd6c3adcec">
+              <Name>Min Handling Tax Rate</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Handling Tax Rate-->
+                        <AttributeID>G070c190a-5057-4c78-b908-098aacda2225</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G4bb4ef08-432e-43a8-a800-c8f940fa054f">
+              <Name>Max Handling Tax Rate</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Handling Tax Rate-->
+                        <AttributeID>G070c190a-5057-4c78-b908-098aacda2225</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="HNDLING_IN_TX_RT_NC" />
+        </Attribute>
+        <Attribute ID="G760358cc-3d69-4fc5-bf36-c65214d3540a">
+          <Name>Handling Total Cost</Name>
+          <DataType>Decimal</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Descending</SortDirection>
+          <Width>12</Width>
+          <Format>f2</Format>
+          <!--Total Handling Total Cost-->
+          <DefaultAggregateAttributeID>G75ad6be1-c4a2-4366-a431-4e5ec1bcb77c</DefaultAggregateAttributeID>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Variations>
+            <Attribute ID="G75ad6be1-c4a2-4366-a431-4e5ec1bcb77c">
+              <Name>Total Handling Total Cost</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Sum</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Handling Total Cost-->
+                        <AttributeID>G760358cc-3d69-4fc5-bf36-c65214d3540a</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G50c40013-14ee-4ee2-93e9-701c34e97ecf">
+              <Name>Avg Handling Total Cost</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Avg</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Handling Total Cost-->
+                        <AttributeID>G760358cc-3d69-4fc5-bf36-c65214d3540a</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G571f960b-58ba-4998-aca1-adc7e62cbc63">
+              <Name>Min Handling Total Cost</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Handling Total Cost-->
+                        <AttributeID>G760358cc-3d69-4fc5-bf36-c65214d3540a</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="Gcb9541c0-eb93-4382-99e4-b133c5479a20">
+              <Name>Max Handling Total Cost</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Handling Total Cost-->
+                        <AttributeID>G760358cc-3d69-4fc5-bf36-c65214d3540a</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="HNDLING_TTL_CSTS_NC" />
+        </Attribute>
+        <Attribute ID="Gf727ada1-534e-4ab6-8c47-879c9e8b69dc">
+          <Name>Handling Out Cost</Name>
+          <DataType>Decimal</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Descending</SortDirection>
+          <Width>11</Width>
+          <Format>f2</Format>
+          <!--Total Handling Out Cost-->
+          <DefaultAggregateAttributeID>G7613202a-7b20-495c-ba53-f68ffa60a6ab</DefaultAggregateAttributeID>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Variations>
+            <Attribute ID="G7613202a-7b20-495c-ba53-f68ffa60a6ab">
+              <Name>Total Handling Out Cost</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Sum</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Handling Out Cost-->
+                        <AttributeID>Gf727ada1-534e-4ab6-8c47-879c9e8b69dc</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G9e743c45-608b-4965-a962-e85ae0d03f8b">
+              <Name>Avg Handling Out Cost</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Avg</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Handling Out Cost-->
+                        <AttributeID>Gf727ada1-534e-4ab6-8c47-879c9e8b69dc</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="Gf7cb30cf-ea67-4496-8b07-5c1a87cc99f5">
+              <Name>Min Handling Out Cost</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Handling Out Cost-->
+                        <AttributeID>Gf727ada1-534e-4ab6-8c47-879c9e8b69dc</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G02469130-c4ea-4068-b939-21bdd84c6633">
+              <Name>Max Handling Out Cost</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Handling Out Cost-->
+                        <AttributeID>Gf727ada1-534e-4ab6-8c47-879c9e8b69dc</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="HNDLING_OUT_CST_NC" />
+        </Attribute>
+        <Attribute ID="G546ae0e6-6dfb-481d-a093-3d4894735daf">
+          <Name>Handling Out Tax Rate</Name>
+          <DataType>Decimal</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Descending</SortDirection>
+          <Width>10</Width>
+          <Format>f0</Format>
+          <!--Total Handling Out Tax Rate-->
+          <DefaultAggregateAttributeID>G8acccf50-404c-43e6-a40a-97402cf74478</DefaultAggregateAttributeID>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Variations>
+            <Attribute ID="G8acccf50-404c-43e6-a40a-97402cf74478">
+              <Name>Total Handling Out Tax Rate</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Sum</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Handling Out Tax Rate-->
+                        <AttributeID>G546ae0e6-6dfb-481d-a093-3d4894735daf</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G6b4c8f75-2719-4682-bc8f-b8c70bf10099">
+              <Name>Avg Handling Out Tax Rate</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Avg</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Handling Out Tax Rate-->
+                        <AttributeID>G546ae0e6-6dfb-481d-a093-3d4894735daf</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="Gb800ada4-9f9b-49bb-90de-b69930a49713">
+              <Name>Min Handling Out Tax Rate</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Handling Out Tax Rate-->
+                        <AttributeID>G546ae0e6-6dfb-481d-a093-3d4894735daf</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="Gb87778c3-01e9-424d-bfbf-21ce65aee351">
+              <Name>Max Handling Out Tax Rate</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Handling Out Tax Rate-->
+                        <AttributeID>G546ae0e6-6dfb-481d-a093-3d4894735daf</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="HNDLING_OUT_TX_RT_NC" />
+        </Attribute>
+        <Attribute ID="Geb42909b-592d-449f-9162-d311797746ea">
+          <Name>Handling Out Total Cost</Name>
+          <DataType>Decimal</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Descending</SortDirection>
+          <Width>11</Width>
+          <Format>f2</Format>
+          <!--Total Handling Out Total Cost-->
+          <DefaultAggregateAttributeID>G4f59edbe-25ec-4def-b061-1e5e31c52bc3</DefaultAggregateAttributeID>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Variations>
+            <Attribute ID="G4f59edbe-25ec-4def-b061-1e5e31c52bc3">
+              <Name>Total Handling Out Total Cost</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Sum</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Handling Out Total Cost-->
+                        <AttributeID>Geb42909b-592d-449f-9162-d311797746ea</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="Ge05e224a-590b-4ea0-9136-b0ac2e5ed411">
+              <Name>Avg Handling Out Total Cost</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Avg</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Handling Out Total Cost-->
+                        <AttributeID>Geb42909b-592d-449f-9162-d311797746ea</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G72c6b8b1-3b4f-41cb-b221-68641d49d9e8">
+              <Name>Min Handling Out Total Cost</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Handling Out Total Cost-->
+                        <AttributeID>Geb42909b-592d-449f-9162-d311797746ea</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="Gaae0aab9-e45a-4d9d-8fdb-d0b8076b6148">
+              <Name>Max Handling Out Total Cost</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Handling Out Total Cost-->
+                        <AttributeID>Geb42909b-592d-449f-9162-d311797746ea</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="HNDLING_OUT_TTL_CSTS_NC" />
+        </Attribute>
+        <Attribute ID="Gbe50368b-92f8-4ebf-abdc-a0eb2a417e09">
+          <Name>Billing Flag</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>1</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="BLLNG_FLG" />
+        </Attribute>
+      </Fields>
+      <Table Name="dbo_V_RPT_GATE_MOVES" />
+    </Entity>
+    <Entity ID="G26eee393-8ca4-432c-b501-ee2c84854458">
+      <Name>Storage Charge</Name>
+      <CollectionName>Storage Charges</CollectionName>
+      <IdentifyingAttributes>
+        <AttributeReference>
+          <!--GI TRNSCTN NO-->
+          <AttributeID>Gdbfb5506-2457-4925-96ea-630ec3d08905</AttributeID>
+        </AttributeReference>
+      </IdentifyingAttributes>
+      <DefaultDetailAttributes>
+        <AttributeReference>
+          <!--GI TRNSCTN NO-->
+          <AttributeID>Gdbfb5506-2457-4925-96ea-630ec3d08905</AttributeID>
+        </AttributeReference>
+        <AttributeReference>
+          <!--STRG CHRG ID-->
+          <AttributeID>G2eab014d-de41-4f83-af4e-8e8eb5ca3e82</AttributeID>
+        </AttributeReference>
+        <AttributeReference>
+          <!--Equipment No-->
+          <AttributeID>G36f184f0-7db4-427c-9df8-66b63484fb74</AttributeID>
+        </AttributeReference>
+        <AttributeReference>
+          <!--Cost Type-->
+          <AttributeID>G3ab10dff-4870-44e6-8157-4e9fecc47829</AttributeID>
+        </AttributeReference>
+      </DefaultDetailAttributes>
+      <DefaultAggregateAttributes>
+        <AttributeReference>
+          <!--#Storage Charges-->
+          <AttributeID>G580705e4-198c-411b-a432-5c5bf5a0c512</AttributeID>
+        </AttributeReference>
+      </DefaultAggregateAttributes>
+      <InstanceSelection>MandatoryFilter</InstanceSelection>
+      <Fields>
+        <Attribute ID="G580705e4-198c-411b-a432-5c5bf5a0c512">
+          <Name>#Storage Charges</Name>
+          <DataType>Integer</DataType>
+          <Expression>
+            <Function>
+              <FunctionName>Count</FunctionName>
+              <Arguments>
+                <Expression>
+                  <EntityRef>
+                    <!--Storage Charge-->
+                    <EntityID>G26eee393-8ca4-432c-b501-ee2c84854458</EntityID>
+                  </EntityRef>
+                </Expression>
+              </Arguments>
+            </Function>
+          </Expression>
+          <IsAggregate>true</IsAggregate>
+          <SortDirection>Descending</SortDirection>
+          <Format>n0</Format>
+          <EnableDrillthrough>true</EnableDrillthrough>
+        </Attribute>
+        <Attribute ID="G2eab014d-de41-4f83-af4e-8e8eb5ca3e82">
+          <Name>STRG CHRG ID</Name>
+          <DataType>Integer</DataType>
+          <SortDirection>Descending</SortDirection>
+          <Width>6</Width>
+          <Format>g</Format>
+          <DiscourageGrouping>true</DiscourageGrouping>
+          <Column Name="STRG_CHRG_ID" />
+        </Attribute>
+        <Attribute ID="G36f184f0-7db4-427c-9df8-66b63484fb74">
+          <Name>Equipment No</Name>
+          <DataType>String</DataType>
+          <SortDirection>Ascending</SortDirection>
+          <Width>11</Width>
+          <Column Name="EQPMNT_NO" />
+        </Attribute>
+        <Attribute ID="Ge890803b-3107-46cf-950c-d5f0d75b6390">
+          <Name>Equipment Code ID</Name>
+          <DataType>Integer</DataType>
+          <SortDirection>Descending</SortDirection>
+          <Width>2</Width>
+          <Format>g</Format>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="EQPMNT_CD_ID" />
+        </Attribute>
+        <Attribute ID="Gbf99bbb1-b5eb-4ebc-a47c-f3906e3fc3b0">
+          <Name>Equipment Code</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>4</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="EQPMNT_CD_CD" />
+        </Attribute>
+        <Attribute ID="Gc6760bff-04d3-481e-89fa-91447ca26740">
+          <Name>Equipment Type ID</Name>
+          <DataType>Integer</DataType>
+          <SortDirection>Descending</SortDirection>
+          <Width>2</Width>
+          <Format>g</Format>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="EQPMNT_TYP_ID" />
+        </Attribute>
+        <Attribute ID="G877b1015-7dd7-4c54-ba0e-eb114e3d25ce">
+          <Name>Equipment Type</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>3</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="EQPMNT_TYP_CD" />
+        </Attribute>
+        <Attribute ID="G3ab10dff-4870-44e6-8157-4e9fecc47829">
+          <Name>Cost Type</Name>
+          <DataType>String</DataType>
+          <SortDirection>Ascending</SortDirection>
+          <Width>3</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="CST_TYP" />
+        </Attribute>
+        <Attribute ID="G8a785239-516e-415d-9f13-d87371a28453">
+          <Name>From Billing Date</Name>
+          <DataType>DateTime</DataType>
+          <SortDirection>Descending</SortDirection>
+          <Format>d</Format>
+          <ValueSelection>List</ValueSelection>
+          <Variations>
+            <Attribute ID="G38e2434f-daaa-4200-8a20-6335466bf023">
+              <Name>From Billing Day</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Day</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--From Billing Date-->
+                        <AttributeID>G8a785239-516e-415d-9f13-d87371a28453</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+            </Attribute>
+            <Attribute ID="G4c096ac7-8a72-4c06-a62e-0dfe7d8ff3bb">
+              <Name>From Billing Month</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Month</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--From Billing Date-->
+                        <AttributeID>G8a785239-516e-415d-9f13-d87371a28453</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+            </Attribute>
+            <Attribute ID="Gfc8102c0-65eb-40ef-b0ad-ee3f62f797e6">
+              <Name>From Billing Year</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Year</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--From Billing Date-->
+                        <AttributeID>G8a785239-516e-415d-9f13-d87371a28453</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+              <Format>0000</Format>
+            </Attribute>
+            <Attribute ID="G9fcc94bf-2782-4415-b771-f139c004d285">
+              <Name>From Billing Quarter</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Quarter</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--From Billing Date-->
+                        <AttributeID>G8a785239-516e-415d-9f13-d87371a28453</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+              <Format>Q0</Format>
+            </Attribute>
+            <Attribute ID="G74dd78fa-1022-49a7-b41c-1312ea9c9a7b">
+              <Name>First From Billing Date</Name>
+              <DataType>DateTime</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--From Billing Date-->
+                        <AttributeID>G8a785239-516e-415d-9f13-d87371a28453</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <Format>d</Format>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="Gdf2cba3c-89e1-4d2e-9678-339d8a968180">
+              <Name>Last From Billing Date</Name>
+              <DataType>DateTime</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--From Billing Date-->
+                        <AttributeID>G8a785239-516e-415d-9f13-d87371a28453</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <Format>d</Format>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="FRM_BLLNG_DT" />
+        </Attribute>
+        <Attribute ID="Ga63a6797-03a9-449d-923d-d26e495ad1e1">
+          <Name>To Billing Date</Name>
+          <DataType>DateTime</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Descending</SortDirection>
+          <Format>d</Format>
+          <ValueSelection>List</ValueSelection>
+          <Variations>
+            <Attribute ID="G622fdc6b-fd36-4b95-8195-cc3da2cd96cc">
+              <Name>To Billing Day</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Day</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--To Billing Date-->
+                        <AttributeID>Ga63a6797-03a9-449d-923d-d26e495ad1e1</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+            </Attribute>
+            <Attribute ID="G69f4503e-fe4d-495e-af33-3811aee32830">
+              <Name>To Billing Month</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Month</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--To Billing Date-->
+                        <AttributeID>Ga63a6797-03a9-449d-923d-d26e495ad1e1</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+            </Attribute>
+            <Attribute ID="Gddb0f5b3-2aec-41e6-b4ce-ea3dd618d2eb">
+              <Name>To Billing Year</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Year</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--To Billing Date-->
+                        <AttributeID>Ga63a6797-03a9-449d-923d-d26e495ad1e1</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+              <Format>0000</Format>
+            </Attribute>
+            <Attribute ID="G34bdefdb-80ee-4d88-b07b-c5b0761501aa">
+              <Name>To Billing Quarter</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Quarter</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--To Billing Date-->
+                        <AttributeID>Ga63a6797-03a9-449d-923d-d26e495ad1e1</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+              <Format>Q0</Format>
+            </Attribute>
+            <Attribute ID="Gf94e7a24-8733-4d37-a169-b3e87c17a30b">
+              <Name>First To Billing Date</Name>
+              <DataType>DateTime</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--To Billing Date-->
+                        <AttributeID>Ga63a6797-03a9-449d-923d-d26e495ad1e1</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <Format>d</Format>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G440f6928-571c-4cef-972c-ff6fcd2c8173">
+              <Name>Last To Billing Date</Name>
+              <DataType>DateTime</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--To Billing Date-->
+                        <AttributeID>Ga63a6797-03a9-449d-923d-d26e495ad1e1</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <Format>d</Format>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="TO_BLLNG_DT" />
+        </Attribute>
+        <Attribute ID="G5241a5f5-a3a4-405c-a152-f314777bb9d2">
+          <Name>Free Days</Name>
+          <DataType>Integer</DataType>
+          <SortDirection>Descending</SortDirection>
+          <Width>3</Width>
+          <Format>g</Format>
+          <!--Total Free Days-->
+          <DefaultAggregateAttributeID>G4657dcd2-2388-42d5-9275-d22fdae659bf</DefaultAggregateAttributeID>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Variations>
+            <Attribute ID="G4657dcd2-2388-42d5-9275-d22fdae659bf">
+              <Name>Total Free Days</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Sum</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Free Days-->
+                        <AttributeID>G5241a5f5-a3a4-405c-a152-f314777bb9d2</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G836885f3-2cf6-4f16-8878-88991a74106b">
+              <Name>Avg Free Days</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Avg</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Free Days-->
+                        <AttributeID>G5241a5f5-a3a4-405c-a152-f314777bb9d2</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="Gae295bde-d9d8-48d8-9332-4ca24ee8f2c4">
+              <Name>Min Free Days</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Free Days-->
+                        <AttributeID>G5241a5f5-a3a4-405c-a152-f314777bb9d2</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G52a3da4a-9085-43d6-a7f1-3f0fb34c50f4">
+              <Name>Max Free Days</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Free Days-->
+                        <AttributeID>G5241a5f5-a3a4-405c-a152-f314777bb9d2</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="FR_DYS" />
+        </Attribute>
+        <Attribute ID="Gbcc6b69d-b990-4b8c-9378-c5ea95bd3a01">
+          <Name>No Of Days</Name>
+          <DataType>Integer</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Descending</SortDirection>
+          <Width>4</Width>
+          <Format>g</Format>
+          <!--Total No Of Days-->
+          <DefaultAggregateAttributeID>Gbbc6db8e-415a-4bb2-b0da-f1a6e0f46dd4</DefaultAggregateAttributeID>
+          <ValueSelection>List</ValueSelection>
+          <Variations>
+            <Attribute ID="Gbbc6db8e-415a-4bb2-b0da-f1a6e0f46dd4">
+              <Name>Total No Of Days</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Sum</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--No Of Days-->
+                        <AttributeID>Gbcc6b69d-b990-4b8c-9378-c5ea95bd3a01</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="Gbd1f8130-07c8-4e96-af46-fe0a925e6eca">
+              <Name>Avg No Of Days</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Avg</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--No Of Days-->
+                        <AttributeID>Gbcc6b69d-b990-4b8c-9378-c5ea95bd3a01</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="Gabcb3aed-7183-4892-bd93-88f13d13189a">
+              <Name>Min No Of Days</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--No Of Days-->
+                        <AttributeID>Gbcc6b69d-b990-4b8c-9378-c5ea95bd3a01</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G400a89b9-e8c2-49b3-ab4c-23eed1213a68">
+              <Name>Max No Of Days</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--No Of Days-->
+                        <AttributeID>Gbcc6b69d-b990-4b8c-9378-c5ea95bd3a01</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="NO_OF_DYS" />
+        </Attribute>
+        <Attribute ID="Gc610be76-7594-4eda-80fe-2d880e9af6ab">
+          <Name>Storage Cost</Name>
+          <DataType>Decimal</DataType>
+          <SortDirection>Descending</SortDirection>
+          <Width>8</Width>
+          <Format>f0</Format>
+          <!--Total Storage Cost-->
+          <DefaultAggregateAttributeID>Ge3e1fa38-fa15-4a34-980b-6466701263e0</DefaultAggregateAttributeID>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Variations>
+            <Attribute ID="Ge3e1fa38-fa15-4a34-980b-6466701263e0">
+              <Name>Total Storage Cost</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Sum</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Storage Cost-->
+                        <AttributeID>Gc610be76-7594-4eda-80fe-2d880e9af6ab</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G43da5d80-ef17-49af-92b9-563178deab9f">
+              <Name>Avg Storage Cost</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Avg</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Storage Cost-->
+                        <AttributeID>Gc610be76-7594-4eda-80fe-2d880e9af6ab</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G43c59cff-f401-4268-b97f-0178888a8bfa">
+              <Name>Min Storage Cost</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Storage Cost-->
+                        <AttributeID>Gc610be76-7594-4eda-80fe-2d880e9af6ab</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G487236ae-0b87-492b-90c6-6897148180e9">
+              <Name>Max Storage Cost</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Storage Cost-->
+                        <AttributeID>Gc610be76-7594-4eda-80fe-2d880e9af6ab</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="STRG_CST_NC" />
+        </Attribute>
+        <Attribute ID="Gaa4774ca-3bad-4cbd-b2a3-4558a851c1eb">
+          <Name>Storage Tax Rate</Name>
+          <DataType>Decimal</DataType>
+          <SortDirection>Descending</SortDirection>
+          <Width>10</Width>
+          <Format>f0</Format>
+          <!--Total Storage Tax Rate-->
+          <DefaultAggregateAttributeID>Gd76ce44c-6edd-403d-9c6b-39d3c87982d7</DefaultAggregateAttributeID>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Variations>
+            <Attribute ID="Gd76ce44c-6edd-403d-9c6b-39d3c87982d7">
+              <Name>Total Storage Tax Rate</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Sum</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Storage Tax Rate-->
+                        <AttributeID>Gaa4774ca-3bad-4cbd-b2a3-4558a851c1eb</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G7686717c-50e7-4e2b-abe8-fe7c11896cf3">
+              <Name>Avg Storage Tax Rate</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Avg</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Storage Tax Rate-->
+                        <AttributeID>Gaa4774ca-3bad-4cbd-b2a3-4558a851c1eb</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G0efc1102-6dfc-4bb1-a463-918e2c2eeba3">
+              <Name>Min Storage Tax Rate</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Storage Tax Rate-->
+                        <AttributeID>Gaa4774ca-3bad-4cbd-b2a3-4558a851c1eb</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G1f193c15-b215-4036-a007-49d598390933">
+              <Name>Max Storage Tax Rate</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Storage Tax Rate-->
+                        <AttributeID>Gaa4774ca-3bad-4cbd-b2a3-4558a851c1eb</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="STRG_TX_RT_NC" />
+        </Attribute>
+        <Attribute ID="Gadad6e3b-63d2-45aa-98d4-cf375db125bd">
+          <Name>Total Cost</Name>
+          <DataType>Decimal</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Descending</SortDirection>
+          <Width>13</Width>
+          <Format>f2</Format>
+          <!--Total Total Cost-->
+          <DefaultAggregateAttributeID>Gc14c8b50-0a02-4d06-b366-dc545c16c63a</DefaultAggregateAttributeID>
+          <ValueSelection>List</ValueSelection>
+          <Variations>
+            <Attribute ID="Gc14c8b50-0a02-4d06-b366-dc545c16c63a">
+              <Name>Total Total Cost</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Sum</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Total Cost-->
+                        <AttributeID>Gadad6e3b-63d2-45aa-98d4-cf375db125bd</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G894b1931-dc25-486e-b25d-1d2ef19a1fb8">
+              <Name>Avg Total Cost</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Avg</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Total Cost-->
+                        <AttributeID>Gadad6e3b-63d2-45aa-98d4-cf375db125bd</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="Gdc6853b0-75d8-4bcd-aefb-f34c50148ccc">
+              <Name>Min Total Cost</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Total Cost-->
+                        <AttributeID>Gadad6e3b-63d2-45aa-98d4-cf375db125bd</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="Gf2ee3977-e974-4669-b07f-0e57d0f2b40e">
+              <Name>Max Total Cost</Name>
+              <DataType>Decimal</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Total Cost-->
+                        <AttributeID>Gadad6e3b-63d2-45aa-98d4-cf375db125bd</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="TTL_CSTS_NC" />
+        </Attribute>
+        <Attribute ID="G8ca7a609-889c-4523-aa2c-ded473555694">
+          <Name>Billed</Name>
+          <DataType>String</DataType>
+          <SortDirection>Ascending</SortDirection>
+          <Width>1</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="BLLNG_FLG" />
+        </Attribute>
+        <Attribute ID="Ge85bd7b2-1647-4b06-9132-a5f05aaa57c1">
+          <Name>Depot ID</Name>
+          <DataType>Integer</DataType>
+          <SortDirection>Descending</SortDirection>
+          <Width>2</Width>
+          <Format>g</Format>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="DPT_ID" />
+        </Attribute>
+        <Attribute ID="G0492da6e-5366-4e01-a999-c38efa69391e">
+          <Name>Customer ID</Name>
+          <DataType>Integer</DataType>
+          <SortDirection>Descending</SortDirection>
+          <Width>4</Width>
+          <Format>g</Format>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="CSTMR_ID" />
+        </Attribute>
+        <Attribute ID="G32c2d1a3-b2f7-4aff-95b9-fbb8e222fefe">
+          <Name>Customer Code</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>9</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="CSTMR_CD" />
+        </Attribute>
+        <Attribute ID="G5356b54b-125e-40c9-bd82-b2cf0af6d284">
+          <Name>Customer Name</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>10</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="CSTMR_NAM" />
+        </Attribute>
+        <Attribute ID="G16798f08-e272-4bb8-9ecf-3b58c366708b">
+          <Name>Previous Cargo</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>3</Width>
+          <ValueSelection>List</ValueSelection>
+          <Column Name="PRDCT_CD" />
+        </Attribute>
+        <Attribute ID="G68b4f942-9b95-4b4f-a89a-9902e364fe5f">
+          <Name>Previous Cargo Description</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>26</Width>
+          <ValueSelection>List</ValueSelection>
+          <Column Name="PRDCT_DSCRPTN_VC" />
+        </Attribute>
+        <Attribute ID="Gc9ce15e2-c0bf-4e2b-bc0f-1bea3726b314">
+          <Name>Gate In Date</Name>
+          <DataType>DateTime</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Descending</SortDirection>
+          <Format>d</Format>
+          <ValueSelection>List</ValueSelection>
+          <Variations>
+            <Attribute ID="G2eda853a-d49f-4de5-8424-5f7a3e4d64b4">
+              <Name>Gate In Day</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Day</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Gate In Date-->
+                        <AttributeID>Gc9ce15e2-c0bf-4e2b-bc0f-1bea3726b314</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+            </Attribute>
+            <Attribute ID="G88fc8245-0d5a-4922-bc4e-065661a20596">
+              <Name>Gate In Month</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Month</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Gate In Date-->
+                        <AttributeID>Gc9ce15e2-c0bf-4e2b-bc0f-1bea3726b314</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+            </Attribute>
+            <Attribute ID="Ge6746828-69c6-4701-a562-a3d54631fdcb">
+              <Name>Gate In Year</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Year</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Gate In Date-->
+                        <AttributeID>Gc9ce15e2-c0bf-4e2b-bc0f-1bea3726b314</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+              <Format>0000</Format>
+            </Attribute>
+            <Attribute ID="Gad2f1d9f-8ae7-4b90-b024-0f5ae6a8739b">
+              <Name>Gate In Quarter</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Quarter</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Gate In Date-->
+                        <AttributeID>Gc9ce15e2-c0bf-4e2b-bc0f-1bea3726b314</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+              <Format>Q0</Format>
+            </Attribute>
+            <Attribute ID="G2dd3072a-2540-45c6-a550-664826fc745c">
+              <Name>First Gate In Date</Name>
+              <DataType>DateTime</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Gate In Date-->
+                        <AttributeID>Gc9ce15e2-c0bf-4e2b-bc0f-1bea3726b314</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <Format>d</Format>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="G24df4100-cc2e-4c0c-b788-273fe48a74eb">
+              <Name>Last Gate In Date</Name>
+              <DataType>DateTime</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Gate In Date-->
+                        <AttributeID>Gc9ce15e2-c0bf-4e2b-bc0f-1bea3726b314</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <Format>d</Format>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="GTN_DT" />
+        </Attribute>
+        <Attribute ID="Gdbfb5506-2457-4925-96ea-630ec3d08905">
+          <Name>GI TRNSCTN NO</Name>
+          <DataType>String</DataType>
+          <SortDirection>Ascending</SortDirection>
+          <Width>12</Width>
+          <DiscourageGrouping>true</DiscourageGrouping>
+          <EnableDrillthrough>true</EnableDrillthrough>
+          <ContextualName>Merge</ContextualName>
+          <Column Name="GI_TRNSCTN_NO" />
+        </Attribute>
+        <Attribute ID="G92888235-75c2-45ea-beab-a5e7bb8a0a3c">
+          <Name>Billing Till Date</Name>
+          <DataType>DateTime</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Descending</SortDirection>
+          <Format>d</Format>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Variations>
+            <Attribute ID="G810bcb9f-6cf5-4325-99c2-d17f09b32043">
+              <Name>Billing Till Day</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Day</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Billing Till Date-->
+                        <AttributeID>G92888235-75c2-45ea-beab-a5e7bb8a0a3c</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+            </Attribute>
+            <Attribute ID="G76215145-99dc-435e-bbdb-3cbebaf8f1ea">
+              <Name>Billing Till Month</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Month</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Billing Till Date-->
+                        <AttributeID>G92888235-75c2-45ea-beab-a5e7bb8a0a3c</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+            </Attribute>
+            <Attribute ID="Ga0897ffe-55d3-475f-846e-fd0bde54e051">
+              <Name>Billing Till Year</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Year</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Billing Till Date-->
+                        <AttributeID>G92888235-75c2-45ea-beab-a5e7bb8a0a3c</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+              <Format>0000</Format>
+            </Attribute>
+            <Attribute ID="G00d1a0a3-a73e-4208-bddf-712d6e979f2e">
+              <Name>Billing Till Quarter</Name>
+              <DataType>Integer</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Quarter</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Billing Till Date-->
+                        <AttributeID>G92888235-75c2-45ea-beab-a5e7bb8a0a3c</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <SortDirection>Ascending</SortDirection>
+              <Format>Q0</Format>
+            </Attribute>
+            <Attribute ID="Gd34197dd-f9de-4fbe-8c66-8b3434bf0eb0">
+              <Name>First Billing Till Date</Name>
+              <DataType>DateTime</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Min</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Billing Till Date-->
+                        <AttributeID>G92888235-75c2-45ea-beab-a5e7bb8a0a3c</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <Format>d</Format>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+            <Attribute ID="Gdab04624-cfcc-4c3e-8889-cfdb156004b9">
+              <Name>Last Billing Till Date</Name>
+              <DataType>DateTime</DataType>
+              <Nullable>true</Nullable>
+              <Expression>
+                <Function>
+                  <FunctionName>Max</FunctionName>
+                  <Arguments>
+                    <Expression>
+                      <AttributeRef>
+                        <!--Billing Till Date-->
+                        <AttributeID>G92888235-75c2-45ea-beab-a5e7bb8a0a3c</AttributeID>
+                      </AttributeRef>
+                    </Expression>
+                  </Arguments>
+                </Function>
+              </Expression>
+              <IsAggregate>true</IsAggregate>
+              <SortDirection>Descending</SortDirection>
+              <Format>d</Format>
+              <EnableDrillthrough>true</EnableDrillthrough>
+            </Attribute>
+          </Variations>
+          <Column Name="BLLNG_TLL_DT" />
+        </Attribute>
+        <Attribute ID="Gebeec914-ed4e-46bc-a6f2-1e0937ea4441">
+          <Name>ACTV BT</Name>
+          <DataType>Boolean</DataType>
+          <SortDirection>Ascending</SortDirection>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="ACTV_BT" />
+        </Attribute>
+        <Attribute ID="G751610a8-2fd7-41c1-b951-a63fc1cc2958">
+          <Name>DRFT INVC NO</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>14</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="DRFT_INVC_NO" />
+        </Attribute>
+        <Attribute ID="G037bceb4-aaf1-482c-8ad6-f6742c466394">
+          <Name>Invoice No</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>14</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="FNL_INVC_NO" />
+        </Attribute>
+        <Attribute ID="Gadd36dc0-a6cc-4fb7-b87a-eb66093444b8">
+          <Name>Depot Code</Name>
+          <DataType>String</DataType>
+          <Nullable>true</Nullable>
+          <SortDirection>Ascending</SortDirection>
+          <Width>6</Width>
+          <ValueSelection>Dropdown</ValueSelection>
+          <Column Name="DPT_CD" />
+        </Attribute>
+      </Fields>
+      <Table Name="dbo_V_RPT_STORAGE_CHARGE" />
+    </Entity>
+  </Entities>
+</SemanticModel>

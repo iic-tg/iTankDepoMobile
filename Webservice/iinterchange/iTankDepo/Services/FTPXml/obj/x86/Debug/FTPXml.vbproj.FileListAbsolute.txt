@@ -1,0 +1,10 @@
+E:\iinterchange\iTankDepo\Services\FTPXml\obj\x86\Debug\iTankDepoFTPXmlService.Resources.resources
+E:\iinterchange\iTankDepo\Services\FTPXml\obj\x86\Debug\iTankDepoFTPXmlService.FTPXml.resources
+E:\iinterchange\iTankDepo\Services\FTPXml\obj\x86\Debug\iTankDepoFTPXmlService.TestForm.resources
+E:\iinterchange\iTankDepo\Services\FTPXml\obj\x86\Debug\FTPXml.vbproj.GenerateResource.Cache
+E:\iinterchange\iTankDepo\Services\FTPXml\obj\x86\Debug\FTPXml.vbprojResolveAssemblyReference.cache
+F:\iinterchange\iTankDepo\Services\FTPXml\obj\x86\Debug\FTPXml.vbprojResolveAssemblyReference.cache
+F:\iinterchange\iTankDepo\Services\FTPXml\obj\x86\Debug\iTankDepoFTPXmlService.Resources.resources
+F:\iinterchange\iTankDepo\Services\FTPXml\obj\x86\Debug\iTankDepoFTPXmlService.FTPXml.resources
+F:\iinterchange\iTankDepo\Services\FTPXml\obj\x86\Debug\iTankDepoFTPXmlService.TestForm.resources
+F:\iinterchange\iTankDepo\Services\FTPXml\obj\x86\Debug\FTPXml.vbproj.GenerateResource.Cache

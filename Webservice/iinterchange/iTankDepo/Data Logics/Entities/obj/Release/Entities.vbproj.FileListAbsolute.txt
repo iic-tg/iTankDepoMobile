@@ -1,0 +1,8 @@
+E:\iinterchange\iTankDepo\Data Logics\Entities\bin\Release\iInterchange.iTankDepo.Entities.dll
+E:\iinterchange\iTankDepo\Data Logics\Entities\bin\Release\iInterchange.iTankDepo.Entities.pdb
+E:\iinterchange\iTankDepo\Data Logics\Entities\bin\Release\iInterchange.iTankDepo.Entities.xml
+E:\iinterchange\iTankDepo\Data Logics\Entities\obj\Release\iInterchange.iTankDepo.Entities.Resources.resources
+E:\iinterchange\iTankDepo\Data Logics\Entities\obj\Release\Entities.vbproj.GenerateResource.Cache
+E:\iinterchange\iTankDepo\Data Logics\Entities\obj\Release\iInterchange.iTankDepo.Entities.dll
+E:\iinterchange\iTankDepo\Data Logics\Entities\obj\Release\iInterchange.iTankDepo.Entities.xml
+E:\iinterchange\iTankDepo\Data Logics\Entities\obj\Release\iInterchange.iTankDepo.Entities.pdb
