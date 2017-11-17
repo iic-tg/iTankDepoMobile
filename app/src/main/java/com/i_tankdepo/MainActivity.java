@@ -118,7 +118,7 @@ public class MainActivity extends CommonActivity
             boolean result = Utility.checkPermission(MainActivity.this, isCamPermission);
         }
 
-        AppCenter.start(getApplication(), "d3a7b058-1851-47a4-9f85-19ac229daf2e", Analytics.class, Crashes.class);
+        AppCenter.start(getApplication(), "b17bd220-e2e9-47c0-97ec-1cf408d5263b", Analytics.class, Crashes.class);
 
 
 
