@@ -3,7 +3,7 @@ package com.i_tankdepo.Constants;
 public class ConstantValues {
 
 //          public static final String Link="http://192.168.0.122/ItankPublish/iTankMobileService/";
-        public static final String Link = "http://10.1.193.156/iTankDepoUI/";
+        public static final String Link = "http://trial.iinterchange.net/itankdepomobile/iTankDepoUI/iTankMobileService/";
 
     // Login and forgot
 
