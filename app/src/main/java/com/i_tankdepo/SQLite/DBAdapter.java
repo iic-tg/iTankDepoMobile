@@ -100,6 +100,8 @@ public class  DBAdapter  {
     public static  final String CONSIGNEE_LOCATION = "get_consignee_location";
 
 
+
+
     private static final String DATABASE_CREATE_GATEIN =
             "create table create_gatein (_id integer primary key autoincrement, "
                     + "customer text not null, customer_id text not null, gate_id text not null, mode text not null, pagename text not null, rep_est_id text not null, " +
@@ -169,11 +171,16 @@ public class  DBAdapter  {
     public static final String OUT_ATTACHMENT= "attach";
     public static final String OUT_MODE= "mode";
 
+    //Added by Anantha krishnan
+    public static  final String BOOKING_AUTH_NO = "booking_auth_no";
+    public static  final String LESSEE_NAME = "lessee_name";
+    public static  final String LESSEE_LOCATION = "lessee_location";
+
 
     public static final String DATABASE_UPDATE_GATEOUT =
             "create table gateout (_id integer primary key autoincrement, " +
                     " user_name text not null , equip_no text not null , location text , out_date text not null , out_time text not null , " +
-                    " eir_no text , vhl_no text , transport text , remark text , rental text , repair_id text , attach text not null , mode text );";
+                    " eir_no text , vhl_no text , transport text , remark text , rental text , repair_id text , attach text not null , mode text, booking_auth_no text ,lessee_name text , Lessee_location );";
 
 
     private final Context context;
@@ -364,7 +371,7 @@ public class  DBAdapter  {
     }
 
         public long updateGateOut(String username , String equip_no , String location , String out_date , String out_time , String eir_no , String vhl_no ,
-                                  String transport , String remark , String rental , String repair_id , String attach , String mode){
+                                  String transport , String remark , String rental , String repair_id , String attach , String mode, String booking_auth_no, String lessee_name, String lessee_location){
             ContentValues gateoutValues = new ContentValues();
 
             gateoutValues.put(USERNAME_GATEOUT,username);
@@ -380,6 +387,11 @@ public class  DBAdapter  {
             gateoutValues.put(OUT_REPAIR_ID,repair_id);
             gateoutValues.put(OUT_ATTACHMENT,attach);
             gateoutValues.put(OUT_MODE,mode);
+
+            //Added by Anantha krishnan
+            gateoutValues.put(BOOKING_AUTH_NO,booking_auth_no);
+            gateoutValues.put(LESSEE_NAME,lessee_name);
+            gateoutValues.put(LESSEE_LOCATION,lessee_location);
 
 
             Toast.makeText(this.context, "GateOut Stored In Database..!", Toast.LENGTH_SHORT).show();
@@ -413,7 +425,7 @@ public class  DBAdapter  {
 
     public Cursor updateGateOut(){
         return db.query(DATABASE_TABLE_UPDATE_GATEOUT,new String[]{USERNAME_GATEOUT,EQUIP_NUMBER_OUT,YRD_LOCATION,OUT_DATE,OUT_TIME,OUT_EIR_NO,
-                OUT_VHL_NO,OUT_TRANSPORT,OUT_REMARKS,OUT_RENTAL,OUT_REPAIR_ID,OUT_ATTACHMENT,OUT_MODE},null,null,null,null,null);
+                OUT_VHL_NO,OUT_TRANSPORT,OUT_REMARKS,OUT_RENTAL,OUT_REPAIR_ID,OUT_ATTACHMENT,OUT_MODE,BOOKING_AUTH_NO,LESSEE_NAME,LESSEE_LOCATION},null,null,null,null,null);
     }
 
     /*Calculating Counts*/

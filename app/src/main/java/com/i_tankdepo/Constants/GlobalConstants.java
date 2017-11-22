@@ -245,7 +245,7 @@ public class GlobalConstants {
     public static ArrayList<RepairBean> repair_arraylist;
 
     public static String roleID="";
-        public static int pendingcount=0;
+    public static int pendingcount=0;
     public static String validationStatus="";
     public static ArrayList<RepairCompletionBean> repair_completion_arraylist;
     public static String repair_est_count="";
@@ -260,5 +260,10 @@ public class GlobalConstants {
 
     public static String CNSGN_NAM = "";
     public static String CNSGN_LCTN = "";
+
+    public static String LSS_NM = "";
+    public static String LSS_LCTN = "";
+    public static String AUTH_NO = "";
+
 
 }

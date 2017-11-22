@@ -116,6 +116,11 @@ import static com.i_tankdepo.R.id.ed_type;
 * */
 public class Update_Gateout extends CommonActivity {
 
+    //Added by Anantha krishnan
+    private EditText ed_booking_auth_no,ed_lessee_name,ed_lessee_location;
+    private String booking_auth_no,lessee_name,lessee_location;
+    private String get_booking_auth_no,get_lessee_name,get_lessee_location;
+
     ImageView up,more_up,equip_up,down,more_down,equip_down;
     LinearLayout LL_general_info;
     private TextView tv_toolbarTitle, tv_add, tv_status, tv_date, tv_time, tv_heat_refresh, leakTest_text;
@@ -234,6 +239,12 @@ public class Update_Gateout extends CommonActivity {
         location = GlobalConstants.location;
         type = GlobalConstants.type;
         date = GlobalConstants.date;
+
+        //Added by Anantha krishnan
+        booking_auth_no = GlobalConstants.AUTH_NO;
+        lessee_name = GlobalConstants.LSS_NM;
+        lessee_location = GlobalConstants.LSS_LCTN;
+
         try {
             Activity_date1 = new SimpleDateFormat("dd-MM-yyyy").parse(date);
         }catch (Exception e)
@@ -376,6 +387,14 @@ public class Update_Gateout extends CommonActivity {
         ed_remark.setText(remark);
         ed_code.setText(code);
         ed_status.setText(status);
+
+        //Added by Anantha krishnan
+        ed_booking_auth_no = (EditText) findViewById(R.id.ed_booking_auth_no);
+        ed_booking_auth_no.setText(booking_auth_no);
+        ed_lessee_name = (EditText) findViewById(R.id.ed_lessee_name);
+        ed_lessee_name.setText(lessee_name);
+        ed_lessee_location = (EditText) findViewById(R.id.ed_lessee_location);
+        ed_lessee_location.setText(lessee_location);
 
 
 
@@ -663,6 +682,12 @@ public class Update_Gateout extends CommonActivity {
                 get_transport=ed_transport.getText().toString();
                 get_remark=ed_remark.getText().toString();
 
+                //Added by Anantha krishnan
+
+                get_booking_auth_no = ed_booking_auth_no.getText().toString();
+                get_lessee_name = ed_lessee_name.getText().toString();
+                get_lessee_location = ed_lessee_location.getText().toString();
+
 
               //  get_last_test_type=sp_last_test_type.getSelectedItem().toString();
             if(cd.isConnectingToInternet()) {
@@ -723,7 +748,7 @@ public class Update_Gateout extends CommonActivity {
 
                             db.open();
                             db.updateGateOut(sp.getString(SP_USER_ID,"user_Id"),equip_no,get_location,get_date,get_time,get_eir_no,get_vechicle,get_transport,
-                                    get_remark,get_swt_rental,Gi_transaction_id,IfAttchment,From);
+                                    get_remark,get_swt_rental,get_booking_auth_no,get_lessee_name,get_lessee_location,Gi_transaction_id,IfAttchment,From);
                             db.close();
 
                         } else {
@@ -1210,6 +1235,11 @@ public class Update_Gateout extends CommonActivity {
                 jsonObject.put("Remarks",get_remark);
                 jsonObject.put("Rental", get_swt_rental);
                 jsonObject.put("RepairEstimateId", Gi_transaction_id);
+
+                //Added by Anantha krishnan
+                jsonObject.put("booking_auth_no",get_booking_auth_no);
+                jsonObject.put("lessee_name", get_lessee_name);
+                jsonObject.put("lessee_location", get_lessee_location);
 
                /* if(attachmentstatus.equalsIgnoreCase("True"))
                 {
